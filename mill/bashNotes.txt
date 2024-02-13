@@ -1,0 +1,226 @@
+https://stackoverflow.com/questions/7333232/how-to-concatenate-two-mp4-files-using-ffmpeg
+ffmpeg -f concat -safe 0 -i mylist.txt -c copy output.mp4
+where
+$ cat mylist.txt
+file '/path/to/file1'
+file '/path/to/file2'
+file '/path/to/file3'
+
+also see: https://ffmpeg.org/ffmpeg-formats.html#concat
+
+ffmpeg -i input.mp4 -i input.wav -c:v copy -map 0:v:0 -map 1:a:0 -c:a aac -b:a 192k output.mp4
+
+ffmpeg -i filmoutput.mp4 -i /Users/mctavish/Documents/nodes/soundfactory/data/rubbedpianoharp/rubbedpianoharp_1642096253276/rubbedpianoharp0_thread_simple_all.mp3 -c:v copy -c:a copy -map 0:v:0 -map 1:a:0 output.mp4
+
+**this kept the sound :::
+ffmpeg -i filmoutput.mp4 -i /Users/mctavish/Documents/nodes/soundfactory/data/rubbedpianoharp/rubbedpianoharp_1642096253276/rubbedpianoharp0_thread_simple_all.mp3 -map 0:v:0 -map 1:a:0  -c:v copy -c:a aac -b:a 192k   output.mp4
+
+
+ffmpee -r 60 -f image2 -s 1920x1080 -i pic%04d.png -vcodec libx264 -crf 25  -pix_fmt yuv420p test.mp4
+
+ffmpeg -r 60 -f image2 -s 1920x1080 -start_number 1  -i image-%03d.png -vcodec libx264 -crf 23  -pix_fmt yuv420p test.mp4
+
+ffmpeg -r 24 -f image2  -s 1920x1080 -start_number 000002 -i image-%06d.png all.webm
+
+
+ffmpeg -framerate 1 -i page%03d.png -c:v libx264 -r 24 -pix_fmt yuv420p book.mp4
+
+ffmpeg -i page%03d.png -vf zoompan=z=1:d=4:fps=2,framerate=24 -c:v libx264 -r 24 -pix_fmt yuv420p testfade001.mp4
+
+Slideshow with crossfading between the pictures
+You can make a slideshow with crossfading between the pictures, by using a combination of the zoompan and framerate filters. "A" is the duration in seconds how long each picture is shown (without the crossfade duration), and "B" is the crossfade duration in seconds.
+
+ffmpeg -i page%03d.png -vf zoompan=d=(A+B)/B:fps=1/B,framerate=25:interp_start=0:interp_end=255:scene=100 -c:v mpeg4 -maxrate 5M -q:v 2 out.mp4
+on another site:
+ffmpeg -i page%03d.png -vf zoompan=$TOTAL_DURATION:fps=1/$FADE_DURATION,framerate=25:interp_start=0:interp_end=255:scene=100 -c:v mpeg4 -maxrate 5M -q:v 2 out.mp4
+ffmpeg -i page%03d.png -vf zoompan=z=1:d=.4:fps=10,framerate=24 -c:v libx264 -r 24 -pix_fmt yuv420p testfade006.mp4
+
+slideshow with crossfade!
+****
+ffmpeg -i page%03d.png -vf zoompan=z=1:d=.4:fps=5,framerate=24 -c:v libx264 -r 24 -pix_fmt yuv420p testfade006.mp4
+ffmpeg -i page%03d.png -vf zoompan=z=1:d=.3:fps=8,framerate=24 -c:v libx264 -r 24 -pix_fmt yuv420p testfade006.mp4
+
+respect square aspect ratio: !
+*******
+ffmpeg -i page%03d.png -vf scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:-1:-1:color=black,zoompan=z=1:d=1:fps=5,framerate=24 -c:v libx264 -r 24 -pix_fmt yuv420p testfade006.mp4
+*****
+
+ffmpeg -framerate 8 -i page%03d.png -c:v libx264 -r 24 -pix_fmt yuv420p testnofde002.mp4
+
+
+Slideshow with crossfading between the pictures
+You can make a slideshow with crossfading between the pictures, by using a combination of the zoompan and framerate filters. "A" is the duration in seconds how long each picture is shown (without the crossfade duration), and "B" is the crossfade duration in seconds.
+
+ffmpeg -i page%03d.png -vf zoompan=d=2:fps=2,framerate=24:interp_start=0:interp_end=255:scene=100 -c:v libx264 -r 24 -pix_fmt yuv420p testfade005.mp4
+
+ffmpeg -i page%03d.png -filter_complex  "xfade=offset=1:duration=1;acrossfade=duration=1" framerate=24:interp_start=0:interp_end=255:scene=100 -c:v libx264 -r 24 -pix_fmt yuv420p testfade003.mp4
+
+"xfade=offset=4.5:duration=1;acrossfade=duration=1"
+
+
+ffmpeg -f concat -safe 0 -r 30 -i filelist.txt -filter:v "crop=640:360" -r 30 outfilm.mp4
+-c:v libx264 -r 24 -pix_fmt yuv420p testfade003.mp4
+ffmpeg -r 0.25 -i "pic_%03d.png" framerate=24 -c:v libx264 -pix_fmt yuv420p -preset veryslow testfade003.mp4
+
+ffmpeg -framerate 2 -i "page%03d.png" -filter_complex  "xfade=offset=1:duration=1;acrossfade=duration=1" framerate=24 -c:v libx264 -r 24 -pix_fmt yuv420p testfade005.mp4
+
+
+https://ottverse.com/crossfade-between-videos-ffmpeg-xfade-filter/
+https://superuser.com/questions/833232/create-video-with-5-images-with-fadein-out-effect-in-ffmpeg/834035#834035
+http://ffmpeg.org/ffmpeg-filters.html#blend (blend / fade / transition)
+ffmpeg \
+-loop 1 -t 5 -i page001.png \
+-loop 1 -t 5 -i page002.png \
+-loop 1 -t 5 -i page003.png \
+-loop 1 -t 5 -i page004.png \
+-loop 1 -t 5 -i page005.png \
+-filter_complex \
+"[0:v]fade=t=out:st=4:d=1[v0]; \
+ [1:v]fade=t=in:st=0:d=1,fade=t=out:st=4:d=1[v1]; \
+ [2:v]fade=t=in:st=0:d=1,fade=t=out:st=4:d=1[v2]; \
+ [3:v]fade=t=in:st=0:d=1,fade=t=out:st=4:d=1[v3]; \
+ [4:v]fade=t=in:st=0:d=1,fade=t=out:st=4:d=1[v4]; \
+ [v0][v1][v2][v3][v4]concat=n=5:v=1:a=0,format=yuv420p[v]" -map "[v]" outFilm.mp4
+
+ ffmpeg \
+-loop 1 -t 4 -i page001.png \
+-loop 1 -t 4 -i page002.png \
+-loop 1 -t 4 -i page003.png \
+-loop 1 -t 4 -i page004.png \
+-loop 1 -t 4 -i page005.png \
+-filter_complex \
+"[1]format=yuva444p,fade=d=0.4:t=in:alpha=1,setpts=PTS-STARTPTS+4/TB[f0]; \
+ [2]format=yuva444p,fade=d=0.4:t=in:alpha=1,setpts=PTS-STARTPTS+8/TB[f1]; \
+ [3]format=yuva444p,fade=d=0.4:t=in:alpha=1,setpts=PTS-STARTPTS+12/TB[f2]; \
+ [4]format=yuva444p,fade=d=0.4:t=in:alpha=1,setpts=PTS-STARTPTS+16/TB[f3]; \
+ [0][f0]overlay[bg1];[bg1][f1]overlay[bg2];[bg2][f2]overlay[bg3]; \
+ [bg3][f3]overlay,format=yuv420p[v]" -map "[v]" -movflags +faststart outFade.mp4
+
+bash script for multiple files in a folder :::
+https://gist.github.com/anguyen8/d0630b6aef6c1cd79b9a1341e88a573e
+
+
+ffmpeg -framerate 0.5 -i page%03d.png -vf "format=yuv420p,framerate=fps=24:interp_start=20:interp_end=240:scene=100" -c:v libx264  -r 24  test.mp4
+
+ffmpeg -framerate 1 -i page%03d.png -c:v libx264 -r 24 -pix_fmt yuv420p book.mp4
+
+
+make an image sequence from a video :::
+https://en.wikibooks.org/wiki/FFMPEG_An_Intermediate_Guide/image_sequence#Slideshow_with_crossfading_between_the_pictures
+ffmpeg -i video.webm -vf fps=1 image-%03d.png
+
+
+https://shotstack.io/learn/use-ffmpeg-to-convert-images-to-video/
+ffmpeg -framerate 1 -i page%02d.png -c:v libx264 -r 24 -pix_fmt yuv420p output.mp4
+
+popple
+https://jdhao.github.io/2019/11/14/convert_pdf_to_images_pdftoppm/
+
+pdftoppm -singlefile -f 4 -r 72 -jpeg -jpegopt quality=90 presentation.pdf test_poppler
+
+pdftoppm -r 72 -jpeg -jpegopt quality=90 algorithm-1636347815_printrun-1636068421230_size-16x9_48.pdf algorithm-1636347815_printrun-1636068421230_size-16x9_48_small
+
+pdftoppm -r 300 -tiff algorithm-1636347815_printrun-1636068421230_size-16x9_48.pdf algorithm-1636347815_printrun-1636068421230_size-16x9_48_tiff
+
+pdftoppm -r 72 -png algorithm-1636347815_printrun-1636068421230_size-16x9_48.pdf algorithm-1636347815_printrun-1636068421230_size-16x9_48_png
+
+pdfunite *.pdf all.pdf
+
+for file in *pdf.png; do mv "$file" "${file/pdf.png/.png}"; done
+for file in *-0.png; do mv "$file" "${file/-0.png/.png}"; done
+
+for file in *.png; do mv "$file" "${file/algorithm-1636347815_printrun-1636418449344_/page}"; done
+for file in *.pdf; do mv "$file" "${file/algorithm-1636347815_printrun-1636418449344_/page}"; done
+for file in *.js; do mv "$file" "${file/algorithm-1636347815_printrun-1636418449344_/page}"; done
+for file in *.sh; do mv "$file" "${file/algorithm-1636347815_printrun-1636418449344_/page}"; done
+rm pageprocessCommands.sh
+for file in *; do mv "$file" "${file/algorithm-1636347815_printrun-1636418449344/book}"; done
+
+for file in *book/pageparameters.js; do mv "$file" "${file/pageparameters/parameters}"; done
+
+for file in books_*/*/parameters.js; do gsed -i '1s;^;let p = ;' $file; done
+
+
+for file in *.png; do mv "$file" "${file/page.png/page}"; done
+algorithm-1636347815_printrun-1636418449344_47
+
+
+for i in *; do magick convert -density 300 ./$i -depth 8 ./$i.tiff; done
+sips -s format tiff input.pdf --out output.tiff
+sips -s format tiff input.pdf --out output.tiff
+(mac sips tool ...
+run sips to see flag options
+for i in *.pdf; do sips -s format tiff $i --out $i.tif; done
+
+for i in *.pdf; do sips –z 1920 -s format png $i --out $i.png; done
+
+for i in *.pdf; do sips –z 5400 9600 -s dpiWidth 300 -s dpiHeight 300 -s format tiff $i --out $i.tif; done
+
+for i in *.pdf; do magick convert $i -resize 1920 $i.png; done
+for i in *.pdf; do magick convert $i -resize 1920 $i.jpg; done
+
+for i in *.pdf; do magick convert $i $i.png; done
+for i in *.pdf; do magick convert $i $i.tif; done
+for i in *.pdf; do magick convert $i $i.jpg; done
+
+zip up books/*
+for i in */; do zip -r "${i%/}.zip" "$i"; done
+
+
+gsutil ls gs://bookfactory/
+
+gsutil -m cp -r books_1637367507739 gs://bookfactory/
+
+gsutil -m cp -r books_1637452515044 gs://bookfactory/
+
+for file in mct
+
+ffmpeg -i vox20200118_8_3b_mixdown.mp3 -i typewriterlongcistern.mp3 -filter_complex "[0:a][1:a]join=inputs=2:channel_layout=stereo[a]" -map "[a]" output.mp3
+
+http://manpages.ubuntu.com/manpages/bionic/man1/sox.1.html#filenames
+sox -m "typewriterlongcistern.mp3" "bird2.mp3" "out.mp3"
+play  "out.mp3" bass +3
+
+sox "bird2.mp3" -p repeat 6 | sox - -m "typewriterlongcistern.mp3" "outstereo.mp3"
+
+sox "bird2.mp3" -p repeat 6 | sox - -m "recording.wav" "recordbird.mp3"
+
+sox recordbird.mp3 outputbird.mp3 pitch -200
+sox out.mp3 outslow.mp3 tempo -s 0.5
+
+https://linux.die.net/man/1/sox
+record 10s of audio stereo
+
+rec -c 2 test.aiff trim 0 10 
+rec -r 41000 -c 2 recording.wav
+
+soxi out.mp3
+(info)
+
+play -n -c1 synth sin %-12 sin %-9 sin %-5 sin %-2 fade h 0.1 1 0.1
+https://ffmpeg.org/ffmpeg-filters.html#amerge
+https://stackoverflow.com/questions/14498539/how-to-overlay-downmix-two-audio-files-using-ffmpeg
+
+
+ffmpeg -i bird2.mp3 -i typewriterlongcistern.mp3 -filter_complex amix=inputs=2:duration=longest output3.mp3
+ffmpeg -i bird2.mp3 -i typewriterlongcistern.mp3 -filter_complex amerge=inputs=2 -ac 2 output4.mp3
+
+https://madskjeldgaard.dk/posts/sox-tutorial-batch-processing/
+
+ffmpeg -i bird0.mp3 -i bird2.mp3 -i bird3.mp3 -filter_complex "amerge=inputs=3,pan=stereo|c0<c0+c1+c4|c1<c2+c3+c5" output5.mp3
+
+normalize files ::: https://madskjeldgaard.dk/posts/sox-tutorial-batch-processing/
+for file in *.mp3; do sox "$file" "n_$file" norm -4; done
+change channels
+for file in *.wav; do sox "$file" "mono_$file" channels 1; done
+change sample rate
+for file in *.wav; do sox "$file" "48khz_$file" rate 48k; done
+change bit rate
+for file in *.wav; do sox "$file" -b 16 "16bit_$file"; done
+
+https://madskjeldgaard.dk/posts/sox-tutorial-cli-tape-music/
+
+
+
+
+
