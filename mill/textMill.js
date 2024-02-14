@@ -13,6 +13,10 @@ const wchcounts = [...weights.keys()].map(k=>k+1).filter(k=>chcounts.includes(k)
 	return [...Array(weights[k]).keys()].map(w=>k);  
 });
 //console.log(wchcounts);
+const punctuations = ["|||","|.|","=>","<=",".^.","#-#","&&","++","_¶",".ä.","(æ)", "ƶƶƶ", "ǡ", "Ǝ!", "Ʃ", "ò"];
+const getpunctuation  = () => {
+	return punctuations[tools.randominteger(0,punctuations.length)];
+}
 let rawpoems = [...Array(npoems).keys()].map(p=>{
 	let poem = [...Array(nstanzas).keys()].map(s=>{	
 		let stanza = [...Array(nlines).keys()].map(l=>{	

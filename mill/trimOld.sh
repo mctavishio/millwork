@@ -23,6 +23,6 @@ FADE_OUT_L="0.5"
 LENGTH=`soxi -d $WAV_IN`
 echo $LENGTH
 
-sox $WAV_IN $WAV_OUT fade $FADE_IN_L $LENGTH $FADE_OUT_L
+sox $WAV_IN $WAV_OUT fade t $FADE_IN_L $LENGTH $FADE_OUT_L
 
 done

@@ -7,7 +7,7 @@ echo $dt
 node inputMill.js
 
 #mv poemTextLists.js poemTextLists$dt
-node textMill.js
+node createTextLists.js
 mv rawPoemsList.js poemTextLists.js
 
 mkdir data/mill$dt
