@@ -22,12 +22,17 @@ const basewhite = [253,253,243];
 const baseblack = [25,25,24];
 const profile = "day";
 const profilecolor = baseblack;
+const profilebg = basewhite;
 const fontops = [0.2,0.3,0.4,0.4,0.4,0.5,0.6,0.7,0.8,0.9,0.9,0.9,1,1,1,1,1,1,1,1];
 const getfontop = () => {
 	return fontops[tools.randominteger(0,fontops.length)];
 }
 const getrgbacolor = () => {
 	return `rgba(${profilecolor[0]},${profilecolor[1]}, ${profilecolor[2]}, ${getfontop()})`;
+}
+const getbgcolor = () => {
+	let mult = tools.randominteger(80,101)/100;
+	return tools.randominteger(0,10)<2 ? "#ffffff" : `rgba(${profilebg[0]*mult},${profilebg[1]*mult}, ${profilebg[2]*mult}, ${getfontop()})`;
 }
 const punctuations = ["|||","|.|","=>","<=",".^.","#-#","&&","++","_¶",".ä.","(æ)", "ƶƶƶ", "ǡ", "Ǝ!", "Ʃ", "ò"];
 const getpunctuation  = () => {

@@ -180,7 +180,6 @@ const sounds = score.reduce( (acc,part) => {
 	});
 	return acc;
 },[]);
-
 const input = {
 	duration: 3.8, //minutes
 	fps: 24,

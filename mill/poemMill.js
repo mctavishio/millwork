@@ -47,7 +47,6 @@ const coversfile = `./covers.js`;
 const bookfile = `./book.js`;
 const filmfile = `./film.js`;
 const rawpoems = require("./poemTextLists.js");
-//console.log(`rawpoems.length = ${rawpoems.length}`);
 
 let dt = new Date();
 let timestamp = dt.getTime();
