@@ -8,82 +8,63 @@ const nthreads = 4;
 const threadlength = input.duration*48;
 const rawsoundfiledata = require("./rawSoundFiles.js");
 // echo module.exports = [ > soundfiles.js; for file in ?(*.mp3|*.wav); do soxi -D $file | read d ; soxi -c $file | read c ; soxi -r $file | read r ; soxi -t $file | read t ; soxi -p $file | read p ;echo {id:\"${file%.*}\", file:\"$file\", duration:$d, nchannels:$c, rate:$r, type:\"$t\", bitrate:$p}, >> soundfiles.js; done; echo ] >> soundfiles.js;
-const prefix = "soundmill002";
-/*
-const toneweights = [
-	//no low no high no noise : minimalist with I II IV V 0
-	{ lowi: 0, bassi: 0, bassV: 0, bassIV: 0, I: 6, II: 2, majIII: 0, miniii: 0, IV: 2, V: 3, VI: 0, majVII: 0, minvii: 0, VIII: 0, lownoise: 0, midnoise: 1, highnoise: 0, noise:0, buzz: 0 },
-	//no low no high no noise : minor chord with forth 1
-	{ lowi: 0, bassi: 0, bassV: 0, bassIV: 0, I: 6, II: 0, majIII: 0, miniii: 1, IV: 1, V: 1, VI: 0, majVII: 0, minvii: 0, VIII: 0, lownoise: 0, midnoise: 1, highnoise: 0, noise:0, buzz: 0 },
-	//no low no high no noise : tight minor chord 2
-	{ lowi: 0, bassi: 0, bassV: 0, bassIV: 0, I: 6, II: 0, majIII: 0, miniii: 1, IV: 0, V: 1, VI: 0, majVII: 0, minvii: 0, VIII: 0, lownoise: 0, midnoise: 1, highnoise: 0, noise:0, buzz: 0 },
-	//minor 7th no noise : full minor scale feel 3
-	{ lowi: 0, bassi: 1, bassV: 1, bassIV: 1, I: 6, II: 1, majIII: 0, miniii: 2, IV: 2, V: 2, VI: 0, majVII: 0, minvii: 2, VIII: 1, lownoise: 0, midnoise: 1, highnoise: 1, noise:0, buzz: 0 },
-	//minor 7th full noise : full minor scale feel 4
-	{ lowi: 0, bassi: 1, bassV: 1, bassIV: 1, I: 6, II: 1, majIII: 0, miniii: 1, IV: 1, V: 1, VI: 0, majVII: 0, minvii: 0, VIII: 0, lownoise: 1, midnoise: 1, highnoise: 1, noise:0, buzz: 0 },
-	//low midnoise I  and below  5
-	{ lowi: 0, bassi: 1, bassV: 1, bassIV: 1, I: 6, II: 0, majIII: 0, miniii: 0, IV: 0, V: 0, VI: 0, majVII: 0, minvii: 0, VIII: 0, lownoise: 0, midnoise: 1, highnoise: 0, noise:0, buzz: 0 },
-	// no noise fuller low simple I IV V  6
-	{ lowi: 0, bassi: 1, bassV: 3, bassIV: 3, I: 6, II: 0, majIII: 0, miniii: 0, IV: 2, V: 2, VI: 0, majVII: 0, minvii: 1, VIII: 0, lownoise: 0, midnoise: 1, highnoise: 0, noise:0, buzz: 0 },
-	//harmonics
-	// simple 7
-	{ lowi: 1, bassi: 1, bassV: 3, bassIV: 3, I: 6, II: 0, majIII: 0, miniii: 0, IV: 6, V: 6, VI: 0, majVII: 0, minvii: 0, VIII: 2, lownoise: 0, midnoise: 0, highnoise: 0, noise:0, buzz: 0 },
-	// pentatonic2 8
-	{ lowi: 1, bassi: 1, bassV: 3, bassIV: 3, I: 6, II: 3, majIII: 0, miniii: 0, IV: 6, V: 6, VI: 6, majVII: 0, minvii: 0, VIII: 2, lownoise: 1, midnoise: 3, highnoise: 0, noise:0, buzz: 0 },
-	// pentatonic 9
-	{ lowi: 1, bassi: 1, bassV: 3, bassIV: 3, I: 6, II: 0, majIII: 0, miniii: 6, IV: 6, V: 6, VI: 0, majVII: 0, minvii: 4, VIII: 2, lownoise: 1, midnoise: 3, highnoise: 0, noise:0, buzz: 0 },
-	//harmonic 10 
-	{ lowi: 1, bassi: 1, bassV: 3, bassIV: 3, I: 6, II: 5, majIII: 1, miniii: 5, IV: 9, V: 9, VI: 4, majVII: 1, minvii: 4, VIII: 2, lownoise: 0, midnoise: 0, highnoise: 0, noise:0, buzz: 0 },
-	//levels of noise
-	// noise 11
-	{ lowi: 0, bassi: 1, bassV: 0, bassIV: 0, I: 2, II: 0, majIII: 0, miniii: 0, IV: 0, V: 0, VI: 0, majVII: 0, minvii: 2, VIII: 0, lownoise: 2, midnoise: 2, highnoise: 2, noise: 4, buzz: 2 },
-	//simplebuzz 12
-	{ lowi: 0, bassi: 0, bassV: 0, bassIV: 0, I: 0, II: 0, majIII: 0, miniii: 0, IV: 0, V: 0, VI: 0, majVII: 0, minvii: 1, VIII: 0, lownoise: 0, midnoise: 1, highnoise: 1, noise: 0, buzz: 8 },
-	// buzz 13
-	{ lowi: 0, bassi: 1, bassV: 0, bassIV: 0, I: 2, II: 0, majIII: 0, miniii: 0, IV: 1, V: 1, VI: 0, majVII: 0, minvii: 1, VIII: 2, lownoise: 1, midnoise: 1, highnoise: 0, noise: 1, buzz: 8 },
-	// the identity (I only) 14
-	{ lowi: 0, bassi: 0, bassV: 0, bassIV: 0, I: 2, II: 0, majIII: 0, miniii: 0, IV: 0, V: 0, VI: 0, majVII: 0, minvii: 0, VIII: 0, lownoise: 0, midnoise: 0, highnoise: 0, noise:0, buzz: 0 },
-];
-*/
-
 
 const datetime = new Date();
 const timestamp = datetime.getTime();
 const datetimestr = datetime.toDateString();
 const datetimeISOstr = datetime.toISOString();
+//const intervals = input.intervals;
+
 const intervals = {
 	lowi: basetone => { return basetone/4 },
+	lowinoise: basetone => { return tools.randominteger(90,110)/100*basetone/4 },
 	bassi: basetone => { return basetone/2 },
+	bassinoise: basetone => { return tools.randominteger(90,110)/100*basetone/2 },
 	bassIV: basetone => { return basetone*4/6 },
+	bassIVnoise: basetone => { return tools.randominteger(90,110)/100*basetone*4/6 },
 	bassV: basetone => { return basetone*3/2 },
+	bassVnoise: basetone => { return tools.randominteger(90,110)/100*basetone*3/2 },
 	I: basetone => { return basetone/1 },
+	Inoise: basetone => { return tools.randominteger(90,110)/100*basetone/1 },
 	II: basetone => { return basetone*9/8 },
+	IInoise: basetone => { return tools.randominteger(90,110)/100*basetone*9/8 },
 	majIII: basetone => { return basetone*5/4 },
+	majIIInoise: basetone => { return tools.randominteger(90,110)/100*basetone*5/4 },
 	miniii: basetone => { return basetone*6/5 },
+	miniiinoise: basetone => { return tools.randominteger(90,110)/100*basetone*6/5 },
 	IV: basetone => { return basetone*4/3 },
+	IVnoise: basetone => { return tools.randominteger(90,110)/100*basetone*4/3 },
 	V: basetone => { return basetone*3/2 },
+	Vnoise: basetone => { return tools.randominteger(90,110)/100*basetone*3/2 },
 	VI: basetone => { return basetone*5/3 },
+	VInoise: basetone => { return tools.randominteger(90,110)/100*basetone*5/3 },
 	majVII: basetone => { return basetone*15/8 },
+	majVIInoise: basetone => { return tools.randominteger(90,110)/100*basetone*15/8 },
 	minvii: basetone => { return basetone*9/5 },
+	minviinoise: basetone => { return tools.randominteger(90,110)/100*basetone*9/5 },
 	VIII: basetone => { return basetone*2 },
+	VIIInoise: basetone => { return tools.randominteger(90,110)/100*basetone*2 },
 	lownoise: basetone => { return basetone*tools.randominteger(5,9)/10 },
-	midnoise: basetone => { return basetone*tools.randominteger(9,11)/10 },
+	midnoise: basetone => { return basetone*tools.randominteger(90,110)/100 },
 	highnoise: basetone => { return basetone*tools.randominteger(12,18)/10 },
 	noise: basetone => { return basetone*tools.randominteger(4,16)/10 },
 	buzz: basetone => { return basetone*tools.randominteger(9,12)/10 },
-};
+}
+
+console.log(`intervals=${JSON.stringify(intervals)}`);
 
 const speeds = Object.entries(intervals).reduce( (acc,entry) => {
+	console.log(`entry[0]=${entry[0]},${entry[1]}`);
 	acc[entry[0]] = entry[1](1000)/1000;
 	return acc;
 }, {});
+console.log(`speeds = ${JSON.stringify(speeds)}`);
+
 const  baseweights = Object.entries(speeds).reduce( (acc,entry) => {
 	acc[entry[0]] = Math.floor(1000/entry[1])/1000;
 	return acc;
 }, {});
-
-// console.log(`speeds = ${JSON.stringify(speeds)}`);
-// console.log(`baseweights = ${JSON.stringify(baseweights)}`);
+console.log(`baseweights = ${JSON.stringify(baseweights)}`);
 
 // const mcompandstr = `gain -4 sinc -n 29 -b 100 8000 mcompand "0.005,0.1 -47,-40,-34,-34,-17,-33" 100 "0.003,0.05 -47,-40,-34,-34,-17,-33" 400 "0.000625,0.0125 -47,-40,-34,-34,-15,-33" 1600 "0.0001,0.025 -47,-40,-34,-34,-31,-31,-0,-30" 6400 "0,0.025 -38,-31,-28,-28,-0,-25" gain 15 highpass 22 highpass 22 sinc -n 255 -b 16 -17500 gain 8 lowpass -1 17801 norm -2 silence -l 1 0.1 1% -1 2.0 1%`;
 const mcompandstr = `gain -12 sinc -n 29 -b 100 8000 mcompand "0.005,0.1 -47,-40,-34,-34,-17,-33" 100 "0.003,0.05 -47,-40,-34,-34,-17,-33" 400 "0.000625,0.0125 -47,-40,-34,-34,-15,-33" 1600 "0.0001,0.025 -47,-40,-34,-34,-31,-31,-0,-30" 6400 "0,0.025 -38,-31,-28,-28,-0,-25" gain 15 highpass 22 highpass 22 sinc -n 255 -b 16 -17500 gain 1 lowpass -1 17801 lowpass 2400`;
@@ -109,49 +90,56 @@ const tonepads = (min=0,max=100) => { return tools.randominteger(min,max)/100 };
 let soxstr = "";
 score.forEach( (line,l) => {
 	rawseeds = line.list;
-	//console.log(`rawseeds = ${JSON.stringify(rawseeds)}`);
+	console.log(`rawseeds = ${JSON.stringify(rawseeds)}`);
 	let soundindexweights = tools.reifyWeightedArray( 
-		rawseeds.map( (w,j) => { return [j, w[1]] } ) );
+		//rawseeds.map( (w,j) => { return [j, w[1]] } ) );
+		rawseeds.map( (w,j) => { return [j, w.weight] } ) );
 
 	// reify the rawsoundfileweights
+	console.log(`chords = ${JSON.stringify(chords)}`);
 	rawsoundfileweights = rawseeds.map( file => {
-		let harmonicweights = file[2];
-		// console.log(`harmonicweights = ${JSON.stringify(harmonicweights)}`);
-		weights = Object.entries(baseweights).reduce( (acc,entry) => {
+		//let harmonicweights = file[2];
+		console.log(`file=${JSON.stringify(file)}`);
+		let harmonicweights = chords[file.chord];
+		console.log(`harmonicweights = ${JSON.stringify(harmonicweights)}`);
+		//ex: harmonicweights = {"I":6,"II":2,"IV":2,"V":3}
+		weights = Object.entries(baseweights).filter(w=>harmonicweights.hasOwnProperty(w[0])).reduce( (acc,entry) => {
 			acc[entry[0]] = entry[1]*harmonicweights[entry[0]];
 			return acc;
 		}, {});
-		// console.log(`weights = ${JSON.stringify(weights)}`);
+		console.log(`weights = ${JSON.stringify(weights)}`);
 		let notes = tools.reifyWeightedArray( Object.entries(weights).map( w=>{ return [w[0], Math.floor(w[1])] } ) );
-		// console.log(`notes = ${notes}`);
-		return [file[0],file[1],notes];
+		 console.log(`notes = ${notes}`);
+		//return [file[0],file[1],notes];
+		return [file.id,file.weight,notes];
 	});
 
-	//console.log(`rawsoundfileweights = ${JSON.stringify(rawsoundfileweights)}`);
+	console.log(`rawsoundfileweights = ${JSON.stringify(rawsoundfileweights)}`);
 	//console.log(`soundindexweights = ${JSON.stringify(soundindexweights)}`);
 	let nlinethreads = line.nthreads ? line.nthreads : nthreads;
 	soxstr = soxstr + [...Array(nlinethreads).keys()].reduce( (threadstr,j) => {
 		let dur = 0;
 		let filestr = "";
-		let threaddur = line.duration ? threadlength*Math.min(line.duration,1.0) : threadlength;
+		let threaddur = line.end ? threadlength*Math.min(line.end,1.0) : threadlength;
 		
-		if(line.delay) {
-			let del = Math.min(line.delay*threadlength,threaddur-10);
+		if(line.start) {
+			let del = Math.min(line.start*threadlength,threaddur-10);
 			filestr = filestr + ` "|sox ../../fragments/silence.mp3 -p pad 0 ${del}" `;
-			//filestr = filestr + ` "|sox -n -r 44100 -c 2 silence.mp3 trim 0.0 ${line.delay}" `;
+			//filestr = filestr + ` "|sox -n -r 44100 -c 2 silence.mp3 trim 0.0 ${line.start}" `;
 			dur += 1 + del;
 			//console.log(`delaydur = ${dur}`);
 		}
 		while(dur < threaddur) {
 			let rawsoundfile = rawsoundfileweights[soundindexweights[tools.randominteger(0,soundindexweights.length)]];
-			//console.log(`rawsoundfile = ${JSON.stringify(rawsoundfile)}`);
+			console.log(`rawsoundfile = ${JSON.stringify(rawsoundfile)}`);
 			//console.log(`rawsoundfile[0] = ${rawsoundfile[0]}`);
 			//console.log(`rawsoundfiledata=${JSON.stringify(rawsoundfiledata.filter(f => f.id===rawsoundfile[0]))}`);
 			let rawsounddur = rawsoundfiledata.filter(f => f.id===rawsoundfile[0])[0].duration;
 			//console.log(`rawsounddur = ${rawsounddur}`);
 			let notef = rawsoundfile[2][tools.randominteger(0,rawsoundfile[2].length)];
-			//console.log(`notef = ${notef}`);
-			let speed = intervals[notef](1);
+			console.log(`notef = ${notef}`);
+			console.log(`intervals[notef] = ${intervals[notef]}`);
+			let speed = intervals[notef](1000)/1000;
 			let tonepad = tonepads(line.padmin,line.padmax);
 			dur = dur + rawsounddur/speed + tonepad;
 			//console.log(`dur = ${dur}`);

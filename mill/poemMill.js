@@ -43,6 +43,8 @@ const markup = str => {
 const bookid = process.argv[4] ? process.argv[4] : "testmill";
 const poemsfile = `./poems.js`;
 const framesfile = `./frames.js`;
+const framesstartfile = `./framesstart.js`;
+const framesendfile = `./framesend.js`;
 const coversfile = `./covers.js`;
 const bookfile = `./book.js`;
 const filmfile = `./film.js`;
@@ -328,6 +330,7 @@ fs.writeFileSync(framesfile, framestr, (err) => {
 		console.log(`${framesfile} written successfully\n`);
 	}
 });
+//do this for film start film end (like cover but with frames)
 fs.writeFileSync(coversfile, coversstr, (err) => {
 	if (err)
 		console.log(err);

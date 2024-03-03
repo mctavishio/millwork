@@ -155,12 +155,38 @@ const rawcolorsets = [
 	]},
 ];
 const pigments = {
-	red: "#8F0000", /*panatone:"7621 C" rgb(rgb(143,0,0)), cmyk(0,100,100,44), hsl(0,100%,28%)*/
-	yellow: "#ffcc00",/*rgb(255,204,0), hsl(48,100%,50%), cmyk(0,20,100,0) */
+	//red: "#8F0000", /*panatone:"7621 C" rgb(rgb(143,0,0)), cmyk(0,100,100,44), hsl(0,100%,28%)*/
+	red: "#AA0000", /*cmyk(0%, 100%, 100%, 33.3%)*/
+	//yellow: "#ffcc00",/*rgb(255,204,0), hsl(48,100%,50%), cmyk(0,20,100,0) */
+	yellow: "#ffde00", //cmyk(0%, 13%, 100%, 0%)
 	blue: "#006699", /*rgb(0,102,153), hsl(200,100%,30%), cmyk(100,33,0,40) */
 	bluegreen: "#006969", /*rgb(0,105,105), hsl(180,100%,20.6%), cmyk(100,0,0,59) */
+	darkbrown: "#332c21", /*cmyk(0%, 13%, 35%, 80%)*/
+	brown: "#4f4433", /*cmyk(0%, 14%, 35%, 69%) */
+	/*--darkbrown: #362C23;  cmyk(0%, 19%, 35%, 79%) */
+	/*--brown: #4A3D30;  cmyk(0%, 17.6%, 35%, 71%) */
 	black: "#000000",
 	warmblack: "#191918",/*panatone "Black 6 C" rgb(25,25,24), hsl(60,2%,9.6%), cmyk(0,0,4,90)*/
+	warmblack1: "#080807",
+	warmblack2: "#2E2E2C",
+	warmblack3: "#3B3B38",
+	warmblack4: "#4F4F4C",
+	warmblack5: "#545451",
+	warmblack6: "#61615D",
+	warmblack7: "#666662",
+	warmblack8: "#70706C",
+	warmblack9: "#7A7A76",
+	warmblack10: "#8C8C87",
+	warmblack11: "#999993",
+	warmblack12: "#ADADA6",
+	warmblack13: "#BDBDB5",
+	warmblack14: "#CCCCC4",
+	warmblack15: "#DBDBD3",
+	warmblack16: "#E6E6DC",
+	warmblack17: "#F0F0E6",
+	warmblack18: "#FAFAF0",
+	warmblack19: "#FCFCF2",
+	warmblack20: "#FFFFF5",
 	gray: "#484848",
 	lightgray: "#888888",
 	warmgray: "#4b4b44",
@@ -168,6 +194,26 @@ const pigments = {
 	white: "#ffffff",
 	warmwhite: "#fcfbe3", /* rgb(252,251,227),hsl(57.6,80.6%,93.9%),cmyk(0,0,10,1)*/
 	warmlightwhite: "#fdfdf3", /* panatone sort of "P 1-9 C"rgb(253,253,243),hsl(60,71.4%,97.3%),cmyk(0,0,4,1)*/
+	warmlightwhite1: "#FFFFF5",
+	warmlightwhite2: "#FAFAF0",
+	warmlightwhite3: "#F5F5EB",
+	warmlightwhite4: "#F0F0E6",
+	warmlightwhite5: "#EBEBE1",
+	warmlightwhite6: "#E6E6DC",
+	warmlightwhite7: "#E0E0D7",
+	warmlightwhite8: "#D6D6CE",
+	warmlightwhite9: "#D1D1C9",
+	warmlightwhite10: "#CCCCC4",
+	warmlightwhite11: "#C7C7BF",
+	warmlightwhite12: "#C2C2BA",
+	warmlightwhite13: "#BDBDB5",
+	warmlightwhite14: "#B8B8B0",
+	warmlightwhite15: "#B3B3AB",
+	warmlightwhite16: "#ADADA6",
+	warmlightwhite17: "#A8A8A2",
+	warmlightwhite18: "#A3A39D",
+	warmlightwhite19: "#999993",
+	warmlightwhite20: "#8F8F89",
 	warmlightwhiteveil: "rgba(253,253,243,0.8)",
 	richblack: "#010203",
 	richgray1: "#2a2a2b",
@@ -182,6 +228,17 @@ const pigments = {
 	philipgreen1: "#3E5915",
 	philipgreen2: "#708C32",
 };
+const blackcmykset = [
+	"cmyk(0%, 0%, 4%, 90.2%)",
+	"cmyk(0%, 0%, 6%, 94%)",
+	"cmyk(0%, 0%, 4%, 92%)",
+	"cmyk(0%, 0%, 4%, 91%)",
+	"cmyk(0%, 0%, 5%, 91%)",
+	"cmyk(0%, 0%, 5%, 88%)",
+	"cmyk(0%, 0%, 5%, 89%)",
+	"cmyk(0%, 0%, 4%, 84%)",
+];
+
 
 const colorsets = {
 	warmbw: [pigments.warmlightwhite, pigments.warmblack],

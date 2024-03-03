@@ -10,11 +10,11 @@ let dt = new Date();
 let timestamp = dt.getTime();
 let datetime = dt.toDateString();
 
-const title = "cyclone";
+const title = "turbulence";
 const subtitle = datetime;
 const description = "algorithmic sound & drawings";
-const rooturl = "https://cyclone.work";
-const authorurl = "https://mctavish.work/index.html";
+const rooturl = "https://turbulence.work";
+const authorurl = "https://mctavish.work/";
 const author= "mctavish";
 const copyright = "Copyright ©2024 mctavish<br/>";
 const isbn = "ISBN: 00000<br/>";
@@ -30,9 +30,13 @@ let filmobj = {
 	bookguttermargin: 0,
 	bleed: 0,
 	bookunits: "in",
+	filmwidth: 16,
+	filmheight: 9,
 	bookwidth: 8,
 	bookheight: 8,
 	bookmargin: 1,
+	postcardwidth: 7,
+	postcardheight: 5,
 	bookguttermargin: 1.2,
 	bleed: 0.125,
 	pixelsperunit: 72,
@@ -90,100 +94,93 @@ const ygrid = [...new Array(ny).keys()].map( j=>Math.floor(100*j/(ny-1))/100 );
 //const ygrid = [...new Array(ny).keys()].map( y=>0.5 );
 console.log(`inputMill:xgrid=${JSON.stringify(xgrid)}`);
 
+const intervals = {
+	lowi: basetone => { return basetone/4 },
+	lowinoise: basetone => { return tools.randominteger(9,11)/10*basetone/4 },
+	bassi: basetone => { return basetone/2 },
+	bassinoise: basetone => { return tools.randominteger(9,11)/10*basetone/2 },
+	bassIV: basetone => { return basetone*4/6 },
+	bassIVnoise: basetone => { return tools.randominteger(9,11)/10*basetone*4/6 },
+	bassV: basetone => { return basetone*3/2 },
+	bassVnoise: basetone => { return tools.randominteger(9,11)/10*basetone*3/2 },
+	I: basetone => { return basetone/1 },
+	Inoise: basetone => { return tools.randominteger(9,11)/10*basetone/1 },
+	II: basetone => { return basetone*9/8 },
+	IInoise: basetone => { return tools.randominteger(9,11)/10*basetone*9/8 },
+	majIII: basetone => { return basetone*5/4 },
+	majIIInoise: basetone => { return tools.randominteger(9,11)/10*basetone*5/4 },
+	miniii: basetone => { return basetone*6/5 },
+	miniiinoise: basetone => { return tools.randominteger(9,11)/10*basetone*6/5 },
+	IV: basetone => { return basetone*4/3 },
+	IVnoise: basetone => { return tools.randominteger(9,11)/10*basetone*4/3 },
+	V: basetone => { return basetone*3/2 },
+	Vnoise: basetone => { return tools.randominteger(9,11)/10*basetone*3/2 },
+	VI: basetone => { return basetone*5/3 },
+	VInoise: basetone => { return tools.randominteger(9,11)/10*basetone*5/3 },
+	majVII: basetone => { return basetone*15/8 },
+	majVIInoise: basetone => { return tools.randominteger(9,11)/10*basetone*15/8 },
+	minvii: basetone => { return basetone*9/5 },
+	minviinoise: basetone => { return tools.randominteger(9,11)/10*basetone*9/5 },
+	VIII: basetone => { return basetone*2 },
+	VIIInoise: basetone => { return tools.randominteger(9,11)/10*basetone*2 },
+	lownoise: basetone => { return basetone*tools.randominteger(5,9)/10 },
+	midnoise: basetone => { return basetone*tools.randominteger(9,11)/10 },
+	highnoise: basetone => { return basetone*tools.randominteger(12,18)/10 },
+	noise: basetone => { return basetone*tools.randominteger(4,16)/10 },
+	buzz: basetone => { return basetone*tools.randominteger(9,12)/10 },
+};
+
+/*
+ * example:::
+	// pentatonic
+	{ lowi: 0, bassi: 1, bassV: 3, bassIV: 3, I: 6, II: 0, majIII: 0, miniii: 6, IV: 6, V: 6, VI: 0, majVII: 0, minvii: 4, VIII: 2, lownoise: 0, midnoise: 0, highnoise: 0, noise:0, buzz: 0 },
+*/
 const chords = [
-	//no low no high no noise : minimalist with I II IV V 0
-	{ lowi: 0, bassi: 0, bassV: 0, bassIV: 0, I: 6, II: 2, majIII: 0, miniii: 0, IV: 2, V: 3, VI: 0, majVII: 0, minvii: 0, VIII: 0, lownoise: 0, midnoise: 1, highnoise: 0, noise:0, buzz: 0 },
-	// pentatonic 9
-	{ lowi: 0, bassi: 1, bassV: 3, bassIV: 3, I: 6, II: 0, majIII: 0, miniii: 6, IV: 6, V: 6, VI: 0, majVII: 0, minvii: 4, VIII: 2, lownoise: 1, midnoise: 3, highnoise: 0, noise:0, buzz: 0 },
-	// no noise fuller low simple I IV V  6
-	{ lowi: 0, bassi: 1, bassV: 3, bassIV: 3, I: 6, II: 0, majIII: 0, miniii: 0, IV: 2, V: 2, VI: 0, majVII: 0, minvii: 1, VIII: 0, lownoise: 0, midnoise: 1, highnoise: 0, noise:0, buzz: 0 },
+	{ I: 6, II: 2, IV: 2, V: 3 },
+	{ Inoise: 6, IInoise: 2, IVnoise: 2, Vnoise: 3 },
 ];
+console.log(`chords[1] = ${JSON.stringify(chords[1])}`);
 const sounddata = require("./rawSoundFiles.js");
 //{id: "accordion", keywords:"accordion", file: "accordion.mp3", duration:17.820000, nchannels:2, rate:44100, type:"mp3", bitrate:16},
-const piano1 = sounddata.filter(f=>f.keywords.includes("piano") && !f.keywords.includes("harp")).map(f=> {
-	return [f.id,1,chords[1]]
+//373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1
+const horn = sounddata.filter(f=>f.id.includes("samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1")).map(f=> {
+	return {id:f.id, weight:1, chord:0}
 });  
-const piano2 = sounddata.filter(f=>f.keywords.includes("piano") && !f.keywords.includes("harp")).map(f=> {
-	return [f.id,1,chords[2]]
+const hornfray = sounddata.filter(f=>f.id.includes("samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1")).map(f=> {
+	return {id:f.id, weight:1, chord:1}
 });  
-const train = sounddata.filter(f=>f.keywords.includes("train")).map(f=> {
-	return [f.id,1,chords[0]]
-});  
-const radio = sounddata.filter(f=>f.keywords.includes("radio")).map(f=> {
-	return [f.id,1,chords[0]]
-});  
-const noise = sounddata.filter(f=>!f.id.includes("coffeepot") && f.keywords.includes("noise")).map(f=> {
-	return [f.id,1,chords[0]]
-});  
-const noise1 = sounddata.filter(f=>!f.id.includes("coffeepot") && f.keywords.includes("noise")).map(f=> {
-	return [f.id,1,chords[1]]
-});  
-const noise2 = sounddata.filter(f=>!f.id.includes("coffeepot") && f.keywords.includes("noise")).map(f=> {
-	return [f.id,1,chords[2]]
-});  
+/*
 const horn = sounddata.filter(f=>f.keywords.includes("horn")).map(f=> {
-	return [f.id,1,chords[0]]
+	return {id:f.id, weight:1, chord:0}
 });  
-const brasslong = sounddata.filter(f=>f.keywords.includes("orchinstsample|brass|horn|long")).map(f=> {
-	return [f.id,1,chords[0]]
+const hornfray = sounddata.filter(f=>f.keywords.includes("horn")).map(f=> {
+	return {id:f.id, weight:1, chord:0}
 });  
-const brassshort = sounddata.filter(f=>f.keywords.includes("brass") && f.keywords.includes("short")).map(f=> {
-	return [f.id,1,chords[0]]
-});  
-const percussion = sounddata.filter(f=>!f.id.includes("typewriter") && f.keywords.includes("percussion")).map(f=> {
-	return [f.id,1,chords[0]]
-});  
-const bells = sounddata.filter(f=>f.keywords.includes("bell")).map(f=> {
-	return [f.id,1,chords[1]]
-});  
-const afterring = sounddata.filter(f=>f.keywords.includes("afterring")).map(f=> {
-	return [f.id,1,chords[1]]
-});  
-const bowedmetal = sounddata.filter(f=>f.keywords.includes("bowedmetal")).map(f=> {
-	return [f.id,1,chords[0]]
-});  
-const  reed = sounddata.filter(f=>f.keywords.includes("reed")).map(f=> {
-	return [f.id,1,chords[0]]
-});  
-const  cry = sounddata.filter(f=>f.keywords.includes("cry")).map(f=> {
-	return [f.id,1,chords[0]]
-});  
-const  bird = sounddata.filter(f=>f.id.includes("bird")).map(f=> {
-	return [f.id,1,chords[0]]
-});  
-const  birdcry = sounddata.filter(f=>f.id.includes("birdcry")).map(f=> {
-	return [f.id,1,chords[0]]
-});  
-const tornadosiren = sounddata.filter(f=>f.id.includes("tornadosiren")).map(f=> {
-	return [f.id,1,chords[1]]
-});  
-const pianoharp = sounddata.filter(f=>f.id.includes("pianoharp")).map(f=> {
-	return [f.id,1,chords[1]]
-});  
+*/
 const score = [
-	{gain:0.5,padmin:0,padmax:100,delay:0.2,duration:1,nthreads:4,list:bells},
-	{gain:0.5,padmin:0,padmax:100,nthreads:2,list:bells},
-	//{gain:0.5,padmin:0,padmax:400,delay:.5,duration:.6,nthreads:4,list:tornadosiren},
-	//{gain:0.3,padmin:0,padmax:500,delay:0.3, duration:0.4,nthreads:2,list:pianoharp},
-	{gain:0.4,padmin:0,padmax:400,delay:0.3,nthreads:3,list:horn},
-	{gain:0.2,padmin:0,padmax:400,nthreads:3,list:afterring},
-	//{gain:0.5,padmin:0,padmax:100,delay:.8, duration: .9, nthreads:2,list:birdcry},
-	{gain:0.4,padmin:0,padmax:100,delay:0, duration:.8, nthreads:4,list:bells},
+	{gain:0.5,padmin:0,padmax:100,start:0,end:1,nthreads:4,list:horn},
+	{gain:0.4,padmin:0,padmax:400,start:0.3,end:0.9,nthreads:3,list:hornfray},
+	//{gain:0.2,padmin:0,padmax:400,nthreads:3,list:afterring},
 ];
 let soundids = [];
 const sounds = score.reduce( (acc,part) => {
 	part.list.forEach( instrument => { 
-		if(!soundids.includes(instrument[0])) {
-			soundids.push(instrument[0]);
-			acc.push(sounddata.filter(f => f.id===instrument[0])[0]);
+		if(!soundids.includes(instrument.id)) {
+			soundids.push(instrument.id);
+			acc.push(sounddata.filter(f => f.id===instrument.id)[0]);
 		}
 	});
 	return acc;
 },[]);
+let intervalstr = JSON.stringify(intervals, (key, val) => {
+        return (typeof val === 'function') ? '' + val.toString() : val;
+});
+console.log(`intervalstr = ${intervalstr}`);
 const input = {
-	duration: 3.8, //minutes
+	duration: 1.8, //minutes
 	fps: 24,
-	//chords, sounds,
+	intervals: intervalstr,
+	chords,
 	sounds,
 	score,
 	nx, ny, nz,

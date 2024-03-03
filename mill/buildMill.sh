@@ -1,5 +1,14 @@
 #!/bin/bash
 #mill=$1
+warmlightwhite="cmyk(0%,0%,3.4%,0.6%)"
+warmblack="cmyk(0%,0%,4%,90%)"
+#or cmyk(0%, 0%, 4%, 93%)
+red="cmyk(0%,100%,100%,43%)"
+#or 0%,100%,98%,44%
+yellow="cmyk(0%,20%,100%,0%)"
+gray="cmyk(0%, 0%, 0%, 71.5%)"
+warmgray="cmyk(0%, 0%, 9%, 72%)"
+
 gsdir="millwork"
 ts=$(date +"%s")
 dt=$(date +"%Y%m%d%H%M%S")
@@ -117,7 +126,7 @@ mkdir data/$mill
 ##rm frame*.png
 ##echo done creating 300dpi pictures 
 #
-#prince -s css/print.css film.html --raster-dpi=150 --raster-output=frame%04d.png;
+#prince -s css/print.css film.html --raster-dpi=120 --raster-output=frame%04d.png;
 #rm frame0000.png
 #rm frame0001.png
 #rm frame0002.png
@@ -134,7 +143,7 @@ mkdir data/$mill
 #echo done making filmsound 
 #
 ## with text film
-##prince -s css/print.css filmtext.html --raster-dpi=150 --raster-output=frame%04d_text.png;
+##prince -s css/print.css filmtext.html --raster-dpi=120 --raster-output=frame%04d_text.png;
 ##rm frame0000_text.png
 ##rm frame0001_withtext.png
 ##ffmpeg -framerate 24 -i frame%04d_text.png -c:v libx264 -r 24 -pix_fmt yuv420p filmtext.mp4
