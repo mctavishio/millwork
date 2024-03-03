@@ -5,24 +5,76 @@ let input =
 	"intervals": "{\"lowi\":\"basetone => { return basetone/4 }\",\"lowinoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone/4 }\",\"bassi\":\"basetone => { return basetone/2 }\",\"bassinoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone/2 }\",\"bassIV\":\"basetone => { return basetone*4/6 }\",\"bassIVnoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*4/6 }\",\"bassV\":\"basetone => { return basetone*3/2 }\",\"bassVnoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*3/2 }\",\"I\":\"basetone => { return basetone/1 }\",\"Inoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone/1 }\",\"II\":\"basetone => { return basetone*9/8 }\",\"IInoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*9/8 }\",\"majIII\":\"basetone => { return basetone*5/4 }\",\"majIIInoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*5/4 }\",\"miniii\":\"basetone => { return basetone*6/5 }\",\"miniiinoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*6/5 }\",\"IV\":\"basetone => { return basetone*4/3 }\",\"IVnoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*4/3 }\",\"V\":\"basetone => { return basetone*3/2 }\",\"Vnoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*3/2 }\",\"VI\":\"basetone => { return basetone*5/3 }\",\"VInoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*5/3 }\",\"majVII\":\"basetone => { return basetone*15/8 }\",\"majVIInoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*15/8 }\",\"minvii\":\"basetone => { return basetone*9/5 }\",\"minviinoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*9/5 }\",\"VIII\":\"basetone => { return basetone*2 }\",\"VIIInoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*2 }\",\"lownoise\":\"basetone => { return basetone*tools.randominteger(5,9)/10 }\",\"midnoise\":\"basetone => { return basetone*tools.randominteger(9,11)/10 }\",\"highnoise\":\"basetone => { return basetone*tools.randominteger(12,18)/10 }\",\"noise\":\"basetone => { return basetone*tools.randominteger(4,16)/10 }\",\"buzz\":\"basetone => { return basetone*tools.randominteger(9,12)/10 }\"}",
 	"chords": [
 		{
-			"I": 6,
-			"II": 2,
-			"IV": 2,
-			"V": 3
+			"I": {
+				"weight": 6,
+				"fraylow": 100,
+				"frayhigh": 100
+			},
+			"II": {
+				"weight": 2,
+				"fraylow": 100,
+				"frayhigh": 100
+			},
+			"IV": {
+				"weight": 2,
+				"fraylow": 100,
+				"frayhigh": 100
+			},
+			"V": {
+				"weight": 3,
+				"fraylow": 100,
+				"frayhigh": 100
+			}
 		},
 		{
-			"Inoise": 6,
-			"IInoise": 2,
-			"IVnoise": 2,
-			"Vnoise": 3
+			"I": {
+				"weight": 6,
+				"fraylow": 92,
+				"frayhigh": 108
+			},
+			"II": {
+				"weight": 2,
+				"fraylow": 92,
+				"frayhigh": 108
+			},
+			"IV": {
+				"weight": 2,
+				"fraylow": 92,
+				"frayhigh": 108
+			},
+			"V": {
+				"weight": 3,
+				"fraylow": 92,
+				"frayhigh": 108
+			}
 		}
 	],
 	"sounds": [
+		{
+			"id": "373178__samulis__f-horn-muted-sustain-g4-mohorn_mute_g3_v1_1",
+			"keywords": "orchinstsample|brass|horn|long",
+			"file": "373178__samulis__f-horn-muted-sustain-g4-mohorn_mute_g3_v1_1.mp3",
+			"duration": 8.385011,
+			"nchannels": 2,
+			"rate": 44100,
+			"type": "mp3",
+			"bitrate": 16
+		},
 		{
 			"id": "373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1",
 			"keywords": "orchinstsample|brass|horn|long",
 			"file": "373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1.mp3",
 			"duration": 14.55,
+			"nchannels": 2,
+			"rate": 44100,
+			"type": "mp3",
+			"bitrate": 16
+		},
+		{
+			"id": "373253__samulis__f-horn-sustain-a3-mohorn_sus_a2_v2_1",
+			"keywords": "orchinstsample|brass|horn|long",
+			"file": "373253__samulis__f-horn-sustain-a3-mohorn_sus_a2_v2_1.mp3",
+			"duration": 13.688005,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
@@ -39,7 +91,17 @@ let input =
 			"nthreads": 4,
 			"list": [
 				{
+					"id": "373178__samulis__f-horn-muted-sustain-g4-mohorn_mute_g3_v1_1",
+					"weight": 1,
+					"chord": 0
+				},
+				{
 					"id": "373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "373253__samulis__f-horn-sustain-a3-mohorn_sus_a2_v2_1",
 					"weight": 1,
 					"chord": 0
 				}

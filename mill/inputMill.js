@@ -136,27 +136,31 @@ const intervals = {
 	{ lowi: 0, bassi: 1, bassV: 3, bassIV: 3, I: 6, II: 0, majIII: 0, miniii: 6, IV: 6, V: 6, VI: 0, majVII: 0, minvii: 4, VIII: 2, lownoise: 0, midnoise: 0, highnoise: 0, noise:0, buzz: 0 },
 */
 const chords = [
-	{ I: 6, II: 2, IV: 2, V: 3 },
-	{ Inoise: 6, IInoise: 2, IVnoise: 2, Vnoise: 3 },
+	{ I: {weight:6,fraylow:100,frayhigh:100}, II: {weight:2,fraylow:100,frayhigh:100}, IV: {weight:2,fraylow:100,frayhigh:100}, V: {weight:3,fraylow:100,frayhigh:100} },
+	{ I: {weight:6,fraylow:92,frayhigh:108}, II: {weight:2,fraylow:92,frayhigh:108}, IV: {weight:2,fraylow:92,frayhigh:108}, V: {weight:3,fraylow:92,frayhigh:108} },
 ];
 console.log(`chords[1] = ${JSON.stringify(chords[1])}`);
 const sounddata = require("./rawSoundFiles.js");
 //{id: "accordion", keywords:"accordion", file: "accordion.mp3", duration:17.820000, nchannels:2, rate:44100, type:"mp3", bitrate:16},
 //373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1
+/*
 const horn = sounddata.filter(f=>f.id.includes("samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1")).map(f=> {
 	return {id:f.id, weight:1, chord:0}
 });  
+*/
 const hornfray = sounddata.filter(f=>f.id.includes("samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1")).map(f=> {
 	return {id:f.id, weight:1, chord:1}
 });  
-/*
+
 const horn = sounddata.filter(f=>f.keywords.includes("horn")).map(f=> {
 	return {id:f.id, weight:1, chord:0}
 });  
+/*
 const hornfray = sounddata.filter(f=>f.keywords.includes("horn")).map(f=> {
 	return {id:f.id, weight:1, chord:0}
 });  
 */
+
 const score = [
 	{gain:0.5,padmin:0,padmax:100,start:0,end:1,nthreads:4,list:horn},
 	{gain:0.4,padmin:0,padmax:400,start:0.3,end:0.9,nthreads:3,list:hornfray},

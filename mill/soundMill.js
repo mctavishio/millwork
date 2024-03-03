@@ -3,7 +3,6 @@ const tools = require("./tools.js");
 const input = require("./input.js");
 const score = input.score;
 const chords = input.chords;
-//const orchestrationparts = scores.orchestrations[input.score]; 
 const nthreads = 4;
 const threadlength = input.duration*48;
 const rawsoundfiledata = require("./rawSoundFiles.js");
@@ -13,59 +12,26 @@ const datetime = new Date();
 const timestamp = datetime.getTime();
 const datetimestr = datetime.toDateString();
 const datetimeISOstr = datetime.toISOString();
-//const intervals = input.intervals;
 
 const intervals = {
-	lowi: basetone => { return basetone/4 },
-	lowinoise: basetone => { return tools.randominteger(90,110)/100*basetone/4 },
-	bassi: basetone => { return basetone/2 },
-	bassinoise: basetone => { return tools.randominteger(90,110)/100*basetone/2 },
-	bassIV: basetone => { return basetone*4/6 },
-	bassIVnoise: basetone => { return tools.randominteger(90,110)/100*basetone*4/6 },
-	bassV: basetone => { return basetone*3/2 },
-	bassVnoise: basetone => { return tools.randominteger(90,110)/100*basetone*3/2 },
-	I: basetone => { return basetone/1 },
-	Inoise: basetone => { return tools.randominteger(90,110)/100*basetone/1 },
-	II: basetone => { return basetone*9/8 },
-	IInoise: basetone => { return tools.randominteger(90,110)/100*basetone*9/8 },
-	majIII: basetone => { return basetone*5/4 },
-	majIIInoise: basetone => { return tools.randominteger(90,110)/100*basetone*5/4 },
-	miniii: basetone => { return basetone*6/5 },
-	miniiinoise: basetone => { return tools.randominteger(90,110)/100*basetone*6/5 },
-	IV: basetone => { return basetone*4/3 },
-	IVnoise: basetone => { return tools.randominteger(90,110)/100*basetone*4/3 },
-	V: basetone => { return basetone*3/2 },
-	Vnoise: basetone => { return tools.randominteger(90,110)/100*basetone*3/2 },
-	VI: basetone => { return basetone*5/3 },
-	VInoise: basetone => { return tools.randominteger(90,110)/100*basetone*5/3 },
-	majVII: basetone => { return basetone*15/8 },
-	majVIInoise: basetone => { return tools.randominteger(90,110)/100*basetone*15/8 },
-	minvii: basetone => { return basetone*9/5 },
-	minviinoise: basetone => { return tools.randominteger(90,110)/100*basetone*9/5 },
-	VIII: basetone => { return basetone*2 },
-	VIIInoise: basetone => { return tools.randominteger(90,110)/100*basetone*2 },
-	lownoise: basetone => { return basetone*tools.randominteger(5,9)/10 },
-	midnoise: basetone => { return basetone*tools.randominteger(90,110)/100 },
-	highnoise: basetone => { return basetone*tools.randominteger(12,18)/10 },
-	noise: basetone => { return basetone*tools.randominteger(4,16)/10 },
-	buzz: basetone => { return basetone*tools.randominteger(9,12)/10 },
+	lowi: (basetone,fraylow,frayhigh) => { return tools.randominteger(fraylow,frayhigh)/100*basetone/4 },
+	bassi: (basetone,fraylow,frayhigh) => { return tools.randominteger(fraylow,frayhigh)/100*basetone/2 },
+	bassIV: (basetone,fraylow,frayhigh) => { return tools.randominteger(fraylow,frayhigh)/100*basetone*4/6 },
+	bassV: (basetone,fraylow,frayhigh) => { return tools.randominteger(fraylow,frayhigh)/100*basetone*3/2 },
+	I: (basetone,fraylow,frayhigh) => { return tools.randominteger(fraylow,frayhigh)/100*basetone/1 },
+	II: (basetone,fraylow,frayhigh) => { return tools.randominteger(fraylow,frayhigh)/100*basetone*9/8 },
+	majIII: (basetone,fraylow,frayhigh) => { return tools.randominteger(fraylow,frayhigh)/100*basetone*5/4 },
+	miniii: (basetone,fraylow,frayhigh) => { return tools.randominteger(fraylow,frayhigh)/100*basetone*6/5 },
+	IV: (basetone,fraylow,frayhigh) => { return tools.randominteger(fraylow,frayhigh)/100*basetone*4/3 },
+	V: (basetone,fraylow,frayhigh) => { return tools.randominteger(fraylow,frayhigh)/100*basetone*3/2 },
+	VI: (basetone,fraylow,frayhigh) => { return tools.randominteger(fraylow,frayhigh)/100*basetone*5/3 },
+	majVII: (basetone,fraylow,frayhigh) => { return tools.randominteger(fraylow,frayhigh)/100*basetone*15/8 },
+	minvii: (basetone,fraylow,frayhigh) => { return tools.randominteger(fraylow,frayhigh)/100*basetone*9/5 },
+	VIII: (basetone,fraylow,frayhigh) => { return tools.randominteger(fraylow,frayhigh)/100*basetone*2 },
+	noise: (basetone,fraylow,frayhigh) => { return tools.randominteger(fraylow,frayhigh)/100*basetone },
 }
 
-console.log(`intervals=${JSON.stringify(intervals)}`);
-
-const speeds = Object.entries(intervals).reduce( (acc,entry) => {
-	console.log(`entry[0]=${entry[0]},${entry[1]}`);
-	acc[entry[0]] = entry[1](1000)/1000;
-	return acc;
-}, {});
-console.log(`speeds = ${JSON.stringify(speeds)}`);
-
-const  baseweights = Object.entries(speeds).reduce( (acc,entry) => {
-	acc[entry[0]] = Math.floor(1000/entry[1])/1000;
-	return acc;
-}, {});
-console.log(`baseweights = ${JSON.stringify(baseweights)}`);
-
+console.log(`intervals.V=${intervals.V(1000,99,100)}`);
 // const mcompandstr = `gain -4 sinc -n 29 -b 100 8000 mcompand "0.005,0.1 -47,-40,-34,-34,-17,-33" 100 "0.003,0.05 -47,-40,-34,-34,-17,-33" 400 "0.000625,0.0125 -47,-40,-34,-34,-15,-33" 1600 "0.0001,0.025 -47,-40,-34,-34,-31,-31,-0,-30" 6400 "0,0.025 -38,-31,-28,-28,-0,-25" gain 15 highpass 22 highpass 22 sinc -n 255 -b 16 -17500 gain 8 lowpass -1 17801 norm -2 silence -l 1 0.1 1% -1 2.0 1%`;
 const mcompandstr = `gain -12 sinc -n 29 -b 100 8000 mcompand "0.005,0.1 -47,-40,-34,-34,-17,-33" 100 "0.003,0.05 -47,-40,-34,-34,-17,-33" 400 "0.000625,0.0125 -47,-40,-34,-34,-15,-33" 1600 "0.0001,0.025 -47,-40,-34,-34,-31,-31,-0,-30" 6400 "0,0.025 -38,-31,-28,-28,-0,-25" gain 15 highpass 22 highpass 22 sinc -n 255 -b 16 -17500 gain 1 lowpass -1 17801 lowpass 2400`;
 // const mcompandstr = `gain -6 sinc -n 29 -b 100 8000 mcompand "0.005,0.1 -47,-40,-34,-34,-17,-33" 100 "0.003,0.05 -47,-40,-34,-34,-17,-33" 400 "0.000625,0.0125 -47,-40,-34,-34,-15,-33" 1600 "0.0001,0.025 -47,-40,-34,-34,-31,-31,-0,-30" 6400 "0,0.025 -38,-31,-28,-28,-0,-25" gain 15 highpass 22 highpass 22 sinc -n 255 -b 16 -17500 gain 6 lowpass -1 17801`;
@@ -89,33 +55,31 @@ const tonepads = (min=0,max=100) => { return tools.randominteger(min,max)/100 };
 // sox cheat cheat: https://gist.github.com/ideoforms/d64143e2bad16b18de6e97b91de494fd
 let soxstr = "";
 score.forEach( (line,l) => {
-	rawseeds = line.list;
-	console.log(`rawseeds = ${JSON.stringify(rawseeds)}`);
-	let soundindexweights = tools.reifyWeightedArray( 
-		//rawseeds.map( (w,j) => { return [j, w[1]] } ) );
-		rawseeds.map( (w,j) => { return [j, w.weight] } ) );
+	instruments = line.list;
+	console.log(`instruments = ${JSON.stringify(instruments)}`);
 
-	// reify the rawsoundfileweights
+	let instruments_reifiedids = tools.reifyWeightedArray( 
+		//instruments.map( (w,j) => { return [j, w[1]] } ) );
+		instruments.map( instrument => { return [instrument.id, instrument.weight] } ) );
+	console.log(`instruments_reifiedids = ${JSON.stringify(instruments_reifiedids)}`);
+
+	// reify the instruments_rawsoundweights
 	console.log(`chords = ${JSON.stringify(chords)}`);
-	rawsoundfileweights = rawseeds.map( file => {
-		//let harmonicweights = file[2];
+	//chord form {"I":{"weight":6,"fraylow":92,"frayhigh":108},"II":{"weight":2,"fraylow":92,"frayhigh":108},"IV":{"weight":2,"fraylow":92,"frayhigh":108},"V":{"weight":3,"fraylow":92,"frayhigh":108}}
+	instruments_rawsoundweights = instruments.map( file => {
+		//let chord = file[2];
 		console.log(`file=${JSON.stringify(file)}`);
-		let harmonicweights = chords[file.chord];
-		console.log(`harmonicweights = ${JSON.stringify(harmonicweights)}`);
-		//ex: harmonicweights = {"I":6,"II":2,"IV":2,"V":3}
-		weights = Object.entries(baseweights).filter(w=>harmonicweights.hasOwnProperty(w[0])).reduce( (acc,entry) => {
-			acc[entry[0]] = entry[1]*harmonicweights[entry[0]];
-			return acc;
-		}, {});
-		console.log(`weights = ${JSON.stringify(weights)}`);
-		let notes = tools.reifyWeightedArray( Object.entries(weights).map( w=>{ return [w[0], Math.floor(w[1])] } ) );
+		let chord = chords[file.chord];
+		console.log(`chord = ${JSON.stringify(chord)}`);
+
+		let notes = tools.reifyWeightedArray( Object.entries(chord).map( w=>{ return [ w[0], w[1].weight ] } ) );
 		 console.log(`notes = ${notes}`);
 		//return [file[0],file[1],notes];
-		return [file.id,file.weight,notes];
+		return {id:file.id, weight:file.weight, chord:file.chord, notes:notes};
 	});
 
-	console.log(`rawsoundfileweights = ${JSON.stringify(rawsoundfileweights)}`);
-	//console.log(`soundindexweights = ${JSON.stringify(soundindexweights)}`);
+	console.log(`instruments_rawsoundweights = ${JSON.stringify(instruments_rawsoundweights)}`);
+	//console.log(`instruments_reifiedids = ${JSON.stringify(instruments_reifiedids)}`);
 	let nlinethreads = line.nthreads ? line.nthreads : nthreads;
 	soxstr = soxstr + [...Array(nlinethreads).keys()].reduce( (threadstr,j) => {
 		let dur = 0;
@@ -125,26 +89,35 @@ score.forEach( (line,l) => {
 		if(line.start) {
 			let del = Math.min(line.start*threadlength,threaddur-10);
 			filestr = filestr + ` "|sox ../../fragments/silence.mp3 -p pad 0 ${del}" `;
+			//filestr = filestr + ` "|sox fragments/silence.mp3 -p pad 0 ${del}" `;
 			//filestr = filestr + ` "|sox -n -r 44100 -c 2 silence.mp3 trim 0.0 ${line.start}" `;
 			dur += 1 + del;
 			//console.log(`delaydur = ${dur}`);
 		}
 		while(dur < threaddur) {
-			let rawsoundfile = rawsoundfileweights[soundindexweights[tools.randominteger(0,soundindexweights.length)]];
+			let id = instruments_reifiedids[tools.randominteger(0,instruments_reifiedids.length)];
+			console.log(`id=${id}`);
+			let rawsoundfile = instruments_rawsoundweights.filter(instrument=>instrument.id===id)[0];
 			console.log(`rawsoundfile = ${JSON.stringify(rawsoundfile)}`);
-			//console.log(`rawsoundfile[0] = ${rawsoundfile[0]}`);
-			//console.log(`rawsoundfiledata=${JSON.stringify(rawsoundfiledata.filter(f => f.id===rawsoundfile[0]))}`);
-			let rawsounddur = rawsoundfiledata.filter(f => f.id===rawsoundfile[0])[0].duration;
+			/*
+			 * instruments_rawsoundweights = [{"id":"373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1","weight":1,"chord":0,"notes":["I","I","I","I","I","I","II","II","IV","IV","V","V","V"]}]
+			 * */
+			//console.log(`rawsoundfile.id = ${rawsoundfile.id}`);
+			//console.log(`rawsoundfiledata=${JSON.stringify(rawsoundfiledata.filter(f => f.id===rawsoundfile.id))}`);
+			let rawsounddur = rawsoundfiledata.filter(f => f.id===rawsoundfile.id)[0].duration;
 			//console.log(`rawsounddur = ${rawsounddur}`);
-			let notef = rawsoundfile[2][tools.randominteger(0,rawsoundfile[2].length)];
+			let notef = rawsoundfile.notes[tools.randominteger(0,rawsoundfile.notes.length)];
+			let chord = chords[rawsoundfile.chord];
 			console.log(`notef = ${notef}`);
 			console.log(`intervals[notef] = ${intervals[notef]}`);
-			let speed = intervals[notef](1000)/1000;
+			let speed = Math.floor(1000*intervals[notef](1000,chord[notef].fraylow,chord[notef].frayhigh)/1000)/1000;
+			console.log(`speed=${speed}`);
 			let tonepad = tonepads(line.padmin,line.padmax);
 			dur = dur + rawsounddur/speed + tonepad;
 			//console.log(`dur = ${dur}`);
-			//console.log(`rawsoundfile = ${rawsoundfile[0]},rawsounddur = ${rawsounddur},  dur = ${dur}, speed = ${speed}`);
-			filestr = filestr + ` "|sox ../../fragments/${rawsoundfile[0]}.mp3 -p speed ${speed} pad 0 ${tonepad} norm -4" `;
+			//console.log(`rawsoundfile = ${rawsoundfile.id},rawsounddur = ${rawsounddur},  dur = ${dur}, speed = ${speed}`);
+			filestr = filestr + ` "|sox ../../fragments/${rawsoundfile.id}.mp3 -p speed ${speed} pad 0 ${tonepad} norm -4" `;
+			//filestr = filestr + ` "|sox fragments/${rawsoundfile.id}.mp3 -p speed ${speed} pad 0 ${tonepad} norm -4" `;
 		}
 		//with echo & 
 		//with no echo
