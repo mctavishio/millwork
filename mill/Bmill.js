@@ -9,16 +9,20 @@ let datetime = dt.toDateString();
 
 const Bfile = `./B.js`;
 const BfilmFile = `./Bfilm.js`;
-const pigments = input.pigments;
 const tools = require("./tools.js");
 
+/* 
+ * for when the nticks is determined by the length of the sound file
 const outSoundFiles = require("./outSoundFiles.js");
 let soundFile = outSoundFiles.filter(f=>f.id==="line_all_thread_all_echo_reverb").length>0 ? outSoundFiles.filter(f=>f.id==="line_all_thread_all_echo")[0] : null;
 const nticks =  soundFile ? Math.round(soundFile.duration) : 240;
+*/
+const nticks = input.nticks;
 console.log(`nticks = ${nticks}`);
 const fps = input.fps || 24;
-const spice = input.spicecolors; 
-const colors = input.colors; 
+const pigments = input.pigments;
+const spicecolors = input.spicecolors; 
+const corecolors = input.corecolors; 
 const allcolors = input.allcolors;
 const nx = input.nx || 5;
 const ny = input.ny || 5;
@@ -28,14 +32,12 @@ const nmax = Math.max(nx,ny);
 const m = nx*ny*nz;
 const ne = (nx*2+ny)*nz;
 const n = nmin;
-//console.log(`colorseq = ${JSON.stringify(colorseq)}`);
+
 const xgrid = tools.shuffle(input.xgrid);
 const ygrid = tools.shuffle(input.ygrid);
 console.log(`xgrid=${JSON.stringify(xgrid)}`);
 //const xgrid = tools.shuffle(input.xgrid);
 //const ygrid = tools.shuffle(input.ygrid);
-
-let pigmentsets = input.pigmentsets;
 
 //x,y,e,z
 let elements = [];

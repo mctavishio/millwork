@@ -1,17 +1,13 @@
 let input =
 	{
-	"duration": 1.8,
+	"sequencetitle": "turbulence",
+	"duration": 2,
+	"nticks": 120,
 	"fps": 24,
-	"intervals": "{\"lowi\":\"basetone => { return basetone/4 }\",\"lowinoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone/4 }\",\"bassi\":\"basetone => { return basetone/2 }\",\"bassinoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone/2 }\",\"bassIV\":\"basetone => { return basetone*4/6 }\",\"bassIVnoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*4/6 }\",\"bassV\":\"basetone => { return basetone*3/2 }\",\"bassVnoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*3/2 }\",\"I\":\"basetone => { return basetone/1 }\",\"Inoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone/1 }\",\"II\":\"basetone => { return basetone*9/8 }\",\"IInoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*9/8 }\",\"majIII\":\"basetone => { return basetone*5/4 }\",\"majIIInoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*5/4 }\",\"miniii\":\"basetone => { return basetone*6/5 }\",\"miniiinoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*6/5 }\",\"IV\":\"basetone => { return basetone*4/3 }\",\"IVnoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*4/3 }\",\"V\":\"basetone => { return basetone*3/2 }\",\"Vnoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*3/2 }\",\"VI\":\"basetone => { return basetone*5/3 }\",\"VInoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*5/3 }\",\"majVII\":\"basetone => { return basetone*15/8 }\",\"majVIInoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*15/8 }\",\"minvii\":\"basetone => { return basetone*9/5 }\",\"minviinoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*9/5 }\",\"VIII\":\"basetone => { return basetone*2 }\",\"VIIInoise\":\"basetone => { return tools.randominteger(9,11)/10*basetone*2 }\",\"lownoise\":\"basetone => { return basetone*tools.randominteger(5,9)/10 }\",\"midnoise\":\"basetone => { return basetone*tools.randominteger(9,11)/10 }\",\"highnoise\":\"basetone => { return basetone*tools.randominteger(12,18)/10 }\",\"noise\":\"basetone => { return basetone*tools.randominteger(4,16)/10 }\",\"buzz\":\"basetone => { return basetone*tools.randominteger(9,12)/10 }\"}",
 	"chords": [
 		{
 			"I": {
 				"weight": 6,
-				"fraylow": 100,
-				"frayhigh": 100
-			},
-			"II": {
-				"weight": 2,
 				"fraylow": 100,
 				"frayhigh": 100
 			},
@@ -21,6 +17,11 @@ let input =
 				"frayhigh": 100
 			},
 			"V": {
+				"weight": 3,
+				"fraylow": 100,
+				"frayhigh": 100
+			},
+			"VIII": {
 				"weight": 3,
 				"fraylow": 100,
 				"frayhigh": 100
@@ -29,23 +30,28 @@ let input =
 		{
 			"I": {
 				"weight": 6,
-				"fraylow": 92,
-				"frayhigh": 108
-			},
-			"II": {
-				"weight": 2,
-				"fraylow": 92,
-				"frayhigh": 108
+				"fraylow": 100,
+				"frayhigh": 100
 			},
 			"IV": {
 				"weight": 2,
-				"fraylow": 92,
-				"frayhigh": 108
+				"fraylow": 100,
+				"frayhigh": 100
 			},
 			"V": {
 				"weight": 3,
-				"fraylow": 92,
-				"frayhigh": 108
+				"fraylow": 96,
+				"frayhigh": 104
+			},
+			"minvii": {
+				"weight": 1,
+				"fraylow": 100,
+				"frayhigh": 100
+			},
+			"VIII": {
+				"weight": 1,
+				"fraylow": 90,
+				"frayhigh": 102
 			}
 		}
 	],
@@ -79,16 +85,26 @@ let input =
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
+		},
+		{
+			"id": "clarinetnotes_e",
+			"keywords": "z|reed|clarinet|clarinetnotes",
+			"file": "clarinetnotes_e.mp3",
+			"duration": 14.529002,
+			"nchannels": 2,
+			"rate": 44100,
+			"type": "mp3",
+			"bitrate": 16
 		}
 	],
 	"score": [
 		{
-			"gain": 0.5,
+			"gain": 0.6,
 			"padmin": 0,
 			"padmax": 100,
 			"start": 0,
-			"end": 1,
-			"nthreads": 4,
+			"end": 0.5,
+			"nthreads": 6,
 			"list": [
 				{
 					"id": "373178__samulis__f-horn-muted-sustain-g4-mohorn_mute_g3_v1_1",
@@ -108,17 +124,107 @@ let input =
 			]
 		},
 		{
-			"gain": 0.4,
+			"gain": 0.6,
 			"padmin": 0,
-			"padmax": 400,
-			"start": 0.3,
+			"padmax": 100,
+			"start": 0.2,
+			"end": 0.4,
+			"nthreads": 2,
+			"list": [
+				{
+					"id": "373178__samulis__f-horn-muted-sustain-g4-mohorn_mute_g3_v1_1",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "373253__samulis__f-horn-sustain-a3-mohorn_sus_a2_v2_1",
+					"weight": 1,
+					"chord": 0
+				}
+			]
+		},
+		{
+			"gain": 0.5,
+			"padmin": 0,
+			"padmax": 300,
+			"start": 0.2,
+			"end": 0.3,
+			"nthreads": 3,
+			"list": [
+				{
+					"id": "clarinetnotes_e",
+					"weight": 1,
+					"chord": 0
+				}
+			]
+		},
+		{
+			"gain": 0.5,
+			"padmin": 0,
+			"padmax": 80,
+			"start": 0.5,
 			"end": 0.9,
 			"nthreads": 3,
+			"list": [
+				{
+					"id": "373178__samulis__f-horn-muted-sustain-g4-mohorn_mute_g3_v1_1",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "373253__samulis__f-horn-sustain-a3-mohorn_sus_a2_v2_1",
+					"weight": 1,
+					"chord": 0
+				}
+			]
+		},
+		{
+			"gain": 0.5,
+			"padmin": 10,
+			"padmax": 200,
+			"start": 0.6,
+			"end": 0.8,
+			"nthreads": 4,
 			"list": [
 				{
 					"id": "373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1",
 					"weight": 1,
 					"chord": 1
+				}
+			]
+		},
+		{
+			"gain": 0.5,
+			"padmin": 0,
+			"padmax": 400,
+			"start": 0.7,
+			"end": 1,
+			"nthreads": 3,
+			"list": [
+				{
+					"id": "373178__samulis__f-horn-muted-sustain-g4-mohorn_mute_g3_v1_1",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "373253__samulis__f-horn-sustain-a3-mohorn_sus_a2_v2_1",
+					"weight": 1,
+					"chord": 0
 				}
 			]
 		}
@@ -206,15 +312,13 @@ let input =
 		"philipgreen1": "#3E5915",
 		"philipgreen2": "#708C32"
 	},
-	"colors": [
+	"corecolors": [
 		"#fdfdf3",
 		"#191918"
 	],
 	"spicecolors": [
-		"#fdfdf3",
-		"#fdfdf3",
-		"#191918",
-		"#4b4b44",
+		"#484848",
+		"#AA0000",
 		"#ffde00"
 	],
 	"allcolors": [
@@ -245,14 +349,6 @@ let input =
 		"#ffde00",
 		"#ffde00"
 	],
-	"bookunits": "in",
-	"bookwidth": 8,
-	"bookheight": 8,
-	"bookmargin": 1,
-	"bookguttermargin": 1.2,
-	"bleed": 0.125,
-	"pixelsperunit": 72,
-	"captionheight": 1,
 	"cssstyles": "",
 	"npoems": 80,
 	"nstanzas": 3,
@@ -309,9 +405,10 @@ let input =
 		1,
 		1
 	],
-	"bookobj": {
+	"bookinfo": {
+		"sequencetitle": "turbulence",
 		"title": "turbulence",
-		"subtitle": "Sun Mar 03 2024",
+		"subtitle": "Sun Mar 10 2024",
 		"description": "algorithmic sound & drawings",
 		"rooturl": "https://turbulence.work",
 		"authorurl": "https://mctavish.work/",
@@ -319,21 +416,31 @@ let input =
 		"copyright": "Copyright ©2024 mctavish<br/>",
 		"isbn": "ISBN: 00000<br/>",
 		"publisher": ". . .",
+		"bodyclasses": [
+			"illustratedbook"
+		],
+		"ntickstitle": 1,
+		"fps": 1,
+		"nticks": 60,
 		"sections": [],
 		"poemids": [],
 		"bookunits": "in",
-		"bookwidth": 8,
-		"bookheight": 8,
-		"bookmargin": 1,
-		"bookguttermargin": 1.2,
+		"width": 8,
+		"height": 8,
+		"margin": 1,
+		"guttermargin": 1,
 		"bleed": 0.125,
+		"spine": 0.322,
 		"pixelsperunit": 72,
+		"svgwidth": 576,
+		"svgheight": 576,
 		"captionheight": 1,
 		"cssstyles": ""
 	},
-	"filmobj": {
+	"postcardinfo": {
+		"sequencetitle": "turbulence",
 		"title": "turbulence",
-		"subtitle": "Sun Mar 03 2024",
+		"subtitle": "Sun Mar 10 2024",
 		"description": "algorithmic sound & drawings",
 		"rooturl": "https://turbulence.work",
 		"authorurl": "https://mctavish.work/",
@@ -341,19 +448,123 @@ let input =
 		"copyright": "Copyright ©2024 mctavish<br/>",
 		"isbn": "ISBN: 00000<br/>",
 		"publisher": ". . .",
+		"bodyclasses": [
+			"broadsides",
+			"notext"
+		],
+		"ntickstitle": 1,
+		"nticks": 60,
+		"fps": 1,
 		"sections": [],
 		"poemids": [],
-		"bookmargin": 1,
-		"bookguttermargin": 1.2,
-		"bleed": 0.125,
 		"bookunits": "in",
-		"filmwidth": 16,
-		"filmheight": 9,
-		"bookwidth": 8,
-		"bookheight": 8,
-		"postcardwidth": 7,
-		"postcardheight": 5,
+		"width": 7,
+		"height": 5,
+		"margin": 0.5,
+		"guttermargin": 0.5,
+		"bleed": 0.125,
+		"spine": 0.322,
 		"pixelsperunit": 72,
+		"svgwidth": 504,
+		"svgheight": 360,
+		"captionheight": 1,
+		"cssstyles": ""
+	},
+	"coverinfo": {
+		"sequencetitle": "turbulence",
+		"title": "turbulence",
+		"subtitle": "Sun Mar 10 2024",
+		"description": "algorithmic sound & drawings",
+		"rooturl": "https://turbulence.work",
+		"authorurl": "https://mctavish.work/",
+		"author": "mctavish",
+		"copyright": "Copyright ©2024 mctavish<br/>",
+		"isbn": "ISBN: 00000<br/>",
+		"publisher": ". . .",
+		"bodyclasses": [
+			"illustratedbook"
+		],
+		"ntickstitle": 1,
+		"fps": 1,
+		"nticks": 60,
+		"sections": [],
+		"poemids": [],
+		"bookunits": "in",
+		"width": 1193.184,
+		"height": 1184.184,
+		"margin": 0,
+		"guttermargin": 0,
+		"bleed": 0.125,
+		"spine": 0.322,
+		"pixelsperunit": 72,
+		"svgwidth": 1193.184,
+		"svgheight": 1184.184,
+		"captionheight": 1,
+		"cssstyles": ""
+	},
+	"film9x9info": {
+		"sequencetitle": "turbulence",
+		"title": "turbulence",
+		"subtitle": "Sun Mar 10 2024",
+		"description": "algorithmic sound & drawings",
+		"rooturl": "https://turbulence.work",
+		"authorurl": "https://mctavish.work/",
+		"author": "mctavish",
+		"copyright": "Copyright ©2024 mctavish<br/>",
+		"isbn": "ISBN: 00000<br/>",
+		"publisher": ". . .",
+		"bodyclasses": [
+			"film",
+			"notext"
+		],
+		"ntickstitle": 4,
+		"nticks": 120,
+		"fps": 24,
+		"sections": [],
+		"poemids": [],
+		"bookunits": "in",
+		"width": 9,
+		"height": 9,
+		"margin": 0,
+		"guttermargin": 0,
+		"bleed": 0,
+		"spine": 0,
+		"pixelsperunit": 120,
+		"svgwidth": 1080,
+		"svgheight": 1080,
+		"captionheight": 1,
+		"cssstyles": ""
+	},
+	"film16x9info": {
+		"sequencetitle": "turbulence",
+		"title": "turbulence",
+		"subtitle": "Sun Mar 10 2024",
+		"description": "algorithmic sound & drawings",
+		"rooturl": "https://turbulence.work",
+		"authorurl": "https://mctavish.work/",
+		"author": "mctavish",
+		"copyright": "Copyright ©2024 mctavish<br/>",
+		"isbn": "ISBN: 00000<br/>",
+		"publisher": ". . .",
+		"bodyclasses": [
+			"film",
+			"notext"
+		],
+		"ntickstitle": 4,
+		"nticks": 120,
+		"fps": 24,
+		"sections": [],
+		"poemids": [],
+		"bookunits": "in",
+		"width": 16,
+		"height": 9,
+		"margin": 0,
+		"guttermargin": 0,
+		"bleed": 0,
+		"spine": 0,
+		"pixelsperunit": 120,
+		"svgwidth": 1920,
+		"svgheight": 1080,
 		"captionheight": 1,
 		"cssstyles": ""
 	}

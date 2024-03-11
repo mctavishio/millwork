@@ -4,7 +4,13 @@ const input = require("./input.js");
 const score = input.score;
 const chords = input.chords;
 const nthreads = 4;
-const threadlength = input.duration*48;
+
+console.log(process.argv);
+let args = process.argv;
+console.log(`parameters = ${args.filter( (a,j)=>{return j>1} )}`);
+//in minutes
+const duration = args[2] ? args[2] : input.duration;
+const threadlength = duration*60; // in seconds
 const rawsoundfiledata = require("./rawSoundFiles.js");
 // echo module.exports = [ > soundfiles.js; for file in ?(*.mp3|*.wav); do soxi -D $file | read d ; soxi -c $file | read c ; soxi -r $file | read r ; soxi -t $file | read t ; soxi -p $file | read p ;echo {id:\"${file%.*}\", file:\"$file\", duration:$d, nchannels:$c, rate:$r, type:\"$t\", bitrate:$p}, >> soundfiles.js; done; echo ] >> soundfiles.js;
 
@@ -31,7 +37,7 @@ const intervals = {
 	noise: (basetone,fraylow,frayhigh) => { return tools.randominteger(fraylow,frayhigh)/100*basetone },
 }
 
-console.log(`intervals.V=${intervals.V(1000,99,100)}`);
+//console.log(`intervals.V=${intervals.V(1000,99,100)}`);
 // const mcompandstr = `gain -4 sinc -n 29 -b 100 8000 mcompand "0.005,0.1 -47,-40,-34,-34,-17,-33" 100 "0.003,0.05 -47,-40,-34,-34,-17,-33" 400 "0.000625,0.0125 -47,-40,-34,-34,-15,-33" 1600 "0.0001,0.025 -47,-40,-34,-34,-31,-31,-0,-30" 6400 "0,0.025 -38,-31,-28,-28,-0,-25" gain 15 highpass 22 highpass 22 sinc -n 255 -b 16 -17500 gain 8 lowpass -1 17801 norm -2 silence -l 1 0.1 1% -1 2.0 1%`;
 const mcompandstr = `gain -12 sinc -n 29 -b 100 8000 mcompand "0.005,0.1 -47,-40,-34,-34,-17,-33" 100 "0.003,0.05 -47,-40,-34,-34,-17,-33" 400 "0.000625,0.0125 -47,-40,-34,-34,-15,-33" 1600 "0.0001,0.025 -47,-40,-34,-34,-31,-31,-0,-30" 6400 "0,0.025 -38,-31,-28,-28,-0,-25" gain 15 highpass 22 highpass 22 sinc -n 255 -b 16 -17500 gain 1 lowpass -1 17801 lowpass 2400`;
 // const mcompandstr = `gain -6 sinc -n 29 -b 100 8000 mcompand "0.005,0.1 -47,-40,-34,-34,-17,-33" 100 "0.003,0.05 -47,-40,-34,-34,-17,-33" 400 "0.000625,0.0125 -47,-40,-34,-34,-15,-33" 1600 "0.0001,0.025 -47,-40,-34,-34,-31,-31,-0,-30" 6400 "0,0.025 -38,-31,-28,-28,-0,-25" gain 15 highpass 22 highpass 22 sinc -n 255 -b 16 -17500 gain 6 lowpass -1 17801`;
@@ -56,29 +62,29 @@ const tonepads = (min=0,max=100) => { return tools.randominteger(min,max)/100 };
 let soxstr = "";
 score.forEach( (line,l) => {
 	instruments = line.list;
-	console.log(`instruments = ${JSON.stringify(instruments)}`);
+	//console.log(`instruments = ${JSON.stringify(instruments)}`);
 
 	let instruments_reifiedids = tools.reifyWeightedArray( 
 		//instruments.map( (w,j) => { return [j, w[1]] } ) );
 		instruments.map( instrument => { return [instrument.id, instrument.weight] } ) );
-	console.log(`instruments_reifiedids = ${JSON.stringify(instruments_reifiedids)}`);
+	//console.log(`instruments_reifiedids = ${JSON.stringify(instruments_reifiedids)}`);
 
 	// reify the instruments_rawsoundweights
-	console.log(`chords = ${JSON.stringify(chords)}`);
+	//console.log(`chords = ${JSON.stringify(chords)}`);
 	//chord form {"I":{"weight":6,"fraylow":92,"frayhigh":108},"II":{"weight":2,"fraylow":92,"frayhigh":108},"IV":{"weight":2,"fraylow":92,"frayhigh":108},"V":{"weight":3,"fraylow":92,"frayhigh":108}}
 	instruments_rawsoundweights = instruments.map( file => {
 		//let chord = file[2];
-		console.log(`file=${JSON.stringify(file)}`);
+		//console.log(`file=${JSON.stringify(file)}`);
 		let chord = chords[file.chord];
-		console.log(`chord = ${JSON.stringify(chord)}`);
+		//console.log(`chord = ${JSON.stringify(chord)}`);
 
 		let notes = tools.reifyWeightedArray( Object.entries(chord).map( w=>{ return [ w[0], w[1].weight ] } ) );
-		 console.log(`notes = ${notes}`);
+		 //console.log(`notes = ${notes}`);
 		//return [file[0],file[1],notes];
 		return {id:file.id, weight:file.weight, chord:file.chord, notes:notes};
 	});
 
-	console.log(`instruments_rawsoundweights = ${JSON.stringify(instruments_rawsoundweights)}`);
+	//console.log(`instruments_rawsoundweights = ${JSON.stringify(instruments_rawsoundweights)}`);
 	//console.log(`instruments_reifiedids = ${JSON.stringify(instruments_reifiedids)}`);
 	let nlinethreads = line.nthreads ? line.nthreads : nthreads;
 	soxstr = soxstr + [...Array(nlinethreads).keys()].reduce( (threadstr,j) => {
@@ -96,9 +102,9 @@ score.forEach( (line,l) => {
 		}
 		while(dur < threaddur) {
 			let id = instruments_reifiedids[tools.randominteger(0,instruments_reifiedids.length)];
-			console.log(`id=${id}`);
+			//console.log(`id=${id}`);
 			let rawsoundfile = instruments_rawsoundweights.filter(instrument=>instrument.id===id)[0];
-			console.log(`rawsoundfile = ${JSON.stringify(rawsoundfile)}`);
+			//console.log(`rawsoundfile = ${JSON.stringify(rawsoundfile)}`);
 			/*
 			 * instruments_rawsoundweights = [{"id":"373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1","weight":1,"chord":0,"notes":["I","I","I","I","I","I","II","II","IV","IV","V","V","V"]}]
 			 * */
@@ -108,10 +114,10 @@ score.forEach( (line,l) => {
 			//console.log(`rawsounddur = ${rawsounddur}`);
 			let notef = rawsoundfile.notes[tools.randominteger(0,rawsoundfile.notes.length)];
 			let chord = chords[rawsoundfile.chord];
-			console.log(`notef = ${notef}`);
-			console.log(`intervals[notef] = ${intervals[notef]}`);
+			//console.log(`notef = ${notef}`);
+			//console.log(`intervals[notef] = ${intervals[notef]}`);
 			let speed = Math.floor(1000*intervals[notef](1000,chord[notef].fraylow,chord[notef].frayhigh)/1000)/1000;
-			console.log(`speed=${speed}`);
+			//console.log(`speed=${speed}`);
 			let tonepad = tonepads(line.padmin,line.padmax);
 			dur = dur + rawsounddur/speed + tonepad;
 			//console.log(`dur = ${dur}`);

@@ -333,9 +333,7 @@ let tools = {
 		line: p => { return {x1:p.x1,x2:p.x2,y1:p.y1,y2:p.y2,"stroke-width":p.sw,"stroke-dashoffset":p.sf,"stroke-dasharray":p.sd,"stroke-opacity":p.so,stroke:p.strokecolor } },
 	},
 
-	drawf: ({width=100,height=100,min=100,max=100}={},b,tag) => {
-		let p = b;
-		//console.log("b = "+JSON.stringify(b));
+	drawf: ({width=100,height=100,min=100,max=100}={},p,tag,cssclasses=[]) => {
 		let attmap = att => {
 			let multiplier = height;
 			if(["width","x","x1","x2","cx"].includes(att)) {
@@ -365,7 +363,7 @@ let tools = {
 		//console.log("atts = "+JSON.stringify(atts));
 		//console.log("drawf = "+ tools.createElementTagStr({tag:tag,attributes:atts,isEmpty:true}));
 		//if(tag==="rect"){console.log(`from tools atts=${JSON.stringify(atts)}`);}
-		return tools.createElementTagStr({tag:tag,attributes:atts,isEmpty:true});
+		return tools.createElementTagStr({tag:tag,attributes:atts,isEmpty:true,cssclasses});
 	},
 	curves: {
 		init:  () => {

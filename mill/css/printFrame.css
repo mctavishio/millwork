@@ -5,11 +5,11 @@
 	/*-prince-trim: 0.25in;*/
 }
 @page :left {
-	margin-right: 1.2in;
+	margin-right: 1in;
 	margin-right: var(--margingutter);
 }
 @page :right {
-	margin-left: 1.2in;
+	margin-left: 1in;
 	margin-left: var(--margingutter);
 }
 @page :right{
@@ -36,23 +36,9 @@
 		margin-bottom: 0.5in;
 	}
 }
-@page pagebroadsides {
-	margin: 0;
-	size: var(--width) var(--height);
-	marks: crop cross;
-	bleed: 0.125in;
-	bleed: var(--bleed);
-	/*-prince-trim: 0.25in;*/
-	/*background-color: var(--warmlightwhite);*/
-	@bottom-left { content: none; }
-	@bottom-center { content: none; }
-	@bottom-right { content: none; }
-	@top-left { content: none; }
-	@top-center { content: none; }
-	@top-right { content: none; }
-}
 @page pagefilm {
 	margin: 0;
+	margin: var(--margin);
 	size: var(--width) var(--height);
 	/*background-color: var(--warmlightwhite);*/
 	@bottom-left { content: none; }
@@ -118,7 +104,7 @@ div.blank, section.blank, section#sectiontoc {
 	page: pageblank;
 }
 body.broadsides div.blank, body.broadsides section.blank, body.broadsides section#sectiontoc {
-	page: pagebroadsides;
+	page: pagefilm;
 }
 body.film div.blank, body.film section.blank, body.film section#sectiontoc {
 	page: pagefilm;
@@ -127,7 +113,7 @@ main > header, section.pagefrontmatter, section > header > h1, section#prelude, 
 	page: pageblank;
 }
 body.broadsides main > header, body.broadsides section.pagefrontmatter, body.broadsides section > header > h1, body.broadsides section#prelude, body.broadsides section#sectiontoc, body.broadsides >  section#bookinscription, body.broadsides section div.inscription {
-	page: pagebroadsides;
+	page: pagefilm;
 }
 body.film main > header, body.film section.pagefrontmatter, body.film section > header > h1, body.film section#prelude, body.film section#sectiontoc, body.film >  section#bookinscription, body.film section div.inscription {
 	page: pagefilm;
@@ -149,7 +135,7 @@ body.film main > header, body.film section.pagefrontmatter, body.film section > 
 	}
 }
 body.broadsides figure, body.broadsides div.frame {
-	page: pagebroadsides;
+	page: pagefilm;
 }
 body.film figure, body.film div.frame {
 	page: pagefilm;
@@ -184,12 +170,14 @@ main > header, section#prelude > header {
 	text-align: center;
 	margin-top: 30%;
 }
+/*
 body.film main > header {
 	display:none;
 }
 body.notext main > header {
 	display:none;
 }
+*/
 body.notext main article > header {
 	display:none;
 }
@@ -256,7 +244,7 @@ article {
 	padding-top:0;
 }
 body.broadsides article {
-	page: pagebroadsides;
+	page: pagefilm;
 	break-before: page;
 }
 body.film article {
@@ -282,8 +270,7 @@ body.illustratedbook article > div.flex {
 	align-items: center;
 	justify-content: center;
 	overflow: clip;
-	border-right: 0.5rem solid var(--warmblack);
-	/*border: 0.5rem solid var(--warmblack);*/
+	border-right: 0.4rem solid var(--warmblack);
 }
 body.film article > div.flex {
 	position: absolute;
@@ -299,14 +286,15 @@ body.broadsides article > div.flex > div.content {
 	position: relative;
 	padding: 1em;
 	margin-top: var(--margin);
-    max-width: 9in;
+    max-width: var(--innerwidth);
+    max-height: var(--innerheight);
 	justify-content: center;
 	flex-basis: 1;
 	background-color: var(--warmlightwhiteveil);
-	font-size:1.2em;
+	font-size:1.0em;
 }
 body.illustratedbook article > div.flex > div.content {
-    max-width: 9in;
+    max-width: var(--innerwidth);
 	justify-content: left;
 	flex-basis: 1;
 }
@@ -408,9 +396,21 @@ body.broadsides figure, div.frame, body.film figure {
 	padding: 0in;
 	margin: 0in;
 	top: 0in; left: 0in;
-	width:var(--width); height:var(--height);
-	min-width:var(--width); min-height:var(--height);
+	width:var(--innerwidth); height:var(--innerheight);
+	min-width:var(--innerwidth); min-height:var(--innerheight);
 	/*break-before: page;*/
+}
+body.broadsides figure.smallbox, body.illustratedbook figure.smallbox, body.film figure.smallbox {
+  object-fit: cover;
+  /*aspect-ratio: 1;*/
+  max-width: 40%;
+  height: 30%;
+}
+.aspect-ratio-hd {
+  aspect-ratio: 16/9;
+}
+.aspect-ratio-square {
+  aspect-ratio: 1;
 }
 article {
 	break-before: page;
@@ -450,7 +450,7 @@ div.blank {
 	page: blank;
 }
 body.broadsides div.blank {
-	page: pagebroadsides;
+	page: pagefilm;
 }
 body.film div.blank {
 	page: pagefilm;
@@ -482,11 +482,14 @@ body.illustratedbook svg {
 	background: var(--warmlightwhite);
 }
 body.broadsides svg, body.film svg {
+	/*
 	position:absolute;
 	top:0; left:0;
 	margin:0;
+	margin:var(--margin);
+	*/
 	padding:0;
-	width:var(--width); height:var(--height);
+	width:var(--innerwidth); height:var(--innerheight);
 }
 body figcaption {
 	display:block;

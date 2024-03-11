@@ -1,20 +1,19 @@
 const fs = require("fs"); 
+let args = process.argv;
+console.log(process.argv);
 const poemfile = `./poems.js`;
 const bookfile = `./book.js`;
 const tools = require("./tools.js");
 const poems = require(poemfile);
 const book = require(bookfile);
-book.sequence = "noisefactory";
-const w = Number(book.bookwidth), h = Number(book.bookheight);
-const m = Number(book.bookmargin);
-const width = book.bookwidth+"in";
-const height = book.bookheight+"in";
+const w = Number(book.width), h = Number(book.height);
+const m = Number(book.margin);
+const width = book.width+"in";
+const height = book.height+"in";
 const innerwidth = (w-2.0*m)+"in";
 const innerheight = (h-2.0*m)+"in";
-const margin = book.bookmargin+"in";
-const margingutter = (book.bookmargin*1+0.2)+"in";
-const svgwidth = book.bookwidth*book.pixelsperunit;
-const svgheight = book.bookheight*book.pixelsperunit;
+const margin = book.margin+"in";
+const margingutter = book.guttermargin+"in";
 const dt = new Date();
 const timestamp = dt.getTime();
 const datetime = dt.toDateString();
@@ -53,11 +52,13 @@ const getfontweight = () => {
 const markcss = [...Array(20).keys()].reduce( (acc,j) => {
 	acc = acc +  `
 	mark.mark${j} {
+		display: inline-block;
 		font-weight:${getfontweight()};
 		color:${getrgbacolor()};
 		font-family: ${getfont()}; 
 		text-decoration: ${getdecoration()};
 		text-decoration-color: var(--gray);
+		/* use borders instead */
 		/*text-decoration-thickness: 0.2em;*/
 	}
 	`;
@@ -120,13 +121,7 @@ let head = `
 	mark {
 		background-color: var(--white);
 	}
-	mark.mark9 {
-		text-transform: uppercase;
-	}
-	mark.mark19 {
-		text-shadow: 2px 2px var(--white);
-	}
-	ul:first-child li:first-child:first-letter {
+	ul.dropletter:first-child li:first-child:first-letter {
 	  color: var(--gray);
 	  float: left;
 	  font-size: 75px;
@@ -155,7 +150,7 @@ let head = `
  * <body class="broadsides notext">
 */
 let html = `<html>${head}
-<body class="illustratedbook">
+<body class="${book.bodyclasses.join(" ")}">
 <div id="mainflex">
 <main class="expand wide" id="top">`;
 html = html + `
@@ -166,14 +161,18 @@ html = html + `
 	<h2>${book.subtitle}</h2>
 	<h3 id="author">${book.author}</h3>
 </header>
--->
+-->`;
+[...Array(book.ntickstitle*book.fps).keys()].forEach(j=> {
+	html = html + `
 <header>
-	<h1>${book.sequence}</h1>
+	<h1>${book.sequencetitle}</h1>
 	<h2>sketch ::: ${book.dt}</h2>
 	<h3 id="author">${book.author}</h3>
-</header>
+</header>`});
+html = html + `
 <section class="interior num1 pagestartnumbers booksection" id="section0">`;
-html = html + tools.shuffle(book.poemids).filter( (p,j)=>j<49 ).reduce( (poemstr,poemid,p) => {
+//html = html + tools.shuffle(book.poemids).filter( (p,j)=>j<49 ).reduce( (poemstr,poemid,p) => {
+html = html + book.poemids.filter( (p,j)=>j<=book.nticks ).reduce( (poemstr,poemid,p) => {
 	//console.log(`poemid=${poemid}`);
 	let poem = poems.filter(poem=>poem.id===poemid)[0];
 	let cssstr = poem.cssclasses ? poem.cssclasses.join(" ") : "";
@@ -207,7 +206,7 @@ html = html + `
 </body>
 </html>`;
 let poemids = poems.map(poem => poem.id); 
-let filename = `./printzine.html`;
+let filename = `./print.html`;
 fs.writeFileSync(filename, html, (err) => {
 	if (err)
 		console.log(err);
