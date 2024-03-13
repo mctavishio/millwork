@@ -172,7 +172,7 @@ html = html + `
 html = html + `
 <section class="interior num1 pagestartnumbers booksection" id="section0">`;
 //html = html + tools.shuffle(book.poemids).filter( (p,j)=>j<49 ).reduce( (poemstr,poemid,p) => {
-html = html + book.poemids.filter( (p,j)=>j<=book.nticks ).reduce( (poemstr,poemid,p) => {
+html = html + book.poemids.filter( (p,j)=>j<=book.nticks*book.fps ).reduce( (poemstr,poemid,p) => {
 	//console.log(`poemid=${poemid}`);
 	let poem = poems.filter(poem=>poem.id===poemid)[0];
 	let cssstr = poem.cssclasses ? poem.cssclasses.join(" ") : "";

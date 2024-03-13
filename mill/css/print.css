@@ -262,14 +262,14 @@ main > header > h2 {
 	color: var(--richgray1);
 }
 main > header > h3 {
-	margin-top: 5em;
+	margin-top: 4em;
 	font-size: 1.8em;
 	letter-spacing: 0.02em;
 	font-weight: 400;
 	color: var(--richgray1);
 }
 main > header > h4 {
-	margin-top: 5em;
+	margin-top: 4em;
 	margin-bottom: 0;
 	font-size: 1.2em;
 	letter-spacing: 0.01em;
@@ -336,7 +336,8 @@ body.illustratedbook article > div.flex {
 	width:100%;
 	height:80%;
 	align-items: center;
-	justify-content: center;
+	/*justify-content: center;*/
+	justify-content: left;
 	overflow: clip;
 	border-right: 0.4rem solid var(--warmblack);
 }
@@ -501,6 +502,9 @@ body.film section > article:first-of-type {
 main > header, section#prelude > header {
 	break-before: recto;
 }
+body.film main > header {
+ 	break-before: page;
+}
 section {
 	break-before: recto;
 }
@@ -522,6 +526,8 @@ body.broadsides div.blank {
 }
 body.film div.blank {
 	page: pagefilm;
+	break-after: avoid-page;
+	display:none;
 }
 .graphic figcaption{
 	background:#F00;
@@ -554,7 +560,7 @@ body.broadsides svg, body.film svg {
 	position:absolute;
 	top:0; left:0;
 	margin:0;
-	margin:var(--width);
+	margin:var(--margin);
 	*/
 	padding:0;
 	width:var(--innerwidth); height:var(--innerheight);

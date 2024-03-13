@@ -28,15 +28,5 @@
 		"rate": 44100,
 		"type": "mp3",
 		"bitrate": 16
-	},
-	{
-		"id": "clarinetnotes_e",
-		"keywords": "z|reed|clarinet|clarinetnotes",
-		"file": "clarinetnotes_e.mp3",
-		"duration": 14.529002,
-		"nchannels": 2,
-		"rate": 44100,
-		"type": "mp3",
-		"bitrate": 16
 	}
 ]

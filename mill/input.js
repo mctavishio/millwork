@@ -85,51 +85,16 @@ let input =
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
-		},
-		{
-			"id": "clarinetnotes_e",
-			"keywords": "z|reed|clarinet|clarinetnotes",
-			"file": "clarinetnotes_e.mp3",
-			"duration": 14.529002,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
 		}
 	],
 	"score": [
 		{
-			"gain": 0.6,
+			"gain": 0.5,
 			"padmin": 0,
 			"padmax": 100,
 			"start": 0,
 			"end": 0.5,
-			"nthreads": 6,
-			"list": [
-				{
-					"id": "373178__samulis__f-horn-muted-sustain-g4-mohorn_mute_g3_v1_1",
-					"weight": 1,
-					"chord": 0
-				},
-				{
-					"id": "373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1",
-					"weight": 1,
-					"chord": 0
-				},
-				{
-					"id": "373253__samulis__f-horn-sustain-a3-mohorn_sus_a2_v2_1",
-					"weight": 1,
-					"chord": 0
-				}
-			]
-		},
-		{
-			"gain": 0.6,
-			"padmin": 0,
-			"padmax": 100,
-			"start": 0.2,
-			"end": 0.4,
-			"nthreads": 2,
+			"nthreads": 4,
 			"list": [
 				{
 					"id": "373178__samulis__f-horn-muted-sustain-g4-mohorn_mute_g3_v1_1",
@@ -151,13 +116,23 @@ let input =
 		{
 			"gain": 0.5,
 			"padmin": 0,
-			"padmax": 300,
+			"padmax": 100,
 			"start": 0.2,
-			"end": 0.3,
-			"nthreads": 3,
+			"end": 0.4,
+			"nthreads": 2,
 			"list": [
 				{
-					"id": "clarinetnotes_e",
+					"id": "373178__samulis__f-horn-muted-sustain-g4-mohorn_mute_g3_v1_1",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "373253__samulis__f-horn-sustain-a3-mohorn_sus_a2_v2_1",
 					"weight": 1,
 					"chord": 0
 				}
@@ -229,17 +204,15 @@ let input =
 			]
 		}
 	],
-	"nx": 3,
-	"ny": 3,
+	"nx": 2,
+	"ny": 2,
 	"nz": 2,
 	"xgrid": [
 		0,
-		0.5,
 		1
 	],
 	"ygrid": [
 		0,
-		0.5,
 		1
 	],
 	"pigments": {
@@ -408,7 +381,7 @@ let input =
 	"bookinfo": {
 		"sequencetitle": "turbulence",
 		"title": "turbulence",
-		"subtitle": "Sun Mar 10 2024",
+		"subtitle": "Wed Mar 13 2024",
 		"description": "algorithmic sound & drawings",
 		"rooturl": "https://turbulence.work",
 		"authorurl": "https://mctavish.work/",
@@ -440,7 +413,7 @@ let input =
 	"postcardinfo": {
 		"sequencetitle": "turbulence",
 		"title": "turbulence",
-		"subtitle": "Sun Mar 10 2024",
+		"subtitle": "Wed Mar 13 2024",
 		"description": "algorithmic sound & drawings",
 		"rooturl": "https://turbulence.work",
 		"authorurl": "https://mctavish.work/",
@@ -473,7 +446,7 @@ let input =
 	"coverinfo": {
 		"sequencetitle": "turbulence",
 		"title": "turbulence",
-		"subtitle": "Sun Mar 10 2024",
+		"subtitle": "Wed Mar 13 2024",
 		"description": "algorithmic sound & drawings",
 		"rooturl": "https://turbulence.work",
 		"authorurl": "https://mctavish.work/",
@@ -505,7 +478,7 @@ let input =
 	"film9x9info": {
 		"sequencetitle": "turbulence",
 		"title": "turbulence",
-		"subtitle": "Sun Mar 10 2024",
+		"subtitle": "Wed Mar 13 2024",
 		"description": "algorithmic sound & drawings",
 		"rooturl": "https://turbulence.work",
 		"authorurl": "https://mctavish.work/",
@@ -538,7 +511,7 @@ let input =
 	"film16x9info": {
 		"sequencetitle": "turbulence",
 		"title": "turbulence",
-		"subtitle": "Sun Mar 10 2024",
+		"subtitle": "Wed Mar 13 2024",
 		"description": "algorithmic sound & drawings",
 		"rooturl": "https://turbulence.work",
 		"authorurl": "https://mctavish.work/",

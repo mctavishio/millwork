@@ -5,7 +5,7 @@ const vowels = "aeiou".split("");
 let letters = wordsAll[0].words;
 let ln = letters.length;
 wordsAll.filter(list=>list.n>1).forEach( list=> {
-	[...Array(20).keys()].forEach(x => {
+	[...Array(10).keys()].forEach(x => {
 		let newword = [...Array(list.n).keys()].reduce( (acc,j) => {
 			return acc + letters[tools.randominteger(0,ln)];
 		}, "");

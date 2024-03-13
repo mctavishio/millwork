@@ -165,8 +165,8 @@ const allcolors = colorweights.flatMap(wx=>{
 	return [...new Array(wx[1]).keys()].map( w=>wx[0] );
 });
 
-const nx = 3;
-const ny = 3;
+const nx = 2;
+const ny = 2;
 //nz = nlayers
 const nz = 2;
 
@@ -217,17 +217,16 @@ const horn = sounddata.filter(f=>f.keywords.includes("horn")).map(f=> {
 const reeds = sounddata.filter(f=>f.keywords.includes("reed")).map(f=> {
 	return {id:f.id, weight:1, chord:0}
 });  
-/*
-const hornfray = sounddata.filter(f=>f.keywords.includes("horn")).map(f=> {
+
+const hornall = sounddata.filter(f=>f.keywords.includes("horn")).map(f=> {
 	return {id:f.id, weight:1, chord:0}
 });  
-*/
+
 
 const score = [
-	{gain:0.6,padmin:0,padmax:100,start:0,end:0.5,nthreads:6,list:horn},
-	{gain:0.6,padmin:0,padmax:100,start:0.2,end:0.4,nthreads:2,list:horn},
+	{gain:0.5,padmin:0,padmax:100,start:0,end:0.5,nthreads:4,list:horn},
+	{gain:0.5,padmin:0,padmax:100,start:0.2,end:0.4,nthreads:2,list:hornall},
 	//{gain:0.5,padmin:10,padmax:200,start:0.4,end:0.5,nthreads:2,list:reeds},
-	{gain:0.5,padmin:0,padmax:300,start:0.2,end:0.3,nthreads:3,list:clarinet_e},
 	{gain:0.5,padmin:0,padmax:80,start:0.5,end:0.9,nthreads:3,list:horn},
 	{gain:0.5,padmin:10,padmax:200,start:0.6,end:0.8,nthreads:4,list:hornfray},
 	{gain:0.5,padmin:0,padmax:400,start:0.7,end:1.0,nthreads:3,list:horn},

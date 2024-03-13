@@ -55,7 +55,8 @@ let count=0;
 			let color = allcolors[tools.randominteger(0,allcolors.length)];
 			++e;++count;
 			elements[z].push({b:[], tag:"line", role:"vline", x,y,z,e,n:count, cx:xgrid[x], cy:ygrid[y], so:1.0, fo:0.0, strokecolor:color, fillcolor:color});
-			color = allcolors[tools.randominteger(0,allcolors.length)];
+			//color = allcolors[tools.randominteger(0,allcolors.length)];
+			color = [...corecolors,...spicecolors][y%(corecolors.length+spicecolors.length)];
 			//if(z===nz) {color=pigments.warmblack}
 			++e;++count;
 			elements[z].push({tag:"rect",role:"rect",b:[],n:count,block:0,x,y,z,e,cx:0,cy:0,w:1,h:1,sw:0.01,sf:0,sd:4,so:1,fo:0,strokecolor:color,fillcolor:pigments.warmlightwhite});
@@ -68,7 +69,7 @@ let count=0;
 			
 			color = allcolors[tools.randominteger(0,allcolors.length)];
 			++e;++count;
-			elements[z].push({b:[], tag:"circle", role:"fcircle", x,y,z,e, n:count, cx:0.5, cy:0.5, so:0.0, fo:1.0, strokecolor:color, fillcolor:color}); 
+			elements[z].push({b:[], tag:"circle", role:"scircle", x,y,z,e, n:count, cx:0.5, cy:0.5, so:0.0, fo:1.0, strokecolor:color, fillcolor:color}); 
 			
 			color = allcolors[tools.randominteger(0,allcolors.length)];
 			//if(z===nz) {color=pigments.warmblack}
