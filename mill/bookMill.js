@@ -45,7 +45,7 @@ const fonts = ["narratorfont","zerofont","riderfont","archivefont","scribefont"]
 const getfont  = () => {
 	return `var(--${fonts[tools.randominteger(0,fonts.length)]})`;
 }
-const fontweights = [200,300,400,500,500,500,600,600,600,600,700,700,700,700,700,800,800,800,800,800,900,900,900,900,900]
+const fontweights = [200,300,400,500,500,500,600,600,600,600,700,700,700,700,700,800,800,800,800,800,800,800,900,900,900,900,900,900]
 const getfontweight = () => {
 	return fontweights[tools.randominteger(0,fontweights.length)];
 }
@@ -111,6 +111,14 @@ let head = `
 		--height:${height};
 		--innerwidth: ${innerwidth};
 		--innerheight: ${innerheight};
+		--color1: var(--warmlightwhite);
+		--color2: var(--warmblack);
+		--color3: var(--gray);
+		--color4: var(--warmlightgray);
+		--spicecolor1: var(--yellow);
+		--spicecolor2: var(--red);
+		--spicecolor3: var(--warmlightgray);
+		--spicecolor4: var(--blue);
 	}
 	body {
 		background-color: var(--corecolor);

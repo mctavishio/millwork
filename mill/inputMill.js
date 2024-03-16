@@ -1,7 +1,5 @@
 const fs = require("fs"); 
 const pigments = require("./pigments.js").pigments;
-//const colorsets = require("./pigments.js").colorsets;
-//const rawcolorsets = require("./pigments.js").rawcolorsets;
 const tools = require("./tools.js");
 console.log(process.argv);
 let args = process.argv;
@@ -94,11 +92,35 @@ let postcardinfo = {
 	cssstyles: "", 
 };
 
+let picture8x8info = {
+	sequencetitle, title, subtitle, description, rooturl,
+	authorurl, author, copyright,
+	isbn, publisher,
+	bodyclasses: ["broadsides", "notext"],
+	ntickstitle: 1,
+	nticks: 24,
+	fps: 1,
+	sections: [],
+	poemids: [],
+	bookunits: "in",
+	width: 8,
+	height: 8,
+	margin: 0.5,
+	guttermargin: 0.5,
+	bleed: 0.125,
+	spine: 0.322,
+	pixelsperunit: 120,
+	svgwidth: 8*120,
+	svgheight: 8*120,
+	captionheight: 1,
+	cssstyles: "", 
+};
+
 let coverinfo = {
 	sequencetitle, title, subtitle, description, rooturl,
 	authorurl, author, copyright,
 	isbn, publisher,
-	bodyclasses: ["illustratedbook"],
+	bodyclasses: ["film", "notext"],
 	ntickstitle: 1,
 	fps: 1,
 	nticks: 60,
@@ -106,8 +128,8 @@ let coverinfo = {
 	poemids: [],
 	bookunits: "in",
 	//(width*2+bleed*2+spine)*printpixelsperunit
-	width: (8*2+0.125*2+0.322)*72,
-	height: (8*2+0.125*1+0.322)*72,
+	width: (8*2+0.125*2+0.322),
+	height: (8*2+0.125*1+0.322),
 	margin: 0,
 	guttermargin: 0.0,
 	bleed: 0.125,
@@ -146,9 +168,18 @@ let bookinfo = {
 const inputfile = `./input.js`;
 
 const fps = 24;
-const spicecolors = [pigments.gray, pigments.red, pigments.yellow]; 
-const corecolors = [pigments.warmlightwhite, pigments.warmblack]; 
-//const allcolors = [pigments.warmlightwhite,pigments.warmblack,pigments.yellow,pigments.warmlightwhite,pigments.warmlightwhite,pigments.warmblack,pigments.warmlightwhite,pigments.warmblack];
+const corecolors = [pigments.warmlightwhite, pigments.warmblack, pigments.gray]; 
+const spicecolors = [pigments.red, pigments.yellow, pigments.lightgray]; 
+const allcolors = [...corecolors,...spicecolors];
+const colorweights = [
+	["var(--color1)",10],
+	["var(--color2)",8],
+	["var(--color3)",2],
+	["var(--spicecolor1)",2],
+	["var(--spicecolor2)",4],
+	["var(--spicecolor3)",0],
+];
+/*
 const colorweights = [
 	[pigments.warmlightwhite,12],
 	[pigments.warmwhite,0],
@@ -160,8 +191,8 @@ const colorweights = [
 	[pigments.yellow,2],
 	[pigments.blue,0],
 ];
-
-const allcolors = colorweights.flatMap(wx=>{
+*/
+const weightedcolors = colorweights.flatMap(wx=>{
 	return [...new Array(wx[1]).keys()].map( w=>wx[0] );
 });
 
@@ -190,25 +221,12 @@ const chords = [
 //console.log(`chords[1] = ${JSON.stringify(chords[1])}`);
 const sounddata = require("./rawSoundFiles.js");
 //{id: "accordion", keywords:"accordion", file: "accordion.mp3", duration:17.820000, nchannels:2, rate:44100, type:"mp3", bitrate:16},
-//373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1
 /*
 const horn = sounddata.filter(f=>f.id.includes("samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1")).map(f=> {
 	return {id:f.id, weight:1, chord:0}
 });  
 */
 const hornfray = sounddata.filter(f=>f.id.includes("samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1")).map(f=> {
-	return {id:f.id, weight:1, chord:1}
-});  
-const clarinet_e = sounddata.filter(f=>f.id.includes("clarinetnotes_e")).map(f=> {
-	return {id:f.id, weight:1, chord:0}
-});  
-const clarinet_d = sounddata.filter(f=>f.id.includes("clarinetnotes_d")).map(f=> {
-	return {id:f.id, weight:1, chord:0}
-});  
-const clarinet_d_fray = sounddata.filter(f=>f.id.includes("clarinetnotes_d")).map(f=> {
-	return {id:f.id, weight:1, chord:0}
-});  
-const clarinet_e_fray = sounddata.filter(f=>f.id.includes("clarinetnotes_e")).map(f=> {
 	return {id:f.id, weight:1, chord:1}
 });  
 const horn = sounddata.filter(f=>f.keywords.includes("horn")).map(f=> {
@@ -218,18 +236,12 @@ const reeds = sounddata.filter(f=>f.keywords.includes("reed")).map(f=> {
 	return {id:f.id, weight:1, chord:0}
 });  
 
-const hornall = sounddata.filter(f=>f.keywords.includes("horn")).map(f=> {
-	return {id:f.id, weight:1, chord:0}
-});  
-
 
 const score = [
-	{gain:0.5,padmin:0,padmax:100,start:0,end:0.5,nthreads:4,list:horn},
-	{gain:0.5,padmin:0,padmax:100,start:0.2,end:0.4,nthreads:2,list:hornall},
-	//{gain:0.5,padmin:10,padmax:200,start:0.4,end:0.5,nthreads:2,list:reeds},
-	{gain:0.5,padmin:0,padmax:80,start:0.5,end:0.9,nthreads:3,list:horn},
-	{gain:0.5,padmin:10,padmax:200,start:0.6,end:0.8,nthreads:4,list:hornfray},
-	{gain:0.5,padmin:0,padmax:400,start:0.7,end:1.0,nthreads:3,list:horn},
+	{gain:0.4,padmin:0,padmax:100,start:0,end:1.0,nthreads:4,list:horn},
+	{gain:0.4,padmin:0,padmax:400,start:0.7,end:1.0,nthreads:3,list:horn},
+	{gain:0.4,padmin:10,padmax:200,start:0.4,end:0.5,nthreads:2,list:reeds},
+	{gain:0.4,padmin:10,padmax:200,start:0.6,end:0.7,nthreads:4,list:hornfray},
 ];
 let soundids = [];
 const sounds = score.reduce( (acc,part) => {
@@ -254,6 +266,7 @@ const input = {
 	//pigments, colorsets, rawcolorsets,
 	pigments,
 	corecolors, spicecolors, allcolors,
+	weightedcolors,
 	cssstyles: "", 
 	npoems: 80,
 	nstanzas: 3,

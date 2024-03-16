@@ -12,8 +12,8 @@ echo done running Bmill
 
 node poemMill bookinfo
 echo done running poemMill bookinfo
-node zineMill
-echo done running zineMill on bookinfo
+node bookMill
+echo done running bookMill on bookinfo
 
 prince -s css/print.css print.html -o printbook_temp.pdf
 mv print.html printbook.html
@@ -61,8 +61,8 @@ echo done removing front matter from printfilmbook.pdf
 
 node poemMill postcardinfo
 echo done running poemMill postcardinfo
-node zineMill
-echo done running zineMill on postcardinfo
+node bookMill
+echo done running bookMill on postcardinfo
 prince -s css/print.css print.html -o printpostcardbook_temp.pdf
 echo done making postcard book
 pdfseparate printpostcardbook_temp.pdf page%03d.pdf
@@ -76,8 +76,8 @@ echo done removing front matter from printpostcardbook.pdf
 #node filmMill
 node poemMill film9x9info
 echo done running poemMill film9x9info
-node zineMill
-echo done running zineMill on film9x9info
+node bookMill
+echo done running bookMill on film9x9info
 #echo done running filmMill
 prince -s css/print.css print.html -o film9x9.pdf
 echo done making film book
@@ -129,8 +129,8 @@ echo done making film9x9sound
 #node filmMill 16x9
 node poemMill film16x9info
 echo done running poemMill film16x9info
-node zineMill
-echo done running zineMill on film16x9info
+node bookMill
+echo done running bookMill on film16x9info
 
 prince -s css/print.css print.html --raster-dpi=120 --raster-output=frame%04d.png;
 rm frame0000.png

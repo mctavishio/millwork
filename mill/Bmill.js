@@ -42,7 +42,7 @@ console.log(`xgrid=${JSON.stringify(xgrid)}`);
 //x,y,e,z
 let elements = [];
 elements[0] = [
-	{tag:"rect",role:"rect",b:[],n:0,block:0,x:0,y:0,z:0,e:0,cx:0,cy:0,w:1,h:1,sw:0.01,sf:0,sd:4,so:1,fo:1,strokecolor:pigments.warmblack,fillcolor:pigments.warmlightwhite},
+	{tag:"rect",role:"rect",b:[],n:0,block:0,x:0,y:0,z:0,e:0,cx:0,cy:0,w:1,h:1,sw:0.01,sf:0,sd:4,so:1,fo:1,strokecolor:"var(--color2)",fillcolor:"var(--color1)"},
 ];
 let count=0;
 [...new Array(nz).keys()].map(z=>z+1).forEach( z=> {
@@ -157,10 +157,10 @@ let mult = [...new Array(nz).keys()].map(z=>tools.randominteger(5,9)/10).sort( (
 	[...new Array(nticks).keys()].forEach( t => {
 		B.elements[z].forEach( (el,j) => {
 			let bt = {};
-			let sw = el.role==="scircle" ? tools.randominteger(28,68)/100 : tools.randominteger(4,120)/100;
+			let sw = el.role==="scircle" ? tools.randominteger(8,18)/100 : tools.randominteger(4,120)/100;
 			//let sw = 1.2;
 			let sf = 0;
-			let sd = el.role==="fcircle" ? tools.randominteger(.4,9)/100 : tools.randominteger(.2,9)/100;
+			let sd = el.role==="fcircle" ? tools.randominteger(.4,9)/100 : tools.randominteger(20,90)/100;
 			if(el.tag==="rect" && z===nz) {sw = tools.randominteger(1,9)/100; sf=tools.randominteger(1,280)/10; sd=tools.randominteger(1,40)/10}
 			
 			let r = el.tag==="circle" ? tools.randominteger(4,38)/100 : tools.randominteger(18,60)/100;
