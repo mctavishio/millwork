@@ -1,11 +1,11 @@
 const fs = require("fs"); 
 let args = process.argv;
 console.log(process.argv);
-const poemfile = `./poems.js`;
-const bookfile = `./book.js`;
 const tools = require("./tools.js");
-const poems = require(poemfile);
-const book = require(bookfile);
+const input = require("./input.js");
+const poems = require("./poems.js");
+const book = require("./book.js");
+const millinfo = require("./millinfo.js");
 const w = Number(book.width), h = Number(book.height);
 const m = Number(book.margin);
 const width = book.width+"in";
@@ -17,6 +17,7 @@ const margingutter = book.guttermargin+"in";
 const dt = new Date();
 const timestamp = dt.getTime();
 const datetime = dt.toDateString();
+//const basewhite = [253,253,243];
 const basewhite = [253,253,243];
 const baseblack = [25,25,24];
 const profile = "day";
@@ -26,14 +27,26 @@ const fontops = [0.2,0.3,0.4,0.4,0.4,0.5,0.6,0.7,0.8,0.9,0.9,0.9,1,1,1,1,1,1,1,1
 const getfontop = () => {
 	return fontops[tools.randominteger(0,fontops.length)];
 }
+const getcolor = () => {
+	let colors = [...input.spicecolors,...input.allcolors].map(color=>{
+		return color === "var(--warmlightwhite)" ? "var(--warmblack)" : color;
+	});
+	return colors[tools.randominteger(0,colors.length)];
+}
 const getrgbacolor = () => {
 	return `rgba(${profilecolor[0]},${profilecolor[1]}, ${profilecolor[2]}, ${getfontop()})`;
 }
+/*
 const getbgcolor = () => {
 	let mult = tools.randominteger(80,101)/100;
-	return tools.randominteger(0,10)<2 ? "#ffffff" : `rgba(${profilebg[0]*mult},${profilebg[1]*mult}, ${profilebg[2]*mult}, ${getfontop()})`;
+	return tools.randominteger(0,10)<5 ? "var(--white)": `rgba(${profilebg[0]*mult},${profilebg[1]*mult}, ${profilebg[2]*mult}, ${getfontop()})`;
 }
-const punctuations = ["|||","|.|","=>","<=",".^.","#-#","&&","++","_¶",".ä.","(æ)", "ƶƶƶ", "ǡ", "Ǝ!", "Ʃ", "ò"];
+*/
+const getbgcolor = () => {
+	const bgs = ["var(--white)", "var(--white)", "var(--white)", "var(--warmwhite)", "var(--warmwhite)", "var(--warmwhite)"];
+	return bgs[tools.randominteger(0,bgs.length)];
+}
+const punctuations = ["|||","|.|","=>",".^.","#-#","&&","++","_¶",".ä.","(æ)", "ƶƶƶ", "ǡ", "Ǝ!", "Ʃ", "ò"];
 const getpunctuation  = () => {
 	return punctuations[tools.randominteger(0,punctuations.length)];
 }
@@ -49,21 +62,36 @@ const fontweights = [200,300,400,500,500,500,600,600,600,600,700,700,700,700,700
 const getfontweight = () => {
 	return fontweights[tools.randominteger(0,fontweights.length)];
 }
+
 const markcss = [...Array(20).keys()].reduce( (acc,j) => {
 	acc = acc +  `
 	mark.mark${j} {
 		display: inline-block;
 		font-weight:${getfontweight()};
 		color:${getrgbacolor()};
+		background-color:${getbgcolor()};
 		font-family: ${getfont()}; 
 		text-decoration: ${getdecoration()};
 		text-decoration-color: var(--gray);
-		/* use borders instead */
-		/*text-decoration-thickness: 0.2em;*/
 	}
 	`;
 	return acc;
 }, "");
+
+const borderscss = [...Array(20).keys()].reduce( (acc,j) => {
+	acc = acc +  `
+	mark.borders${j} {
+		display: inline-block;
+		padding-left: 0.2em; padding-right: 0.2em;
+		border-left: solid; border-right: solid;
+		border-radius: 0.5em;
+		border-left-color: ${getcolor()};
+		border-right-color: ${getcolor()};
+	}
+	`;
+	return acc;
+}, "");
+
 let head = `
 <head>
 	<title>${book.title} ::: ${book.dt}</title>
@@ -81,7 +109,7 @@ let head = `
 			"@type": "WebPage",
 			"name": "${book.title}",
 			"breadcrumb": "core text",
-          	"url": "${book.rooturl}/${book.file}.html",
+          	"url": "${book.rooturl}/${millinfo.webinfo}.html",
 			"description": "${book.description}",
 			"datePublished": "${book.datetime}",
           	"image": "/apple-touch-icon.png",
@@ -111,23 +139,25 @@ let head = `
 		--height:${height};
 		--innerwidth: ${innerwidth};
 		--innerheight: ${innerheight};
-		--color1: var(--warmlightwhite);
-		--color2: var(--warmblack);
-		--color3: var(--gray);
-		--color4: var(--warmlightgray);
-		--spicecolor1: var(--yellow);
-		--spicecolor2: var(--red);
-		--spicecolor3: var(--warmlightgray);
-		--spicecolor4: var(--blue);
+		--corecolor0: ${input.corecolors[0]};
+		--corecolor1: ${input.corecolors[1%input.corecolors.length]};
+		--corecolor2: ${input.corecolors[2%input.corecolors.length]};
+		--corecolor3: ${input.corecolors[3%input.corecolors.length]};
+		--corecolor4: ${input.corecolors[4%input.corecolors.length]};
+		--spicecolor0: ${input.spicecolors[0]};
+		--spicecolor1: ${input.spicecolors[1%input.spicecolors.length]};
+		--spicecolor2: ${input.spicecolors[2%input.spicecolors.length]};
+		--spicecolor3: ${input.spicecolors[3%input.spicecolors.length]};
+		--spicecolor4: ${input.spicecolors[4%input.spicecolors.length]};
+	}
+	mark {
+		background-color: var(--white);
 	}
 	body {
 		background-color: var(--corecolor);
 	}
 	main {
 		background-color: var(--corebg);
-	}
-	mark {
-		background-color: var(--white);
 	}
 	ul.dropletter:first-child li:first-child:first-letter {
 	  color: var(--gray);
@@ -139,6 +169,9 @@ let head = `
 	  padding-left: 3px;
 	}
 	${markcss}
+	${borderscss}
+	mark.circle {
+	}
 	@page {
 		--margin:${margin};
 		--width:${width};

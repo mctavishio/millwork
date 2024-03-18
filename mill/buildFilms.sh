@@ -6,79 +6,15 @@ echo $mill
 
 node inputMill.js
 
-ls
 node Bmill.js
 echo done running Bmill
 
-node poemMill bookinfo
-echo done running poemMill bookinfo
-node bookMill
-echo done running bookMill on bookinfo
-
-prince -s css/print.css print.html -o printbook_temp.pdf
-mv print.html printbook.html
-echo done making print book
-pdfseparate printbook_temp.pdf page%03d.pdf
-rm page001.pdf
-rm page002.pdf
-pdfunite page*.pdf printbook.pdf
-rm page*.pdf
-rm printbook_temp.pdf
-echo done removing front matter from printbook.pdf
 #
-sed "s/illustratedbook/broadsides/" printbook.html > printbroadsides.html
-prince -s css/print.css printbroadsides.html -o printbroadsides_temp.pdf
-echo done making broadside book
-pdfseparate printbroadsides_temp.pdf page%03d.pdf
-rm page001.pdf
-rm page002.pdf
-pdfunite page*.pdf printbroadsides.pdf
-rm page*.pdf
-rm printbroadsides_temp.pdf
-echo done removing front matter from printbroadsides.pdf
-
-sed "s/illustratedbook/broadsides notext/" printbook.html > printpicturebook.html
-prince -s css/print.css printpicturebook.html -o printpicturebook_temp.pdf
-echo done making picture book
-pdfseparate printpicturebook_temp.pdf page%03d.pdf
-rm page001.pdf
-rm page002.pdf
-pdfunite page*.pdf printpicturebook.pdf
-rm page*.pdf
-rm printpicturebook_temp.pdf
-echo done removing front matter from printpicturebook.pdf
-
-sed "s/illustratedbook/film notext/" printbook.html > printfilmbook.html
-prince -s css/print.css printfilmbook.html -o printfilmbook_temp.pdf
-echo done making film book
-pdfseparate printfilmbook_temp.pdf page%03d.pdf
-rm page001.pdf
-rm page002.pdf
-pdfunite page*.pdf printfilmbook.pdf
-rm page*.pdf
-rm printfilmbook_temp.pdf
-echo done removing front matter from printfilmbook.pdf
-
-node poemMill postcardinfo
-echo done running poemMill postcardinfo
-node bookMill
-echo done running bookMill on postcardinfo
-prince -s css/print.css print.html -o printpostcardbook_temp.pdf
-echo done making postcard book
-pdfseparate printpostcardbook_temp.pdf page%03d.pdf
-rm page001.pdf
-rm page002.pdf
-pdfunite page*.pdf printpostcardbook.pdf
-rm page*.pdf
-rm printpostcardbook_temp.pdf
-echo done removing front matter from printpostcardbook.pdf
-#
-#node filmMill
+#node filmMill 9x9
 node poemMill film9x9info
 echo done running poemMill film9x9info
 node bookMill
 echo done running bookMill on film9x9info
-#echo done running filmMill
 prince -s css/print.css print.html -o film9x9.pdf
 echo done making film book
 #
@@ -122,8 +58,17 @@ cp frame0818.png poster9x9_0004.png
 ffmpeg -framerate 24 -i frame%04d.png -c:v libx264 -r 24 -pix_fmt yuv420p film9x9.mp4
 rm frame*.png
 echo done making film9x9.mp4
-ffmpeg -i film9x9.mp4 -i tf_02:00_sound.mp3 -map 0:v:0 -map 1:a:0  -c:v copy -c:a aac -b:a 192k film9x9sound.mp4
-echo done making film9x9sound 
+ffmpeg -i film9x9.mp4 -i tf_02:00_sound.mp3 -map 0:v:0 -map 1:a:0  -c:v copy -c:a aac -b:a 192k film9x9_sound.mp4
+
+ffmpeg -ss 00:01:00 -to 00:02:00 -i film9x9.mp4 -c copy film9x9_1min.mp4
+ffmpeg -i film9x9_1min.mp4 -i tf_01:00_sound.mp3 -map 0:v:0 -map 1:a:0  -c:v copy -c:a aac -b:a 192k film9x9_1min_sound.mp4
+ffmpeg -i film9x9_1min_sound.mp4  -c copy -metadata:s:v:0 rotate=90 film9x9_1min_v_sound.mp4
+
+ffmpeg -ss 00:01:00 -to 00:01:15 -i film9x9.mp4 -c copy film9x9_15sec.mp4
+ffmpeg -i film9x9_15sec.mp4 -i tf_00:15_sound.mp3 -map 0:v:0 -map 1:a:0  -c:v copy -c:a aac -b:a 192k film9x9_15sec_sound.mp4
+ffmpeg -i film9x9_15sec_sound.mp4  -c copy -metadata:s:v:0 rotate=90 film9x9_15sec_v_sound.mp4
+
+echo done making film9x9sound films 
 #
 #
 #node filmMill 16x9
@@ -146,7 +91,15 @@ ffmpeg -framerate 24 -i frame%04d.png -c:v libx264 -r 24 -pix_fmt yuv420p film16
 rm frame*.png
 echo done making film16x9.mp4
 ffmpeg -i film16x9.mp4 -i tf_02:00_sound.mp3 -map 0:v:0 -map 1:a:0  -c:v copy -c:a aac -b:a 192k film16x9sound.mp4
-echo done making film16x9sound 
+
+ffmpeg -ss 00:01:00 -to 00:02:00 -i film16x9.mp4 -c copy film16x9_1min.mp4
+ffmpeg -i film16x9_1min.mp4 -i tf_01:00_sound.mp3 -map 0:v:0 -map 1:a:0  -c:v copy -c:a aac -b:a 192k film16x9_1min_sound.mp4
+ffmpeg -i film16x9_1min_sound.mp4  -c copy -metadata:s:v:0 rotate=90 film16x9_1min_v_sound.mp4
+
+ffmpeg -ss 00:01:00 -to 00:01:15 -i film16x9.mp4 -c copy film16x9_15sec.mp4
+ffmpeg -i film16x9_15sec.mp4 -i tf_00:15_sound.mp3 -map 0:v:0 -map 1:a:0  -c:v copy -c:a aac -b:a 192k film16x9_15sec_sound.mp4
+ffmpeg -i film16x9_15sec_sound.mp4  -c copy -metadata:s:v:0 rotate=90 film16x9_15sec_v_sound.mp4
+echo done making film16x9sound films 
 #
 ## with text film
 ##prince -s css/print.css filmtext.html --raster-dpi=120 --raster-output=frame%04d_text.png;
@@ -179,5 +132,5 @@ echo done making film16x9sound
 #echo "open data/$mill/filmtextsound.mp4"
 #echo "bash createFilm.sh"
 #echo gsutil -m cp -r film_file$dt.mp4 gs://clockfactory/
-#
+rm print.html
 echo "|:|"

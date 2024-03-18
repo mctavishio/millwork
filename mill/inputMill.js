@@ -25,7 +25,7 @@ let film16x9info = {
 	authorurl, author, copyright,
 	isbn, publisher,
 	bodyclasses: ["film", "notext"],
-	ntickstitle: 4,
+	ntickstitle: 2,
 	nticks: 60*2,
 	fps: 24,
 	sections: [],
@@ -49,7 +49,7 @@ let film9x9info = {
 	authorurl, author, copyright,
 	isbn, publisher,
 	bodyclasses: ["film", "notext"],
-	ntickstitle: 4,
+	ntickstitle: 2,
 	nticks: 60*2,
 	fps: 24,
 	sections: [],
@@ -96,7 +96,7 @@ let picture8x8info = {
 	sequencetitle, title, subtitle, description, rooturl,
 	authorurl, author, copyright,
 	isbn, publisher,
-	bodyclasses: ["broadsides", "notext"],
+	bodyclasses: ["film", "notext"],
 	ntickstitle: 1,
 	nticks: 24,
 	fps: 1,
@@ -105,8 +105,8 @@ let picture8x8info = {
 	bookunits: "in",
 	width: 8,
 	height: 8,
-	margin: 0.5,
-	guttermargin: 0.5,
+	margin: 0,
+	guttermargin: 0,
 	bleed: 0.125,
 	spine: 0.322,
 	pixelsperunit: 120,
@@ -129,14 +129,14 @@ let coverinfo = {
 	bookunits: "in",
 	//(width*2+bleed*2+spine)*printpixelsperunit
 	width: (8*2+0.125*2+0.322),
-	height: (8*2+0.125*1+0.322),
+	height: (8*1+0.125*2+0.322),
 	margin: 0,
 	guttermargin: 0.0,
 	bleed: 0.125,
 	spine: 0.322,
 	pixelsperunit: 72,
 	svgwidth: (8*2+0.125*2+0.322)*72,
-	svgheight: (8*2+0.125*1+0.322)*72,
+	svgheight: (8*1+0.125*2+0.322)*72,
 	captionheight: 1,
 	cssstyles: "", 
 }
@@ -168,16 +168,20 @@ let bookinfo = {
 const inputfile = `./input.js`;
 
 const fps = 24;
-const corecolors = [pigments.warmlightwhite, pigments.warmblack, pigments.gray]; 
+const corecolors = [pigments.warmblack, pigments.warmlightwhite]; 
 const spicecolors = [pigments.red, pigments.yellow, pigments.lightgray]; 
 const allcolors = [...corecolors,...spicecolors];
 const colorweights = [
-	["var(--color1)",10],
-	["var(--color2)",8],
-	["var(--color3)",2],
+	["var(--corecolor0)",10],
+	["var(--corecolor1)",9],
+	["var(--corecolor2)",0],
+	["var(--corecolor3)",0],
+	["var(--corecolor4)",0],
+	["var(--spicecolor0)",1],
 	["var(--spicecolor1)",2],
-	["var(--spicecolor2)",4],
+	["var(--spicecolor2)",2],
 	["var(--spicecolor3)",0],
+	["var(--spicecolor4)",0],
 ];
 /*
 const colorweights = [
@@ -196,16 +200,16 @@ const weightedcolors = colorweights.flatMap(wx=>{
 	return [...new Array(wx[1]).keys()].map( w=>wx[0] );
 });
 
-const nx = 2;
-const ny = 2;
+const nx = 4;
+const ny = 4;
 //nz = nlayers
-const nz = 2;
+const nz = 3;
 
-const xgrid = [...new Array(nx).keys()].map( j=>Math.floor(100*j/(nx-1))/100 );
-const ygrid = [...new Array(ny).keys()].map( j=>Math.floor(100*j/(ny-1))/100 );
+//const xgrid = [...new Array(nx).keys()].map( j=>Math.floor(100*j/(nx-1))/100 );
+//const ygrid = [...new Array(ny).keys()].map( j=>Math.floor(100*j/(ny-1))/100 );
 //const ygrid = [...new Array(n).keys()].map(j=>tools.randominteger(0,100)/100).sort( (a,b) => { return a - b } );
-//const xgrid = [...new Array(nx).keys()].map( x=>0.5 );
-//const ygrid = [...new Array(ny).keys()].map( y=>0.5 );
+const xgrid = [...new Array(nx).keys()].map( x=>0.5 );
+const ygrid = [...new Array(ny).keys()].map( y=>0.5 );
 //console.log(`inputMill:xgrid=${JSON.stringify(xgrid)}`);
 
 
@@ -232,6 +236,9 @@ const hornfray = sounddata.filter(f=>f.id.includes("samulis__f-horn-sustain-a3-m
 const horn = sounddata.filter(f=>f.keywords.includes("horn")).map(f=> {
 	return {id:f.id, weight:1, chord:0}
 });  
+const brass = sounddata.filter(f=>f.keywords.includes("brass")).map(f=> {
+	return {id:f.id, weight:1, chord:0}
+});  
 const reeds = sounddata.filter(f=>f.keywords.includes("reed")).map(f=> {
 	return {id:f.id, weight:1, chord:0}
 });  
@@ -240,7 +247,7 @@ const reeds = sounddata.filter(f=>f.keywords.includes("reed")).map(f=> {
 const score = [
 	{gain:0.4,padmin:0,padmax:100,start:0,end:1.0,nthreads:4,list:horn},
 	{gain:0.4,padmin:0,padmax:400,start:0.7,end:1.0,nthreads:3,list:horn},
-	{gain:0.4,padmin:10,padmax:200,start:0.4,end:0.5,nthreads:2,list:reeds},
+	{gain:0.4,padmin:10,padmax:200,start:0.4,end:0.5,nthreads:2,list:brass},
 	{gain:0.4,padmin:10,padmax:200,start:0.6,end:0.7,nthreads:4,list:hornfray},
 ];
 let soundids = [];
@@ -274,6 +281,7 @@ const input = {
 	nchars: 48,
 	weights: [0,18,22,22,30,24,18,16,14,12,6,4,3,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
 	bookinfo,postcardinfo,coverinfo,
+	picture8x8info,
 	film9x9info,film16x9info,
 };
 

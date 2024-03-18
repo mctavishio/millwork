@@ -323,18 +323,18 @@ body.broadsides article > div.flex {
 	position: absolute;
 	top:0; left:0;
 	display: flex;
-    width: var(--width);
-    height: var(--height);
+    width: var(--innerwidth);
+    height: var(--innerheight);
 	align-items: center;
 	justify-content: center;
 	overflow: clip;
 }
 body.illustratedbook article > div.flex {
 	position: absolute;
-	top:10%; left:0;
+	top:0; left:0;
 	display: flex;
-	width:100%;
-	height:80%;
+    width: var(--innerwidth);
+    height: var(--innerheight);
 	align-items: center;
 	/*justify-content: center;*/
 	justify-content: left;
@@ -683,11 +683,12 @@ article a::after {
 }
 ul {
 	margin:0;
- 	margin-bottom:1em;
+ 	margin-top:2em;
  	padding:0;
 }
 ul li {
 	list-style-type: none;
+	line-height: 1.5em;
 	display: block;
 	font-size: 1em;
 	color: var(--warmblack);

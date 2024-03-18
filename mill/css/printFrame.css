@@ -255,18 +255,18 @@ body.broadsides article > div.flex {
 	position: absolute;
 	top:0; left:0;
 	display: flex;
-    width: var(--width);
-    height: var(--height);
+    width: var(--innerwidth);
+    height: var(--innerheight);
 	align-items: center;
 	justify-content: center;
 	overflow: clip;
 }
 body.illustratedbook article > div.flex {
 	position: absolute;
-	top:10%; left:0;
+	top:0; left:0;
 	display: flex;
-	width:100%;
-	height:80%;
+    width: var(--innerwidth);
+    height: var(--innerheight);
 	align-items: center;
 	/*justify-content: center;*/
 	justify-content: left;

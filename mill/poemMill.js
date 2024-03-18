@@ -15,7 +15,17 @@ const fps = Math.min(book.fps,B.fps);
 
 const markup = str => {
 	let words = str.split(" ").map( (w,j) => {
-		return tools.randominteger(0,30)<2 ? `<mark class="mark${tools.randominteger(0,20)} word${j}">${w}</mark>` : w;
+		let markup = w;
+		if(tools.randominteger(0,30)<2) {
+			let markclass = `mark${tools.randominteger(0,20)} word${j}`;
+			let bordersclass = tools.randominteger(0,40)<2 ? `borders${tools.randominteger(0,20)}` : ""; 
+			markup = `<mark class="${markclass} ${bordersclass}">${w}</mark>`;
+		}
+		else if(tools.randominteger(0,50)<2) {
+			let bordersclass = `borders${tools.randominteger(0,20)}`; 
+			markup = `<mark class="${bordersclass} word${j}">${w}</mark>`;
+		}
+		return markup;
 	});
 	return words.join(" ");
 };
@@ -46,7 +56,7 @@ let poemsinfo = [...new Array(nticks).keys()].map( j => {
 	//let textarray = "left throng city depot arrived alone worn suitcase sandwich lukewarm coffee thermos tepid brown liquid greasy paper rusted texaco station folded map urgent mission fix the system repair reclaim rebuild reweave restore prairie meadow sequestration".split(" ");
 	let textarray = textLists.reduce( (acc,list) => {
 		return acc + list.join(" ");
-	}, "").split(" ").filter( word => word!=="prostitutes" && word!==" ");
+	}, " ").split(" ").filter( word => word!=="prostitutes" && word!==" " && word.length < 12);
 	let captiontext = [0,1,2].map(j=>textarray[tools.randominteger(0,textarray.length)]).join(" :|: ");
 	let title = [0].map(j=>textarray[tools.randominteger(0,textarray.length)]).join(" ");
 	// console.log(textarray);
