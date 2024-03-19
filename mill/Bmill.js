@@ -43,13 +43,14 @@ console.log(`xgrid=${JSON.stringify(xgrid)}`);
 //x,y,e,z
 let elements = [];
 elements[0] = [
-	{tag:"rect",role:"rect",b:[],n:0,block:0,x:0,y:0,z:0,e:0,cx:0,cy:0,w:1,h:1,sw:0.2,sf:0,sd:4,so:1,fo:1,strokecolor:"var(--corecolor1)",fillcolor:"var(--corecolor0)"},
+	{tag:"rect",role:"rect",b:[],n:0,block:0,x:0,y:0,z:0,e:0,cx:0,cy:0,w:1,h:1,sw:0.2,sf:0,sd:4,so:1,fo:1,strokecolor:"var(--warmblack)",fillcolor:"var(--warmlightwhite)"},
 ];
 let count=0;
 [...new Array(nz).keys()].map(z=>z+1).forEach( z=> {
 	//let color = weightedcolors[tools.randominteger(0,weightedcolors.length)];
 	let e = -1;
 	elements[z] = [];
+	let r = 0.5;
 	[...new Array(nx).keys()].forEach( x=> {
 		[...new Array(ny).keys()].forEach( y=> {
 			let cx = xgrid[x];
@@ -61,6 +62,7 @@ let count=0;
 
 			color = "var(--corecolor0)"; 
 			++e;++count;
+			r = Math.min(r*0.9,0.2);
 			elements[z].push({b:[], tag:"circle", role:"fcircle", x,y,z,e, n:count, cx:0.5, cy:0.5, r:0.4, strokecolor:color, fillcolor:color}); 
 
 			color = "var(--corecolor1)"; 
@@ -69,6 +71,7 @@ let count=0;
 
 			color = "var(--corecolor0)"; 
 			++e;++count;
+			r = Math.min(r*0.9,0.2);
 			elements[z].push({b:[], tag:"circle", role:"fcircle", x,y,z,e, n:count, cx:0.5, cy:0.5, r:0.3, strokecolor:color, fillcolor:color}); 
 
 		});
@@ -85,9 +88,10 @@ let count=0;
 	++e;++count;
 	elements[z].push({tag:"rect",role:"rect",b:[],n:count,block:0,x:0,y:0,z:0,e,cx:0,cy:0,w:1,h:1,sw:0.2,sf:0,sd:.5,so:1,fo:0,strokecolor:color, fillcolor:color});
 
-	color = "var(--spicecolor1)"; 
+	color = "var(--spicecolor0)"; 
 	++e;++count;
-	elements[z].push({b:[], tag:"circle", role:"fcircle", x:0,y:0,z:0,e, n:count, cx:0.5, cy:0.5, r:0.2, strokecolor:color, fillcolor:color}); 
+	elements[z].push({b:[], tag:"circle", role:"fcircle", x:0,y:0,z:0,e, n:count, cx:0.5, cy:0.5, r:0.14, strokecolor:color, fillcolor:color}); 
+
 });
 
 let B = {
@@ -144,13 +148,13 @@ let mult = [...new Array(nz).keys()].map(z=>tools.randominteger(2,10)/10).sort( 
 			let sf = 0;
 			let sd = tools.randominteger(0.4,20)/100;
 			if(el.tag==="rect") {
-				sw = tools.randominteger(4,16)/100; 
+				sw = tools.randominteger(6,19)/100; 
 				sf = tools.randominteger(0,160)/100; 
 				sd = tools.randominteger(18,198)/100
 			}
 
 			let r = tools.randominteger(8,48)/100;
-			if("r" in el) r=el.r*tools.randominteger(48,110)/100;
+			if("r" in el) r=el.r*tools.randominteger(68,110)/100;
 
 			if( t===0 || ischange() || t===nticks-1 ) {
 				//bt = { sw:sw, sd:sd, sf:sf, r:r*mult[z-1] };

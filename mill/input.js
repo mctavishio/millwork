@@ -1,6 +1,6 @@
 let input =
 	{
-	"sequencetitle": "turbulence",
+	"sequencetitle": "trans | figure",
 	"duration": 2,
 	"nticks": 120,
 	"fps": 24,
@@ -362,7 +362,7 @@ let input =
 			"gain": 0.4,
 			"padmin": 10,
 			"padmax": 200,
-			"start": 0.4,
+			"start": 0.2,
 			"end": 0.5,
 			"nthreads": 2,
 			"list": [
@@ -494,11 +494,11 @@ let input =
 			]
 		},
 		{
-			"gain": 0.4,
+			"gain": 0.3,
 			"padmin": 10,
 			"padmax": 200,
-			"start": 0.6,
-			"end": 0.7,
+			"start": 0.5,
+			"end": 0.6,
 			"nthreads": 4,
 			"list": [
 				{
@@ -525,7 +525,7 @@ let input =
 		0.5
 	],
 	"pigments": {
-		"red": "#AA0000",
+		"red": "#AE0501",
 		"yellow": "#ffcc00",
 		"blue": "#006699",
 		"bluegreen": "#006969",
@@ -599,14 +599,12 @@ let input =
 		"#fdfdf3"
 	],
 	"spicecolors": [
-		"#AA0000",
 		"#ffcc00",
 		"#888888"
 	],
 	"allcolors": [
 		"#191918",
 		"#fdfdf3",
-		"#AA0000",
 		"#ffcc00",
 		"#888888"
 	],
@@ -693,11 +691,11 @@ let input =
 		1
 	],
 	"bookinfo": {
-		"sequencetitle": "turbulence",
-		"title": "turbulence",
-		"subtitle": "Sun Mar 17 2024",
+		"sequencetitle": "trans | figure",
+		"title": "transfigure",
+		"subtitle": "Tue Mar 19 2024",
 		"description": "algorithmic sound & drawings",
-		"rooturl": "https://turbulence.work",
+		"rooturl": "https://transfigure.work",
 		"authorurl": "https://mctavish.work/",
 		"author": "mctavish",
 		"copyright": "Copyright ©2024 mctavish<br/>",
@@ -725,11 +723,11 @@ let input =
 		"cssstyles": ""
 	},
 	"postcardinfo": {
-		"sequencetitle": "turbulence",
-		"title": "turbulence",
-		"subtitle": "Sun Mar 17 2024",
+		"sequencetitle": "trans | figure",
+		"title": "transfigure",
+		"subtitle": "Tue Mar 19 2024",
 		"description": "algorithmic sound & drawings",
-		"rooturl": "https://turbulence.work",
+		"rooturl": "https://transfigure.work",
 		"authorurl": "https://mctavish.work/",
 		"author": "mctavish",
 		"copyright": "Copyright ©2024 mctavish<br/>",
@@ -758,11 +756,11 @@ let input =
 		"cssstyles": ""
 	},
 	"coverinfo": {
-		"sequencetitle": "turbulence",
-		"title": "turbulence",
-		"subtitle": "Sun Mar 17 2024",
+		"sequencetitle": "trans | figure",
+		"title": "transfigure",
+		"subtitle": "Tue Mar 19 2024",
 		"description": "algorithmic sound & drawings",
-		"rooturl": "https://turbulence.work",
+		"rooturl": "https://transfigure.work",
 		"authorurl": "https://mctavish.work/",
 		"author": "mctavish",
 		"copyright": "Copyright ©2024 mctavish<br/>",
@@ -779,7 +777,7 @@ let input =
 		"poemids": [],
 		"bookunits": "in",
 		"width": 16.572,
-		"height": 8.572,
+		"height": 8.25,
 		"margin": 0,
 		"guttermargin": 0,
 		"bleed": 0.125,
@@ -791,11 +789,11 @@ let input =
 		"cssstyles": ""
 	},
 	"picture8x8info": {
-		"sequencetitle": "turbulence",
-		"title": "turbulence",
-		"subtitle": "Sun Mar 17 2024",
+		"sequencetitle": "trans | figure",
+		"title": "transfigure",
+		"subtitle": "Tue Mar 19 2024",
 		"description": "algorithmic sound & drawings",
-		"rooturl": "https://turbulence.work",
+		"rooturl": "https://transfigure.work",
 		"authorurl": "https://mctavish.work/",
 		"author": "mctavish",
 		"copyright": "Copyright ©2024 mctavish<br/>",
@@ -823,12 +821,44 @@ let input =
 		"captionheight": 1,
 		"cssstyles": ""
 	},
-	"film9x9info": {
-		"sequencetitle": "turbulence",
-		"title": "turbulence",
-		"subtitle": "Sun Mar 17 2024",
+	"picturebookinfo": {
+		"sequencetitle": "trans | figure",
+		"title": "transfigure",
+		"subtitle": "Tue Mar 19 2024",
 		"description": "algorithmic sound & drawings",
-		"rooturl": "https://turbulence.work",
+		"rooturl": "https://transfigure.work",
+		"authorurl": "https://mctavish.work/",
+		"author": "mctavish",
+		"copyright": "Copyright ©2024 mctavish<br/>",
+		"isbn": "ISBN: 00000<br/>",
+		"publisher": ". . .",
+		"bodyclasses": [
+			"film notext"
+		],
+		"ntickstitle": 1,
+		"fps": 1,
+		"nticks": 120,
+		"sections": [],
+		"poemids": [],
+		"bookunits": "in",
+		"width": 8,
+		"height": 8,
+		"margin": 1,
+		"guttermargin": 1,
+		"bleed": 0.125,
+		"spine": 0.322,
+		"pixelsperunit": 72,
+		"svgwidth": 576,
+		"svgheight": 576,
+		"captionheight": 1,
+		"cssstyles": ""
+	},
+	"film9x9info": {
+		"sequencetitle": "trans | figure",
+		"title": "transfigure",
+		"subtitle": "Tue Mar 19 2024",
+		"description": "algorithmic sound & drawings",
+		"rooturl": "https://transfigure.work",
 		"authorurl": "https://mctavish.work/",
 		"author": "mctavish",
 		"copyright": "Copyright ©2024 mctavish<br/>",
@@ -857,11 +887,11 @@ let input =
 		"cssstyles": ""
 	},
 	"film16x9info": {
-		"sequencetitle": "turbulence",
-		"title": "turbulence",
-		"subtitle": "Sun Mar 17 2024",
+		"sequencetitle": "trans | figure",
+		"title": "transfigure",
+		"subtitle": "Tue Mar 19 2024",
 		"description": "algorithmic sound & drawings",
-		"rooturl": "https://turbulence.work",
+		"rooturl": "https://transfigure.work",
 		"authorurl": "https://mctavish.work/",
 		"author": "mctavish",
 		"copyright": "Copyright ©2024 mctavish<br/>",

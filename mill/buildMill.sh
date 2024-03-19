@@ -1,6 +1,6 @@
 #!/bin/bash
 #mill=$1
-gsdir="millwork"
+gsdir="bindery"
 ts=$(date +"%s")
 dt=$(date +"%Y%m%d%H%M%S")
 mill=mill$dt
@@ -94,11 +94,11 @@ echo "module.exports = { webpage:'printbook${mill:4}.html', dt:'$dt', datetime:'
 node Bmill.js
 echo done running Bmill
 
+#printbook
 node poemMill bookinfo
 echo done running poemMill bookinfo
 node bookMill
 echo done running bookMill on bookinfo
-
 prince -s css/print.css print.html -o printbook_temp.pdf
 mv print.html printbook.html
 echo done making print book
@@ -109,11 +109,29 @@ pdfunite page*.pdf printbook.pdf
 rm page*.pdf
 rm printbook_temp.pdf
 echo done removing front matter from printbook.pdf
+
+#picturebook
+node poemMill picturebookinfo 
+echo done running poemMill picturebookinfo 
+node bookMill
+echo done running bookMill on picturebookinfo 
+prince -s css/print.css print.html -o printbook_temp.pdf
+mv print.html printpicturebook.html
+echo done making print book
+pdfseparate printbook_temp.pdf page%03d.pdf
+rm page001.pdf
+rm page002.pdf
+pdfunite page*.pdf printpicturebook.pdf
+rm page*.pdf
+rm printbook_temp.pdf
+echo done removing front matter from printpicturebook.pdf
+
 #
 # change colors :::
 #sed "s/spicecolor2: var(--red)/spicecolor2: var(--yellow)/" printbook.html > printbook2.html
 #
-sed "s/illustratedbook/broadsides/" printbook.html > printbroadsides.html
+
+sed "s/film notext/broadsides withtext/" printpicturebook.html > printbroadsides.html
 prince -s css/print.css printbroadsides.html -o printbroadsides_temp.pdf
 echo done making broadside book
 pdfseparate printbroadsides_temp.pdf page%03d.pdf
@@ -124,27 +142,6 @@ rm page*.pdf
 rm printbroadsides_temp.pdf
 echo done removing front matter from printbroadsides.pdf
 
-sed "s/illustratedbook/broadsides notext/" printbook.html > printpicturebook.html
-prince -s css/print.css printpicturebook.html -o printpicturebook_temp.pdf
-echo done making picture book
-pdfseparate printpicturebook_temp.pdf page%03d.pdf
-rm page001.pdf
-rm page002.pdf
-pdfunite page*.pdf printpicturebook.pdf
-rm page*.pdf
-rm printpicturebook_temp.pdf
-echo done removing front matter from printpicturebook.pdf
-
-sed "s/illustratedbook/film notext/" printbook.html > printfilmbook.html
-prince -s css/print.css printfilmbook.html -o printfilmbook_temp.pdf
-echo done making film book
-pdfseparate printfilmbook_temp.pdf page%03d.pdf
-rm page001.pdf
-rm page002.pdf
-pdfunite page*.pdf printfilmbook.pdf
-rm page*.pdf
-rm printfilmbook_temp.pdf
-echo done removing front matter from printfilmbook.pdf
 #postcards
 node poemMill postcardinfo
 echo done running poemMill postcardinfo
@@ -298,7 +295,7 @@ echo done making film16x9sound films
 #echo "done"
 #echo "|:|"
 #cd ../..
-#echo gsutil -m cp -r data/$mill gs://clockfactory/
+#echo gsutil -m cp -r data/$mill gs://bindery/
 #echo "cd data/$mill"
 #echo open data/$mill/printbook.pdf
 #echo open data/$mill/printbroadsides.pdf
@@ -307,8 +304,9 @@ echo done making film16x9sound films
 #echo "open data/$mill/filmsound.mp4"
 #echo "open data/$mill/filmtextsound.mp4"
 #echo "bash createFilm.sh"
-#echo gsutil -m cp -r film_file$dt.mp4 gs://clockfactory/
+#echo gsutil -m cp -r film_file$dt.mp4 gs://bindery/
 rm print.html
+rm Bfilm.js
 
 sed "s/figure class=\"frame\"/figure class=\"\"/" printbook.html > printbook_temp.html
 mv printbook_temp.html printbook.html

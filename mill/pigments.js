@@ -156,7 +156,8 @@ const rawcolorsets = [
 ];
 const pigments = {
 	//red: "#8F0000", /*panatone:"7621 C" rgb(rgb(143,0,0)), cmyk(0,100,100,44), hsl(0,100%,28%)*/
-	red: "#AA0000", /*cmyk(0%, 100%, 100%, 33.3%)*/
+	//red: "#AA0000", /*cmyk(0%, 100%, 100%, 33.3%)*/
+	red: "#AE0501",
 	yellow: "#ffcc00",/*rgb(255,204,0), hsl(48,100%,50%), cmyk(0,20,100,0) */
 	//yellow: "#ffde00", //cmyk(0%, 13%, 100%, 0%)
 	blue: "#006699", /*rgb(0,102,153), hsl(200,100%,30%), cmyk(100,33,0,40) */

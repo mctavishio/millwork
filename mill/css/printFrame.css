@@ -321,7 +321,8 @@ body.illustratedbook article header {
 }
 body.broadsides article header {
 	z-index: 400;
-	padding: 2em;
+	padding: 1em;
+	padding-left: 1.5em;
 }
 body.film article header {
 	display: none;
@@ -330,7 +331,7 @@ body.film article header {
 }
 body.broadsides article header > h1, body.film article header > h1 {
 	z-index: 400;
-	padding: 1em;
+	padding: 0em;
 	color: var(--warmblack);
 	font-size: 3rem;
 	background-color: var(--warmlightwhiteveil);

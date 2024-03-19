@@ -13,7 +13,6 @@ node poemMill bookinfo
 echo done running poemMill bookinfo
 node bookMill
 echo done running bookMill on bookinfo
-
 prince -s css/print.css print.html -o printbook_temp.pdf
 mv print.html printbook.html
 echo done making print book
@@ -28,7 +27,29 @@ echo done removing front matter from printbook.pdf
 # change colors :::
 #sed "s/spicecolor2: var(--red)/spicecolor2: var(--yellow)/" printbook.html > printbook2.html
 #
-sed "s/illustratedbook/broadsides/" printbook.html > printbroadsides.html
+#
+#picturebook
+node poemMill picturebookinfo 
+echo done running poemMill picturebookinfo 
+node bookMill
+echo done running bookMill on picturebookinfo 
+prince -s css/print.css print.html -o printbook_temp.pdf
+mv print.html printpicturebook.html
+echo done making print book
+pdfseparate printbook_temp.pdf page%03d.pdf
+rm page001.pdf
+rm page002.pdf
+pdfunite page*.pdf printpicturebook.pdf
+rm page*.pdf
+rm printbook_temp.pdf
+echo done removing front matter from printpicturebook.pdf
+
+#
+# change colors :::
+#sed "s/spicecolor2: var(--red)/spicecolor2: var(--yellow)/" printbook.html > printbook2.html
+#
+
+sed "s/film notext/broadsides withtext/" printpicturebook.html > printbroadsides.html
 prince -s css/print.css printbroadsides.html -o printbroadsides_temp.pdf
 echo done making broadside book
 pdfseparate printbroadsides_temp.pdf page%03d.pdf
@@ -39,27 +60,7 @@ rm page*.pdf
 rm printbroadsides_temp.pdf
 echo done removing front matter from printbroadsides.pdf
 
-sed "s/illustratedbook/broadsides notext/" printbook.html > printpicturebook.html
-prince -s css/print.css printpicturebook.html -o printpicturebook_temp.pdf
-echo done making picture book
-pdfseparate printpicturebook_temp.pdf page%03d.pdf
-rm page001.pdf
-rm page002.pdf
-pdfunite page*.pdf printpicturebook.pdf
-rm page*.pdf
-rm printpicturebook_temp.pdf
-echo done removing front matter from printpicturebook.pdf
-
-sed "s/illustratedbook/film notext/" printbook.html > printfilmbook.html
-prince -s css/print.css printfilmbook.html -o printfilmbook_temp.pdf
-echo done making film book
-pdfseparate printfilmbook_temp.pdf page%03d.pdf
-rm page001.pdf
-rm page002.pdf
-pdfunite page*.pdf printfilmbook.pdf
-rm page*.pdf
-rm printfilmbook_temp.pdf
-echo done removing front matter from printfilmbook.pdf
+#
 #postcards
 node poemMill postcardinfo
 echo done running poemMill postcardinfo

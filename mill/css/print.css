@@ -4,7 +4,9 @@
 :root {
   /*--red: #9a0000;*/
 	/*--red: #8F0000; panatone:"7621 C" rgb(rgb(143,0,0)), cmyk(0,100,100,44), hsl(0,100%,28%)*/
-	--red: #AA0000; /*cmyk(0%, 100%, 100%, 33.3%)*/
+	/*--red: #AA0000; cmyk(0%, 100%, 100%, 33.3%)*/
+	/*#AD0800* or #CD0A00 */
+	--red: #AE0501;
 	--yellow: #ffcc00; /*rgb(255,204,0), hsl(48,100%,50%), cmyk(0,20,100,0)*/
 	/*--yellow: #ffde00; cmyk(0%, 13%, 100%, 0%)*/
 	/*--yellow: #FFD700;/*panatone "Yellow 012 C" rgb(255,215,0), hsl(50.4,100%,50%), cmyk(0,16,100,0) */
@@ -389,7 +391,8 @@ body.illustratedbook article header {
 }
 body.broadsides article header {
 	z-index: 400;
-	padding: 2em;
+	padding: 1em;
+	padding-left: 1.5em;
 }
 body.film article header {
 	display: none;
@@ -398,7 +401,7 @@ body.film article header {
 }
 body.broadsides article header > h1, body.film article header > h1 {
 	z-index: 400;
-	padding: 1em;
+	padding: 0em;
 	color: var(--warmblack);
 	font-size: 3rem;
 	background-color: var(--warmlightwhiteveil);
@@ -680,6 +683,11 @@ article a::after {
 	width: 2em;
 	padding-right: 1em;
 	text-align: right;
+}
+body.broadsides ul {
+	margin:0;
+ 	margin-top:2em;
+ 	padding:0;
 }
 ul {
 	margin:0;

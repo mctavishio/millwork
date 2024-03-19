@@ -9,11 +9,11 @@ let dt = new Date();
 let timestamp = dt.getTime();
 let datetime = dt.toDateString();
 
-const title = "turbulence";
-const sequencetitle = "turbulence";
+const title = "transfigure";
+const sequencetitle = "trans | figure";
 const subtitle = datetime;
 const description = "algorithmic sound & drawings";
-const rooturl = "https://turbulence.work";
+const rooturl = "https://transfigure.work";
 const authorurl = "https://mctavish.work/";
 const author= "mctavish";
 const copyright = "Copyright ©2024 mctavish<br/>";
@@ -129,7 +129,7 @@ let coverinfo = {
 	bookunits: "in",
 	//(width*2+bleed*2+spine)*printpixelsperunit
 	width: (8*2+0.125*2+0.322),
-	height: (8*1+0.125*2+0.322),
+	height: (8*1+0.125*2),
 	margin: 0,
 	guttermargin: 0.0,
 	bleed: 0.125,
@@ -165,11 +165,35 @@ let bookinfo = {
 	cssstyles: "", 
 };
 
+let picturebookinfo = {
+	sequencetitle, title, subtitle, description, rooturl,
+	authorurl, author, copyright,
+	isbn, publisher,
+	bodyclasses: ["film notext"],
+	ntickstitle: 1,
+	fps: 1,
+	nticks: 120,
+	sections: [],
+	poemids: [],
+	bookunits: "in",
+	width: 8,
+	height: 8,
+	margin: 1,
+	guttermargin: 1.0,
+	bleed: 0.125,
+	spine: 0.322,
+	pixelsperunit: 72,
+	svgwidth: 8*72,
+	svgheight: 8*72,
+	captionheight: 1,
+	cssstyles: "", 
+};
+
 const inputfile = `./input.js`;
 
 const fps = 24;
 const corecolors = [pigments.warmblack, pigments.warmlightwhite]; 
-const spicecolors = [pigments.red, pigments.yellow, pigments.lightgray]; 
+const spicecolors = [pigments.yellow, pigments.lightgray]; 
 const allcolors = [...corecolors,...spicecolors];
 const colorweights = [
 	["var(--corecolor0)",10],
@@ -247,8 +271,8 @@ const reeds = sounddata.filter(f=>f.keywords.includes("reed")).map(f=> {
 const score = [
 	{gain:0.4,padmin:0,padmax:100,start:0,end:1.0,nthreads:4,list:horn},
 	{gain:0.4,padmin:0,padmax:400,start:0.7,end:1.0,nthreads:3,list:horn},
-	{gain:0.4,padmin:10,padmax:200,start:0.4,end:0.5,nthreads:2,list:brass},
-	{gain:0.4,padmin:10,padmax:200,start:0.6,end:0.7,nthreads:4,list:hornfray},
+	{gain:0.4,padmin:10,padmax:200,start:0.2,end:0.5,nthreads:2,list:brass},
+	{gain:0.3,padmin:10,padmax:200,start:0.5,end:0.6,nthreads:4,list:hornfray},
 ];
 let soundids = [];
 const sounds = score.reduce( (acc,part) => {
@@ -282,6 +306,7 @@ const input = {
 	weights: [0,18,22,22,30,24,18,16,14,12,6,4,3,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
 	bookinfo,postcardinfo,coverinfo,
 	picture8x8info,
+	picturebookinfo,
 	film9x9info,film16x9info,
 };
 

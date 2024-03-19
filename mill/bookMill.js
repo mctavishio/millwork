@@ -82,11 +82,10 @@ const borderscss = [...Array(20).keys()].reduce( (acc,j) => {
 	acc = acc +  `
 	mark.borders${j} {
 		display: inline-block;
-		padding-left: 0.2em; padding-right: 0.2em;
-		border-left: solid; border-right: solid;
-		border-radius: 0.5em;
-		border-left-color: ${getcolor()};
-		border-right-color: ${getcolor()};
+		padding-bottom: 0.1em;
+		border-width: 1em;
+		border-bottom: dashed;
+		border-bottom-color: ${getcolor()};
 	}
 	`;
 	return acc;

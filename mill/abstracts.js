@@ -35,7 +35,7 @@ let keywords = [
 let frictions = [
 	["chance","deterministic"],
 	["open system", "closed system"],
-	["noise", "harmonic"],
+	["noise", "harmonics"],
 	["dissonance", "consonance"],
 	["continuous", "discrete"],
 	["infinite between", "finite ladders"],
