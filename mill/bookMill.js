@@ -54,7 +54,8 @@ const decorations = ["underline","underline","overline","line-through","line-thr
 const getdecoration  = () => {
 	return decorations[tools.randominteger(0,decorations.length)];
 }
-const fonts = ["narratorfont","zerofont","riderfont","archivefont","scribefont"];
+//const fonts = ["narratorfont","zerofont","riderfont","archivefont","scribefont"];
+const fonts = ["monospace_code", "monospace", "monospace_zeroslash", "monospace_zerodot"];
 const getfont  = () => {
 	return `var(--${fonts[tools.randominteger(0,fonts.length)]})`;
 }

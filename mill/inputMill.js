@@ -227,13 +227,13 @@ const weightedcolors = colorweights.flatMap(wx=>{
 const nx = 4;
 const ny = 4;
 //nz = nlayers
-const nz = 3;
+const nz = 4;
 
-//const xgrid = [...new Array(nx).keys()].map( j=>Math.floor(100*j/(nx-1))/100 );
-//const ygrid = [...new Array(ny).keys()].map( j=>Math.floor(100*j/(ny-1))/100 );
+const xgrid = [...new Array(nx).keys()].map( j=>Math.floor(100*j/(nx-1))/100 );
+const ygrid = [...new Array(ny).keys()].map( j=>Math.floor(100*j/(ny-1))/100 );
 //const ygrid = [...new Array(n).keys()].map(j=>tools.randominteger(0,100)/100).sort( (a,b) => { return a - b } );
-const xgrid = [...new Array(nx).keys()].map( x=>0.5 );
-const ygrid = [...new Array(ny).keys()].map( y=>0.5 );
+//const xgrid = [...new Array(nx).keys()].map( x=>0.5 );
+//const ygrid = [...new Array(ny).keys()].map( y=>0.5 );
 //console.log(`inputMill:xgrid=${JSON.stringify(xgrid)}`);
 
 
@@ -254,13 +254,13 @@ const horn = sounddata.filter(f=>f.id.includes("samulis__f-horn-sustain-a3-mohor
 	return {id:f.id, weight:1, chord:0}
 });  
 */
-const hornfray = sounddata.filter(f=>f.id.includes("samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1")).map(f=> {
-	return {id:f.id, weight:1, chord:1}
-});  
 const horn = sounddata.filter(f=>f.keywords.includes("horn")).map(f=> {
 	return {id:f.id, weight:1, chord:0}
 });  
 const brass = sounddata.filter(f=>f.keywords.includes("brass")).map(f=> {
+	return {id:f.id, weight:1, chord:0}
+});  
+const clarinet_e = sounddata.filter(f=>f.id.includes("clarinetnotes_e")).map(f=> {
 	return {id:f.id, weight:1, chord:0}
 });  
 const reeds = sounddata.filter(f=>f.keywords.includes("reed")).map(f=> {
@@ -269,10 +269,10 @@ const reeds = sounddata.filter(f=>f.keywords.includes("reed")).map(f=> {
 
 
 const score = [
-	{gain:0.4,padmin:0,padmax:100,start:0,end:1.0,nthreads:4,list:horn},
-	{gain:0.4,padmin:0,padmax:400,start:0.7,end:1.0,nthreads:3,list:horn},
-	{gain:0.4,padmin:10,padmax:200,start:0.2,end:0.5,nthreads:2,list:brass},
-	{gain:0.3,padmin:10,padmax:200,start:0.5,end:0.6,nthreads:4,list:hornfray},
+	{gain:0.3,padmin:0,padmax:200,start:0,end:1.0,nthreads:4,list:horn},
+	{gain:0.3,padmin:10,padmax:200,start:0.2,end:0.5,nthreads:3,list:brass},
+	{gain:0.4,padmin:10,padmax:200,start:0.5,end:0.6,nthreads:4,list:reeds},
+	{gain:0.4,padmin:10,padmax:200,start:0.6,end:0.9,nthreads:4,list:clarinet_e},
 ];
 let soundids = [];
 const sounds = score.reduce( (acc,part) => {

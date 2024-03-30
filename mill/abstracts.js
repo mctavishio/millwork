@@ -1,8 +1,17 @@
 let keywords = [
 	"sequence",
+	"pouring ::: 101 hats",
+	"archive",
 	"time",
+	"mechanical computation",
+	"electrical pulse logic",
+	"wired equations",
+	"analog recursion",
+	"binary calculations",
 	"vector",
 	"drawing",
+	"reading",
+	"writing",
 	"chance",
 	"random numbers",
 	"discrete",
@@ -30,10 +39,16 @@ let keywords = [
 	"radio", "telegraph",
 	"nested", "lists",
 	"word collation",
+	"memex", "quipo",
+	"scale", "trees", "webs",
+	"directed graph", 
+	"computation", "algebra",
+	"calculus", "change",
 	"encoded", "poetics",
 ];
 let frictions = [
 	["chance","deterministic"],
+	["silence","revealed"],
 	["open system", "closed system"],
 	["noise", "harmonics"],
 	["dissonance", "consonance"],
@@ -55,33 +70,78 @@ let abstracts = [
 		textlists: [
 			[
 				"a tool a mill a clock"
-				"generate pages",
-				"generate frames",
-				"create still image sequences",
-				"count seconds",
-				"tween 24 steps between seconds",
+				"pages frames prints",
+				"algorithmic press",
+				"count map mark",
+				"book of hours",
+				"book of minutes",
+				"book of seconds",
+				"a tween ::: 24 steps",
+				"between seconds",
 				"between states",
 				"between ticks",
-				"attenuate recorded sound fragments",
+				"multiples ratios",
+				"tonal ladders",
+				"recorded sound fragments",
 				"knot filtered sound into threads",
-				"spin aural yarn",
 				"fray twist knot",
-				"braid threads into film sound",
+				"braid threads into soundscape",
 				"compile frames into animations",
+				"weld sound to moving pictures",
+			],
 		]
 	},
 	{
 		id: "20240316101400",
-		keywords: [],
+		keywords: ["drawing","diagram", "model"],
 		title: "",
 		subtitle: "notes0",
 		date: "2024.03.16",
 		credits: "mctavish",
 		textlists: [
 			[
+				"model diagram index",
+			],
+			[
+				"to draw ::: scrawl write",
+				"vector manifesto",
+				"hand mark thought",
+				"a rendering ::: an imprint",
+
 
 		]
 	},
+	{
+		id: "20240327144900",
+		keywords: ["reading"],
+		title: "",
+		subtitle: "notes",
+		date: "2024.04.27",
+		credits: "mctavish",
+		textlists: [
+			[
+				"to read ::: a physical act",
+				"climbing clamber grasp",
+				"pull delve untangle",
+				"uncover reveal knot fuse",
+				"a traversal",
+				"glyph word line page",
+				"link",
+				"index => search engine",
+				"lost articulation",
+				"conglomerates ::: statistical blobs",
+				"versus hyper local or specific joins",
+				"purposeful, transparant distillation",
+				"versus opaque, black-box-variable compression",
+				"defining the axes of distillation keeps the inquiry open",
+				"keeps the bolts revealed ::: the cornices exposed",
+				"the structure present",
+				"a conceptual sarah zse architectural, blow-up sculpture",
+				"a trans | media ::: space | time pop-up book",
+			],
+
+		]
+	}
 ];
 let links = [
 	{

@@ -130,17 +130,18 @@ echo done removing front matter from printpicturebook.pdf
 # change colors :::
 #sed "s/spicecolor2: var(--red)/spicecolor2: var(--yellow)/" printbook.html > printbook2.html
 #
-
-sed "s/film notext/broadsides withtext/" printpicturebook.html > printbroadsides.html
-prince -s css/print.css printbroadsides.html -o printbroadsides_temp.pdf
-echo done making broadside book
-pdfseparate printbroadsides_temp.pdf page%03d.pdf
-rm page001.pdf
-rm page002.pdf
-pdfunite page*.pdf printbroadsides.pdf
-rm page*.pdf
-rm printbroadsides_temp.pdf
-echo done removing front matter from printbroadsides.pdf
+#
+#sed "s/film notext/broadsides withtext/" printpicturebook.html > printbroadsides.html
+#prince -s css/print.css printbroadsides.html -o printbroadsides_temp.pdf
+#echo done making broadside book
+#pdfseparate printbroadsides_temp.pdf page%03d.pdf
+#rm page001.pdf
+#rm page002.pdf
+#pdfunite page*.pdf printbroadsides.pdf
+#rm page*.pdf
+#rm printbroadsides_temp.pdf
+#echo done removing front matter from printbroadsides.pdf
+#
 
 #postcards
 node poemMill postcardinfo
@@ -166,7 +167,11 @@ prince -s css/print.css print.html --raster-dpi=300 --raster-output=picture%04d.
 echo done making picture8x8 sequence
 rm picture0000.png
 rm picture0001.png
+rm picture0002.png
 echo done removing front matter from printpictures8x8.pdf
+
+mkdir -p size400
+mogrify -path size400/ -resize 400 picture*.png
 
 #covers
 node poemMill coverinfo

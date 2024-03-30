@@ -534,7 +534,6 @@ wordlist = [
 			"key",
 			"hey",
 			"gut",
-			"gun",
 			"gay",
 			"fog",
 			"cry",
@@ -908,7 +907,6 @@ wordlist = [
 			"inky",
 			"holy",
 			"hear",
-			"guns",
 			"grip",
 			"gold",
 			"glow",
@@ -1060,6 +1058,7 @@ wordlist = [
 			"been",
 			"arts",
 			"area",
+			"horn",
 			"::::"
 		]
 	},
@@ -1068,6 +1067,9 @@ wordlist = [
 		"words": [
 			"00100",
 			"10101",
+			"00110",
+			"10011",
+			"11001",
 			"aleph",
 			"|.|.|",
 			": : :",
@@ -1605,14 +1607,12 @@ wordlist = [
 			"caves",
 			"carts",
 			"cargo",
-			"bully",
 			"brook",
 			"brief",
 			"brick",
 			"blown",
 			"blink",
 			"belts",
-			"balls",
 			"askew",
 			"ashes",
 			"media",
@@ -1650,8 +1650,10 @@ wordlist = [
 			"blend",
 			"based",
 			"knock",
+			"delve",
 			"monad",
-			"barns"
+			"barns",
+			"bolts",
 		]
 	},
 	{
@@ -2789,6 +2791,7 @@ wordlist = [
 			"aspects",
 			"whether",
 			"torrent",
+			"torrent",
 			"testing",
 			"teacher",
 			"surveys",
@@ -2803,12 +2806,14 @@ wordlist = [
 			"patient",
 			"methods",
 			"melding",
+			"welding",
 			"marking",
 			"lyrical",
 			"longarm",
 			"lessons",
 			"lesbian",
 			"laments",
+			"theorem",
 			"informs",
 			"impacts",
 			"gymnast",
@@ -2837,6 +2842,7 @@ wordlist = [
 			"food web",
 			"friction",
 			"null set",
+			"deviance",
 			"galaxies",
 			"arteries",
 			"nutrient",
@@ -3160,7 +3166,6 @@ wordlist = [
 			"textured",
 			"terrains",
 			"swimming",
-			"suburban",
 			"striking",
 			"stranger",
 			"stitches",
@@ -3199,7 +3204,6 @@ wordlist = [
 			"hammered",
 			"hallways",
 			"hallowed",
-			"gunpoint",
 			"gripping",
 			"grasping",
 			"glorious",
@@ -3283,10 +3287,13 @@ wordlist = [
 		"words": [
 			"electrify",
 			"electrify",
+			"archivist",
 			"circuitry",
 			"tone rows",
 			"sculpture",
 			"recursive",
+			"recursion",
+			"hypertext",
 			"hypertext",
 			"resonance",
 			"pipelines",
@@ -3872,13 +3879,19 @@ wordlist = [
 			"artificial",
 			"dusty lamp",
 			"architects",
-			"alchemists"
+			"alchemists",
+			"intonation",
+			"encryption",
 		]
 	},
 	{
 		"n": 11,
 		"words": [
 			"denumerable",
+			"(re)cursion",
+			"permutation",
+			"pop-up book",
+			"combination",
 			"cardinality",
 			"open system",
 			"creased map",
@@ -3887,6 +3900,7 @@ wordlist = [
 			"bowed metal",
 			"distraction",
 			"radio pluto",
+			"night watch",
 			"night watch",
 			"say my name",
 			"night vigil",
@@ -3982,7 +3996,7 @@ wordlist = [
 			"expectation",
 			"skyscrapers",
 			"dissipating",
-			"uncountably",
+			"uncountable",
 			"typographer",
 			"translucent",
 			"storyteller",
@@ -4028,6 +4042,7 @@ wordlist = [
 			"blue window",
 			"articulates",
 			"coffee ring",
+			"transfigure",
 			"(m)bodiment"
 		]
 	},
@@ -4035,6 +4050,7 @@ wordlist = [
 		"n": 12,
 		"words": [
 			"greasy paper",
+			"tonal ladder",
 			"lucky strike",
 			"vector space",
 			"gender fluid",
@@ -4113,19 +4129,28 @@ wordlist = [
 			"dusty window",
 			"text factory",
 			"permutations",
+			"combinations",
 			"film factory",
+			"book factory",
+			"grid factory",
 		]
 	},
 	{
 		"n": 13,
 		"words": [
 			"arrived alone",
+			"pitch factory",
+			"sound factory",
+			"noise factory",
+			"cloud factory",
+			"cloth factory",
 			"worn suitcase",
 			"(re)do (red)o",
 			"(re)do (red)o",
 			"repeat repeat",
 			"compass light",
 			"orchestration",
+			"the archivist",
 			"a + b = b + a",
 			"a x b = b x a",
 			"infinite sets",
@@ -4135,7 +4160,7 @@ wordlist = [
 			"nowhere dense",
 			"digital cloud",
 			"multi lingual",
-			"trans / media",
+			"trans | media",
 			"cybernetic ze",
 			"networked (i)",
 			"probabilities",
@@ -4188,12 +4213,13 @@ wordlist = [
 		"n": 14,
 		"words": [
 			"urgent mission",
+			"trans | figure",
 			"stop the gears",
 			"choreographies",
 			"multi threaded",
-			"trans / border",
-			"trans / formed",
-			"trans / gender",
+			"trans | border",
+			"trans | formed",
+			"trans | gender",
 			"cybernetic she",
 			"transformation",
 			"stoichiometric",
@@ -4221,9 +4247,12 @@ wordlist = [
 		"n": 15,
 		"words": [
 			"telephone wires",
+			"telegraph wires",
+			"cloth manifesto",
 			"railroad tracks",
+			"read write draw",
 			"intra dependent",
-			"trans / figured",
+			"trans | figured",
 			"electromagnetic",
 			"transformations",
 			"map filter fold",
@@ -4232,9 +4261,11 @@ wordlist = [
 			"transfiguration",
 			"surround-scapes",
 			"non-traditional",
+			"just intonation",
 			"loosely-coupled",
 			"improvisational",
 			"cross-reference",
+			"change & motion",
 			"computer-driven",
 		]
 	},
@@ -4245,7 +4276,7 @@ wordlist = [
 			"throw the switch",
 			"platform station",
 			"the infinite sky",
-			"trans / platform",
+			"trans | platform",
 			"infinite between",
 			"angel ghost bird",
 			"library of babel",
@@ -4269,10 +4300,12 @@ wordlist = [
 		"n": 18,
 		"words": [
 			"hero zero rider ze",
+			"countably infinite",
+			"hero zero rider ze",
 			"hero zero rider ze",
 			"hero zero rider ze",
 			"electrical current",
-			"i meant to say ...",
+			"i meant to say .|.",
 			//"the modernist grid",
 			"self-documentation",
 			"difference machine",
@@ -4285,6 +4318,7 @@ wordlist = [
 		"n": 19,
 		"words": [
 			"the repairman rider",
+			"hypertext manifesto",
 			"passenger lone bird",
 			"turn back the clock",
 			"||-- ::: . ::: --||",
@@ -4297,7 +4331,7 @@ wordlist = [
 		"n": 20,
 		"words": [
 			"wireless signal code",
-			"cellular connections"
+			"cellular connections",
 		]
 	},
 	{
@@ -4361,7 +4395,7 @@ wordlist = [
 		"n": 32,
 		"words": [
 			"sandwich lukewarm coffee thermos",
-			"rusted texaco station folded map"
+			"rusted texaco station folded map",
 		]
 	},
 	{
@@ -4373,7 +4407,8 @@ wordlist = [
 	{
 		"n": 35,
 		"words": [
-			"mend restart retrain reboard rewire"
+			"mend restart retrain reboard rewire",
+			"blood feather stalk beak grass root",
 		]
 	},
 	{
@@ -4395,9 +4430,16 @@ wordlist = [
 		]
 	},
 	{
+		"n": 41,
+		"words": [
+			"suitcase sandwich lukewarm coffee thermos",
+			"grass blade dyke (our hero zero rider ze)",
+		]
+	},
+	{
 		"n": 42,
 		"words": [
-			"turn the helm the wheel the tide the orbit"
+			"turn the helm the wheel the tide the orbit",
 		]
 	},
 	{

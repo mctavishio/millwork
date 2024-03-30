@@ -14,7 +14,7 @@ const nticks = Math.min(book.nticks,B.nticks);
 const fps = Math.min(book.fps,B.fps);
 
 const markup = str => {
-	let words = str.split(" ").map( (w,j) => {
+	let words = str.split("..").map( (w,j) => {
 		let markup = w;
 		if(tools.randominteger(0,30)<2) {
 			let markclass = `mark${tools.randominteger(0,20)} word${j}`;
@@ -27,7 +27,7 @@ const markup = str => {
 		}
 		return markup;
 	});
-	return words.join(" ");
+	return words.join("..");
 };
 const poemsfile = `./poems.js`;
 const bookfile = `./book.js`;
@@ -40,7 +40,7 @@ let datetime = dt.toDateString();
 const textLists2html = textLists => {
 	return textLists.reduce( (acc,list) => {
 		acc = acc + `
-		<ul class="stanza">` + list.map(item=>item.replace("prostitutes","creased map")).reduce( (ulstr,item) => {
+		<ul class="stanza">` + list.reduce( (ulstr,item) => {
 			ulstr = ulstr + `<li>${markup(item)}</li>`;
 			return ulstr;
 		},"");
@@ -56,7 +56,7 @@ let poemsinfo = [...new Array(nticks).keys()].map( j => {
 	//let textarray = "left throng city depot arrived alone worn suitcase sandwich lukewarm coffee thermos tepid brown liquid greasy paper rusted texaco station folded map urgent mission fix the system repair reclaim rebuild reweave restore prairie meadow sequestration".split(" ");
 	let textarray = textLists.reduce( (acc,list) => {
 		return acc + list.join(" ");
-	}, " ").split(" ").filter( word => word!=="prostitutes" && word!==" " && word.length < 12);
+	}, "").split("..").filter( word => word!==".." && word!==" " && word.length < 12);
 	let captiontext = [0,1,2].map(j=>textarray[tools.randominteger(0,textarray.length)]).join(" :|: ");
 	let title = [0].map(j=>textarray[tools.randominteger(0,textarray.length)]).join(" ");
 	// console.log(textarray);

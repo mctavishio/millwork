@@ -90,7 +90,7 @@ cp frame0818.png poster16x9_0004.png
 ffmpeg -framerate 24 -i frame%04d.png -c:v libx264 -r 24 -pix_fmt yuv420p film16x9.mp4
 rm frame*.png
 echo done making film16x9.mp4
-ffmpeg -i film16x9.mp4 -i tf_02:00_sound.mp3 -map 0:v:0 -map 1:a:0  -c:v copy -c:a aac -b:a 192k film16x9sound.mp4
+ffmpeg -i film16x9.mp4 -i tf_02:00_sound.mp3 -map 0:v:0 -map 1:a:0  -c:v copy -c:a aac -b:a 192k film16x9_sound.mp4
 
 ffmpeg -ss 00:01:00 -to 00:02:00 -i film16x9.mp4 -c copy film16x9_1min.mp4
 ffmpeg -i film16x9_1min.mp4 -i tf_01:00_sound.mp3 -map 0:v:0 -map 1:a:0  -c:v copy -c:a aac -b:a 192k film16x9_1min_sound.mp4

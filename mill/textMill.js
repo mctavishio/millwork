@@ -35,7 +35,7 @@ let rawpoems = [...Array(npoems).keys()].map( (p,pn) =>{
 			//console.log(`nchars-count = ${nchars-count}`);
 			let chcts = wchcounts.filter(c => c <= (nchars-count) );
 			let n = chcts[tools.randominteger(0,chcts.length)];
-			count = count + n + 1;
+			count = count + n + 2;
 			linecount.push(n);
 		}
 		let stanza = [...Array(nlines).keys()].map( (l,lj) => {	
@@ -43,7 +43,7 @@ let rawpoems = [...Array(npoems).keys()].map( (p,pn) =>{
 				let choices = wordsAll.filter(w => w.n===n)[0].words.filter(w => !w.includes(vowels[pn%vowels.length]));
 				let word = choices[tools.randominteger(0,choices.length)];
 				return word;
-			}).join(" ");
+			}).join("..");
 			/*
 			while(count<nchars) {
 				//console.log(`nchars-count = ${nchars-count}`);
