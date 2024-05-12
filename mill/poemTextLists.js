@@ -3,22 +3,22 @@ module.exports = [
   "title": "poem 0",
   "lists": [
    [
-    "î¹¹fbÝ#8öÜ..Ç..diners..thoughts..kept..shop..ƒ",
-    "regression..j..bucket..dendrite..over..hero..=",
-    "philosophy..₈..revery..twisting..sews..work..v",
-    "the cyborg..t..rewind..composer..woke..pG8Ã..4"
+    "pie..tomorrow..cyclones..sink..I$3…çÕ+pnA5D×..₈",
+    ":|:..sequence..isocline..ship..point-of-view..e",
+    "pie..fluidity..scottish..over..(re)do (red)o..c",
+    "too..shouting..birdless..boot..(re)do (red)o..≑"
    ],
    [
-    "shelters..clutches..resolution..verb..pigeons..Ü",
-    "blinking..elements..compelling..hymn..cyclone..‹",
-    "bleeding..striking..y = mx + b..iron..columns..½",
-    "shredded..response..ƶJii¡8lÝ&7..list..housing..j"
+    "¨½2|#‰LIǎ‡­?øcœm#S16ÛT8œ#02Ê+-”¦Ü∞Í..sleepy..+.",
+    "{²ù²b‹eœ8j4₈§ýßê¾¯#j¡}ê½×P5ojìP_‹c-..screws..01",
+    "{²ù²b‹eœ8j4₈§ýßê¾¯#j¡}ê½×P5ojìP_‹c-..unroll..-.",
+    "%ýÜ6=ƒz¡¯½Pìk|∐ç=÷xÜ∏ƒ$₈äs0jô⊙S3wÜ∈..simple..89"
    ],
    [
-    "different..behind..screeching..hour..1ëb78m2Í..#",
-    "communion..Al·6áƶ..retrieving..oxen..unending..j",
-    "recursion..golden..thresholds..glue..detector..∈",
-    "explosion..invoke..continuity..long..plumbing..¯"
+    "crow..resident..stilled..more..storms..hiker..⊙",
+    "grid..detector..slender..spun..ticker..miles..6",
+    "moon..emission..herself..duty..inside..skies..3",
+    "rush..shouting..thermos..1906..stones..times..Æ"
    ]
   ]
  },
@@ -26,22 +26,22 @@ module.exports = [
   "title": "poem 1",
   "lists": [
    [
-    "proclaim..crucifix..ǎ..M..masks..shady..stock..r",
-    "sanctify..spilling..w..M..cargo..signs..plans..3",
-    "ravaging..thoughts..ç..?..signs..urban..glory..A",
-    "circling..climbing..‡..È..nails..royal..birth..×"
+    "junction..to-do..subtraction..shards..4th..##=&p",
+    "ℵ₀ℵ₁ℵ₂ℵ₃..sixth..information..waking...^...click",
+    "standing..twist..ùûƶü^6šH÷÷ê..trying..ago..stain",
+    "counting..bolts..×ø¹9&üç&oƎ¡..pupils.._o_..moons"
    ],
    [
-    "arduous..struck..mirrors..mountains..m..5..abyss",
-    "tsunami..floods..product..colonists..ü..1..graph",
-    "harmony..floors..insight..harmonics..P..½..grows",
-    "guitars..slight..staring..corridors..‡..ö..words"
+    "½..school..AIK&?‰|}÷∐Û..dolls..prints..prisons",
+    "3..vacant..probability..touch..static..station",
+    "∷..humans..subtraction..snows..window..guitars",
+    "7..unroll..computation..shows..typing..radiant"
    ],
    [
-    "days..pausing..laughing..original..ribbons..bank",
-    "bind..insight..catapult..infinity..foolish..öc±V",
-    "&≑t6..skyward..painting..sunlight..doorway..lost",
-    "&≑t6..impacts..counting..thoughts..formula..&≑t6"
+    "approach..formulas..| |..block..!..low..poison",
+    "too-long..midnight..but..plain..š..tin..photos",
+    "artifact..snapshot...^...knots..Y..:|:..tattoo",
+    "standing..transact..far..rocky..Y..|||..thatch"
    ]
   ]
  },
@@ -49,22 +49,22 @@ module.exports = [
   "title": "poem 2",
   "lists": [
    [
-    "bowed..tubes..permeate..10¢..¡¡..memory..layers",
-    "tears..label..networks..8th..==..growth..bounds",
-    "wagon..house..responds..∅.∅..=>..bender..rusted",
-    "dusty..rural..entrance..#.#..re..speech..really"
+    "answers..bç!Hì∷AVmïo×1-ÜƒÃ=Û≑..storm..developer",
+    "methane..mℵ‰≑ÜIý¦zýêøℵǡeoòo±¯..caged..passenger",
+    "between..gP3t½87$æ/óØû:j4Pk7w..decay..electrode",
+    "screens..û¾7pkQø&np±#ÝA2Ís.ƶç..break..stuttered"
    ],
    [
-    "bender..entanglement..sheets..sale..alphabets..ý",
-    "tracks..f.:ÆœëM38÷Gw..values..moss..construct..×",
-    "wanted..fluorescence..muscle..1906..networked..½",
-    "values..choreography..theory..fold..blackhole..V"
+    "membrane..layered..platforms..x‰ÜœóckMýHÙ70Ývö∏¹",
+    "torrents..weather..strangers..#∀öîIœƒj?­9äÍ$³½oÊ",
+    "clutches..bustled..hypertext.._∅v3ûIzétPôffóǎÜ…?",
+    "momentum..parched..scattered..DSû∏ó5¡÷S∅mÝ_Ǝû!4j"
    ],
    [
-    "chatter..coupled..accelerate..transcendence..{}",
-    "acrobat..gallery..statements..≈%û84¤Ø3∫mâÐ_..me",
-    "uttered..cellars..exuberance..­9¯uÛ`¾jJhßwǎ..ýg",
-    "thunder..bottles..aleph zero..(re)enactment..´ë"
+    "dz..exuberance..rolled..sheets..tattered..heard",
+    ">^..thresholds..tunnel..looked..trousers..felon",
+    "_¶..orthogonal..odessa..breath..wanderer..above",
+    "_¶..folded map..clocks..washes..traveler..flame"
    ]
   ]
  },
@@ -72,22 +72,22 @@ module.exports = [
   "title": "poem 3",
   "lists": [
    [
-    "=>..unprecedented..minutes..witness..agent..key",
-    "is..élû:3?Gvǎû÷N₈..pulling..pigment..multi..fly",
-    "5¢..a x b = b x a..lantern..schemas..grass...¹.",
-    "¡¡..multi-channel..trapeze..surveys..still..lay"
+    "tube..trans | gender..circuits..culled..fists..x",
+    "line..individualized..feathers..adrift..stick..l",
+    "hard..human-readable..fragment..screws..needs..ǡ",
+    "same..trans | figure..stranger..walter..churn..²"
    ],
    [
-    "cages..angles..fall..drawers..center..asl..miss",
-    "dance..signal..page..tensile..welder..pin..hard",
-    "facts..chains..helm..surging..wanted...ö...fall",
-    "trans..parcel..meet..drugged..cement..hum..deer"
+    "∀..awake..threaded..1906..ö:..eternally..dying",
+    "Ï..ashes..reactant..null..my..imperfect..naked",
+    "Ø..study..ǎÇ#iøøw„..bend..Ǝ!..excavated..grain",
+    "∫..relay..saluting..lazy..at..fragments..inter"
    ],
    [
-    "blinking..click..design.....setting..telegraph",
-    "playback..ready..frayed..∷..weather..stairwell",
-    "bisected..trash..barbed..J..¯J|mô7‹..landmarks",
-    "matrices..trees..shards..U..guitars..alleyways"
+    "∷ø∏¯œ«n=∈ò‡¡=Ðøzm≑?:~ò1vj…_ô”V{l&iw·%?..depths",
+    "·÷‰3ƶÜìi#”4é/3$GéÈ2?5:3Ð¡Q¦zÍæ½7KCPÝ:7..leader",
+    "∷tæK3g¼Õ#.r!.ç…âƩ0…~5R|ÜÈzÊØ#Ð0ß÷öf8|k..bridge",
+    "¼ò×G3‰ü∀ÆmòÀé$Ùn4÷&¡Ø½z±ÛQ¼3¦|ÍSßxœ4yl..cycles"
    ]
   ]
  },
@@ -95,22 +95,22 @@ module.exports = [
   "title": "poem 4",
   "lists": [
    [
-    "trans | platform..whole..ordered..habitat..salt",
-    "angel ghost bird..known..harmony..retrain..dark",
-    "xÃa727$mzóHo?8∏÷..naked..¤Y.$∀&ù..present..soon",
-    "library of babel..orbit..problem..slender..dime"
+    "geo..patterns..mallet..fractal..metallic..tents",
+    "|-|..hovering..napkin..klezmer..dynamics..wards",
+    "dry..deranged..ticker..waiting..seasonal..cycle",
+    "çýÝ..homeless..winter..castles..chiseled..ideal"
    ],
    [
-    "package..demystify..asymptotic..salvation..fire",
-    "potency..replacing..relentless..afternoon..news",
-    "rhythms..enactment..swarm-self..cacophony..lots",
-    "shifted..explosion..web-native..september..that"
+    "rays..ì..omniscient..spilled..Üw4MT4wüýÛGoǡ..≠–º",
+    "fins..{..frightened..glowing..noise factory..#v#",
+    "flow..¨..folded map..reclaim..collaborative..pen",
+    "dead..x..devastated..mirrors..intersections..are"
    ],
    [
-    "christmas..slender..|∅.∅|..parameter..energy..>&",
-    "artifacts..shaking..10011..transform..rewire..at",
-    "minnesota..emerald..great..rehearsal..welder..so",
-    "fragility..verdant..video..knifelike..slides..^."
+    "cross-media..:::..write..Ǝ..intrinsically..it..×",
+    "inflections..top..again..x..intrinsically..an..½",
+    "experienced..dry..whole..$..gravitational..::..Û",
+    "algorithmic...^...proof..8..intersections..++..m"
    ]
   ]
  },
@@ -118,22 +118,22 @@ module.exports = [
   "title": "poem 5",
   "lists": [
    [
-    "48..struck..mirrors..unmerciful..spoken..flew..?",
-    "me..rushes..stunned..y = mx + b..lumens..ripe..x",
-    "it..middle..rolling..keystrokes..bender..stem..n",
-    "it..gospel..rectify..monologues..crowds..fold..ë"
+    "­:48øoVÝéi∏Ïïóêýxu9&ô∫xÙA∴0YJrx!ô0ç∞ÕÕ..consumed",
+    "uH½#R_|#4gš∞y?û53ƒ”1œµY:öoØ”oÝiìÆÜq:ù8..homeless",
+    "∷ø∏¯œ«n=∈ò‡¡=Ðøzm≑?:~ò1vj…_ô”V{l&iw·%?..stitched",
+    "uH½#R_|#4gš∞y?û53ƒ”1œµY:öoØ”oÝiìÆÜq:ù8..stitched"
    ],
    [
-    "Ù„9œ½UçÍko½ì8wU∏gd∷½÷×=j..worked..reedy..columns",
-    "(our hero zero rider ze)..sticky..union..insight",
-    "Ù„9œ½UçÍko½ì8wU∏gd∷½÷×=j..energy..bends..violent",
-    "#8ûÜÇe‹xƩÜƎÂ7ÐMøji#Øœxý!..copper..round..triples"
+    "millenniums..1¢..tightly..chipped..00100..slows",
+    "Y1H×?G6xl0ö..to..billion..cycling..could..chute",
+    "Iëµûš„p&ÝÊ...{}..subject..insects..hover..hours",
+    "recognition..()..twisted..skipped..grows..sixth"
    ],
    [
-    "bottles..bind..instrument..sighted..structures",
-    "pistons..oboe..retrieving..nickels..night crow",
-    "essence..lung..refineries..witness..velocities",
-    "degrees..purl..microfiche..&Øl%ej§..î¹¹fbÝ#8öÜ"
+    "throw..lock..d..½ý#xÝK¯çp¨ýÜœÃNœÏ..see..stones",
+    "shops..food..3..¤J∞=j1_#|cæH´M∫.m..hey..bender",
+    "shiny..time..⊚..#«Ûêw5÷·÷ó=9Ù=mµi..two..school",
+    "shock..bind..∀..áëzýj¨Í!10ø§dQ4Ã¦..sky..phcœ=:"
    ]
   ]
  },
@@ -141,22 +141,22 @@ module.exports = [
   "title": "poem 6",
   "lists": [
    [
-    "üá#∞ƒwÀℵ#!..gulf..â⊙Rbç_ØÍ~Í_gÝ¦œ..phonograph..ü",
-    "dusty lamp..jump..xìýæøß!#ò5Y}?A...cincinnati..o",
-    "transistor..paul..railroad tracks..artificial..%",
-    "phonograph..draw..xìýæøß!#ò5Y}?A...manuscript..i"
+    "TQì|ÀjÊirwµ±½h?Jǡ#ciǎ#{∏½∀Tj∀yx_¨‹..both..pins",
+    "8Øm8}ÜJJx3Ð4&ÈÝUç≈týs3ç⊙wÊ!#x¯¾∴/}..ions..1958",
+    "ü6w=!·øröyj³∞_üjw¹tûÆ∀:ì∏iØh7jûÐ§j..root..such",
+    "ü6w=!·øröyj³∞_üjw¹tûÆ∀:ì∏iØh7jûÐ§j..last..cook"
    ],
    [
-    "Ç1~H½-&ò%jó·..prisons..10¢..Ûq/?4#½bbPQ..curtain",
-    "qÍwj=b:Gâßûǡ..vacancy..oil..subtraction..howling",
-    "book of sand..roadway..gay..bifurcation..vibrant",
-    "185±∷9#mÍCýD..radiant..man..incantation..joining"
+    "knowing..against..horizon..lash..ý‰½ø~œdØQîaï!2l",
+    "fabrics..similar..foolish..waif..h#n=áwëœ«ǎ½p?jk",
+    "windows..pulling..chordal..part..h#n=áwëœ«ǎ½p?jk",
+    "lyrical..company..falling..loud..improvisational"
    ],
    [
-    "harmonics..orbit..things..ÝÜô#½..grid factory..œ",
-    "computing..plumb..abacus..spill..ô½ÊJ?b½çÇDm∷..m",
-    "transport..local..spring..lucky..book factory..`",
-    "unfolding..stain..napkin..dying..combinations..x"
+    "railing..diffusion..playback..scratching..losing",
+    "bowling..community..mourning..stochastic..crisis",
+    "staring..dinosaurs..passions..struggling..points",
+    "symbols..labyrinth..drawings..washington..colors"
    ]
   ]
  },
@@ -164,22 +164,22 @@ module.exports = [
   "title": "poem 7",
   "lists": [
    [
-    "IöÀ·am+Ç#aƒ8∈p₈‹jê∞y±/ƎH..åß..abstract..role..ü",
-    "œ0=4&sxý‡òhjeh:V3w‰#z5ý∐..he..unbroken..real..G",
-    "œ0=4&sxý‡òhjeh:V3w‰#z5ý∐..as..torrents..seed..k",
-    "Ý4|m¦ìnj¤Ʃ{o{⊚GG!³≈j_k:&..89..hundreds..rush..8"
+    "ghost..knowledge..Íég3û‰3!p‹Êj$P..?oo¦nc⊙|äzIg~",
+    "cards..transects..x?-Ût∏¤KǎlêØh½..a x b = b x a",
+    "rolls..polyphony..breathlessness..Üw4MT4wüýÛGoǡ",
+    "naked..landscape..cross-platform..A+ℵPk½øÇQjxÃQ"
    ],
    [
-    "Üwpelä/g…v¤CIxæÕHÊ±7÷10š+⊚mø∀Í4NMæû½4..ladder..q",
-    "dÀÊƶ~ý/w·kjÍ∀ûxuÃ¡Ʃ∷´?oÇm_½x¯₈‡Ûû=#vû..heaven..?",
-    "Üwpelä/g…v¤CIxæÕHÊ±7÷10š+⊚mø∀Í4NMæû½4..warped..8",
-    "Ç³øY9Ýø½kç_dℵÕ##füg2æ¼%ÏÀ&±ǡ-I„jvÊx«æ..absent..x"
+    "aleph zero..platform..wool..words..learned..call",
+    "degenerate..geometry..even..monad..patches..free",
+    "y = mx + b..hallways..hole..tubes..letters..oxen",
+    "grasslands..produced..then..plans..average..maps"
    ],
    [
-    "be..fold..for all..too-long..§m§¾öô7#3ø_ƒ..Â¯‰±:",
-    ">:..coke..all sky..null set..185±∷9#mÍCýD..hymns",
-    "ôò..self..explore..scrawled..§m§¾öô7#3ø_ƒ..psych",
-    "==..tone..dreamed..tomorrow..qÍwj=b:Gâßûǡ..young"
+    "knot..flooded..school..∀!..edge..payday..pretty",
+    "fell..correct..before..Ǝ¨..moth..gender..gospel",
+    "coke..college..stereo..=-..1914..mallet..beggar",
+    "late..H∴$zÍ`d..faster..my..gone..dreams..almost"
    ]
   ]
  },
@@ -187,22 +187,22 @@ module.exports = [
   "title": "poem 8",
   "lists": [
    [
-    "average..catching..dimly..bandaged..suitcases..R",
-    "railway..artifact..knife..ý#…∐MÜ¹ï..searching..ø",
-    "printed..emergent..paper..musician..pipelines..ò",
-    "checker..elements..chill..‰½œi9ølx..frameless..š"
+    "4..click..frame..reviewed..alchemy..crate..masts",
+    "i..gates..clump..galaxies..engines..gears..chair",
+    "J..fugue..digit..skeletal..surface..rapid..chest",
+    "û..churn..plant..students..sharpen..sheet..chevy"
    ],
    [
-    "strike..key..clickbait..grass blade dyke..î..way",
-    "static..die..effective..¨1ôýh÷öIæ¡±¡Y%¾ø..e..ivy",
-    "friend..any..faltering..|bl8?~m$NU9±3jûA..x..any",
-    "stable..gay..reference..the infinite sky..#...^."
+    "maxwell..filled..drawings..#..infinite between",
+    "pattern..waking..deviance..~..infinite between",
+    "ladders..payday..permeate..¼..µûtpIr±‹T⊚ℵ½k8Jé",
+    "chatter..script..hundreds..4..4?!±8^Ù_æ2∐t∴?¡·"
    ],
    [
-    "flashlight..raster..veil..∴..fusing..washes..m",
-    "stammering..pliers..sing..=..gender..device..=",
-    "sweltering..drench..pail..4..t-cell..faster..œ",
-    "w#§ÐwÏ=C³d..chance..dear..5..missed..frayed..G"
+    "Iü¼_~e”j?8öw⊚jy..search..farm..intact..ālef...ǡ.",
+    "read write draw..=ä#áxé..ends..desert..tide..ice",
+    "h#n=áwëœ«ǎ½p?jk..lights..were..vessel..sang..#-#",
+    "dß∅m8∞5û58≈ƒI¹ù..tables..epic..intact..ways..lit"
    ]
   ]
  },
@@ -210,22 +210,22 @@ module.exports = [
   "title": "poem 9",
   "lists": [
    [
-    "effort..wiry..é..slipped..associative..locked..k",
-    "trying..road..?..package..cataclysmic..narrow..m",
-    "martha..lips..j..pointer..topographic..lament..Æ",
-    "walter..free..¦..algebra..adaptations..wheels..x"
+    "I$3…çÕ+pnA5D×..sidewalk..mineral..acres..boats",
+    "distillations..metallic..elegiac..snake..swing",
+    "pitch factory..chiseled..sharpen..retie..paths",
+    "cybernetic ze..watering..checker..night..wards"
    ],
    [
-    "strange..slender..predicate..me..scottish..drop",
-    "raining..flashes..carpenter..my..grabbing..nets",
-    "beneath..fragile..radiation..it..sandwich..word",
-    "signals..roadway..parchment..43..december..lily"
+    "parched..compass..first..>:..À∴ë=8Gý^=xjÐkù..ß",
+    "species..gallery..dried..ax..%+Õa₈kÕǡ½Û¤gja..÷",
+    "pigeons..beneath..gears..ax..J|1·wq∅L#”xöyç..ƒ",
+    "charges..bending..winds..==..cross-platform..…"
    ],
    [
-    "stored..recognition..beats..feather..foolish..6",
-    "filled..topographic..store..ghostly..concert..~",
-    "enigma..sympathetic..given..schemas..sleeves..ß",
-    "choose..incantation..ratio..howling..strange..?"
+    "fact..pail..pigeon..k..∷..beginning..message..J",
+    "harp..goal..levers..ó..?..typically..glimpse..V",
+    "said..sign..spider..V..:..receivers..decline..ê",
+    "knit..soot..matter..²..$..jrÕ=dö½_∐..palette..∐"
    ]
   ]
  },
@@ -233,22 +233,22 @@ module.exports = [
   "title": "poem 10",
   "lists": [
    [
-    "curves..prime..holding..rise..over..doors..∞..8",
-    "frozen..write..numbers..hush..howl..queer.....g",
-    "intent..shelf..courier..form..nets..skull..!..G",
-    "rewire..lever..ribbons..more..just..guide..x..‡"
+    "rites..„ó∏k≑céö∞±$ƒœx&1+ûé÷R!÷êJîóæ..N..Ǝ¨..skew",
+    "boxed..„ó∏k≑céö∞±$ƒœx&1+ûé÷R!÷êJîóæ..ç..17..both",
+    "delve..œçßûmH3v÷Y¼¹½Êbµ4§&ÃℵKllx4ÏÜ..û..-...file",
+    "lines..„ó∏k≑céö∞±$ƒœx&1+ûé÷R!÷êJîóæ..û..in..duty"
    ],
    [
-    "deep..electrode..textured..flew..gospel..opening",
-    "from..functions..evolving..2ûlT..etched..dustlit",
-    "knit..distilled..supposed..moss..others..informs",
-    "boot..specimens..friction..turn..improv..degrees"
+    "florescence..ä#¦Íótû7/3-ǎmò|b∞é9=÷%≑§{Ã8«wS..k",
+    "$##=ƒµm6ü~ø..∴^bü/∈∀d‰¾häǡ}6-bH0c0_p0lCDß‹#..$",
+    "industry(!)..∴^bü/∈∀d‰¾häǡ}6-bH0c0_p0lCDß‹#..K",
+    "×ø¹9&üç&oƎ¡..=¡‰eV½G!oìÜ¯IAi∫§½=7#¯5t{&±¨Õ7..{"
    ],
    [
-    "whisper..gentle..pivot..tuning..these..diners..1",
-    "species..number..moves..floors..prism..fusing..œ",
-    "slipped..energy..towns..unlike..south..chords.._",
-    "¯J|mô7‹..sought..joins..xï¹`×I..slung..rhythm..œ"
+    "see..Ǝ¨..supposed..telephone..mind..bus..purpose",
+    "run..13..chiseled..?ü±øi⊚IÆ∈..yoke..bog..çåw çåw",
+    "| |..or..recorder..extension..mine..dew..history",
+    "010..64..interior..œiƩH±~öV×..ship..128..â÷I∅8¾i"
    ]
   ]
  },
@@ -256,22 +256,22 @@ module.exports = [
   "title": "poem 11",
   "lists": [
    [
-    "silicon..titrations..v..oscillations..spoons..§",
-    "tapping..industrial..|..185±∷9#mÍCýD..cantor..Y",
-    "arduous..discussion..ø..185±∷9#mÍCýD..switch..ä",
-    "informs..üá#∞ƒwÀℵ#!..x..book of sand..3-ring..H"
+    "gripping..1906..functions..translator..gold..sun",
+    "villains..1938..cascading..industrial..full..bow",
+    "plankton..tool..œiƩH±~öV×..production..tomb...,.",
+    "plankton..bags..fragility..clockworks..tomb..(æ)"
    ],
    [
-    "grasping..isotopic..clocks..hush..industry!..ß",
-    "contrast..abundant..august..miss..salvation..½",
-    "brandish..drifting..choral..bank..transport..p",
-    "m=Ǝk∞l¦_..%xǎçƒ}Í#..drowsy..bury..shuffling..8"
+    "snow..dß∅m8∞5û58≈ƒI¹ù..ribbons..boarding..grip",
+    "thin..ý‰½ø~œdØQîaï!2l..symbols..quilting..…Â”0",
+    "pull..ý‰½ø~œdØQîaï!2l..looking..&{2Øℵ#²t..hard",
+    "mark..h#n=áwëœ«ǎ½p?jk..cattail..∞&jÍƒgqj..vial"
    ],
    [
-    "œoæ∫⊙tj½8ÆI³7²S...128..dusty window..ê..prisons",
-    "î4dâli_µy₈ƒêPoêÀ..now..psychotropic..∅..graphic",
-    "¨1ôýh÷öIæ¡±¡Y%¾ø..rib..f.:ÆœëM38÷Gw..i..walking",
-    "trans | platform..Ø0Ø..translations..§..turning"
+    "wing..paul..against..plans..tours..struggling..3",
+    "tool..ýx½m..buffalo..paint..radio..y = mx + b..%",
+    "pond..back..rigging..music..11001..blacksmith..û",
+    "arts..cars..against..&KRæ”..barns..minimalist..±"
    ]
   ]
  },
@@ -279,22 +279,22 @@ module.exports = [
   "title": "poem 12",
   "lists": [
    [
-    "way..∀..û..quest..correct..tenderness..platforms",
-    "way..V..s..curve..browser..degenerate..renderers",
-    "our..#..y..wards..reached..swarm-self..temporary",
-    "law..P..&..state..algebra..percolator..catalogue"
+    "assessments..w..∈..stalk..value(s)..part..#øS„d",
+    "observatory..∈..Ã..tonal..hydrogen..noun..pause",
+    "uncountable..J..¹..tents..conjurer..seas..skull",
+    "unstoppable..l..´..clock..hundreds..foot..reach"
    ],
    [
-    "mouth..a..embrace..~..perhaps..some..||..:cÙÃjç",
-    "along..é..drunken..G..clouded..purl..:#..muscle",
-    "‡_n#m..¼..perhaps..`..decades..harp..ℵ₀..parcel",
-    "acres..h..o¦á}Øýr..¡..forests..caps..()..walked"
+    "denumerable..texaco..bloody..çQ#oÜÊ05¦1½∈..caws",
+    "phosphorous..copper..glassy..JcLH}4¦∷löÝ~..next",
+    "florescence..turned..coffee..#:æTKƒ½v≑½Ý6..lost",
+    "Y1H×?G6xl0ö..hammer..routes..text factory..lock"
    ],
    [
-    "supermarket..chatter..leap..more..deserts..free",
-    "convergence..emerald..root..beat..drunken..tone",
-    "resplendent..package..full..8⊙ü²..longarm..paul",
-    "chlorophyll..schemas..oboe..moss..stretch..hour"
+    "forms..loud..textures..glassy..convergence..only",
+    "cards..mask..assembly..odessa..manufacture..well",
+    "atoms..heat..helpless..joyful..manufacture..fray",
+    "malls..burn..ℵ₀ℵ₁ℵ₂ℵ₃..planet..unstoppable..hymn"
    ]
   ]
  },
@@ -302,22 +302,22 @@ module.exports = [
   "title": "poem 13",
   "lists": [
    [
-    "j8¯JïÛℵk|+êÐj¾J½=JrøÊökƎx⊚7J¯..eternity..rushes",
-    "­ÜÐùƶ+~∴#4Ê¾ÍkÆ¦/ïÝ=­5&ý?m1c∐..manifest..bucket",
-    "±iý_∏Pm½tD¹^wcï1Tò¦æƎ0î9û|Qüb..bleeding..canvas",
-    "3ǎÛœ_Âöò÷Ç7p8ℵ0á‰¤∏p!ÐýK04ôÇU..skeletal..#?z¹bê"
+    "map..careening..cincinnati..faster..deviant..arc",
+    "|||..backspace..curvatures..planet..pausing..ink",
+    "tar..alleyways..difference..papers..systems..sew",
+    "È&i..scattered..multimedia..heaven..playing..gap"
    ],
    [
-    "walked..finite..accessible..spills..train..vital",
-    "¼V=ü¾r..uptake..accelerate..digits..dying..rules",
-    "fungal..riding..multimedia..ticker..waves..waves",
-    "energy..desert..relentless..tracks..where..speed"
+    "ûÛés∷#½1çüjuÂ‰ù0=4Ùiýa¡öG=#¾mpØ#..drain..1958..À",
+    "8$ç1¼`À~êÝ”…iC#½xœ$œ∞∏⊙3yǡ%w%Ǝ¹R..elegy..risk..D",
+    "6äzû…u?ƒ1-îY$Ni∀≑ß$tx0&ûœJ±jyUk~..files..cups..=",
+    "äê‰‡x2dGP¡¼Se+ýäû×ïHJ$&x7§&5òœDƩ..dwell..live..ò"
    ],
    [
-    "waiting..mesh..cat..chutes..lesbian..3rd..‰..∈",
-    "species..name..sea..tuning..clarity..jet..?..ü",
-    "waiting..very..gas..saturn..distant..asl..„..=",
-    "perfect..verb..∅.∅..gender..insight..wax..3..Ý"
+    "pitch..amplify..faithless..wandering..insects..ü",
+    "plans..blazing..grassland..l½j·8u½‡‹..gravity..Ý",
+    "paths..railway..signature..renderers..cascade..«",
+    "chest..circles..blackened..unpressed..animate..Ý"
    ]
   ]
  },
@@ -325,22 +325,22 @@ module.exports = [
   "title": "poem 14",
   "lists": [
    [
-    "redeem..pick..factory..f.:ÆœëM38÷Gw..monastic..$",
-    "static..draw..watches..experiential..relation..r",
-    "graphs..1914..prairie..?§7ö:eH‹Ímv∴..geologic..:",
-    "spider..fell..forests..choreography..minerals..Ð"
+    "askew..dolls..relentless..willow..x..viola..yoke",
+    "takes..pitch..invocation..living..+..twist..gear",
+    "carts..boxed..conditions..prayer..j..rises..clap",
+    "codes..tight..inflection..vision..Ù..whose..acid"
    ],
    [
-    "backward..gathers..plankton..wolves..scripts..//",
-    "rhythmic..restore..redfield..oxygen..meeting..{}",
-    "hovering..climate..emphasis..typing..evening..is",
-    "retrieve..climate..glaciers..adrift..wetland..am"
+    "receipts..cello..hydrogen..siberian..ecosystem",
+    "∞&jÍƒgqj..vinyl..criminal..gathered..scribbled",
+    "ripening..looms..helpless..critical..inception",
+    "pipeline..niche..darkness..codework..something"
    ],
    [
-    "lock..near..feathers..snapped..snapshot..2d..î",
-    "holy..gray..fretless..kinetic..projects..to..m",
-    "helm..that..volcanic..longarm..scraping..in..ä",
-    "verb..plot..receipts..threads..operatic..ôò..j"
+    "gay..gospel..electricity..rocky..i..monad..fray",
+    "çåw..pretty..divergences..floor..ç..swift..line",
+    "had..flames..proprietary..poles..­..00100..caws",
+    "she..cliffs..Iëµûš„p&ÝÊ...codes..c..vapor..boys"
    ]
   ]
  },
@@ -348,22 +348,22 @@ module.exports = [
   "title": "poem 15",
   "lists": [
    [
-    "bend..chest..from..unmerciful..i..winter..poison",
-    "nest..stick..this..expression..J..drinks..bibles",
-    "pins..smell..city..quickening..⊙..choose..throws",
-    "tied..piece..husk..deductions..&..weight..belief"
+    "contexts..bowling..I..tightrope..mythic..well..P",
+    "textured..cycling..ǡ..listening..devoid..bind..e",
+    "specific..burning..$..projected..thirst..Û5&₈..G",
+    "geometry..tremble..k..turnstile..moving..neon..½"
    ],
    [
-    "wood..red-sky..coursework..texture..rugged..spun",
-    "kind..science..experience..imprint..record..ions",
-    "coke..housing..w#§ÐwÏ=C³d..morning..crisis..thin",
-    "dirt..methods..explicitly..swiftly..throws..rush"
+    "something..produced..likelihood..words..courier",
+    "inference..modeling..discussion..codex..browser",
+    "conductor..glorious..4ø…!R42´xt..tolls..shifted",
+    "producers..students..extinction..wound..infused"
    ],
    [
-    "glove..sunless..forced..lung..movies..cloth..Ø",
-    "score..forcing..fungus..knot..#?z¹bê..siren..D",
-    "limit..pigeons..person..eyes..robust..touch..Ç",
-    "diner..sweetly..sudden..&≑t6..ticker..stick..c"
+    "die..bulb..recorder..poems..lucky strike..grows",
+    ".Ʃ...ripe..shredded..tours..çQ#oÜÊ05¦1½∈..times",
+    "(×)..moth..quilting..plumb..fluorescence..group",
+    "010..moth..l«Gûó÷_ý..clump..KìUÆøÜ½⊙q¡wA..knife"
    ]
   ]
  },
@@ -371,22 +371,22 @@ module.exports = [
   "title": "poem 16",
   "lists": [
    [
-    "dx..ghost..stalk..discussion..strings..Ê..jump",
-    "_¶..touch..forms..modulation..program..x..hall",
-    ".^..rolls..chalk..y = mx + b..3ûM0-i4.._..copy",
-    "15..study..books..Ùý#ýélr½__..rubbing..Ü..paul"
+    "inhabitants..asphalt..ambiguity..snapshot..!==",
+    "night watch..conduct..plurality..junkyard..|||",
+    "dissolution..falling..consuming..platform...^.",
+    "AIK&?‰|}÷∐Û..trophic..junctions..physical..god"
    ],
    [
-    "øìéë+ƒ..pG8Ã..dinosaur..drowsy..today..public..x",
-    "coding..dust..graffiti..forgot..souls..lights..û",
-    "worlds..gray..function..spills..cliff..wizard..3",
-    "things..&≑t6..citation..audion..graph..joyful..7"
+    "rocking..pulling..combination..salt..original..&",
+    "pulling..pistons..bifurcation..lash..staining..∞",
+    "rubbing..factory..pop-up book..cold..laughing..a",
+    "longing..housing..computation..wild..musician..K"
    ],
    [
-    "radio pluto..sand..^...plurality..habitat..ê..o",
-    "incantation..howl..to..collision..diagram..î..g",
-    "combination..bind..ôò..vibrating..fractal..t..½",
-    "conjunction..folk..ýg..dynamical..tapping..u..2"
+    "journals..bang..dusk..nights..sundial..boys..x",
+    "swirling..rail..crow..phcœ=:..columns..soda..ê",
+    "éC«7Íb≑?..fool..rush..slowly..diorama..turn..5",
+    "notation..soda..harp..swings..rhythms..till..Ø"
    ]
   ]
  },
@@ -394,22 +394,22 @@ module.exports = [
   "title": "poem 17",
   "lists": [
    [
-    "J¨2½4PÝG«P¦N1j_:#éý2÷a?„û´m72+..cavern..áî0..13",
-    "J¨2½4PÝG«P¦N1j_:#éý2÷a?„û´m72+..albert..| |..us",
-    "¹⊚ôéHÂkµI1…L!9t∐ƒÆ÷¼ÜG#&ÝôeƩt0..cycles..!.!..­÷",
-    "=æÍjösû32j=çµJhH5j¡R∞â«G¡pǎ´:j..crowds..had..¡¡"
+    "a + b = b + a..cyclones..hunt..poured..raster..Ý",
+    "repeat repeat..unbroken..gear..nevada..glassy..ë",
+    "∅GØLj6tÇ∏Go½ý..wordless..shop..screws..retort..¡",
+    "I$3…çÕ+pnA5D×..narrator..bank..tattoo..hollow..o"
    ],
    [
-    "ℵ₀..(re)enactment..craft..super..that..problem",
-    "_¶..#:¡ÈÛ‹‰r∴ço‡~..start..bells..mesh..drought",
-    "my..≈%û84¤Ø3∫mâÐ_..shown..world..make..creased",
-    "&^..a + b = b + a..needs..moons..snow..ghostly"
+    "samples..background..hallways..lampless..belly",
+    "program..orchestral..maskless..projects..belts",
+    "cadenza..devastated..shredded..sketches..horse",
+    "problem..hyperspace..collated..produced..entry"
    ],
    [
-    "boundedness..plots..start..reversal..netherworld",
-    "storefronts..deals..reedy..emanates..en¦∏//:{Õ^S",
-    "conductance..nomad..frame..fretless..creased map",
-    "creased map..there..boats..catapult..7¯S«÷x¤8öîÊ"
+    "textures..chamber..greasy..checker..89..deserts",
+    "threaded..feather..system..nearest..be..centers",
+    "responds..records..places..awkward..no..swollen",
+    "transect..verdant..labels..oracles..:#..measure"
    ]
   ]
  },
@@ -417,22 +417,22 @@ module.exports = [
   "title": "poem 18",
   "lists": [
    [
-    "pins..∫..îcÜés∀Í?¦{æGl≈|ßPI¯L¹!±ÐhlL⊙çH÷~¯ä×..Ê",
-    "wars..R..êÃý¤Ý?½¨Hm¼zý8¼´­lûý|±ç$âÈ|¾:##∴!¡4..:",
-    "cafe..‡..S#Ãm∐$y:TP3x&²Nlé~T½jýòPi∴Üse¦…|p­=..-",
-    "wave..c..?!œVx‡2jx¡wÍ÷ø²±i”TÃ¡ö{ü+÷5«∴₈ƶî¤U?..ö"
+    "de..sleep..graffiti..grasping..ƶ&œNxøfá11&f{..¤",
+    ":#..files..pavement..midnight..(re)enactment..0",
+    "dx..green..physical..spilling..the archivist..ô",
+    "=>..green..sanctify..transact..ƶ&œNxøfá11&f{..ǎ"
    ],
    [
-    "phase..quest..…±Íc¾½q4I⊚..lean..::..çåw çåw..?",
-    "query..belts..refineries..melt.._¶..railway..!",
-    "magic..razed..cincinnati..knit..&^..temples..ò",
-    "lined..twist..accelerate..flag..´ë..gymnast..g"
+    "cavern..4ö¯YK∞≑|÷Cd÷9=hù..n6ø∀½ÛØ^µz..sparse..?",
+    "higher..grass blade dyke..manuscript..waking..≈",
+    "napkin..4?!±8^Ù_æ2∐t∴?¡·..literature..circus..|",
+    "create..ä#ÆôjƒsÛH~8H²½5?..architects..papers..#"
    ],
    [
-    "mill..filing..chipped..exists..emphasis..₈..sink",
-    "that..alleys..red-sky..bitter..imagined..m..fins",
-    "duty..slides..playing..drinks..knapsack..5..girl",
-    "data..public..textile..nevada..humidity..Õ..with"
+    "~..write..whether..hammer..ß..filing..winged..∫∫",
+    "ï..death..talking..starry..l..glance..wanted..dz",
+    "î..humid..leather..nevada..¦..racing..warped..at",
+    "÷..clear..tremble..curved..z..tilted..vacuum..he"
    ]
   ]
  },
@@ -440,22 +440,22 @@ module.exports = [
   "title": "poem 19",
   "lists": [
    [
-    "knot..echo..piercing..desperate..pins..isotope",
-    "prey..work..reviewed..drainpipe..wars..declare",
-    "date..ties..ripening..telescope..drip..ecology",
-    "wolf..swan..rational..lifetimes..goal..writing"
+    "loose..∐..collaborative..iii..slight..herself..&",
+    "brown..µ..intrinsically...ǡ...levers..limited..5",
+    "rosin..e..collaborative..sea..silent..lesbian..v",
+    "thing..k..infinite sets..gay..barren..spewing..Ê"
    ],
    [
-    "flame..transact..‹..sea..rhythmic..probabilities",
-    "fixed..drowning..#..orb..backward..differentials",
-    "enter..sketches..ƒ..key..gatherer..point-of-view",
-    "night..intimate..V..jaw..emphasis..light factory"
+    "plot..dancehall..avalanche..forsaken..13..lost",
+    "door..hydrology..clickbait..tattered..be..flow",
+    "melt..emptiness..orchestra..gathered..43..leaf",
+    "soon..biography..vibration..vastness..ö:..wars"
    ],
    [
-    "dated..boys..engage..scar..abandon..again..nomad",
-    "rosin..came..Al·6áƶ..were..skipped..opera..shock",
-    "press..down..simple..loss..klezmer..track..grave",
-    "chalk..tide..beaked..ever..carries..woven..hinge"
+    "gender..seemingly..?..walter..¹..drawers..mend",
+    "shards..carnivals..Û..n-body..­..stained..17th",
+    "mentor..abandoned..é..hollow..À..landing..head",
+    "bloody..drainpipe..+..fading..Ý..tremble..rail"
    ]
   ]
  },
@@ -463,22 +463,22 @@ module.exports = [
   "title": "poem 20",
   "lists": [
    [
-    "biome..drowsy..sonic..spider..ØÆ4IéxÜǡÇ..pluto",
-    "tooth..melody..depth..cycles..shortcuts..|∅.∅|",
-    "built..screws..store..corner..september..fires",
-    "fists..mystic..moons..urgent..electrode..bolts"
+    "deftly..edge..^..red-sky..clouds..knowledge..dy",
+    "people..::::..”..finding..ticker..recording..we",
+    "scythe..foot..o..pensive..throng..hypertext..:#",
+    "drench..tool..8..fishers..erotic..lifetimes..in"
    ],
    [
-    "|∅.∅|..ohio..promised..opportunities..unfold..∞",
-    "unity..into..possibly..opportunities..slight..š",
-    "still..uses..regiment..discontinuity..photos..j",
-    "hurry..spun..gripping..unprecedented..curves..4"
+    "swings..low..informs..foot..rows..efficiency..=>",
+    "roofer..¡!¡..winding..ripe..left..tenderness...#",
+    "street..our..screens..redo..loud..encryption..:#",
+    "others..not..slipped..fuel..keen..windshield..it"
    ],
    [
-    "quickening..code..u..forge..drought..2d..dots..½",
-    "coursework..lots..ö..twist..consume..16..bell..‰",
-    "complicity..17th..ò..smell..flooded..>:..long..≈",
-    "expression..oboe.....plumb..minutes..=>..news..q"
+    "synchronized..dß∅m8∞5û58≈ƒI¹ù..forced..torched",
+    "frictionless..h#n=áwëœ«ǎ½p?jk..encode..foundry",
+    "recollection..loosely-coupled..houses..drugged",
+    "progressions..loosely-coupled..prints..burning"
    ]
   ]
  },
@@ -486,22 +486,22 @@ module.exports = [
   "title": "poem 21",
   "lists": [
    [
-    "transcriptions..proclaim..computation..dirt..Ø",
-    "transformation..rational..qš01Í=lLd0w..king..µ",
-    "cross-platform..spinning..subtraction..hair..c",
-    "cross-platform..catapult..populations..kind..x"
+    "onward..µûtpIr±‹T⊚ℵ½k8Jé..touch..blank..landing",
+    "matrix..4ö¯YK∞≑|÷Cd÷9=hù..urban..cargo..unbound",
+    "within..4ö¯YK∞≑|÷Cd÷9=hù..would..known..drought",
+    "fabric..platform station..count..forms..habitat"
    ],
    [
-    "shaking..glancing..½∀jj∈#..trans | platform..48",
-    "columns..radiator..shhhhh..xÃa727$mzóHo?8∏÷..∅∅",
-    "captain..rational..liquid..î4dâli_µy₈ƒêPoêÀ..us",
-    "abandon..thousand..floors.._hmIxc&év9ÜfjdUb..­÷"
+    "1938..C..marking..throws..arc..roadway..tiny..-",
+    "what.._..horizon..spiral..run..quantum..fall..#",
+    "your..¼..rasping..affirm..hot..unbound..grip..∀",
+    "opal..‰..program..poison..way..çåw çåw..duty..?"
    ],
    [
-    "øwwf∅‹3o..thrumming..‰..block..shiny..ä..mist..n",
-    "isotopic..migrating..j..dolls..tools..0..arms..P",
-    "junction..clickbait..Ǝ..chair..rocks..â..rows..Û",
-    "staining..grassland..7..psych..tonal..À..&≑t6..|"
+    "anchor..duration..transcriptions..torch..primal",
+    "photos..P¤±#.Iû÷..}ò„ÆßAA8¦jÏiƎ&..board..sticks",
+    "mythic..original..transmigration..abyss..lights",
+    "vacant..mountain..collaborations..radar..riding"
    ]
   ]
  },
@@ -509,22 +509,22 @@ module.exports = [
   "title": "poem 22",
   "lists": [
    [
-    "gatherer..thread..traverse..conjure..method..one",
-    "alphabet..marble..alphabet..patches..breath..god",
-    "software..portal..remember..learned..choral..own",
-    "external..sleepy..sentence..jukebox..sheets..|||"
+    "burlesque..platforms..perfect..latch..pepper..±",
+    "knowledge..#7≈5½Ùk²#..jukebox..short..robust..¡",
+    "hydrology..languages..red-sky..slate..forget..2",
+    "transform..blackened..stunned..plots..whales..æ"
    ],
    [
-    "construct..backward..catapult..helm..saves!..6",
-    "catalogue..crumpled..deranged..rows..narrow..g",
-    "Ûä∏±Ø½f?o..calculus..hands-on..pads..follow..1",
-    "developer..symphony..lukewarm..blue..summer..L"
+    "bender..say..dark..uncover..manhood..thousand..#",
+    "school..hum..tone..cadenza..numbers..category..2",
+    "hollow..boy..edge..çåw çåw..algebra..currents..½",
+    "tables..cut..beer..economy..tremble..calculus..‰"
    ],
    [
-    "#_#..burdened..M..wandered..human-readable..ôò",
-    "yet..burdened..ü..taxonomy..t…Üç∴ö%wý‡∞¨=·..::",
-    "!.!..platform..#..wondrous..óqoás3éfj34}#î..dy",
-    "god..palettes..?..tomorrow..PbǡV±§j¦∴_‹æ²…..00"
+    "the..j2ç¾môé..broadcast..rocky..role..glances..L",
+    "axe..compose..electrode..ready..tomb..longarm..=",
+    "^|^..created..abandoned..notes..back..canyons.._",
+    "hue..roadway..heartless..lucky..loss..jukebox..j"
    ]
   ]
  },
@@ -532,22 +532,22 @@ module.exports = [
   "title": "poem 23",
   "lists": [
    [
-    "‰4ßfHd!xýqÜ&é∏ℵǡ?âœÙ¦ØMPüòx∀k∐J¡N…Âz#&Ê≑#..dy..…",
-    "â-&ÛÃPÊ|~IH{ÍƎ:x}á÷lcøçǎ´æ§âx%Õç∴:L¯mwµwò..13..0",
-    "ä8öi9ýî³i3‹ÃDü?g¾‹¡¹ÆÇû…Yáj²/D³xÆ∏?#‡H78ü..ƒH..-",
-    "7…‰‹µ_^!ƒnÕê¹nhÃô1½œ9h¦$ƒK`é¡ƒ#$tj#4ø7=ü½..my..b"
+    "start..stream..Iü¼_~e”j?8öw⊚jy..fragmented..land",
+    "magic..settle..f„½k-ìv…Iê#2∈4÷..y = mx + b..push",
+    "spill..marked..ý‰½ø~œdØQîaï!2l..accessible..drip",
+    "spill..∐#ÛIÛG..they she all ze..accessible..wash"
    ],
    [
-    "pepper..starry..8Jwƒól„tY¨…3ý$¯..exists..rains",
-    "detail..anyway..â⊙Rbç_ØÍ~Í_gÝ¦œ..states..drive",
-    "hawker..planet..8Jwƒól„tY¨…3ý$¯..madrid..wires",
-    "census..sticks..∏Ý∴jV∞z4Vî±ü¡Ǝj..melted..given"
+    "transfigured..arachne..h#n=áwëœ«ǎ½p?jk..sudden",
+    "intersecting..j2ç¾môé..ü=MëÈ49=857LQÈÕ..stream",
+    "breathtaking..triples..ü=MëÈ49=857LQÈÕ..subway",
+    "system-level..samples..intra dependent..begins"
    ],
    [
-    "testing..10101..screeching..universal..millennia",
-    "residue..first..management..heartless..wasteland",
-    "message..11001..remembered..dumpsters..september",
-    "retrain..track..instrument..desperate..clickbait"
+    "!.!..alef..traverse..climb..walking..´..super..∈",
+    "^|^..left..reactant..paths..curtain..ì..steam..f",
+    "gay..need..dynamite..heard..blanket..#..chute..¨",
+    "are..Û5&₈..drifting..there..hurried..Ý..faded..w"
    ]
   ]
  },
@@ -555,22 +555,22 @@ module.exports = [
   "title": "poem 24",
   "lists": [
    [
-    "arrow..…|$..invocation..…ÝTsÇ³Êx-c½×tx₈{½UØ|S..∷",
-    "views..…|$..accelerate..…ÝTsÇ³Êx-c½×tx₈{½UØ|S..ø",
-    "honey..its..î¹¹fbÝ#8öÜ..÷#oê8¤⊙ir½´Rä3.ß12G¦ô..∐",
-    "roles..101..asymptotic..÷#oê8¤⊙ir½´Rä3.ß12G¦ô..3"
+    "melted..stick..handbook..sweetly..chalky..hollow",
+    "change..craft..geometry..vibrant..washes..seeing",
+    "movies..nails..stealing..chordal..player..moloch",
+    "drawer..belly..remnants..pistons..sewing..higher"
    ],
    [
-    "dirt..ℵ₀ℵ₁ℵ₂ℵ₃..aspect..#..wanderers..rise..ƒH",
-    "caps..stringed..parcel..z..strangers..sail..de",
-    "wave..spilling..charge..¾..wasteland..once..::",
-    "cool..K½V8Õ‰=÷..willow..t..reactions..five..in"
+    "chaotic..drip..important..D..?ü±øi⊚IÆ∈..skeletal",
+    "all sky..mary..(re)cover..j..rebreathe..spilling",
+    "ïÆøtÍ%ì..late..proposals..7..intensity..tenebrae",
+    "notches..boot..newsprint..¦..gathering..permeate"
    ],
    [
-    "me..movies..chord..energy..symphonies..wooden...",
-    "&...spills..signs..thrown..resonation..stones..m",
-    "so..melody..death..linear..challenges..foster..^",
-    "&>..growth..paths..plains..federation..taking..Y"
+    "hero zero rider ze..cloth factory..arrived..down",
+    "È&bU∞Ctg´∞ℵv=_‹ÇTx..probabilistic..breathe..take",
+    "vö`$ûR-ØÍ∷.7C8Q_¯∀..ƶ&œNxøfá11&f{..teacher..hone",
+    "x‰ÜœóckMýHÙ70Ývö∏¹..ƶ&œNxøfá11&f{..hearing..shed"
    ]
   ]
  },
@@ -578,22 +578,22 @@ module.exports = [
   "title": "poem 25",
   "lists": [
    [
-    "circle..‡$ö/ƶ½1ØÕf∞∷2G=Jî¦..¯..building..into..k",
-    "ignite..f¯$m}=~2±¡1-²:~~iw..ß..homeless..west..ƒ",
-    "flying..!s&{$òx`8^8ÃæK9lÏ∅..ç..pictures..rope..$",
-    "trying..7‰ýÛ!‰½oo¨∞²!rýU∞j..}..betweens..link..¦"
+    "silent..mythic..red-sky..wooden..torrent..=..dry",
+    "triode..worked..rolling..(ze)ro..mission..ç..!==",
+    "behind..phcœ=:..insects..coding..silicon..4..#-#",
+    "robust..robust..milling..pulled..evening..j..few"
    ],
    [
-    "begins..unbroken..on..V..efficient..held..town",
-    "improv..crumpled..1¢..ß..pipelines..thin..pour",
-    "cyborg..crumpled..&&..3..different..ribs..shop",
-    "wolves..touching..::..~..telephony..pine..slow"
+    "µûtpIr±‹T⊚ℵ½k8Jé..put..lure..blurred..link..live",
+    "m∴÷xÕℵi!DéÈý2Ù/œ..ÕM4..root..economy..rich..held",
+    "œcoe%-=0xgÂ3₈ç+ô..get..iron..provers..with..news",
+    "ä#ÆôjƒsÛH~8H²½5?..out..wide..thunder..ions..spew"
    ],
    [
-    "reconstruct..fuse..glue..centers..tents..notes",
-    "reconstruct..pG8Ã..live..weeping..rolls..there",
-    "2ùg‰P‰é=gD∀..fish..moss..evening..globe..evoke",
-    "x?…½J^l0xÊi..long..curl..profile..‡_n#m..hurry"
+    "rinse..î..â÷I∅8¾i..vertiginous..plywood..rimmed",
+    "stool..j..rhizome..florescence..history..sheets",
+    "windy..Ü..ÀØ∷ücǡ|..projections..whisper..devoid",
+    "skull..J..forcing..reconstruct..combine..series"
    ]
   ]
  },
@@ -601,22 +601,22 @@ module.exports = [
   "title": "poem 26",
   "lists": [
    [
-    "quilting..drinks..stalk..you..mill..graph..Y..j",
-    "artistic..stains..start..gay..plan..flags..v..J",
-    "constant..counts..rural..ink..cast..drawn..ý..¨",
-    "critical..vacant..royal..fur..¦Hℵ#..ghost..∈..+"
+    "l«Gûó÷_ý..#qîj$}jH0zô257_∞..arcs..surging..culm",
+    "duration..sœýk3&∅÷Íœ±ǡ‰‡Gî..mask..marimba..…Â”0",
+    "ℵ₀ℵ₁ℵ₂ℵ₃..ø∫i¤HPœomz∈RQ∈g8..flow..forward..fast",
+    "grasping..platform station..auto..arduous..ions"
    ],
    [
-    "1..towns..flashlight..anyway..clap..longarm..128",
-    "₈..craft..cincinnati..bounds..cold..jumping..gas",
-    "r..slant..old-school..wizard..iowa..liminal..48¢",
-    "C..woman..complicity..moving..body..pulsing..ivy"
+    "psychotropic..translator..artifacts..diagram..it",
+    "transactions..functional..workshops..blazing..()",
+    "calculations..mƩfÊÍ&éG∫Q..bandwidth..musical..-.",
+    "calculations..intonation..industry!..plywood..=>"
    ],
    [
-    "points..group..dusty window..abstraction..adrift",
-    "arctic..rocks..=nnolê∴?ƩIw0..criss-cross..intact",
-    "humans..shiny..Ø2jx∴ý:î9g∀½..computation..fusing",
-    "chalky..tight..installation..linguistics..origin"
+    "stick..glyph..ø..masts..night watch..adrift..m",
+    "track..blown..o..brown..$##=ƒµm6ü~ø..prints..g",
+    "spark..wards..2..pluto..dissipating..nights..Ê",
+    "knots..murky..3..tight..dissolution..mystic..‡"
    ]
   ]
  },
@@ -624,22 +624,22 @@ module.exports = [
   "title": "poem 27",
   "lists": [
    [
-    "prayer..marble..sequester..}M·..dream..forgot..p",
-    "porous..escape..letterman..jet..rungs..narrow..ø",
-    "gather..stable..progress!..hot..whale..player..ƒ",
-    "theory..rusted..xylophone..sow..every..ghosts..^"
+    "Kté”ûÂ”..stored..surveys..¾f5#§tƩ41x∈ën‹4joö½¨⊚",
+    "corners..summer..ordered..|2ÀÛ∞œd½œêîÃ7Ü….‹A¯&¦",
+    "closest..theory..prophet..ØØøP¡∞±&÷ö¼wƒ^¦éß¹çÃö",
+    "feather..cellar..samples..q8RoÝj_¤w|.öùf7n∐Nl-x"
    ],
    [
-    "sentence..pG8Ã..calls..royal..abandon..lone..ü",
-    "fretless..!±^¡..felon..blend..cathode..eyes..k",
-    "marlboro..neon..beast..10101..whether..wolf..÷",
-    "collated..such..flags..graph..bullets..spew..½"
+    "Ùℵv4j¯‰¾Gç:Ã1woÛ=ìƒ#}÷r?≑M⊚!´0₈o5jw±#6∈ÀöIj₈Ý..À",
+    "ßSƶ¦Ø?ÝæƩ=ö5±∏#∐÷Ǝ5z#ò%êøJÊ?Axm≈ÍT%ûýøÊz½kT/¡..§",
+    "7koo2ødvtƶç5Lœ8îRlû#jY∏×poz≈∐5&Y3∫pü4_jMPN.yt..|",
+    "p∞³üÈ&÷é{4∐2êo„⊚∞ÏÙ54G?ö&œkx8Øxw””∏:$RR«‹ø„fÝ..v"
    ],
    [
-    "people..cloud factory..vectors..matchbook..½..!^",
-    "asleep..1÷²$h_öøAì÷ôx..collage..resurrect..%..to",
-    "retort..(re)enactment..erasure..newspaper..À..be",
-    "access..(re)do (red)o..uncover..blackened..ó..ax"
+    "dulled..folded..magnet..commerce..transcendence",
+    "copper..people..branch..unfurled..Dø8ý‡$œ^_½öÍh",
+    "tunnel..search..erased..trousers..?oo¦nc⊙|äzIg~",
+    "moment..aspect..bounds..collapse..a x b = b x a"
    ]
   ]
  },
@@ -647,22 +647,22 @@ module.exports = [
   "title": "poem 28",
   "lists": [
    [
-    "mast..unity..enter..crate..lines..present..mary",
-    "scar..plain..clump..whale..value..twisted..they",
-    "same..caged..∞`C¦I..ashes..trans..arrives..live",
-    "nest..stalk..sinew..prime..glass..altered..pins"
+    "their..weightless..i..sequestrate..swarm-self..î",
+    "plain..stretching..Ü..Y1H×?G6xl0ö..scratching..Ø",
+    "|∅.∅|..alphabetic..r..inhabitance..×û¦øö±=m=Ã..´",
+    "brief..resilience..‰..sympathetic..y = mx + b..Ê"
    ],
    [
-    "currents..asl..infinity..ruptured..knifelike..re",
-    "stranger..:::..gendered..variable..translate..43",
-    "buslines..cat..crumpled..emphasis..hypertext..ax",
-    "semantic..key..feasibly..quartets..fragility..>:"
+    "screws..vibrant..burlesque..survey..striking..‹",
+    "chalky..balding..inference..magnet..gestures..V",
+    "upside..traffic..buildings..rubric..glaciers..ö",
+    "deeper..bearing..strangers..begins..embedded..î"
    ],
    [
-    "aspire..alleyways..Ý..machines..hammered..faster",
-    "manual..resurrect..∅..blankets..multiple..lumber",
-    "steady..adaptable..Ý..twisting..deranged..uptake",
-    "grazer..demystify..Ø..radiance..rainfall..vacuum"
+    "prism..walks..washes..ālef..variable..artist..ǡ",
+    "drawn..|.|.|..became..bind..staining..desert..~",
+    "cages..cycle..making..same..staining..asleep..∏",
+    "black..which..walked..arts..arrivals..search..4"
    ]
   ]
  },
@@ -670,22 +670,22 @@ module.exports = [
   "title": "poem 29",
   "lists": [
    [
-    "ÀeGCçG8=`≈#bJLerm∅m#é¦=öo+#&H..walk..adrift..fog",
-    "j8¯JïÛℵk|+êÐj¾J½=JrøÊökƎx⊚7J¯..flow..signal..pin",
-    "±iý_∏Pm½tD¹^wcï1Tò¦æƎ0î9û|Qüb..meet..beyond..far",
-    "ÀeGCçG8=`≈#bJLerm∅m#é¦=öo+#&H..hive..middle..law"
+    "proliferation..boatman..charcoal..ropes..metric",
+    "proliferation..spinner..the body..field..spills",
+    "noise factory..arachne..homeless..caves..gap(s)",
+    "transcendence..craters..platform..steam..mentor"
    ],
    [
-    "tent..average..gas..slight..13..sow..stain..ô..o",
-    "till..wrapper..bit..search..5¢..all..stalk..Ê..Ü",
-    "rock..spilled..doe..wanted..2d..can..prism..{..æ",
-    "plan..manhood..½jt..forgot..^...½jt..plain..ù..ƒ"
+    "think..monad..seal..factory..asked..take..images",
+    "store..psych..star..reified..fists..spew..revery",
+    "silos..morse..coal..glimpse..shorn..move..higher",
+    "latch..paint..mark..instead..pools..mesh..easily"
    ],
    [
-    "hat..intermittent..orchestration..0½1..beat..∀!",
-    "day..otherworldly..point-of-view..all..vein..1¢",
-    "one..breathtaking..trans | media..:::..roll..¡¡",
-    "zoo..cable-access..reverberation..cry..king..43"
+    "rich..day..½7¡¯4U¨ƒ7Ǝ~¨äÝ!#oœbö≈Gçfî2‹Í½I..ç..ü",
+    "nail..low..½7¡¯4U¨ƒ7Ǝ~¨äÝ!#oœbö≈Gçfî2‹Í½I..ü..x",
+    "dear..god..8=∏¦Âℵ½¾â5V`:¹y4i-ww¦3{9Ã«Ý9¦æ..z..=",
+    "wave..old..½7¡¯4U¨ƒ7Ǝ~¨äÝ!#oœbö≈Gçfî2‹Í½I..j..Ã"
    ]
   ]
  },
@@ -693,22 +693,22 @@ module.exports = [
   "title": "poem 30",
   "lists": [
    [
-    "(re)cover..pulley..â⊙Rbç_ØÍ~Í_gÝ¦œ..shortcuts..÷",
-    "fl⊙uk!∞8­..crowds..telephone wires..inference..â",
-    "colonists..chutes..½¯₈§H$¯!kTxKâý≑..xylophone..s",
-    "tone rows..poison..cross-reference..structure..x"
+    "microfiche..list..streets..á|á..sleeves..columns",
+    "old-school..wind..prophet..off..surging..limited",
+    "efficiency..::::..tunnels..his..checker..plywood",
+    "continuous..redo..engines...^...decline..circles"
    ],
    [
-    "}..yet..wheels..intertwine..photosynthesis..1938",
-    "ℵ.._o_..spline..complicity..óqoás3éfj34}#î..gulf",
-    "H..boy..flower..incomplete..ïwmJKhêo¡=dwçÝ..coin",
-    "œ..fog..glides..deductions..$4Ð8Ü|#öø‰û|òÂ..melt"
+    "citizen..struck..bottles..P¤±#.Iû÷..½xƶ/gn..seed",
+    "outline..memory..clothes..spinning..inside..bend",
+    "whisper..winter..spiders..currency..growth..reed",
+    "density..behind..pistons..renderer..person..oxen"
    ],
    [
-    "Ðmoé%LmÕ?sÛz&_41‹¤~..reflection..∐∈­ûÆéøÃƒ..view",
-    "o½p∞Û#x½_ùƒIûló½k½8..redemption..trembling..fork",
-    "3û´Ãî##x¯éIi²¯œG!çó..screeching..scribbled..tell",
-    "q#lj⊚#Y86½^½ß5/½ô¼|..deciphered..submerged..cold"
+    "lived..strings..took..contexts..silicon..0..new",
+    "hymns..mirrors..loss..contexts..screens..Ø...ö.",
+    "vines..longing..view..friction..sectors..é..ÏØu",
+    "choir..pulling..kind..shouting..extinct..y..cut"
    ]
   ]
  },
@@ -716,22 +716,22 @@ module.exports = [
   "title": "poem 31",
   "lists": [
    [
-    "ù..rhythms..ýIûw§…9#qlûp¼#~¾‰îç?j..arduous..moon",
-    "Q..similar..æw-_¯69VÆÆℵM6òc1ÃûT2#..journal..girl",
-    "‡..shadows..#…⊙ëý”9__^ë²Íq¤GGî_i´..swallow..iowa",
-    "~..rubbing..1x:Gü∐|æw∞ℵ|2UÏ?‰oóôc..guitars..slam"
+    "ø..looms..minimalist..drought..hymn..pathways.._",
+    "∐..|.|.|..wind mills..mirrors..data..hallways..Í",
+    "U..rooms..struggling..holding..bang..formulas..#",
+    "&..öH#.‹..×û¦øö±=m=Ã..pinning..king..magician.._"
    ],
    [
-    "crash..‰Û8aoY…N¨..î¹¹fbÝ#8öÜ..dancing..shady..c",
-    "walls..workshops..stochastic..morning..going..¦",
-    "doors..∐∈­ûÆéøÃƒ..Ùý#ýélr½__..4æw!âus..woman..G",
-    "knots..workshops..population..ghostly..suits..≈"
+    "grainy..3:48..skills..thank..rural..digital..3",
+    "window..silk..stains..thank..shirt..lingual..Æ",
+    "choral..post..photos..brook..spill..joining..!",
+    "almost..arms..growth..throw..trash..summary..="
    ],
    [
-    "48¢..railroad tracks..pulls..windows..7..only..÷",
-    "was..i¨Cäuý§§t±b∞∀`y..farms..trophic..ý..fork..∫",
-    "car..transformations..short..housing..#..fair..¡",
-    "hum..transfiguration..polar..gravity..P..harp..Ü"
+    "hours..∷..migration..quixotic..slow..monastic..÷",
+    "rails..œ..ö¯∫ÙÆÇ|¯±..notation..swan..workshop..x",
+    "crash..ö..unfolding..friction..dawn..possibly..ä",
+    "arrow..ý..4¾:GÃ5Â_#..journals..upon..hurtling..w"
    ]
   ]
  },
@@ -739,22 +739,22 @@ module.exports = [
   "title": "poem 32",
   "lists": [
    [
-    "tenebrae..adaptable..speaks..assessments..table",
-    "remnants..swallowed..rusted..florescence..roles",
-    "traverse..boundless..shadow..underground..based",
-    "pavement..j¹÷ê:ÕmG{..modern..convergence..chevy"
+    "skeletons..toasters..deer..storage..saw..tattoo",
+    "newspaper..resonate..spun..conduct..e∐w..season",
+    "blankness..taxonomy..hole..reverse..bow..gap(s)",
+    "collected..research..news..trumpet..ago..opened"
    ],
    [
-    "remnants..&≑t6..whales..3rd..tackle..fractured",
-    "currents..well..sleepy..wax..scythe..emergence",
-    "narrator..text..barbed..010..prayer..scattered",
-    "approach..came..clamps..#_#..played..ourselves"
+    "hear..path..myself..composable..raster..role..l",
+    "seed..flaw..roofer..folded map..stalks..bulb..|",
+    "nets..mark..course..confluence..heaven..jade..o",
+    "paul..1958..avenue..n6ø∀½ÛØ^µz..length..reef..±"
    ],
    [
-    "…±Íc¾½q4I⊚..cold..calls..∅Ü=¼ù..software..moves",
-    "encounters..post..chevy..coder..cellular..enter",
-    "gramophone..ward..heavy..wrung..membrane..throw",
-    "swarm-self..snow..venom..depth..too-long..moons"
+    "devastated..cellular..mallet..landmarks..decades",
+    "folded map..branches..uptake..abundance..methane",
+    "technology..pathways..sparse..transform..spectra",
+    "the cyborg..observer..tangle..roofscape..ä^¦JÛw9"
    ]
   ]
  },
@@ -762,22 +762,22 @@ module.exports = [
   "title": "poem 33",
   "lists": [
    [
-    "Ê..deeply..vastness..emergent..phrase..shifters",
-    "Ý..vacant..watering..litanies..anyway..dreaming",
-    "/..skills..measures..bandaged..glance..sanctify",
-    "m..blades..circling..circling..access..laughing"
+    "graffiti..say..since..stare..inch..sleep..given",
+    "scrawled..bad..limit..turns..seek..chute..flint",
+    "hymnless..any..label..tides..said..terms..third",
+    "requires..ray..earth..rains..warp..glint..trail"
    ],
    [
-    "C..gathering..vital..çåw çåw..fixed..galaxies..é",
-    ":..fl⊙uk!∞8­..basis..curtain..sedge..feasibly..ù",
-    "#..j¹÷ê:ÕmG{..hands..strange..vines..circling..j",
-    "¾..artifacts..swift..waiting..great..maskless..Ð"
+    "divergences..drugged..snakes..sandwich..rites..ƒ",
+    "articulated..harvest..marble..whispers..urban..Ý",
+    "inhabitants..harvest..artist..blinking..|:|:|..i",
+    "supermarket..pasture..matter..emphasis..runes..6"
    ],
    [
-    "ê..rhythms..drawer..gatherer..rewind..pasture..i",
-    "∈..fascist..making..terrains..tenets..railway..Õ",
-    "ℵ..shifted..length..rainfall..vertex..miracle..½",
-    "Æ..wailing..visual..sidewalk..headed..shining..∷"
+    "breathtaking..y = mx + b..dance..Èjp1..miracle",
+    "KìUÆøÜ½⊙q¡wA..breathless..birth..junk..pinning",
+    "system-level..unmerciful..paths..dyke..whether",
+    "q~ÈP÷fDö÷ǎ}ì..illuminate..split..seed..deliver"
    ]
   ]
  },
@@ -785,22 +785,22 @@ module.exports = [
   "title": "poem 34",
   "lists": [
    [
-    "1902..together..abstraction..moloch..taxonomy..‰",
-    "ties..gripping..disoriented..aspect..dissolve..T",
-    "rock..skeletal..destination..stains..criminal..#",
-    "oats..villages..electricity..fodder..branches..ö"
+    "rebreathe..ç..warning..stairwells..statements..c",
+    "eternally..²..closest..attracting..estimation..∷",
+    "limestone..f..hearing..#‰#œY₈ßý$f..creativity..ƒ",
+    "detection..0..caverns..artificial..accessible..¦"
    ],
    [
-    "dimly..focal..flaw..aspect..worn..photo..provers",
-    "poles..babel..life..cipher..hone..chalk..filters",
-    "parts..world..mist..½∀jj∈#..cafe..bison..insight",
-    "moths..basin..have..throng..fray..royal..prisons"
+    "synthesis..detection..shed..pages..tired..jet..x",
+    "expansion..elevators..free..hymns..orbit..way..Ð",
+    "deviation..lightning..step..waltz..tense..eye..8",
+    "flickered..artifacts..from..pitch..risky..:::..o"
    ],
    [
-    "forests..extension..copy..8..specimen..snow..15",
-    "3 moons..relations..beat..Q..forecast..eons..to",
-    "becomes..ephemeral..sand..…..criminal..dyke..it",
-    "becomes..j¹÷ê:ÕmG{..&≑t6..D..K½V8Õ‰=÷..drip..dz"
+    "sentence..an..intelligence..package..migration",
+    "traverse..∞#..incandescent..distant..listeners",
+    "proclaim...#..technologies..teeming..parameter",
+    "assembly..of..incandescent..marimba..ascending"
    ]
   ]
  },
@@ -808,22 +808,22 @@ module.exports = [
   "title": "poem 35",
   "lists": [
    [
-    "husks..moon..linguistics..files..conduct..blink",
-    "ÝÜô#½..feed..industry(!)..birth..3 moons..tooth",
-    "niche..dime..ê½⊙Ø§#NlwvH..shift..tenders..route",
-    "views..bone..instruments..murky..extinct..world"
+    "Kx∏g~Ük‰œ4D∫Û-´­éJey=êdǡ|Ʃ=#ûÈ..swollen..insects",
+    "ä#¦Íótû7/3-ǎmò|b∞é9=÷%≑§{Ã8«wS..rebuild..texture",
+    "8=∏¦Âℵ½¾â5V`:¹y4i-ww¦3{9Ã«Ý9¦æ..melding..conjoin",
+    "µ#7G=æ#⊙=4=mç÷|kgx·æì_5w«Hwcƒ¨..purpose..methods"
    ],
    [
-    "¦#=/4o6øêo…1ê_wKoƎv¨Çe=ÈjJw/9s|I∏i∐8l½/¾|M..hope",
-    "xÏ÷Ý}|îI:ƒ^LÛòânu⊙Â3VÍ½o3´fN!2œ4C=3Í½ûÛxçl..mend",
-    "Q#wÐ²Ïät¨Ïj‰q9k½êÝöYIwtPw×Í∞fzƒƒHÆ5üÝ∏é?#Ê..ship",
-    "Ê:_wüP÷#~á∷äÍ8≑œ&i·ïû5oƒòƒØ1È^÷1ÀI½Ý≈:rû´Ê..cool"
+    "7..piercing..indigo..sketches..word..settle..she",
+    "0..collides..models..movement..wind..street..bog",
+    "È..building..choose..fleeting..both..within..:|:",
+    "½..explicit..poison..building..epic..knives..ivy"
    ],
    [
-    "ý..isotopic..wolf..underground..times..nickels",
-    "Ý..contours..ties..rusty light..there..consume",
-    "2..1ëb78m2Í..food..non-metered..dense..circled",
-    "b..unfurled..pick..linguistics..forth..decline"
+    "x..left..N..pie..w..iÊîáý⊙∐œ·½„ö..cyclones..tree",
+    "≑..moon..~..ƶƶƶ.._..j4k?∅ioP¼Ã¯ü..loophole..1958",
+    "#..pump..5..===..j..çQ#oÜÊ05¦1½∈..listless..wind",
+    "¯..york..∞..two..C..iÊîáý⊙∐œ·½„ö..episodic..dyke"
    ]
   ]
  },
@@ -831,22 +831,22 @@ module.exports = [
   "title": "poem 36",
   "lists": [
    [
-    "natural..intact..origin..x..taking..highway..4",
-    "modular..n-body..sought..¼..saving..staring..¹",
-    "playing..chorus..cloudy..Æ..grainy..informs..M",
-    "factory..filing..glassy..¯..ghosts..nothing..ø"
+    "drought..symphony..talks..roar..«..knapsack..9",
+    "quickly..dinosaur..grows..nail..Ê..striking..=",
+    "scripts..too-long..focal..sign..‰..swirling..ý",
+    "çåw çåw..grabbing..to-do..mast..R..saluting..t"
    ],
    [
-    "drawings..symbols..‡..discussion..action..I..if",
-    "physical..natural..j..background..mythic..~..>&",
-    "painting..quantum..∏..Ùý#ýélr½__..across../..∀!",
-    "striking..natural..∏..üá#∞ƒwÀℵ#!..Al·6áƶ..?..Ǝ!"
+    "put..clocks..3:48..broadcast..fray..daylight..I",
+    "fur..ghosts..mist..diffusion..what..grabbing..ö",
+    "101..choral..worn..circuitry..boys..infinity..f",
+    "icy..porous..city..dynamical..only..sunlight..½"
    ],
    [
-    "worlds..fools..carnivals..configurations..Ø..∅|∅",
-    "string..woman..formation..l}²ø‰9ÊDwJqÍýj..R..bit",
-    "anyway..chips..biography..transformation..­..sow",
-    "affirm..faint..harmonics..configurations..b..zoo"
+    "∞&jÍƒgqj..stick..b..day..clutching..calls..malls",
+    "physical..rapid..:..ƶƶƶ..titration..lucky..going",
+    "shouting..stalk..:..dim..clutching..rapid..short",
+    "hurtling..farms..ç...Ǝ!..catalysts..drown..chill"
    ]
   ]
  },
@@ -854,22 +854,22 @@ module.exports = [
   "title": "poem 37",
   "lists": [
    [
-    "compass..system..feet..¤Y.$∀&ù..laments..ç..man",
-    "Ro·PÕç±..rugged..lash..stretch..context..ø..two",
-    "program..blades..cool..skyward..degrees..f..:::",
-    "screens..subway..leaf..strange..columns..H..pen"
+    "yoke..trousers..heavy..cathedral..&{2Øℵ#²t..9..K",
+    "rays..pavement..glass..telescope..pleasure..ǡ..G",
+    "hole..snapshot..loose..desperate..cultures..÷..C",
+    "curl..hydrogen..wagon..emergence..tomorrow..-..¦"
    ],
    [
-    "yesterday..shutter..unstoppable..newspaper..even",
-    "structure..restart..unstoppable..statement..gone",
-    "emergency..release..qš01Í=lLd0w..coffeepot..rows",
-    "molecular..consume..florescence..september..cast"
+    "bolts..transformers..snapped..along..serve..1902",
+    "skull..system-level..uttered..tango..wards..tell",
+    "state..#:æTKƒ½v≑½Ý6..cloaked..trace..rocky..once",
+    "great..#:æTKƒ½v≑½Ý6..encoded..heavy..1|%&e..cold"
    ],
    [
-    "pressed..soot...ûqs3∏!l=!⊚”∫ùÐê×šjÊ..blown..()",
-    "gesture..horn..RøÛk?^Ï|5#cjØY”&éçN&..naked...-",
-    "quantum..zone..|r$U∅ÍM#½÷3½bR_k8éì`..dense..2d",
-    "cloaked..mary...ûqs3∏!l=!⊚”∫ùÐê×šjÊ..fugue..he"
+    "¦..orchestra..system..would..throw..pulley...-",
+    "7..µ´±l!|Ð28..forgot..arrow..to-do..forget..am",
+    "½..strangers..create..bones..photo..across..so",
+    "w..hypertext..struts..tower..boats..sheath...&"
    ]
   ]
  },
@@ -877,22 +877,22 @@ module.exports = [
   "title": "poem 38",
   "lists": [
    [
-    "patterns..just..striking..ù..32..caves..cement",
-    "textures..claw..metallic..Ø..w?..vines..aerial",
-    "battered..rung..darkened..f..::..these..waking",
-    "emanates..lung..hurtling..Õ..ze..guide..wanted"
+    "guitars..there..birds..ø..empty..bell..bisected",
+    "gestalt..entry..crash..‰..stain..dead..alphabet",
+    "spilled..reedy..rates..j..track..damp..lifetime",
+    "stained..years..belly..ï..fever..nail..radiance"
    ],
    [
-    "classifiers..hurry..speed..grasslands..really..ç",
-    "night watch..walks..bells..legibility..hunger..ø",
-    "say my name..delve..plans..resilience..gather..½",
-    "supermarket..state..pitch..stammering..humans..î"
+    "articulates..steed..aged..white..any..thermal..ó",
+    "sequestrate..unity..flax..tubes..map..palette..„",
+    "sequestrate..shirt..inch..bends..010..finding..2",
+    "frequencies..pulse..free..trail...ö...pensive..û"
    ],
    [
-    "glue..instrumental..strangers..necklace..living",
-    "disk..entanglement..fragility..whispers..visual",
-    "they..regenerative..j¹÷ê:ÕmG{..infinity..clamps",
-    "away..regenerative..passenger..regiment..leader"
+    "dumpsters..unexpected..painter..rinse..#-#..part",
+    "efficient..cybernetic..musical..rides..çåw..+pÊ8",
+    "repairman..manuscript..milling..faded..was..nail",
+    "exquisite..stairwells..climate..lever..{ü}..gear"
    ]
   ]
  },
@@ -900,22 +900,22 @@ module.exports = [
   "title": "poem 39",
   "lists": [
    [
-    "finally..till..çlw8‰ìÂÕ¹D½rkAIê#ói&:¡5≈..stretch",
-    "anchors..need..çlw8‰ìÂÕ¹D½rkAIê#ói&:¡5≈..labeled",
-    "stained..deck..çlw8‰ìÂÕ¹D½rkAIê#ói&:¡5≈..sloping",
-    "pistons..wide..œ0=4&sxý‡òhjeh:V3w‰#z5ý∐..caverns"
+    "shadows..fodder..weeks..axe..codework..topology",
+    "radiant..season..|:|:|..asl..wireless..pandemic",
+    "bottles..tenets..flame..sea..ℵ₀ℵ₁ℵ₂ℵ₃..rhythmic",
+    "retrain..narrow..laced..log..volcanic..notation"
    ],
    [
-    "light..strands..Ý..wasteland..narrow..arctic..Ý",
-    "sheet..similar..û..bisecting..chrome..weight..f",
-    "shelf..insight..1..harmonics..tilted..bodies..T",
-    "speed..cellars..9..offerings..thrown..myself..+"
+    "sanctified..½ò≈÷ö­GÜm×Û_0÷V..filters..##=&p..^",
+    "horsepower..they she all ze..clothes..inter..m",
+    "retrieving..transformations..markets..bills..ò",
+    "brilliance..electromagnetic..radiant..tides..N"
    ],
    [
-    "5¢..collection..ancient..brandish..atomic..7..ç",
-    "Êý..cantor set..robotic..spectral..places..½..q",
-    "!^..directions..college..external..method..C..j",
-    "==..complexity..pistons..brandish..joints..#..œ"
+    "seemingly..cross-sensory..áëzýj¨Í!10ø§dQ4Ã¦..D",
+    "landmarks..thermoelastic..x∴‰=4ÙßJ!$-ió¾¾∞v..3",
+    "repair(*)..watch factory..áëzýj¨Í!10ø§dQ4Ã¦..=",
+    "armaments..Üw4MT4wüýÛGoǡ..ê¯c#”K?÷‰Ǝ±-∈ÍÂÐb..4"
    ]
   ]
  },
@@ -923,22 +923,22 @@ module.exports = [
   "title": "poem 40",
   "lists": [
    [
-    "discontinuity..limit..sequence..bicycle...&..3",
-    "unprecedented..shorn..pipeline..entropy..∀!..~",
-    "opportunities..while..1ëb78m2Í..slender...&..³",
-    "(re)do (red)o..spell..produced..engines..!^..Æ"
+    "PlÝgGýdPÏpz¾j×8f¯I#‰ò_÷4:½?8Ê#nH&!²ÝçN½..churn",
+    "i÷Üç8‰-éö¾¯2òc½öÃký!Ã÷:∞kmâökT/oniöÛx¤...looms",
+    "=#Æ~Æ∈Íf}MœÈ‹R5|#‡ïë1∈&~e#ý‰4_IœloýI÷|o..multi",
+    "=#Æ~Æ∈Íf}MœÈ‹R5|#‡ïë1∈&~e#ý‰4_IœloýI÷|o..floor"
    ],
    [
-    "simpler..glimpse..burdened..buildings..locked..³",
-    "engines..cyclone..the body..synthesis...xôJl¤..o",
-    "pigeons..o¦á}Øýr..numerous..dumpsters..murder..ƒ",
-    "metrics..observe..birdless..introduce..needle..$"
+    "correct..∐#ÛIÛG..this..Üw4MT4wüýÛGoǡ..zoo..ends",
+    "whistle..school..pins..site-specific..off..bits",
+    "tunnels..choose..moth..A+ℵPk½øÇQjxÃQ..fly..news",
+    "pigment..pulsed..gulf..profit-driven..½*¹..turn"
    ],
    [
-    "fossils..frictionless..compelling..bit..limbs..‡",
-    "testing..oscilloscope..unexpected..doe..shops..È",
-    "history..gender fluid..frightened..dry..gifts..H",
-    "spinner..(m)bodiments..instrument..its..tense..∞"
+    "moss..reef..snows..hot..|..by..towns..wheel..Õ",
+    "grit..nets..rungs..low..u..Ǝ¨..tires..hiker..Í",
+    "york..pick..goods..3rd..I..us..video..files..½",
+    "flew..flew..spell..net..∞..re..torch..rinse..l"
    ]
   ]
  },
@@ -946,22 +946,22 @@ module.exports = [
   "title": "poem 41",
   "lists": [
    [
-    "book factory..soda..groups...¹...culm..factory",
-    "ô½ÊJ?b½çÇDm∷..push..cyborg..lit..flax..gravity",
-    "grid factory..barn..floods..#-#..dawn..†åp ¬|˙",
-    "installation..jazz..orbits..≠–º..from..walking"
+    "knowing..sundial..spoons..gas..pistons..risk..∞",
+    "liminal..shining..visual..101..foolish..upon..÷",
+    "contour..company..3-ring..Ø0Ø..diorama..oats..Ê",
+    "looking..buffalo..losing..gas..foundry..swan..¯"
    ],
    [
-    "glorious..burn..#`ý..blazing..transition..mary",
-    "portland..rock.._o_..talking..disruption..bomb",
-    "sandwich..thin..ash..for all..continuous..plan",
-    "physical..harp..its..factory..struggling..bits"
+    "{}..1962..swirling..hydrology..window..is..##=&p",
+    "‹c..noon..staccato..µ´±l!|Ð28..crowds..>^..south",
+    "or..full..insights..matchbook..points..us..would",
+    "Nù..sums..narrator..hydrology..string..:ö..wagon"
    ],
    [
-    "§3ý∞ì=52÷2#⊙Cœt{œ4×§x²1ûÊÍ#Ʃi∈‡æf0fØÛô_..jaw..‹",
-    "%s⊚Qu:Âoói8I8fH7x≈I∫½2½o%”òl8R±g:t7&Êpç..bow..}",
-    "|NTbø#≈+o÷&Â=q_½#z…wuƶǎj4ÝøǎHǡ0½ǡ|…Ptßƒ..|-|..ç",
-    "%s⊚Qu:Âoói8I8fH7x≈I∫½2½o%”òl8R±g:t7&Êpç..| |..&"
+    "grainy..digits..Õ..spinning..struggling..origin",
+    "thirst..groups..v..climbing..clockworks..spills",
+    "around..thirst..Û..notation..constraint..tattoo",
+    "thatch..column..4..-ä~½TÛxç..philosophy..vision"
    ]
   ]
  },
@@ -969,22 +969,22 @@ module.exports = [
   "title": "poem 42",
   "lists": [
    [
-    "flag..problem..sequestrate..beaked..tonal..hymns",
-    "1902..grammar..typographer..chords..codex..rusty",
-    "gods..surface..„eÊÀJ∞?j¦~ì..x~3ï3⊚..rusty..relay",
-    "glue..maxwell..non-metered..gentle..space..waves"
+    "rates..gone..fused..press..groan..sculpture..q",
+    "chaos..folk..start..knock..start..entangled..á",
+    "epoch..area..flung..walks..blade..networked..½",
+    "stars..when..meant..belly..story..harnessed..3"
    ],
    [
-    "engage..phase..hold..second..çåw..after..changes",
-    "august..pools..eons..raster..cat..float..schemas",
-    "portal..solar..bury..tackle..cut..young..process",
-    "tackle..frame..eons..turned..!.!..plans..pattern"
+    "abacus..k..mapless..observatory..=>..escape..8",
+    "across..½..purpose..temperature..ℵ₈..duluth.._",
+    "struck..ê..H∴$zÍ`d..creased map..at..echoed..d",
+    "photos..a..Kté”ûÂ”..astrologers..&^..payday..∅"
    ],
    [
-    "cable-access..00100..blankets..monologues..blank",
-    "ô½ÊJ?b½çÇDm∷..codes..unsteady..Ùý#ýélr½__..fades",
-    "f.:ÆœëM38÷Gw..pluto..blankets..storefront..local",
-    "cable-access..knots..ý#…∐MÜ¹ï..background..value"
+    "networks..stem..words..venom..cloth factory..&.",
+    "contrast..yoke..murky..chest..(re)enactment..||",
+    "theorems..glow..plots..razed..ƶ&œNxøfá11&f{..we",
+    "marlboro..oxen..tonal..caves..?oo¦nc⊙|äzIg~..=="
    ]
   ]
  },
@@ -992,22 +992,22 @@ module.exports = [
   "title": "poem 43",
   "lists": [
    [
-    "stable..S#Ãm∐$y:TP3x&²Nlé~T½jýòPi∴Üse¦…|p­=..≠–º",
-    "3-ring..êÃý¤Ý?½¨Hm¼zý8¼´­lûý|±ç$âÈ|¾:##∴!¡4..dew",
-    "access..aJ#âg?iæ8·0/…dÊxøÍi=Ðýû∀_&5ù2ƶÛmk3w..rim",
-    "grates..?!œVx‡2jx¡wÍ÷ø²±i”TÃ¡ö{ü+÷5«∴₈ƶî¤U?..arc"
+    "semisynthetic..|||..matter..harness..silent..48¢",
+    "mathematician..the..asleep..mercury..levels..57∈",
+    "repeat repeat..ray..asleep..arrives..repeat..lit",
+    "site-specific..she..vertex..cricket..faster..raw"
    ],
    [
-    "dustlit..dimmer..repair(*man)..translate..untie",
-    "decades..plumes..lucky strike..clickable..never",
-    "insects..marked..tranquilizer..densities..babel",
-    "vibrant..things..repair(*man)..hypertext..table"
+    "affixed..wasteland..parchment..specimen..thirst",
+    "carrier..artifacts..clutching..spectral..planet",
+    "raining..sculpture..telegraph..majestic..jungle",
+    "believe..intensity..fragility..deranged..-ç}Rä∈"
    ],
    [
-    "battered..chair..m∏{~Ø÷pÀá4s∞¤4æ6Ã#¦..feasibly",
-    "infinity..radar..q#lj⊚#Y86½^½ß5/½ô¼|..creative",
-    "dendrite..delve..á∀∅ℵçÛ”œöz…‹∐Ǝ⊙xg$8..gestures",
-    "pressing..ö„#Ç8..á∀∅ℵçÛ”œöz…‹∐Ǝ⊙xg$8..billiard"
+    "^≑hÛ%∞0qµ÷jø¨8M±·šm¡∴3éø&∈&⊚^..½..little..resist",
+    "±4½==iô3Pa§ÛÀ#æzøçÊGÙc?ù{J?G¯..x..parcel..series",
+    "^≑hÛ%∞0qµ÷jø¨8M±·šm¡∴3éø&∈&⊚^..0..buried..faster",
+    "±4½==iô3Pa§ÛÀ#æzøçÊGÙc?ù{J?G¯..¹..stream..sheets"
    ]
   ]
  },
@@ -1015,22 +1015,22 @@ module.exports = [
   "title": "poem 44",
   "lists": [
    [
-    "golden..narrate..whispered..glass..lesbian..gay",
-    "switch..signals..salvation..heard..clothes..sow",
-    "models..working..knifelike..leapt..arrives..128",
-    "filing..eternal..cigarette..steed..freedom..!.!"
+    "shifters..both..~Yë‹ç¾œY1Dl3∞äòÛÜ∅ƶÊVHep_U_8÷..K",
+    "codework..tied..¹Ãc!¦=8~j3hvÊ=ëj∫=jý8jÊ∈T&!#¾..2",
+    "chiseled..half..¹Ãc!¦=8~j3hvÊ=ëj∫=jý8jÊ∈T&!#¾..J",
+    "drifting..gray..±!!#wl|m#⊙?sx1:ô$=%½÷ü”Cç¡|ÝJ..Ü"
    ],
    [
-    "distilled..xï¹`×I..bang..d½i8..description..¡..r",
-    "radiation..sparse..find..deck..storyteller..â..Â",
-    "carpenter..thrown..tied..lace..convergence..v..Q",
-    "variation..anyway..coin..then..bowed metal..À..∞"
+    "the repairman rider..worked..charge..great..8..Ü",
+    "(how things change)..speech..rising..alive..4..ó",
+    "±”&¡ƶYÂio:%œ#û#¡s¤≈..spider..blades..paths..„..Æ",
+    "mêv|7|=Üü#ǎe§ûeÛp₈+..simple..beaked..alley..¼..ó"
    ],
    [
-    "%..pipes..breathlessness..bottle..¾..soldiers..}",
-    "¦..lined..t…Üç∴ö%wý‡∞¨=·..albert..ì..magnetic..ó",
-    "!..reedy..mineralization..alleys..Â..listless..ö",
-    "÷..snail..$4Ð8Ü|#öø‰û|òÂ..lights..q..siberian..i"
+    "wood..gathers..angles..swollen..breaking..deep",
+    "mill..pigment..bibles..mirrors..gatherer..acid",
+    "1906..crimson..pliers..finally..specific..back",
+    "lots..another..chalky..billion..ý∴ònçjö&..ripe"
    ]
   ]
  },
@@ -1038,22 +1038,22 @@ module.exports = [
   "title": "poem 45",
   "lists": [
    [
-    "fission..shining..group..w~Ê8w|hIöï∅âœ..tours..U",
-    "teeming..minutes..links..discontinuity..reedy..Ý",
-    "|ƒ8„::²..tensile..fixed..discontinuity..built..!",
-    "tremble..quickly..motel..opportunities..husks..G"
+    "dervish..billion..strike..ions..diffusion..ì..ò",
+    "bicycle..culture..broken..curl..decisions..N..m",
+    "torrent..glowing..worlds..null..unpressed..Í..h",
+    "suppose..circles..prison..pour..projected..ǎ..‰"
    ],
    [
-    "questions..explicitly..ç..poles..x?…½J^l0xÊi..‹",
-    "receivers..screeching..=..coins..likelihoods..­",
-    "Ûä∏±Ø½f?o..symphonies..ä..dense..dissolution..c",
-    "exploring..redemption..«..knock..(m)bodiment..¡"
+    "scripts..networked..untied..∫È4..grid..÷..revery",
+    "observe..ecosystem..bridge...ä...view..w..#s∷wHC",
+    "kinetic..efficient..losing..!.!..foot..ø..floods",
+    "restore..furthered..=ä#áxé..the..crow..¯..cipher"
    ],
    [
-    "center..died..decline..symphonies..rest..rocky",
-    "xï¹`×I..both..torched..w#§ÐwÏ=C³d..1958..8½#ý4",
-    "depths..fish..rocking..thermionic..À}·#..holes",
-    "fossil..prey..longing..expression..bulb..spine"
+    "sketches..clothes..ghost..limit..copy..doors..πø",
+    "crumpled..tightly..|∅.∅|..öH#.‹..oily..field..&.",
+    "climbing..economy..rings..stock..over..prism..∞#",
+    "codework..process..chips..sedge..moss..ƎxÝ½­..or"
    ]
   ]
  },
@@ -1061,22 +1061,22 @@ module.exports = [
   "title": "poem 46",
   "lists": [
    [
-    "ǡm|∞¯½NrÐÃÜ÷H=Õj-|≑ǡ..living..imprint..cry..!==",
-    "RøÛk?^Ï|5#cjØY”&éçN&..domain..acrobat..car..had",
-    "üò}Ûq¦r!!~jâæÛz2x¦Í4..chords..surging..phd..bus",
-    ":P¨#uR#á!||ℵ$∐p?Ý!!z..visits..sloping..bit..gay"
+    "µIx±2û±ý3!#:ö|Ãöô_s^&Yæ÷øë^œ:..p..porous..churn",
+    "µIx±2û±ý3!#:ö|Ãöô_s^&Yæ÷øë^œ:..∐..M&0m9H..glass",
+    "±!!#wl|m#⊙?sx1:ô$=%½÷ü”Cç¡|ÝJ..I..grainy..trash",
+    "8JÛ0‰Ǝ`P´k29?réÂ?#Ǝƒ½∅­|ùP⊙ǡï..ç..floors..plant"
    ],
    [
-    "riding..fray..woman..lancing..diorama..ǎm8Èƒ=$…æ",
-    "fusion..worn..paint..dustlit..chicago..migration",
-    "anchor..=||=..small..holding..faraway..fl⊙uk!∞8­",
-    "saving..bait..packs..calling..plywood..hydrology"
+    "9jl#hÊØi^ÈJ∐aÊǡ∫&øç²ççƒcßœ-ûø^4ó½ÍtÃ4#&MG÷..`..∷",
+    "7⊚k!ÀxDjw¨VÙYçx∐i½!lÃî!7ØÛ?∴‹Ãj¡#ä0N-qu¤i¤..Æ..ô",
+    "äw…xëÐ­kvH_Íô§w„ƒÐ4j0ÍK200öé#æ#Gm58û„Ù÷êh=..P..l",
+    "ì¡$+∀_¾ÊPëKt3wäçµjA‰ýǡø½}½î&æá=:∏I÷Hëj±œ1∷..5..c"
    ],
    [
-    "narrator..algorithm..bang..:#..washington..ink",
-    "touching..collision..foam..∫∫..irrational..ray",
-    "rainfall..­|ƒ„it∞œç..mind..16..…±Íc¾½q4I⊚..#.#",
-    "blurring..¤9:1∷…Gt7..rush..ax..wind mills..ray"
+    "ink..a~$..bowling..orbits..mƩfÊÍ&éG∫Q..colossal",
+    "nyx..not..factory..liquid..production..downward",
+    "∅|∅..saw..anchors..chains..titrations..musician",
+    "Ø0Ø..∫È4..informs..colors..discussion..playback"
    ]
   ]
  },
@@ -1084,22 +1084,22 @@ module.exports = [
   "title": "poem 47",
   "lists": [
    [
-    "research..red-sky..boatman..vessel..plot..broke",
-    "students..blanket..planets..headed..bank..wards",
-    "quartets..stuffed..mapless..strong..fuel..start",
-    "alphabet..sources..gallery..alleys..weft..chest"
+    "barbed..breathe..abundant..q~ÈP÷fDö÷ǎ}ì..blade",
+    "choose..3 moons..contours..heterotrophs..lucky",
+    "spoken..whether..gendered..greasy paper..rules",
+    "forget..breadth..formulas..q~ÈP÷fDö÷ǎ}ì..horse"
    ],
    [
-    "observatory..exactly..«..correct..looms..use..Ç",
-    "phosphorous..declare..|..symbols..talks..pen..1",
-    "manufacture..ordered..x..notches..lungs..:|:..S",
-    "Ûq/?4#½bbPQ..conduct..K..labeled..stems..and..½"
+    "eternally..page..forsaken..û8G∈~D}³∀Ý4ýtÐÐ..out",
+    "threshold..left..commerce..cross-reference..map",
+    "shortwave..caws..projects..½ò≈÷ö­GÜm×Û_0÷V..sun",
+    "abundance..buzz..transfer..f„½k-ìv…Iê#2∈4÷...ö."
    ],
    [
-    "IöÀ·am+Ç#aƒ8∈p₈‹jê∞y±/ƎH..trans | border..stem",
-    "œ0=4&sxý‡òhjeh:V3w‰#z5ý∐..human-readable..cast",
-    "h~ØôÜI∷∈çx`3Êa7DÏÍ:?w^ýu..human-readable..york",
-    "Ù„9œ½UçÍko½ì8wU∏gd∷½÷×=j..trans | formed..bend"
+    "study..emergence..forgot..waves..embrace..Û..æ",
+    "route..roofscape..pocket..caves..objects..Ï..Ǝ",
+    "drawn..frequency..random..swarm..craters..-..â",
+    "earth..jrÕ=dö½_∐..engage..after..unbound..ǎ..7"
    ]
   ]
  },
@@ -1107,22 +1107,22 @@ module.exports = [
   "title": "poem 48",
   "lists": [
    [
-    "¦∅&..father..marimba..hawker..ö„#Ç8..clickbait",
-    "few..remain..streams..screws..snake..blankness",
-    "the..weaver..quartet..stitch..fixed..ephemeral",
-    "few..waning..textile..tunnel..tents..dumpsters"
+    "key..visits..flickering..piece..AIK&?‰|}÷∐Û..Øö",
+    "∫È4..tenets..refineries..sheet..night watch..am",
+    "rip..simply..curvatures..razed..interrupted..43",
+    "#-#..called..enactments..slate..$##=ƒµm6ü~ø..it"
    ],
    [
-    "rainfall..flickering..brief..given..cataclysmic",
-    "membrane..researcher..white..index..disciplines",
-    "teaching..tenderness..leans..agent..reverberate",
-    "glimmers..refineries..spill..table..synergistic"
+    "grasslands..chatter..ß..skies..breathe..engage",
+    "cathedrals..ribcage..#..share..finding..father",
+    "arithmetic..hurried..Ê..deals..fragile..trains",
+    "ℵ₀ℵ₁ℵ₂ℵ₃ℵ₄..freight..∷..chute..thunder..trucks"
    ],
    [
-    "askew..careening..blinking..multi threaded..warm",
-    "crack..whispered..skeletal..$4Ð8Ü|#öø‰û|òÂ..hear",
-    "stamp..invisible..aluminum..æƩa#øï¼ém3ǡ∐/4..land",
-    "every..ephemeral..traveler..k|=PÍ#ê≑Yû|l‰¹..lash"
+    "squares..l..e..8¹×..palettes..silences..4..∅.∅",
+    "shining..Ð..÷..why..december..restated..÷..axe",
+    "skipped..≈..9..(×)..hymnless..cultures..Ý..has",
+    "glacial..Æ..L..nap..feasibly..traverse..y..10¢"
    ]
   ]
  },
@@ -1130,22 +1130,22 @@ module.exports = [
   "title": "poem 49",
   "lists": [
    [
-    "skeleton..slight..tilted..shifters..metaphor..ƒH",
-    "tenebrae..scream..stairs..downward..isotopic..17",
-    "infinity..fodder..:cÙÃjç..artifact..dynamics..^.",
-    "sketches..depths..storms..minerals..drifting..ℵ₈"
+    "constant..probability..collides..hover..watched",
+    "drawings..observatory..gendered..small..patches",
+    "villains..atmospheric..seasonal..retie..caverns",
+    "charcoal..compression..implicit..shelf..pressed"
    ],
    [
-    "irretrievable..alchemy..iron..telephone..simple",
-    "(re)do (red)o..forests..pine..different..always",
-    "point-of-view..tangled..3:48..synthesis..typing",
-    "Ýù¾Ãtd:Û0#≑GØ..rasping..dawn..listening..always"
+    "heat..take..play..orbits..reclamation..till..é",
+    "swan..core..dear..hidden..atmospheres..zone..¾",
+    "away..pine..node..shovel..alternating..book..l",
+    "once..dial..coal..sparse..alternating..grew..∏"
    ],
    [
-    "stranger..retrieve..aleph..box..closest..eternal",
-    "odometer..remnants..leans..#_#..edition..beneath",
-    "passions..breaking..light..#-#..torrent..whether",
-    "possibly..blankets..tonal..0½1..markets..potency"
+    "grassland..generative..copper..cigarette..whisky",
+    "(re)cover..projection..object..immersion..trying",
+    "boltzmann..transcribe..copper..archivist..chains",
+    "distilled..dissolving..throws..iterative..redeem"
    ]
   ]
  },
@@ -1153,22 +1153,22 @@ module.exports = [
   "title": "poem 50",
   "lists": [
    [
-    "wordless..|..|..hunt..grip..filters..2..burned",
-    "blurring..spun..soil..wire..nothing..I..seemed",
-    "birdless..cell..gone..beer..klezmer..ǎ..script",
-    "textured..knot..soul..code..current..+..deftly"
+    "pitch..emergency..silence..ourselves..commerce",
+    "stool..eruptions..printed..jrÕ=dö½_∐..dissolve",
+    "|:|:|..decisions..consume..telephone..receipts",
+    "spend..emergency..sighted..sentinels..incident"
    ],
    [
-    "ice..j..simplify..8Jwƒól„tY¨…3ý$¯..sequence..up",
-    "but..‹..m=Ǝk∞l¦_..computer-driven..gestures..∅∅",
-    "128..š..clutches..computer-driven..lifetime..no",
-    ".,...û..textured..loosely-coupled..lonesome..()"
+    "enter..tone rows..better..york..hydrology..shed",
+    "shows..corridors..rhythm..disk..emergence..word",
+    "birds..skeletons..winter..reef..ecosystem..spew",
+    "ghost..institute..prints..sine..lightning..more"
    ],
    [
-    "brief..silence..keening..dwell..copper..missing",
-    "comes..conduct..screens..which..spills..sunless",
-    "night..weights..entropy..smell..tender..form(s)",
-    "drive..consume..engines..blown..winged..extinct"
+    "textured..{..windy..fusion..well..conduct..cube",
+    "quixotic..‰..vigil..-ç}Rä∈..iron..closest..find",
+    "housings..f..moves..burned..ripe..believe..lure",
+    "redfield..Æ..forth..skills..hush..network..culm"
    ]
   ]
  },
@@ -1176,22 +1176,22 @@ module.exports = [
   "title": "poem 51",
   "lists": [
    [
-    "railroad..mind..pools..grid factory..populations",
-    "swimming..foot..ratio..combinations..rusty light",
-    "villains..body..psych..punctuations..topographic",
-    "housings..town..cross..translations..information"
+    "conjoin..##=&p..gaunt..disruption..circuitry..Ð",
+    "warning..10101..chain..production..dinosaurs..‰",
+    "chariot..radar..shows..xo9w&ƒýikx..dinosaurs..9",
+    "fascist..fists..rapid..complicity..vibration..j"
    ],
    [
-    "mystic..workshops..labyrinth..all sky..saluting",
-    "anchor..catalysts..grassland..trophic..plumbing",
-    "shadow..carnivals..cascading..marimba..abstract",
-    "graphs..‰Û8aoY…N¨..fragility..waiting..twisting"
+    "tapping..room..grabbing..onto..snail..spool..¼",
+    "singing..bulb..thousand..curl..chain..group..œ",
+    "billion..dams..abstract..harp..cloak..bills..c",
+    "rasping..=||=..wondrous..cups..blank..goals..a"
    ],
    [
-    "din..radio pluto..½∀jj∈#..#..cross-disciplinary",
-    "too..x?…½J^l0xÊi..school..Ǝ..f¯$m}=~2±¡1-²:~~iw",
-    "day..inhabitants..saturn..:..₈?ê÷œ0$≈aQwAØ∀m/w`",
-    ".¹...phosphorous..waking..∷..7‰ýÛ!‰½oo¨∞²!rýU∞j"
+    "Ǝò½3‹ûaØÕ{..wizard..choral..spiral..thirst..ë..…",
+    "pollinator..shhhhh..n-body..motion..origin..∴..o",
+    "wind mills..poison..chords..throws..almost..‰..¦",
+    "translator..visual..clamps..thirst..martha..1..A"
    ]
   ]
  },
@@ -1199,22 +1199,22 @@ module.exports = [
   "title": "poem 52",
   "lists": [
    [
-    "nowhere dense..percolator..around..category..:::",
-    "w~Ê8w|hIöï∅âœ..generators..moment..research..axe",
-    "Ýù¾Ãtd:Û0#≑GØ..traversals..saves!..supposed..co2",
-    "­9¯uÛ`¾jJhßwǎ..departures..drowsy..now-ness..|||"
+    "crow..watch factory..wash..hope..remembered..^.",
+    "hunt..{_∞p:|Â½³.#Ǝ³..drop..verb..y = mx + b..=>",
+    "root..unprecedented..laws..=||=..devastated.._¶",
+    "door..unprecedented..roar..near..parameters..∫∫"
    ],
    [
-    "watched..proof..fungal..Ðmoé%LmÕ?sÛz&_41‹¤~..3",
-    "reboard..meant..moloch..||-- ::: . ::: --||..ö",
-    "problem..moths..bender..m∏{~Ø÷pÀá4s∞¤4æ6Ã#¦..ï",
-    "buffalo..tango..turned..Ðmoé%LmÕ?sÛz&_41‹¤~..G"
+    "entranced..temples..changeful..heat..calculates",
+    "developer..eternal..boundless..soul..translator",
+    "landmarks..ghostly..electrode..than..utterances",
+    "reference..blurred..languages..lure..cantor set"
    ],
    [
-    "fragmented..overlayment..redo..lots..confluence",
-    "management..assemblance..slow..head..assemblage",
-    "traversals..assemblance..sage..echo..traversals",
-    "turbulence..conductance..late..work..deployment"
+    "ƶ&œNxøfá11&f{..é..node..assessments..‹..dense..∀",
+    "transcendence..ò..junk..AIK&?‰|}÷∐Û..&..super..2",
+    "(re)do (red)o..Í..lose..florescence..o..polar..Ü",
+    "sound factory..Ð..zero..temperature..±..morse../"
    ]
   ]
  },
@@ -1222,22 +1222,22 @@ module.exports = [
   "title": "poem 53",
   "lists": [
    [
-    "adaptable..linguistics..small..chance-infused..i",
-    "sanctuary..cataclysmic..swarm..l}²ø‰9ÊDwJqÍýj..C",
-    "landmarks..ê½⊙Ø§#NlwvH..veils..breathlessness..Ü",
-    "bandwidth..expenditure..10101..üCì…´ØjƩ¦1iøÊÝ..‹"
+    "artists..|2ÀÛ∞œd½œêîÃ7Ü….‹A¯&¦..assembly..trace",
+    "reverse..æ_z∷Çû81|¼8KSJMw4ýøƒ²..receipts..flame",
+    "cricket..óæjœp8Ǝö∫j7öÜ…È≑ƒ~0_Ê..criminal..night",
+    "H∴$zÍ`d..ØØøP¡∞±&÷ö¼wƒ^¦éß¹çÃö..magician..cycle"
    ],
    [
-    "if..student..cluster..gender fluid..temples..|.|",
-    ".&..muscled..weeping..system-level..cycling..!.!",
-    "dx..checker..failure..multiplicity..algebra..∅|∅",
-    "dy..ancient..limited..Ç1~H½-&ò%jó·..perhaps..use"
+    "¤..ƶ&œNxøfá11&f{..a..Ǝ!..e¡µ3¡¯U±∞÷ë..illumined",
+    "x..Dø8ý‡$œ^_½öÍh..~..10..translucent..hurricane",
+    "ý..ƶ&œNxøfá11&f{..Í..if..reenactment..?ü±øi⊚IÆ∈",
+    "f..semisynthetic..…...#..frequencies..alleyways"
    ],
    [
-    "really..cipher..rain..piercing..frightened..{}",
-    "welder..manual..1938..stringed..flashlight..||",
-    "hinges..crisis..lamp..drifting..refineries..^.",
-    "saturn..mirage..land..litanies..splintered..me"
+    "cellars..sticks..fused..&0Nâ..reaches..bar..mill",
+    "tightly..useful..built..spun..raining..sun..fail",
+    "fragile..rhythm..wheel..left..samples..çåw..blue",
+    "painter..frames..dying..laws..patient..iii..axle"
    ]
   ]
  },
@@ -1245,22 +1245,22 @@ module.exports = [
   "title": "poem 54",
   "lists": [
    [
-    "grief..o¦á}Øýr..Ü..boarding..raging..resistance",
-    "boots..whisper..m..lysergic..barbed..management",
-    "to-do..perhaps..I..tangents..sticky..extensible",
-    "shown..ancient..§..protests..closed..breathless"
+    "faltering..ratio..iowa..progress!..reach..chrome",
+    "jrÕ=dö½_∐..phase..bird..different..reeds..spring",
+    "energetic..ochre..mind..invisible..masks..flight",
+    "particles..trail..mask..skeletons..diode..orange"
    ],
    [
-    "mineralization..conveyer..photosynthesis..orbits",
-    "trans | border..specific..choreographies..skills",
-    "ïwmJKhêo¡=dwçÝ..radiator..üCì…´ØjƩ¦1iøÊÝ..magnet",
-    "breathlessness..rainfall..t…Üç∴ö%wý‡∞¨=·..string"
+    "∷tæK3g¼Õ#.r!.ç…âƩ0…~5R|ÜÈzÊØ#Ð0ß÷öf8|k..floor..m",
+    "±yPî?ýÆaÛnfÊÝ¡î=j∞ø4û:Êé÷Ïiš=?î‰‹­:Ã²Õ..faint..z",
+    "∷tæK3g¼Õ#.r!.ç…âƩ0…~5R|ÜÈzÊØ#Ð0ß÷öf8|k..fever..j",
+    "¼ò×G3‰ü∀ÆmòÀé$Ùn4÷&¡Ø½z±ÛQ¼3¦|ÍSßxœ4yl..share..a"
    ],
    [
-    "sews..associative..¨..paper..o..toward..trace..$",
-    "seek..classifiers..c..cries..¼..random..morse..l",
-    "lash..observatory..∞..pixel..?..triode..focal..f",
-    "axis..distraction..÷..after..ä..spline..ÝÜô#½..´"
+    "magic..:#..scar..sails..flags..welder..low..loss",
+    "basin..ax..mass..shift..teach..called..jar..silk",
+    "woven..&...1914..ratio..sleep..madrid..too..fork",
+    "grows..am..bang..diner..coins..phrase..has..foot"
    ]
   ]
  },
@@ -1268,22 +1268,22 @@ module.exports = [
   "title": "poem 55",
   "lists": [
    [
-    "delve..trucks..ice..icy..1938..tomb..soldiers..S",
-    "µ~æjÝ..lonely..8¹×..key..body..pump..cyclones..‹",
-    "being..dimmer..128..his..fish..fire..1ëb78m2Í..¡",
-    "store..missed..nyx..hoe..flow..!±^¡..wordless..ò"
+    "lonely..tours..form..tinged..ý..loophole..left",
+    "forest..cries..down..record..p..ǎÇ#iøøw„..lens",
+    "dimmer..mouth..ālef..wheels..⊚..quilting..deck",
+    "friend..shock..gold..behind..3..currency..rock"
    ],
    [
-    "mesh..tune..evening..collections..renderings..R",
-    "lost..this..circuit..seemingless..tenderness..8",
-    "howl..seek..observe..âäI{v4ìšG‹Ü..unfettered..#",
-    "lens..silo..rolling..linguistics..Ùý#ýélr½__..j"
+    "reflection..nyx..itself..stitched..rubbed..iii",
+    "weightless..old..hollow..modeling..inside..pie",
+    "retrieving..log..unlike..together..bender..fur",
+    "monologues..e∐w..culled..multiple..filing..dew"
    ],
    [
-    "numerous..run..horse..compelling..brief..lost..k",
-    "together..üø§..novel..unexpected..loose..webs..j",
-    "soldiers..∅|∅..poems..underlying..query..turn..{",
-    "pressing..red..bowed..dependence..whose..lure..:"
+    "#_#..stored..ö:..type..depot..#..smooth..diner",
+    ".ö...unfold..∅∅..ties..tents..3..forces..piece",
+    "4th..unlike..it..wool..turns..á..½xƶ/gn..moves",
+    "0½1..nights..dz..dice..spool..$..curved..trees"
    ]
   ]
  },
@@ -1291,22 +1291,22 @@ module.exports = [
   "title": "poem 56",
   "lists": [
    [
-    "block..|..last..waking..doors..icy..daylight..8",
-    "doors..0..bowl..thrown..crash..not..swirling..Ù",
-    "brown..á..cool..growth..skull..low..saluting..´",
-    "shows..5..roll..clouds..limbs..48¢..last-day..x"
+    "animation..boat..rainfall..glassy..∅∅..floating",
+    "buildings..thin..snapshot..random..13..taxonomy",
+    "colonists..lost..abundant..canvas..:#..blurring",
+    "plurality..warm..proclaim..trucks..1¢..duration"
    ],
    [
-    "j8¯JïÛℵk|+êÐj¾J½=JrøÊökƎx⊚7J¯..howling..infinity",
-    "w|½‹iý#÷∈`Æ~ý#j`Û0#÷çw%j¾ytǎw..diagram..ravaging",
-    "3ǎÛœ_Âöò÷Ç7p8ℵ0á‰¤∏p!ÐýK04ôÇU..harmony..øwwf∅‹3o",
-    "&8äQmÏœf^M#Ûx/½J∈∷&ÜC5MQ0b7IA..product..glorious"
+    "artificial..hands..railroad tracks..mƩfÊÍ&éG∫Q",
+    "struggling..wrong..À+?øƩ¨∅‹øø¾mø=R..modulation",
+    "salutation..pitch..û8G∈~D}³∀Ý4ýtÐÐ..phonograph",
+    "dusty lamp..00110..½ò≈÷ö­GÜm×Û_0÷V..manuscript"
    ],
    [
-    "ƒ..sandwich..graffiti..ý#…∐MÜ¹ï..history..spark",
-    "‹..mourning..sunlight..duration..rasping..shorn",
-    "î..simplify..snapshot..industry..ribbons..moons",
-    "ƒ..ý#…∐MÜ¹ï..twisting..monastic..knowing..shorn"
+    "Ð..conjoin..sundial..waiting..skin..wind mills",
+    "o..H∴$zÍ`d..joining..knowing..farm..scratching",
+    "M..lingual..skyward..billion..walk..blacksmith",
+    "½..highway..pistons..gravity..rays..discussion"
    ]
   ]
  },
@@ -1314,22 +1314,22 @@ module.exports = [
   "title": "poem 57",
   "lists": [
    [
-    "too-long..now-ness..hearts..æ..dy..forge..gap..û",
-    "lonesome..catapult..jungle..×..00..wound..our..Ï",
-    "protests..together..metals..À..´ë..hands..á|á..e",
-    "contours..concerto..looked..r..up..blood..why..|"
+    "compare..ablaze..fuse..around..šÍ4Ãxøv{kÃ..key",
+    "objects..lumber..land..alleys..tenderness..cut",
+    "deserts..colors..bone..person..unexpected..(×)",
+    "charges..became..land..murder..traversals..a~$"
    ],
    [
-    "×..boatman..grass blade dyke..assemblage..M..48",
-    "÷..leaders..Kv5z÷­+tw#…ÜÍ{òö..enactments..´...&",
-    "A..freedom..}ô^Íǡy8xM|ý_o¯l½..confluence..w..ze",
-    "Ï..erasure..grass blade dyke..ê³ü8≑ýƩHçǡ..₈..++"
+    "paradox..rehearsal..methods..ocean..passenger..∴",
+    "watched..punctuate..lantern..depth..september..l",
+    "torched..wanderers..reweave..forge..producers..z",
+    "fractal..carpenter..present..steed..broadcast..Ï"
    ],
    [
-    "arms..enactments..old-school..tracks..awkward..9",
-    "pale..thresholds..landscapes..golden..red-sky..+",
-    "poet..computable..convergent..london..wrapper..š",
-    "deck..grasslands..computable..seemed..college..k"
+    "7..chute..down..blackened..pump..longarm..drown",
+    "x..relay..sets..alleyways..ways..Ǝ¡Ûä²?o..coder",
+    "D..query..taco..transport..buzz..perhaps..flood",
+    "¤..often..took..strangers..team..thermos..codes"
    ]
   ]
  },
@@ -1337,22 +1337,22 @@ module.exports = [
   "title": "poem 58",
   "lists": [
    [
-    "glancing..magician..weld..sheet..textures..bad",
-    "hurtling..bendable..mine..thing..shredded..#_#",
-    "gripping..nutrient..fell..trans..scrawled..can",
-    "maskless..artistic..stem..based..gleaming..ƶƶƶ"
+    "farm..bibles..chatter..arterial..enter..cellar",
+    "free..always..cycling..pictures..slung..fading",
+    "list..nevada..insects..climbing..drawn..leaves",
+    "dust..inside..quantum..tangents..relay..fields"
    ],
    [
-    "1..entanglement..blink..past..sweetly..sentinels",
-    ":..i was a bird..depth..find..haunted..typically",
-    "¯..?§7ö:eH‹Ímv∴..crate..beat..the API..imperfect",
-    "#..experiential..there..barn..quickly..fl⊙uk!∞8­"
+    "thicket..chipped..bibles..newspaper..screws..if",
+    "rebuild..milling..aflame..desperate..scales..my",
+    "reweave..scripts..winged..intensity..prints..de",
+    "minutes..decades..beaked..parchment..flight..re"
    ],
    [
-    "∅∅..alphabet..december..||..rails..whistle..4..d",
-    "¡¡..exchange..reviewed..ö:..think..between..R..ò",
-    "10..laughing..whispers..we..awake..streams..v..8",
-    "-...pavement..emergent..∀!..angel..†åp ¬|˙..ê..!"
+    "man..4..accessibility..icarus..really..#..blades",
+    "===..y..infinite sets..hawker..rubbed..G..states",
+    "ash..`..Dø8ý‡$œ^_½öÍh..sticky..unlike..ǎ..speech",
+    ".ä...½..cybernetic ze..leaves..system..œ..bender"
    ]
   ]
  },
@@ -1360,22 +1360,22 @@ module.exports = [
   "title": "poem 59",
   "lists": [
    [
-    "aspects..lamps..cells..gaze..oscilloscope..Ǝ..´ë",
-    "singing..whose..glory..pG8Ã..i was a bird..Ã..an",
-    "insight..dried..paths..node..book factory..ï..w?",
-    "roadway..aleph..blood..wave..film factory..b..89"
+    "criminal..snake..interpreter..pressing..1906..&",
+    "feedback..evoke..extinctions..siberian..mass..ä",
+    "explores..memex..chlorophyll..P¤±#.Iû÷..came..|",
+    "codework..thick..resplendent..odometer..dirt..g"
    ],
    [
-    "interpreter..generating..ripple..trees..carts..8",
-    "sympathetic..philosophy..canyon..glove..barns..x",
-    "o«l₈Â∈IÃ.%∞..enactments..framed..wards..gears..V",
-    "researchers..pollinator..copper..field..cliff..9"
+    "ì..things..limestone..along..Âb~8w..experience",
+    "g..deeply..entranced..whole..tired..complexity",
+    "j..tilted..fragments..chair..rocky..mycorrhiza",
+    "V..wizard..eternally..glint..shops..technology"
    ],
    [
-    "typing..shady..watch factory..gray..packs..drive",
-    "rising..tango..(re)do (red)o..what..forth..arrow",
-    "gap(s)..third..site-specific..made..noise..rings",
-    "stamps..plans..transcendence..fire..dwell..trans"
+    "tracks..îa¦∞ûL÷:∏À#æéIbôe..date..gathers..grass",
+    "aboard..#«Ûêw5÷·÷ó=9Ù=mµi..cell..casting..glint",
+    "linear..the networked (i)..body..corners..cries",
+    "yellow..îa¦∞ûL÷:∏À#æéIbôe..tape..methane..photo"
    ]
   ]
  },
@@ -1383,22 +1383,22 @@ module.exports = [
   "title": "poem 60",
   "lists": [
    [
-    "Ý..?kǎ²#ƒwÍü³ß5ç±q2ïÜÏ..receipts..fish..elicit",
-    "Ç..o½p∞Û#x½_ùƒIûló½k½8..becoming..wire..redeem",
-    "Ê..o½p∞Û#x½_ùƒIûló½k½8..eternity..neon..clouds",
-    "Ê..á∀∅ℵçÛ”œöz…‹∐Ǝ⊙xg$8..december..dime..broken"
+    "#«Ûêw5÷·÷ó=9Ù=mµi..reference..vending..ourselves",
+    "¤J∞=j1_#|cæH´M∫.m..stillness..symbols..industry!",
+    "áëzýj¨Í!10ø§dQ4Ã¦..intensity..bending..limestone",
+    "superintelligence..ecologies..ÀØ∷ücǡ|..jrÕ=dö½_∐"
    ],
    [
-    "dissolved..pressings..:::..journey..()..stripped",
-    "ecosystem..electrify..jet..residue..¡¡..provided",
-    "networked..diffusion..doe..student..!^..specific",
-    "inventory..eruptions..^|^..freedom..&&..shifters"
+    "sections..deer..people..unbound..13..sweltering",
+    "emergent..|..|..shovel..mission..Øö..reflection",
+    "topology..dice..cliffs..weights..de..regression",
+    "swimming..form..robots..shifted..re..redemption"
    ],
    [
-    "blocks..unending..x..geometric..industry!..pump",
-    ":cÙÃjç..geometry..‹..industry!..driftless..knit",
-    "drench..friction..#..delivered..projected..cook",
-    "resist..circling..p..submerged..inventory..into"
+    "intersections..swiftly..underlying..foolish..bog",
+    "I$3…çÕ+pnA5D×..klezmer..blueprints..rubbing..you",
+    "?oo¦nc⊙|äzIg~..form(s)..mesmerized..bending..|-|",
+    "cross-sensory..jumping..mentorship..circles..row"
    ]
   ]
  },
@@ -1406,22 +1406,22 @@ module.exports = [
   "title": "poem 61",
   "lists": [
    [
-    "book factory..‰Û8aoY…N¨..ǡ..½ÀYýJc3äR∞#3µz?µçû",
-    "construction..community..C..šI#aA4#î9mÝêý8Êǎýg",
-    "transactions..ambiguity..ù..cross-disciplinary",
-    "calculations..matchbook..m..mxÊ⊚ö∅&wéýûR³GÇî÷k"
+    "robotic..miss..ribs..flashlight..crow..labyrinth",
+    "arduous..1958..tool..continuity..body..conductor",
+    "morning..Èjp1..road..stochastic..cook..harmonics",
+    "raining..mask..only..washington..pawn..transport"
    ],
    [
-    "night vigil..pillars..cognition..locomotion..∞",
-    "conjunction..rasping..accordion..titrations..o",
-    "computation..marimba..shuffling..old-school..Û",
-    "qš01Í=lLd0w..blazing..functions..adaptation..&"
+    "M..|||..‹..intoxicating..platforms..7..|||..noun",
+    "?..rib..w..oscillations..dynamical..#.._o_..duty",
+    "0..½*¹..2..book of sand..collision..½..saw..pins",
+    "1..row..#..bifurcations..transform..i..din..auto"
    ],
    [
-    "location..atoms..housings..ghost..night vigil..1",
-    "glorious..stalk..solution..dying..collisional..Â",
-    "blinking..forth..approach..swing..qš01Í=lLd0w..Ã",
-    "boarding..vigil..knapsack..chill..industry(!)..i"
+    "improvisational..fail..jumping..S..vigil..cannot",
+    "transfiguration..flux..fabrics..Ã..cargo..abacus",
+    "î6fi#%ƒ¡Æòì#!xi..dial..strings..&..tools..smooth",
+    "just intonation..land..lyrical..d..rings..random"
    ]
   ]
  },
@@ -1429,22 +1429,22 @@ module.exports = [
   "title": "poem 62",
   "lists": [
    [
-    "too-long..sparse..I..grasses..j¹÷ê:ÕmG{..(ze)ro",
-    "textures..dancer..e..drowned..sculpture..become",
-    "calculus..survey..ý..glances..processes..folded",
-    "harbored..locked..ô..torrent..swallowed..golden"
+    "++..ecology..turn..entanglement..ourselves..x..J",
+    "&...watches..drew..q~ÈP÷fDö÷ǎ}ì..landmarks..ç..`",
+    "∅∅..texture..rows..text factory..knowledge..$..¡",
+    "by..rhythms..bulb..heterotrophs..newspaper..é..w"
    ],
    [
-    "conductor..arcs..wrapper..text factory..slate..²",
-    "landmarks..mary..program..185±∷9#mÍCýD..holes..L",
-    "landmarks..free..muscled..book of sand..torch..½",
-    "electrons..duty..labeled..text factory..craft.._"
+    "stock..½..human..stool..bank..sew..count..mentor",
+    "tools..á..notes..walls..mean..now..touch..tracks",
+    "forge..½..shock..bolts..dyke..hex..lucky..faster",
+    "calls..Ǝ..clock..tubes..hush..ƶƶƶ..arrow..schema"
    ],
    [
-    "…±Íc¾½q4I⊚..schema..transect..towns..3..#-#..§",
-    "old-school..Al·6áƶ..ý#…∐MÜ¹ï..weave..#..her..é",
-    "fragmented..myself..reactant..stock..#..any..b",
-    "background..cycles..null set..serve..f..and..w"
+    "÷..†åp ¬|˙..projected..16..surround-scapes..Ø..…",
+    "9..reverse..messenger..-...h#n=áwëœ«ǎ½p?jk.._..#",
+    "≈..plywood..emergence...#..½ò≈÷ö­GÜm×Û_0÷V..ô..ò",
+    "a..tangled..scattered..10..cross-reference..L..t"
    ]
   ]
  },
@@ -1452,22 +1452,22 @@ module.exports = [
   "title": "poem 63",
   "lists": [
    [
-    "marks..4th..distilled..string..bulb..pick..links",
-    "build..!==..stitching..gender..3:48..pawn..|∅.∅|",
-    "suits...Ǝ!..sketchpad..seemed..salt..film..image",
-    "bends..^|^..emptiness..dreams..warp..ahab..rains"
+    "1958..assemblance..walked..highways...^..myself",
+    "mean..electricity..liquid..daylight..&>..mirage",
+    "1962..illuminated..taking..pandemic..>&..bullet",
+    "file..millenniums..tuning..detrital..¡¡..itself"
    ],
    [
-    "ǎm8Èƒ=$…æ..32..archer..supermarket..dance..x..P",
-    "blankness..15..slides..divergences..prism..V..Q",
-    "emergency..me..chalky..night watch..dimly..^..±",
-    "blueprint..++..scrawl..materiality..stars..é..ç"
+    "mapless..then..tapping..passage..lash..half..çýÝ",
+    "laments..that..methane..breathe..deer..push..gas",
+    "clarity..axle..glacial..scraped..been..acid..see",
+    "verdant..mesh..impacts..lesbian..grid..silk..ice"
    ],
    [
-    "cages..answers..jazz..suitcases..trans | figure",
-    "10101..captain..west..stillness..üCì…´ØjƩ¦1iøÊÝ",
-    "share..strange..seas..predicate..üCì…´ØjƩ¦1iøÊÝ",
-    "drain..drunken..drip..blackened..üCì…´ØjƩ¦1iøÊÝ"
+    "ascending..pause..assert..diagrams..##=&p..pulls",
+    "alphabets..delay..phcœ=:..watering..plane..psych",
+    "entangled..study..erased..litanies..dance..rhyme",
+    "institute..after..chutes..hymnless..winds..sails"
    ]
   ]
  },
@@ -1475,22 +1475,22 @@ module.exports = [
   "title": "poem 64",
   "lists": [
    [
-    "hymn-like..…|$..diagrams..(re)do (red)o..weeks",
-    "millennia..rim..soldiers..reverberation..piano",
-    "coffeepot..icy..stranger..networked (i)..dance",
-    "different..die..alphabet..w~Ê8w|hIöï∅âœ..sleet"
+    "greasy..conflagration..walk..experience..known",
+    "beaked..infinite sets..slam..Ǝò½3‹ûaØÕ{..story",
+    "jagged..site-specific..lake..helicopter..flint",
+    "gospel..A+ℵPk½øÇQjxÃQ..1938..irrational..plane"
    ],
    [
-    "inflorescent..avalanche..gymnast..renderers..j",
-    "ô½ÊJ?b½çÇDm∷..¤9:1∷…Gt7..harmony..straining..k",
-    "=nnolê∴?ƩIw0..hymn-like..weights..christmas..+",
-    "fractionated..cognition..halogen..knifelike..3"
+    "topographic..wireless signal code..sets..cellar",
+    "collisional..gP3t½87$æ/óØû:j4Pk7w..spew..glides",
+    "incoherence..∴îÜ³3M_êH#b²iV³sÍ~éƶ..verb..melody",
+    "abstraction..¾²ý^T|?¦HIø7Ý¹∫œ#1¨=..bone..belief"
    ],
    [
-    "criss-cross..endless..5..intoxicated..silences",
-    "bendability..witness..o..likelihoods..stitches",
-    "„eÊÀJ∞?j¦~ì..digital..w..profanities..now-ness",
-    "assessments..gallery..j..researchers..bendable"
+    "traveler..landscape..packs..rewire..last-day..x",
+    "isocline..archivist..spark..foster..torrents..Ã",
+    "revealed..detection..latch..floods..&{2Øℵ#²t..s",
+    "manifest..imperfect..risky..begins..manifest..#"
    ]
   ]
  },
@@ -1498,22 +1498,22 @@ module.exports = [
   "title": "poem 65",
   "lists": [
    [
-    "bottle..community..the cyborg..flickered...Ǝ!..¡",
-    "unfold..sequester..coursework..emergence..log..œ",
-    "singer..blueprint..renderings..listening..log..m",
-    "hidden..messenger..responding..electrify..ink..8"
+    "coughing..geo..the cyborg..mourning..::::..hero",
+    "&{2Øℵ#²t..#.#..frightened..prophets..thin..mill",
+    "possibly..ice..continuity..sections..hope..inch",
+    "shifting..god..responding..geometry..yoke..goes"
    ],
    [
-    "collections..liked..route..begins..cello..link",
-    "interrupted..wound..towns..n-body..depot..long",
-    "incoherence..dusty..multi..fields..fused..list",
-    "resplendent..depth..codex..school..novel..grip"
+    "pierces..promised..with..gone..seemingly..while",
+    "form(s)..coughing..took..cups..dumpsters..cello",
+    "nightly..momentum..wish..stop..geometric..stick",
+    "H∴$zÍ`d..éC«7Íb≑?..file..fell..hypertext..vigil"
    ],
    [
-    "«..seed..torched..numerous..w?..institute..ice",
-    "0..plot..fishers..plumbing..dx..trembling..pen",
-    "ö..meet..checker..ℵ₀ℵ₁ℵ₂ℵ₃..dz..demystify..:|:",
-    "m..echo..forcing..subsumed..πø..inference..two"
+    "contour...&..speed..|||..chipped..enrichment..⊙",
+    "through..!^..shown..∅.∅..surveys..wind mills..ò",
+    "missing..∫∫..fugue..nyx..columns..scientific..∏",
+    "nothing..^...risks..one..missing..discussion..p"
    ]
   ]
  },
@@ -1521,22 +1521,22 @@ module.exports = [
   "title": "poem 66",
   "lists": [
    [
-    "carnivals..doorway..&a5p{f_×..boltzmann..thirst",
-    "footholds..joining..drawings..labyrinth..lining",
-    "workshops..forward..quilting..pinocchio..adrift",
-    "vibrating..chordal..journals..formation..within"
+    "into..fragility..landmarks..dolls..window..thing",
+    "lost..boltzmann..shortcuts..round..cannot..fools",
+    "drip..boltzmann..4¾:GÃ5Â_#..human..robust..winds",
+    "coat..catalysts..hydrology..third..london..start"
    ],
    [
-    "lazy..8∴Ø¾=..j#ër‡ƒmê#kh3ÍçYTØ0..colors..winding",
-    "buzz..pivot..₈?ê÷œ0$≈aQwAØ∀m/w`..scrawl..initial",
-    "moth..chain..cross-disciplinary..nights..towards",
-    "york..rungs..7‰ýÛ!‰½oo¨∞²!rýU∞j..flight..musical"
+    "saturn..production..…..was..industry(!)..bulb..­",
+    "whisky..n6ø∀½ÛØ^µz..~..say..dissolution..rust..ç",
+    "robots..attracting..w..not..instability..thin..ü",
+    "rhythm..continuous..D..rim..pollination..flaw..ø"
    ],
    [
-    "landmarks..photos..holy..into..barns..storm..our",
-    "frictions..drinks..snow..plow..blown..small..can",
-    "∐∈­ûÆéøÃƒ..domain..join..gold..calls..shift..low",
-    "formation..raging..loop..bits..abyss..plans..î_j"
+    "multiplicity..upon..junkyard..accordion...Ǝ!..&^",
+    "çQ#oÜÊ05¦1½∈..¡Êrý..hurtling..plurality..say..||",
+    "JcLH}4¦∷löÝ~..bulb..graffiti..shuffling..hot..am",
+    "film factory..lots..plumbing..landmarks..010..!^"
    ]
   ]
  },
@@ -1544,22 +1544,22 @@ module.exports = [
   "title": "poem 67",
   "lists": [
    [
-    "knapsack..depths..Kv5z÷­+tw#…ÜÍ{òö..abundance..∫",
-    "trousers..ground..¨1ôýh÷öIæ¡±¡Y%¾ø..electrons..œ",
-    "junkyard..column..œoæ∫⊙tj½8ÆI³7²S...resonance..j",
-    "trousers..jungle..¨1ôýh÷öIæ¡±¡Y%¾ø..warehouse..â"
+    "culture..storyteller..suspended..death..looms..š",
+    "thermos..underground..hypertext..clock..dated..ô",
+    "arduous..atmospheres..telephone..plant..woven..w",
+    "&Í?//¦4..manufacture..forgotten..bells..roots..Ê"
    ],
    [
-    "ecology..half..sale..float..adaptable..k..warp",
-    "watches..hunt..take..doors..resurrect..&..cups",
-    "screens..oboe..=||=..torch..newspaper..œ..caps",
-    "samples..rest..blue..churn..converges..m..bags"
+    "|∅.∅|..project..length..×ø¹9&üç&oƎ¡..connectance",
+    "looms..Ǝ¡Ûä²?o..planes..translucent..×ø¹9&üç&oƎ¡",
+    "shock..gallery..forgot..reverberate..×ø¹9&üç&oƎ¡",
+    "tolls..cellars..routed..astrologers..underground"
    ],
    [
-    "atoms..w~Ê8w|hIöï∅âœ..abandoned..fluorescence..‰",
-    "askew..nowhere dense..fragments..Ç1~H½-&ò%jó·..½",
-    "start..rollercoaster..networked..otherworldly..S",
-    "taste..­9¯uÛ`¾jJhßwǎ..ǎm8Èƒ=$…æ..convergences..r"
+    "thermal..dancehall..pepper..explores..students",
+    "forever..automated..sheets..nebraska..hydrogen",
+    "gallery..stretched..wooden..software..l«Gûó÷_ý",
+    "restore..traversal..cantor..skeletal..colossal"
    ]
   ]
  },
@@ -1567,22 +1567,22 @@ module.exports = [
   "title": "poem 68",
   "lists": [
    [
-    "residue..knit..things..hammer..turning..blade..§",
-    "sleeves..buzz..cavern..intent..winding..weave..$",
-    "subject..sink..became..scythe..systems..facts..Û",
-    "texture..lily..levers..welder..dynamic..turns..i"
+    "guards..ò..p..steering..dated..dx..herself..¡!¡",
+    "filled..ç..G..unsteady..unity..x|..narrate..ray",
+    "metric..ù..½..staining..slate..ℵ₀..craters...ǡ.",
+    "assert..l..ç..particle..study..πø..rasping..dew"
    ],
    [
-    "skin..axle..sanctified..ship..frames..repelling",
-    "text..paul..inebriated..race..waking..fl⊙uk!∞8­",
-    "culm..dust..enrichment..3:48..figure..repairman",
-    "junk..sums..elliptical..warp..walker..difficult"
+    "indecipherable..read write draw..!.!..∐..was..÷",
+    "H¤&_3mJ¤iÇ∏$Jx..trans | figured..rim..#..ash..j",
+    "J|1·wq∅L#”xöyç..f„½k-ìv…Iê#2∈4÷...Ǝ!..⊙...^...×",
+    "x?-Ût∏¤KǎlêØh½..î6fi#%ƒ¡Æòì#!xi..cat..Õ..gas..8"
    ],
    [
-    "steering..enactment..labels..label..always..tap",
-    "gendered..cigarette..center..hands..stamps..new",
-    "multiple..efficient..dimmer..caves..direct..}M·",
-    "vastness..shuffling..reader..hands..cycles..(æ)"
+    "midland..faded..cybernetic she..gatherer..1914",
+    "fishers..deals..«ùƎ!m~8Am%‹ℵø÷..midnight..waif",
+    "shining..train..indecipherable..subsumed..flag",
+    "breathe..dream..individualized..fretless..deer"
    ]
   ]
  },
@@ -1590,22 +1590,22 @@ module.exports = [
   "title": "poem 69",
   "lists": [
    [
-    "caps..barns..feeling..examination..tomorrow..so",
-    "oily..grave..science..collections..bleeding..=>",
-    "farm..walls..migrate..atmospheres..hands-on..ze",
-    "sink..blood..spectra..disciplines..branches..in"
+    "iterations..really..electrode..stammering..away",
+    "relentless..encode..interface..expression..heat",
+    "mycorrhiza..albert..straining..omniscient..bend",
+    "harnessing..locked..ecologies..timetables..dots"
    ],
    [
-    "it was like this every morning..exists..goes..·",
-    "êÊJ¡ÛH±wiC#0ÃÍUJxǎ­∈R#ø}ǡ‹éÃ·÷..jacket..dice..?",
-    "éiÃRAaÍ‰It∏P„ǡbüÛ_9ûDùwVý…by∈û..stored..grew..ø",
-    "¹⊚ôéHÂkµI1…L!9t∐ƒÆ÷¼ÜG#&ÝôeƩt0..dreams..howl..½"
+    "different..iii..8..breath..:::..shifting..swings",
+    "traveling..row..∞..atomic..ÕM4..majestic..ticket",
+    "eternally..|-|..o..drawer..∅.∅..category..n-body",
+    "governing..web..Ç..voices..gap..imagined..thrown"
    ],
    [
-    "similar..prints..cyclone..bars..¹..!==..from..ýg",
-    "bagpipe..season..beneath..cafe..÷..bow..silk..­÷",
-    "another..bridge..embrace..flew..D..god..flew..Ǝ!",
-    "animate..glance..perfect..laws..V..çåw..soot..πø"
+    "„ó∏k≑céö∞±$ƒœx&1+ûé÷R!÷êJîóæ..top..marlboro..:::",
+    "#Rǎ-1±é/:ℵ∅rJ~{I{≈_ahÇ∫3Ý_∅ô..á|á..spinning..rim",
+    "#Rǎ-1±é/:ℵ∅rJ~{I{≈_ahÇ∫3Ý_∅ô..#.#..fleeting..was",
+    "Ræ{÷oGI½#0î⊚ëýwý&ƒ¯„¼Â2I#43‰..#_#..traveler..gay"
    ]
   ]
  },
@@ -1613,22 +1613,22 @@ module.exports = [
   "title": "poem 70",
   "lists": [
    [
-    "hinge..cyborg..œoæ∫⊙tj½8ÆI³7²S...ghostly..ôò..>:",
-    "south..string..infinite between..rigging..13..Õ∞",
-    "chess..N9!Ue¡..î4dâli_µy₈ƒêPoêÀ..welding..∫∫..up",
-    "ÝÜô#½..spoken..|bl8?~m$NU9±3jûA..student..1¢..w?"
+    "listless..restored..?..driftless..dz..hymn..:..ý",
+    "requires..electron..ö..inference..de..sing..t..”",
+    "resinous..unveiled..I..meteorite..πø..rope..=..é",
+    "incident..observer..!..repelling..17..1969.._..2"
    ],
    [
-    "found..ö..pulls..topology..mercury..into..eye.._",
-    "poems..o..poles..redfield..without..took..sky..µ",
-    "runes..œ..comes..subsumed..forever..reed..4th..%",
-    "cross..j..slung..roulette..thermos..deck..low..ß"
+    "roofer..hero zero rider ze..every..Dø8ý‡$œ^_½öÍh",
+    "filled..#∀öîIœƒj?­9äÍ$³½oÊ..humid..discontinuity",
+    "skills.._∅v3ûIzétPôffóǎÜ…?..speed..profit-driven",
+    "record..hero zero rider ze..gifts..point-of-view"
    ],
    [
-    "sixth..shouting..joints..(re)cover..needle..down",
-    "winds..incident..become..networked..throng..both",
-    "evoke..hydrogen..switch..dissolved..spider..meet",
-    "motel..modeling..cherry..explosion..deeply..west"
+    "scripts..drive..work..quick..struts..stored..ç",
+    "uttered..choir..line..force..stored..gentle..|",
+    "rocking..hinge..burn..ochre..middle..speech..ç",
+    "uttered..brick..loom..wires..closed..wheels..v"
    ]
   ]
  },
@@ -1636,22 +1636,22 @@ module.exports = [
   "title": "poem 71",
   "lists": [
    [
-    "map..writing..points..fools..coding..throng..¦",
-    "á|á..working..flying..photo..narrow..marrow..Û",
-    "say..boatman..fungal..radio..vacant..guards..7",
-    "ivy..rushing..cloudy..small..robust..spills..#"
+    "pinning..goods..iii..hymns..moths..rusty light",
+    "gymnast..hymns..ivy..cloak..night..traditional",
+    "shining..rails..nyx..souls..clump..G½f∞ë2ýpU$c",
+    "milling..tools..gas..shorn..rusty..distraction"
    ],
    [
-    "3..sailor..ö„#Ç8..Ý..irrational..constraint..½",
-    "½..robust..shady..Æ..old-school..phonograph..P",
-    "‹..swamps..plain..o..orthogonal..invocation..³",
-    "ò..throws..tight..¯..old-school..ƶJii¡8lÝ&7..w"
+    "intonation..é..railways..xo9w&ƒýikx..>&..Ùƒ”kj_",
+    "#‰#œY₈ßý$f..b..passions..constraint..ax..payday",
+    "modulation..y..function..manuscript...^..chains",
+    "artificial..^..boundary..population..åß..riding"
    ],
    [
-    "notations..industry!..urban..î4dâli_µy₈ƒêPoêÀ..¦",
-    "pinocchio..clutching..cloth..xÃa727$mzóHo?8∏÷..&",
-    "mountains..migration..atoms..trans | platform..‡",
-    "broadcast..transport..packs.._{bØmj∈u9ÆUØ!R¤#..y"
+    "short..&Í?//¦4..distillations..¯ÈÛ-nmçÏ..½..fold",
+    "macro..rolling..cloud factory..junkyard..j..&#7±",
+    "shows..railing..digital cloud..calculus..p..mist",
+    "stalk..unbound..a + b = b + a..implicit..%..town"
    ]
   ]
  },
@@ -1659,22 +1659,22 @@ module.exports = [
   "title": "poem 72",
   "lists": [
    [
-    "platform..rehearsal..½ÀYýJc3äR∞#3µz?µçû..part..ô",
-    "too-long..carefully..šI#aA4#î9mÝêý8Êǎýg..wars..Í",
-    "spectral..reference..šI#aA4#î9mÝêý8Êǎýg..1962..D",
-    "language..encourage..7‰ýÛ!‰½oo¨∞²!rýU∞j..bang..û"
+    "development..hours..outstretched..e..through..am",
+    "say my name..place..transference..½..reweave..!^",
+    "creased map..leapt..KìUÆøÜ½⊙q¡wA..‹..chordal..::",
+    "assemblance..group..embeddedness..÷..suppose..&^"
    ],
    [
-    "endless..translucent..together..program..gallery",
-    "pasture..underground..sketches..quantum..restore",
-    "perfect..convergence..harbored..contour..baskets",
-    "torched..7¯S«÷x¤8öîÊ..software..feather..drought"
+    "palettes..clockworks..others..observatory..ô..&>",
+    "forsaken..assemblage..theory..connectance..÷..∅∅",
+    "produced..thresholds..pulsed..skyscrapers..8..|!",
+    "together..flowerhead..voyage..say my name..k..re"
    ],
    [
-    "h..buffalo..òRÆ##~¦Rwøêç¦ì|ûƎçyÜxHçœÇo#I#..other",
-    "G..compose..j8¯JïÛℵk|+êÐj¾J½=JrøÊökƎx⊚7J¯..elegy",
-    "À..samples..æî…t2î`⊚ℵCƩÝ&êÊ¨0Ê¹çšâx|KcyØR..|∅.∅|",
-    "x..flooded..ÀeGCçG8=`≈#bJLerm∅m#é¦=öo+#&H..gaunt"
+    "prayer..ƶ&œNxøfá11&f{..co2..connectance..hoe..+",
+    "people..(re)do (red)o..law..phosphorous..our..k",
+    "scores..{_∞p:|Â½³.#Ǝ³..man..pop-up book..too..$",
+    "robots..watch factory...,...non-metered..∫È4..Ü"
    ]
   ]
  },
@@ -1682,22 +1682,22 @@ module.exports = [
   "title": "poem 73",
   "lists": [
    [
-    "winding..threaded..10¢..skyscrapers..barren..far",
-    "shutter..pandemic..hex..say my name..engine..128",
-    "bustled..graffiti..tap..âäI{v4ìšG‹Ü..whales..cry",
-    "strange..imagined..raw..millenniums..untied...ǡ."
+    "renderings..rites..∞&jÍƒgqj..citizen..inky..ƶ..ó",
+    "deciphered..large..buslines..laments..self..w..m",
+    "electrical..turns..l«Gûó÷_ý..circled..cage..~..c",
+    "windshield..tubes..drawings..bullets..till..e..‰"
    ],
    [
-    "ever..ò..betweens..f.:ÆœëM38÷Gw..materiality..7",
-    "tune..Û..drifting..Ø2jx∴ý:î9g∀½..seemingless..T",
-    "damp..ø..mistakes..independence..x?…½J^l0xÊi..¡",
-    "lash..⊚..clutches..185±∷9#mÍCýD..frequencies..ø"
+    "stitched..hertzian..y = mx + b..transect..swing",
+    "remember..junkyard..experience..clutches..delve",
+    "hurtling..junkyard..management..quartets..#øS„d",
+    "adapting..stripped..retrieving..remember..parts"
    ],
    [
-    "Ê..flickering..artifacts..duty..archive..talks",
-    "Ý..unfettered..chemistry..ribs..eternal..blend",
-    "g..frightened..suitcases..lace..mineral..niche",
-    "8..flickering..specimens..wire..erasure..small"
+    "ä#¦Íótû7/3-ǎmò|b∞é9=÷%≑§{Ã8«wS..aurally..circuit",
+    "∴^bü/∈∀d‰¾häǡ}6-bH0c0_p0lCDß‹#..species..reading",
+    "×¤⊙m∈”mH∫ǎ/öpø0T|óM§²I8=êHaÍiç..feeling..creates",
+    "8=∏¦Âℵ½¾â5V`:¹y4i-ww¦3{9Ã«Ý9¦æ..mercury..instead"
    ]
   ]
  },
@@ -1705,22 +1705,22 @@ module.exports = [
   "title": "poem 74",
   "lists": [
    [
-    "spinner..smooth..drip..1902..assemblance..finite",
-    "forcing..tinged..swan..keen..cybernetics..fading",
-    "conjoin..asleep..code..fins..seemingless..marrow",
-    "caverns..gentle..tone..soot..transmitted..myself"
+    "transcription..ä#¦Íótû7/3-ǎmò|b∞é9=÷%≑§{Ã8«wS..î",
+    "the archivist..×¤⊙m∈”mH∫ǎ/öpø0T|óM§²I8=êHaÍiç..≑",
+    "irretrievable..=¡‰eV½G!oìÜ¯IAi∫§½=7#¯5t{&±¨Õ7..t",
+    "Üw4MT4wüýÛGoǡ..½7¡¯4U¨ƒ7Ǝ~¨äÝ!#oœbö≈Gçfî2‹Í½I..e"
    ],
    [
-    "dated..probabilities..likelihood..topology..coin",
-    "clasp..w~Ê8w|hIöï∅âœ..rhizomatic..radiator..love",
-    "tools..distillations..percolator..splendor..moon",
-    "today..thermoelastic..algorithms..tomorrow..mast"
+    "arcs..bowed..blinking..ready..cathedrals..5¢..û",
+    "bone..caves..&{2Øℵ#²t..roots..orthogonal..so..ö",
+    "said..today..radiator..liked..encryption...^..À",
+    "gold..blink..permeate..sweet..dissolving..Ǝ¨..½"
    ],
    [
-    "trapeze..independence..difference..storefront..ǡ",
-    "plywood..tonal ladder..recitation..blacksmith..À",
-    "harmony..f.:ÆœëM38÷Gw..commercial..attracting..s",
-    "pointer..regenerative..compelling..intonation..`"
+    "abyss..onward..arithmetic..demystify..damp..goal",
+    "retie..shadow..Ǝò½3‹ûaØÕ{..proposals..team..ahab",
+    "¤üe&¯..movies..repetition..appliance..deep..girl",
+    "blank..5`{ì#a..transition..listeners..1906..have"
    ]
   ]
  },
@@ -1728,22 +1728,22 @@ module.exports = [
   "title": "poem 75",
   "lists": [
    [
-    "dissolution..jungle..embeddedness..rust..mind..m",
-    "connections..bounds..?§7ö:eH‹Ímv∴..nest..bury..ç",
-    "netherworld..yellow..construction..1958..hill..Ý",
-    "(m)bodiment..bibles..185±∷9#mÍCýD..kite..feel..J"
+    "lessons..electrode..sighted..frozen..â÷I∅8¾i..ǡ",
+    "freight..shortcuts..howling..drowsy..uncover..¦",
+    "flooded..diffusion..prisons..scythe..feeling..æ",
+    "drought..hydrology..twisted..pupils..bending..¾"
    ],
    [
-    "history..set..honest..topology..press..#`ý..œ..H",
-    "finding..lit..foster..concrete..blend..two..ý..ß",
-    "melding..boy..forest..elements..shock..fî7..?..x",
-    "conjure..½jt..cyborg..blurring..silos..lit..ì.._"
+    "computer-driven..pupils..broken..eons..nightly",
+    "ü=MëÈ49=857LQÈÕ..stolen..choose..flux..lessons",
+    "telephone wires..hooves..settle..gulf..thermos",
+    "½ò≈÷ö­GÜm×Û_0÷V..ground..bender..glue..pointer"
    ],
    [
-    "evoke..ghosts..production..quickening..#`ý..tin",
-    "boots..rimmed..flickering..enrichment..ode..sew",
-    "sleep..fields..incomplete..locomotion..üø§..pen",
-    "rungs..lining..suspension..production..101..48¢"
+    "processes..tiny..=¡‰eV½G!oìÜ¯IAi∫§½=7#¯5t{&±¨Õ7",
+    "hymn-like..both..=¡‰eV½G!oìÜ¯IAi∫§½=7#¯5t{&±¨Õ7",
+    "progress!..more..q²qm##op±µ_‹∐{P4JœØipv0±_~_xkØ",
+    "frequency..love..µ#7G=æ#⊙=4=mç÷|kgx·æì_5w«Hwcƒ¨"
    ]
   ]
  },
@@ -1751,22 +1751,22 @@ module.exports = [
   "title": "poem 76",
   "lists": [
    [
-    "=>..tomorrow..²mò0g..Ý4|m¦ìnj¤Ʃ{o{⊚GG!³≈j_k:&..ä",
-    "++..hallways..packs..Ù„9œ½UçÍko½ì8wU∏gd∷½÷×=j..∐",
-    "10..radiator..brick..Héç!ëj½Ïi?i?mÊ÷Øû¯¨8LTš2..x",
-    "to..spilling..flood..Héç!ëj½Ïi?i?mÊ÷Øû¯¨8LTš2..3"
+    "today..loans..ways..½..swiftly..typically..Ç..=",
+    "flung..chips..word..u..mirrors..colliding..½..”",
+    "windy..words..rows..Ç..strands..artifacts..J..×",
+    "boots..birds..vast..Ð..Ǝ¡Ûä²?o..labyrinth..1..î"
    ],
    [
-    "station..1¢..8Jwƒól„tY¨…3ý$¯..gaunt..possibility",
-    "traffic..13..transformations..built..night watch",
-    "holding...-..i¨Cäuý§§t±b∞∀`y..split..distraction",
-    "warning..by..æµǎÆÂm:!}C¡0¼NØ..torch..abstraction"
+    "kind..quantum..shadow..winds..non-traditional..m",
+    "rows..informs..anyway..tight..improvisational..i",
+    "boat..skyward..sought..touch..transformations..!",
+    "…Â”0..curtain..tuning..roots..just intonation..ƒ"
    ],
    [
-    "ö&¯mKæq#fÜ%≈dQ½&~gUNé«..diagram..glorious..block",
-    "×ë5ℵçG≈§!∴ÊkÏƒ¤îp&î∫§Í..knowing..harmonic..graph",
-    "-ØgôAøÙ1ÜØø!oJÜ3²îÀAüf..working..passions..spark",
-    "×ë5ℵçG≈§!∴ÊkÏƒ¤îp&î∫§Í..factory..downward..winds"
+    ".#..ribs..floods..things..adrift..whisky..∷..&",
+    "ℵ₀..vial..fabric..whisky..fossil..moving..!..1",
+    "of..last..joints..simply..giants..cannot..Y..Ü",
+    "ℵ₈..soot..drowsy..digits..spills..vacant..h..2"
    ]
   ]
  },
@@ -1774,22 +1774,22 @@ module.exports = [
   "title": "poem 77",
   "lists": [
    [
-    "ØÆ4IéxÜǡÇ..l..season..compass..abyss..Ø..5..4..N",
-    "‰Û8aoY…N¨..v..shadow..ladders..flows..H..œ..c..o",
-    "producers..œ..people..emerald..could..b..9..#..8",
-    "¤9:1∷…Gt7..f..people..&Øl%ej§..dwell..æ..C..|..œ"
+    "rubber..run..electron..0?¹-|∐!…ìg∴..hands-on..š",
+    "jungle..#_#..marlboro..Y1H×?G6xl0ö..yellowed..ò",
+    "strewn..lay..l«Gûó÷_ý..chronometer..last-day..H",
+    "tackle..eye..hands-on..storyteller..stranger..~"
    ],
    [
-    "scales..crate..another..conveyer..f.:ÆœëM38÷Gw",
-    "cycles..there..torrent..traveler..qÍwj=b:Gâßûǡ",
-    "method..store..longarm..snapshot..otherworldly",
-    "snakes..reedy..journal..trousers..cable-access"
+    "caged..charcoal..arrow..problem..Û5&₈..records",
+    "facts..composer..cross..student..verb..watches",
+    "forms..unsteady..start..thunder..fool..paradox",
+    "shock..vastness..pause..sources..mask..clouded"
    ],
    [
-    "blood..trees..asked..y..development..axle..coal",
-    "other..µ~æjÝ..bowed..#..measurement..3:48..nest",
-    "radar..level..store..ç..supermarket..play..lone",
-    "ether..notes..state..x..florescence..pawn..root"
+    "monologues..parameters..watches..fragments..bell",
+    "unfettered..exuberance..economy..hypertext..caws",
+    "mƩfÊÍ&éG∫Q..clockworks..prophet..cacophony..aged",
+    "phonograph..clockworks..explore..producers..part"
    ]
   ]
  },
@@ -1797,22 +1797,22 @@ module.exports = [
   "title": "poem 78",
   "lists": [
    [
-    "murky..fact..redeem..fail..glue..lungs..specific",
-    "stain..rays..crisis..rung..hall..these..musician",
-    "00110..huge..future..uses..mail..plain..mistakes",
-    "flash..rail..spider..1962..tent..skies..magnetic"
+    "string..flew..swamps..fl..arithmetic..fraying..ù",
+    "scythe..like..3-ring..16..cybernetic..recipes..∐",
+    "graphs..part..shards..∫∫..assemblage..ladders..i",
+    "lumens..draw..humans..ℵ₈..refineries..physics..t"
    ],
    [
-    "||..mirage..abstract..Vkr8ïÂ½½½|òǎxÂP¨árc·∞..//",
-    "10..3-ring..musician..spatially-distributed..64",
-    "is..lament..remnants..½j×3$=P¡÷mœÜj«­¤æm4≈s..me",
-    "+...easily..circling..spatially-distributed..be"
+    "dreams..!..exuberance..the API..tell..strewn..&>",
+    "levels..9..fragmented..faraway..rush..linear..{}",
+    "remain..k..frightened..bagpipe..&#7±..speaks..yý",
+    "remain..f..difference..bending..nets..albert..-."
    ],
    [
-    "built..kind..reverse..subliminal..dynamic..wide",
-    "awake..team..residue..manuscript..narrate..each",
-    "sixth..last..narrate..scattering..blazing..mask",
-    "train..half..haunted..blacksmith..spectra..full"
+    "uptake..fires..against..blades..average..murky",
+    "manual..belly..believe..useful..pressed..retry",
+    "middle..place..whether..tenets..release..media",
+    "tapper..files..measure..writes..feather..where"
    ]
   ]
  },
@@ -1820,22 +1820,22 @@ module.exports = [
   "title": "poem 79",
   "lists": [
    [
-    "alchemy..fish..torrent..†åp ¬|˙..bind..ë..gospel",
-    "setting..folk..strings..chaotic..bird..h..inside",
-    "kinetic..nail..cadenza..citizen..film..Û..seemed",
-    "calling..fray..miracle..centers..bait..¯..vowels"
+    "restart..weld..trace..pistons..gap(s)..floors..G",
+    "deviant..talk..hover..eternal..forget..orbits..ß",
+    "company..crow..stems..balance..scythe..prints..&",
+    "Ǝ¡Ûä²?o..jazz..lever..welding..artist..movies..⊚"
    ],
    [
-    "delve..8½#ý4..geologies..moons..deep..what..drop",
-    "moves..often..expansion..which..kind..dirt..alef",
-    "locks..alone..bandwidth..goals..cage..lose..once",
-    "rails..throw..cascading..label..book..name..grit"
+    "elemental..inhabitants..microscope..walking..yý",
+    "boltzmann..atmospheres..dependence..concert..Nù",
+    "letterman..resplendent..saxophones..concert..2d",
+    "migration..assemblance..stochastic..streams..1¢"
    ],
    [
-    "adaptations...#..settle..intersections..arches",
-    "possibility.._¶..aboard..the archivist..phrase",
-    "night vigil..ax..switch..trans | media..walker",
-    "atmospheric..it..within..8âö‡ò&Ð½ÃjJpℵ..spiral"
+    "choir..they..…..craft..cities..î..convergent..”",
+    "belly..root..H..grand..aerial..P..composable..G",
+    "chest..mass..$..vinyl..hammer..∏..web-native..#",
+    "rooms..near..~..state..design..#..breathless..Ǝ"
    ]
   ]
  }

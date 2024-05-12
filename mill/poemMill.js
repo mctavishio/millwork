@@ -51,6 +51,7 @@ const textLists2html = textLists => {
 };
 
 let canvas = { width:book.svgwidth, height:book.svgheight, min:Math.min(book.svgwidth,book.svgheight), max:Math.max(book.svgwidth,book.svgheight)};
+let morsecode = "__.__.______.__.______.__.____".split("");
 let poemsinfo = [...new Array(nticks).keys()].map( j => {
 	let textLists = rawpoems[j%rawpoems.length].lists;
 	//let textarray = "left throng city depot arrived alone worn suitcase sandwich lukewarm coffee thermos tepid brown liquid greasy paper rusted texaco station folded map urgent mission fix the system repair reclaim rebuild reweave restore prairie meadow sequestration".split(" ");
@@ -58,6 +59,8 @@ let poemsinfo = [...new Array(nticks).keys()].map( j => {
 		return acc + list.join(" ");
 	}, "").split("..").filter( word => word!==".." && word!==" " && word.length < 12);
 	let captiontext = [0,1,2].map(j=>textarray[tools.randominteger(0,textarray.length)]).join(" :|: ");
+	
+	//let captiontext = morsecode[j%morsecode.length];
 	let title = [0].map(j=>textarray[tools.randominteger(0,textarray.length)]).join(" ");
 	// console.log(textarray);
 	let poem = {
@@ -114,6 +117,7 @@ else {
 				id: `${(k).toString().padStart(3, '0')}`,
 				title: poem.title, 
 				text: poem.figure.caption.split(" ")[0], 
+				//text: morsecode[t%morsecode.length],
 			};
 			let elementdraw = Bfilm.elements.map( layer => {
 				return layer.map( el => {

@@ -9,11 +9,11 @@ let dt = new Date();
 let timestamp = dt.getTime();
 let datetime = dt.toDateString();
 
-const title = "transfigure";
-const sequencetitle = "trans | figure";
+const title = "telegraph";
+const sequencetitle = "telegraph";
 const subtitle = datetime;
 const description = "algorithmic sound & drawings";
-const rooturl = "https://transfigure.work";
+const rooturl = "https://telegraph.work";
 const authorurl = "https://mctavish.work/";
 const author= "mctavish";
 const copyright = "Copyright ©2024 mctavish<br/>";
@@ -25,7 +25,7 @@ let film16x9info = {
 	authorurl, author, copyright,
 	isbn, publisher,
 	bodyclasses: ["film", "notext"],
-	ntickstitle: 2,
+	ntickstitle: 0,
 	nticks: 60*2,
 	fps: 24,
 	sections: [],
@@ -49,7 +49,7 @@ let film9x9info = {
 	authorurl, author, copyright,
 	isbn, publisher,
 	bodyclasses: ["film", "notext"],
-	ntickstitle: 2,
+	ntickstitle: 0,
 	nticks: 60*2,
 	fps: 24,
 	sections: [],
@@ -79,8 +79,8 @@ let postcardinfo = {
 	sections: [],
 	poemids: [],
 	bookunits: "in",
-	width: 7,
-	height: 5,
+	width: 6,
+	height: 4,
 	margin: 0.5,
 	guttermargin: 0.5,
 	bleed: 0.125,
@@ -169,7 +169,7 @@ let picturebookinfo = {
 	sequencetitle, title, subtitle, description, rooturl,
 	authorurl, author, copyright,
 	isbn, publisher,
-	bodyclasses: ["film notext"],
+	bodyclasses: ["broadsides notext"],
 	ntickstitle: 1,
 	fps: 1,
 	nticks: 120,
@@ -193,7 +193,8 @@ const inputfile = `./input.js`;
 
 const fps = 24;
 const corecolors = [pigments.warmblack, pigments.warmlightwhite]; 
-const spicecolors = [pigments.yellow, pigments.lightgray]; 
+const spicecolors = [pigments.warmblack, pigments.warmlightwhite, pigments.warmlightwhite]; 
+//const spicecolors = [pigments.yellow, pigments.lightgray]; 
 const allcolors = [...corecolors,...spicecolors];
 const colorweights = [
 	["var(--corecolor0)",10],
@@ -224,16 +225,15 @@ const weightedcolors = colorweights.flatMap(wx=>{
 	return [...new Array(wx[1]).keys()].map( w=>wx[0] );
 });
 
-const nx = 4;
-const ny = 4;
+const nx = 5;
+const ny = 5;
 //nz = nlayers
-const nz = 4;
-
-const xgrid = [...new Array(nx).keys()].map( j=>Math.floor(100*j/(nx-1))/100 );
-const ygrid = [...new Array(ny).keys()].map( j=>Math.floor(100*j/(ny-1))/100 );
+const nz = 2;
+//const xgrid = [...new Array(nx).keys()].map( j=>Math.floor(100*j/(nx-1))/100 );
+//const ygrid = [...new Array(ny).keys()].map( j=>Math.floor(100*j/(ny-1))/100 );
 //const ygrid = [...new Array(n).keys()].map(j=>tools.randominteger(0,100)/100).sort( (a,b) => { return a - b } );
-//const xgrid = [...new Array(nx).keys()].map( x=>0.5 );
-//const ygrid = [...new Array(ny).keys()].map( y=>0.5 );
+const xgrid = [...new Array(nx).keys()].map( x=>0.5 );
+const ygrid = [...new Array(ny).keys()].map( y=>0.5 );
 //console.log(`inputMill:xgrid=${JSON.stringify(xgrid)}`);
 
 

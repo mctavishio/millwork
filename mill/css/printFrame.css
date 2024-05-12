@@ -311,7 +311,7 @@ body.film article > div.flex > div.content {
 	/*background-color: var(--warmlightwhiteveil);*/
 	color: var(--red);
 	font-size:1.4rem;
-	font-size:16vmin;
+	font-size:36vmin;
 }
 body.notext article > div.flex > div.content {
 	display:none;

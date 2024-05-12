@@ -1,6 +1,6 @@
 let input =
 	{
-	"sequencetitle": "trans | figure",
+	"sequencetitle": "telegraph",
 	"duration": 2,
 	"nticks": 120,
 	"fps": 24,
@@ -824,20 +824,22 @@ let input =
 			]
 		}
 	],
-	"nx": 4,
-	"ny": 4,
-	"nz": 4,
+	"nx": 5,
+	"ny": 5,
+	"nz": 2,
 	"xgrid": [
-		0,
-		0.33,
-		0.66,
-		1
+		0.5,
+		0.5,
+		0.5,
+		0.5,
+		0.5
 	],
 	"ygrid": [
-		0,
-		0.33,
-		0.66,
-		1
+		0.5,
+		0.5,
+		0.5,
+		0.5,
+		0.5
 	],
 	"pigments": {
 		"red": "#AE0501",
@@ -914,14 +916,16 @@ let input =
 		"#fdfdf3"
 	],
 	"spicecolors": [
-		"#ffcc00",
-		"#888888"
+		"#191918",
+		"#fdfdf3",
+		"#fdfdf3"
 	],
 	"allcolors": [
 		"#191918",
 		"#fdfdf3",
-		"#ffcc00",
-		"#888888"
+		"#191918",
+		"#fdfdf3",
+		"#fdfdf3"
 	],
 	"weightedcolors": [
 		"var(--corecolor0)",
@@ -1006,11 +1010,11 @@ let input =
 		1
 	],
 	"bookinfo": {
-		"sequencetitle": "trans | figure",
-		"title": "transfigure",
-		"subtitle": "Thu Mar 28 2024",
+		"sequencetitle": "telegraph",
+		"title": "telegraph",
+		"subtitle": "Sun May 12 2024",
 		"description": "algorithmic sound & drawings",
-		"rooturl": "https://transfigure.work",
+		"rooturl": "https://telegraph.work",
 		"authorurl": "https://mctavish.work/",
 		"author": "mctavish",
 		"copyright": "Copyright ©2024 mctavish<br/>",
@@ -1038,11 +1042,11 @@ let input =
 		"cssstyles": ""
 	},
 	"postcardinfo": {
-		"sequencetitle": "trans | figure",
-		"title": "transfigure",
-		"subtitle": "Thu Mar 28 2024",
+		"sequencetitle": "telegraph",
+		"title": "telegraph",
+		"subtitle": "Sun May 12 2024",
 		"description": "algorithmic sound & drawings",
-		"rooturl": "https://transfigure.work",
+		"rooturl": "https://telegraph.work",
 		"authorurl": "https://mctavish.work/",
 		"author": "mctavish",
 		"copyright": "Copyright ©2024 mctavish<br/>",
@@ -1058,8 +1062,8 @@ let input =
 		"sections": [],
 		"poemids": [],
 		"bookunits": "in",
-		"width": 7,
-		"height": 5,
+		"width": 6,
+		"height": 4,
 		"margin": 0.5,
 		"guttermargin": 0.5,
 		"bleed": 0.125,
@@ -1071,11 +1075,11 @@ let input =
 		"cssstyles": ""
 	},
 	"coverinfo": {
-		"sequencetitle": "trans | figure",
-		"title": "transfigure",
-		"subtitle": "Thu Mar 28 2024",
+		"sequencetitle": "telegraph",
+		"title": "telegraph",
+		"subtitle": "Sun May 12 2024",
 		"description": "algorithmic sound & drawings",
-		"rooturl": "https://transfigure.work",
+		"rooturl": "https://telegraph.work",
 		"authorurl": "https://mctavish.work/",
 		"author": "mctavish",
 		"copyright": "Copyright ©2024 mctavish<br/>",
@@ -1104,11 +1108,11 @@ let input =
 		"cssstyles": ""
 	},
 	"picture8x8info": {
-		"sequencetitle": "trans | figure",
-		"title": "transfigure",
-		"subtitle": "Thu Mar 28 2024",
+		"sequencetitle": "telegraph",
+		"title": "telegraph",
+		"subtitle": "Sun May 12 2024",
 		"description": "algorithmic sound & drawings",
-		"rooturl": "https://transfigure.work",
+		"rooturl": "https://telegraph.work",
 		"authorurl": "https://mctavish.work/",
 		"author": "mctavish",
 		"copyright": "Copyright ©2024 mctavish<br/>",
@@ -1137,18 +1141,18 @@ let input =
 		"cssstyles": ""
 	},
 	"picturebookinfo": {
-		"sequencetitle": "trans | figure",
-		"title": "transfigure",
-		"subtitle": "Thu Mar 28 2024",
+		"sequencetitle": "telegraph",
+		"title": "telegraph",
+		"subtitle": "Sun May 12 2024",
 		"description": "algorithmic sound & drawings",
-		"rooturl": "https://transfigure.work",
+		"rooturl": "https://telegraph.work",
 		"authorurl": "https://mctavish.work/",
 		"author": "mctavish",
 		"copyright": "Copyright ©2024 mctavish<br/>",
 		"isbn": "ISBN: 00000<br/>",
 		"publisher": ". . .",
 		"bodyclasses": [
-			"film notext"
+			"broadsides notext"
 		],
 		"ntickstitle": 1,
 		"fps": 1,
@@ -1169,11 +1173,11 @@ let input =
 		"cssstyles": ""
 	},
 	"film9x9info": {
-		"sequencetitle": "trans | figure",
-		"title": "transfigure",
-		"subtitle": "Thu Mar 28 2024",
+		"sequencetitle": "telegraph",
+		"title": "telegraph",
+		"subtitle": "Sun May 12 2024",
 		"description": "algorithmic sound & drawings",
-		"rooturl": "https://transfigure.work",
+		"rooturl": "https://telegraph.work",
 		"authorurl": "https://mctavish.work/",
 		"author": "mctavish",
 		"copyright": "Copyright ©2024 mctavish<br/>",
@@ -1183,7 +1187,7 @@ let input =
 			"film",
 			"notext"
 		],
-		"ntickstitle": 2,
+		"ntickstitle": 0,
 		"nticks": 120,
 		"fps": 24,
 		"sections": [],
@@ -1202,11 +1206,11 @@ let input =
 		"cssstyles": ""
 	},
 	"film16x9info": {
-		"sequencetitle": "trans | figure",
-		"title": "transfigure",
-		"subtitle": "Thu Mar 28 2024",
+		"sequencetitle": "telegraph",
+		"title": "telegraph",
+		"subtitle": "Sun May 12 2024",
 		"description": "algorithmic sound & drawings",
-		"rooturl": "https://transfigure.work",
+		"rooturl": "https://telegraph.work",
 		"authorurl": "https://mctavish.work/",
 		"author": "mctavish",
 		"copyright": "Copyright ©2024 mctavish<br/>",
@@ -1216,7 +1220,7 @@ let input =
 			"film",
 			"notext"
 		],
-		"ntickstitle": 2,
+		"ntickstitle": 0,
 		"nticks": 120,
 		"fps": 24,
 		"sections": [],
