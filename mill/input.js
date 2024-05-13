@@ -57,470 +57,210 @@ let input =
 	],
 	"sounds": [
 		{
-			"id": "373178__samulis__f-horn-muted-sustain-g4-mohorn_mute_g3_v1_1",
-			"keywords": "orchinstsample|brass|horn|long",
-			"file": "373178__samulis__f-horn-muted-sustain-g4-mohorn_mute_g3_v1_1.mp3",
-			"duration": 8.385011,
+			"id": "bagpipe1e",
+			"keywords": "bagpipe|click|beat|percussion|",
+			"file": "bagpipe1e.mp3",
+			"duration": 2.433991,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1",
-			"keywords": "orchinstsample|brass|horn|long",
-			"file": "373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1.mp3",
-			"duration": 14.55,
+			"id": "bagpipe1f",
+			"keywords": "bagpipe|click|beat|percussion|",
+			"file": "bagpipe1f.mp3",
+			"duration": 1.832993,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "373253__samulis__f-horn-sustain-a3-mohorn_sus_a2_v2_1",
-			"keywords": "orchinstsample|brass|horn|long",
-			"file": "373253__samulis__f-horn-sustain-a3-mohorn_sus_a2_v2_1.mp3",
-			"duration": 13.688005,
+			"id": "bagpipe1g",
+			"keywords": "bagpipe|click|beat|percussion|",
+			"file": "bagpipe1g.mp3",
+			"duration": 1.886009,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "373957__samulis__tenor-trombone-staccato-d4-tenortbn_stac_d3_v2_rr1",
-			"keywords": "orchinstsample|brass|short",
-			"file": "373957__samulis__tenor-trombone-staccato-d4-tenortbn_stac_d3_v2_rr1.mp3",
-			"duration": 1.515011,
+			"id": "bagpipe1h",
+			"keywords": "bagpipe|click|beat|percussion|",
+			"file": "bagpipe1h.mp3",
+			"duration": 0.789002,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "374016__samulis__tenor-trombone-sustain-c4-tenortbn_sus_c3_v2_1",
-			"keywords": "orchinstsample|brass|long|trombone",
-			"file": "374016__samulis__tenor-trombone-sustain-c4-tenortbn_sus_c3_v2_1.mp3",
-			"duration": 9.769002,
+			"id": "cellohighthunk",
+			"keywords": "cello|thunk|beat|percussion|",
+			"file": "cellohighthunk.mp3",
+			"duration": 1.755011,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "374094__samulis__trumpet-staccato-a4-sum_shtrumpet_stac_a3_v1_rr2",
-			"keywords": "orchinstsample|brass|short|trumpet",
-			"file": "374094__samulis__trumpet-staccato-a4-sum_shtrumpet_stac_a3_v1_rr2.mp3",
-			"duration": 1.175011,
+			"id": "celloknock0",
+			"keywords": "cello|knock|beat|percussion|",
+			"file": "celloknock0.mp3",
+			"duration": 1.18,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "374098__samulis__trumpet-staccato-c6-sum_shtrumpet_stac_c5_v1_rr2",
-			"keywords": "orchinstsample|brass|short|trumpet",
-			"file": "374098__samulis__trumpet-staccato-c6-sum_shtrumpet_stac_c5_v1_rr2.mp3",
-			"duration": 1.41,
+			"id": "clapping0",
+			"keywords": "clap|beat|percussion|",
+			"file": "clapping0.mp3",
+			"duration": 28.503991,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "374133__samulis__trumpet-straight-mute-sustain-e5-sum_shtrumpet_straightm-sus_f4_v1_rr1",
-			"keywords": "orchinstsample|brass|long|trumpet",
-			"file": "374133__samulis__trumpet-straight-mute-sustain-e5-sum_shtrumpet_straightm-sus_f4_v1_rr1.mp3",
-			"duration": 8.723991,
+			"id": "cowbell",
+			"keywords": "beat|percussion",
+			"file": "cowbell.mp3",
+			"duration": 0.235011,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "374152__samulis__trumpet-sustain-f4-sum_shtrumpet_sus_g3_v1_rr1",
-			"keywords": "orchinstsample|brass|long|trumpet",
-			"file": "374152__samulis__trumpet-sustain-f4-sum_shtrumpet_sus_g3_v1_rr1.mp3",
-			"duration": 16.509002,
+			"id": "knocking1",
+			"keywords": "beat|knock|percussion",
+			"file": "knocking1.mp3",
+			"duration": 3.087007,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "374174__samulis__trumpet-vibrato-sustain-a4-sum_shtrumpet_susvib_a3_v2_rr1",
-			"keywords": "orchinstsample|brass|long|trumpet",
-			"file": "374174__samulis__trumpet-vibrato-sustain-a4-sum_shtrumpet_susvib_a3_v2_rr1.mp3",
-			"duration": 4.622993,
+			"id": "knocking2",
+			"keywords": "beat|knock|percussion",
+			"file": "knocking2.mp3",
+			"duration": 7.659002,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "374267__samulis__tuba-sustain-a3-tuba3_sus_a2_v3_rr1_mid",
-			"keywords": "orchinstsample|brass|long|tuba",
-			"file": "374267__samulis__tuba-sustain-a3-tuba3_sus_a2_v3_rr1_mid.mp3",
-			"duration": 4.675011,
+			"id": "stapler",
+			"keywords": "beat",
+			"file": "stapler.mp3",
+			"duration": 7.370998,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "374798__samulis__oldtrombone-a2-trombone_short_a2_v2_3",
-			"keywords": "orchinstsample|brass|trombone|short",
-			"file": "374798__samulis__oldtrombone-a2-trombone_short_a2_v2_3.mp3",
-			"duration": 0.94,
+			"id": "t0",
+			"keywords": "vox|beat|percussion|",
+			"file": "t0.mp3",
+			"duration": 1.832993,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "374873__samulis__oldtrombone-d3-trombone_short_d3_v2_1",
-			"keywords": "orchinstsample|brass|trombone|short",
-			"file": "374873__samulis__oldtrombone-d3-trombone_short_d3_v2_1.mp3",
-			"duration": 0.679002,
+			"id": "thunk",
+			"keywords": "beat|thunk|percussion",
+			"file": "thunk.mp3",
+			"duration": 21.869002,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "374846__samulis__oldtrombone-d3-trombone_short_d3_v2_1",
-			"keywords": "orchinstsample|brass|trombone|short",
-			"file": "374846__samulis__oldtrombone-d3-trombone_short_d3_v2_1.mp3",
-			"duration": 0.6,
+			"id": "typewriter1",
+			"keywords": "beat|percussion",
+			"file": "typewriter1.mp3",
+			"duration": 2.669002,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "374823__samulis__oldtrombone-c3-trombone_short_c3_v2_4",
-			"keywords": "orchinstsample|brass|trombone|short",
-			"file": "374823__samulis__oldtrombone-c3-trombone_short_c3_v2_4.mp3",
-			"duration": 0.521995,
+			"id": "typewriterlong",
+			"keywords": "beat|percussion|long",
+			"file": "typewriterlong.mp3",
+			"duration": 42.322993,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "374914__samulis__oldtrombone-f3-trombone_short_f3_v2_2",
-			"keywords": "orchinstsample|brass|trombone|short",
-			"file": "374914__samulis__oldtrombone-f3-trombone_short_f3_v2_2.mp3",
-			"duration": 0.6,
+			"id": "typewriterlongcistern",
+			"keywords": "beat|cistern|percussion|long",
+			"file": "typewriterlongcistern.mp3",
+			"duration": 75.263991,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "374920__samulis__oldtrombone-f3-trombone_short_f3_v3_4",
-			"keywords": "orchinstsample|brass|trombone|short",
-			"file": "374920__samulis__oldtrombone-f3-trombone_short_f3_v3_4.mp3",
-			"duration": 0.417007,
+			"id": "373405__samulis__percussion-d5-claves1_hit_v3_rr2_sum",
+			"keywords": "orchinstsample|clave|beat|percussion|",
+			"file": "373405__samulis__percussion-d5-claves1_hit_v3_rr2_sum.mp3",
+			"duration": 1.540998,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "374937__samulis__oldtrombone-g2-trombone_short_g2_v2_1",
-			"keywords": "orchinstsample|brass|trombone|short",
-			"file": "374937__samulis__oldtrombone-g2-trombone_short_g2_v2_1.mp3",
-			"duration": 0.6,
+			"id": "373434__samulis__percussion-f2-gongscrape_mf",
+			"keywords": "orchinstsample|gong|beat|percussion|afterring",
+			"file": "373434__samulis__percussion-f2-gongscrape_mf.mp3",
+			"duration": 3.551995,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "374961__samulis__oldtrombone-a2-trombone_sustain_a2_v4_2",
-			"keywords": "orchinstsample|brass|trombone|long",
-			"file": "374961__samulis__oldtrombone-a2-trombone_sustain_a2_v4_2.mp3",
-			"duration": 3.265011,
+			"id": "373440__samulis__percussion-e5-logdrumhi_medm_v2_rr1_sum",
+			"keywords": "orchinstsample|beat|percussion|drum|percussion",
+			"file": "373440__samulis__percussion-e5-logdrumhi_medm_v2_rr1_sum.mp3",
+			"duration": 1.592993,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "374992__samulis__oldtrombone-c3-trombone_sustain_c3_v4_1",
-			"keywords": "orchinstsample|brass|trombone|long",
-			"file": "374992__samulis__oldtrombone-c3-trombone_sustain_c3_v4_1.mp3",
-			"duration": 3.812993,
+			"id": "373581__samulis__marimba-c7-marimba_hit_outrigger_c6_loud_01",
+			"keywords": "orchinstsample|marimba|beat|percussion|",
+			"file": "373581__samulis__marimba-c7-marimba_hit_outrigger_c6_loud_01.mp3",
+			"duration": 1.828005,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
 			"bitrate": 16
 		},
 		{
-			"id": "375008__samulis__oldtrombone-d3-trombone_sustain_d3_v4_1",
-			"keywords": "orchinstsample|brass|trombone|long",
-			"file": "375008__samulis__oldtrombone-d3-trombone_sustain_d3_v4_1.mp3",
-			"duration": 4.989002,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "375047__samulis__oldtrombone-f3-trombone_sustain_f3_v3_1",
-			"keywords": "orchinstsample|brass|trombone|long",
-			"file": "375047__samulis__oldtrombone-f3-trombone_sustain_f3_v3_1.mp3",
-			"duration": 10.343991,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "375063__samulis__oldtrombone-g2-trombone_sustain_g2_v2_1",
-			"keywords": "orchinstsample|brass|trombone|long",
-			"file": "375063__samulis__oldtrombone-g2-trombone_sustain_g2_v2_1.mp3",
-			"duration": 8.75,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "375069__samulis__oldtrombone-g3-trombone_sustain_g3_v2_1",
-			"keywords": "orchinstsample|brass|trombone|long",
-			"file": "375069__samulis__oldtrombone-g3-trombone_sustain_g3_v2_1.mp3",
-			"duration": 6.53,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "375078__samulis__oldtrombone-a2-trombone_vibrato_a2_v1_1",
-			"keywords": "orchinstsample|brass|trombone|long",
-			"file": "375078__samulis__oldtrombone-a2-trombone_vibrato_a2_v1_1.mp3",
-			"duration": 8.986009,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "clarinet1",
-			"keywords": "z|reed|clarinet",
-			"file": "clarinet1.mp3",
-			"duration": 22.312993,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "clarinet2",
-			"keywords": "z|reed|clarinet",
-			"file": "clarinet2.mp3",
-			"duration": 14.895011,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "clarinetnotes_a",
-			"keywords": "z|reed|clarinet|clarinetnotes",
-			"file": "clarinetnotes_a.mp3",
-			"duration": 15.233991,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "clarinetnotes_b",
-			"keywords": "z|reed|clarinet|clarinetnotes",
-			"file": "clarinetnotes_b.mp3",
-			"duration": 18.211995,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "clarinetnotes_c",
-			"keywords": "z|reed|clarinet|clarinetnotes",
-			"file": "clarinetnotes_c.mp3",
-			"duration": 13.901995,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "clarinetnotes_d",
-			"keywords": "z|reed|clarinet|clarinetnotes",
-			"file": "clarinetnotes_d.mp3",
-			"duration": 16.357007,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "clarinetnotes_e",
-			"keywords": "z|reed|clarinet|clarinetnotes",
-			"file": "clarinetnotes_e.mp3",
-			"duration": 14.529002,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "clarinetnotes_f",
-			"keywords": "z|reed|clarinet|clarinetnotes",
-			"file": "clarinetnotes_f.mp3",
-			"duration": 12.178005,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "clarinetnotes_g",
-			"keywords": "z|reed|clarinet|clarinetnotes",
-			"file": "clarinetnotes_g.mp3",
-			"duration": 11.629002,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "clarinetnotes_h",
-			"keywords": "z|reed|clarinet|clarinetnotes",
-			"file": "clarinetnotes_h.mp3",
-			"duration": 17.35,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "clarinetnotes_i",
-			"keywords": "z|reed|clarinet|clarinetnotes",
-			"file": "clarinetnotes_i.mp3",
-			"duration": 21.399002,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "tornadosiren",
-			"keywords": "weather|reed|clarinetnote",
-			"file": "tornadosiren.mp3",
-			"duration": 33.598005,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "372930__samulis__clarinet-long-sustain-e4-dcclar_suslong_f3_v1_rr1_sum",
-			"keywords": "orchinstsample|reed|clarinet|long",
-			"file": "372930__samulis__clarinet-long-sustain-e4-dcclar_suslong_f3_v1_rr1_sum.mp3",
-			"duration": 9.717007,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "372934__samulis__clarinet-long-sustain-a5-dcclar_suslong_a4_v2_rr1_sum",
-			"keywords": "orchinstsample|reed|clarinet|long",
-			"file": "372934__samulis__clarinet-long-sustain-a5-dcclar_suslong_a4_v2_rr1_sum.mp3",
-			"duration": 10.160998,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "372936__samulis__clarinet-long-sustain-d4-dcclar_suslong_d3_v2_rr1_sum",
-			"keywords": "orchinstsample|reed|clarinet|long",
-			"file": "372936__samulis__clarinet-long-sustain-d4-dcclar_suslong_d3_v2_rr1_sum.mp3",
-			"duration": 10.109002,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "372941__samulis__clarinet-long-sustain-e4-dcclar_suslong_f3_v2_rr1_sum",
-			"keywords": "orchinstsample|reed|clarinet|long",
-			"file": "372941__samulis__clarinet-long-sustain-e4-dcclar_suslong_f3_v2_rr1_sum.mp3",
-			"duration": 11.31,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "373598__samulis__oboe-staccato-a5-oboe_stacc_a4_v2_rr1_main",
-			"keywords": "orchinstsample|oboe|short|reed",
-			"file": "373598__samulis__oboe-staccato-a5-oboe_stacc_a4_v2_rr1_main.mp3",
-			"duration": 0.809002,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "373627__samulis__oboe-staccato-e4-oboe_stacc_f3_v2_rr2_main",
-			"keywords": "orchinstsample|oboe|short|reed",
-			"file": "373627__samulis__oboe-staccato-e4-oboe_stacc_f3_v2_rr2_main.mp3",
-			"duration": 0.860998,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "373628__samulis__oboe-staccato-e5-oboe_stacc_f4_v2_rr2_main",
-			"keywords": "orchinstsample|oboe|short|reed",
-			"file": "373628__samulis__oboe-staccato-e5-oboe_stacc_f4_v2_rr2_main.mp3",
-			"duration": 0.705011,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "373636__samulis__oboe-staccato-e5-oboe_stacc_f4_v3_rr2_main",
-			"keywords": "orchinstsample|oboe|short|reed",
-			"file": "373636__samulis__oboe-staccato-e5-oboe_stacc_f4_v3_rr2_main.mp3",
-			"duration": 0.757007,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "373648__samulis__oboe-sustain-a4-oboe_sus_a3_v3_main",
-			"keywords": "orchinstsample|oboe|long|reed",
-			"file": "373648__samulis__oboe-sustain-a4-oboe_sus_a3_v3_main.mp3",
-			"duration": 8.986009,
-			"nchannels": 2,
-			"rate": 44100,
-			"type": "mp3",
-			"bitrate": 16
-		},
-		{
-			"id": "373654__samulis__oboe-sustain-e5-oboe_sus_f4_v3_main",
-			"keywords": "orchinstsample|oboe|long|reed",
-			"file": "373654__samulis__oboe-sustain-e5-oboe_sus_f4_v3_main.mp3",
-			"duration": 7.940998,
+			"id": "375590__samulis__agogo-agogobell3_ff_1",
+			"keywords": "orchinstsample|beat|percussion|",
+			"file": "375590__samulis__agogo-agogobell3_ff_1.mp3",
+			"duration": 1.122993,
 			"nchannels": 2,
 			"rate": 44100,
 			"type": "mp3",
@@ -531,23 +271,113 @@ let input =
 		{
 			"gain": 0.3,
 			"padmin": 0,
-			"padmax": 200,
+			"padmax": 20,
 			"start": 0,
 			"end": 1,
 			"nthreads": 4,
 			"list": [
 				{
-					"id": "373178__samulis__f-horn-muted-sustain-g4-mohorn_mute_g3_v1_1",
+					"id": "bagpipe1e",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1",
+					"id": "bagpipe1f",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "373253__samulis__f-horn-sustain-a3-mohorn_sus_a2_v2_1",
+					"id": "bagpipe1g",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "bagpipe1h",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "cellohighthunk",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "celloknock0",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "clapping0",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "cowbell",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "knocking1",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "knocking2",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "stapler",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "t0",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "thunk",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "typewriter1",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "typewriterlong",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "typewriterlongcistern",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "373405__samulis__percussion-d5-claves1_hit_v3_rr2_sum",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "373434__samulis__percussion-f2-gongscrape_mf",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "373440__samulis__percussion-e5-logdrumhi_medm_v2_rr1_sum",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "373581__samulis__marimba-c7-marimba_hit_outrigger_c6_loud_01",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "375590__samulis__agogo-agogobell3_ff_1",
 					"weight": 1,
 					"chord": 0
 				}
@@ -555,134 +385,114 @@ let input =
 		},
 		{
 			"gain": 0.3,
-			"padmin": 10,
-			"padmax": 200,
-			"start": 0.2,
-			"end": 0.5,
+			"padmin": 0,
+			"padmax": 10,
+			"start": 0.1,
+			"end": 0.9,
 			"nthreads": 3,
 			"list": [
 				{
-					"id": "373178__samulis__f-horn-muted-sustain-g4-mohorn_mute_g3_v1_1",
+					"id": "bagpipe1e",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "373243__samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1",
+					"id": "bagpipe1f",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "373253__samulis__f-horn-sustain-a3-mohorn_sus_a2_v2_1",
+					"id": "bagpipe1g",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "373957__samulis__tenor-trombone-staccato-d4-tenortbn_stac_d3_v2_rr1",
+					"id": "bagpipe1h",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "374016__samulis__tenor-trombone-sustain-c4-tenortbn_sus_c3_v2_1",
+					"id": "cellohighthunk",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "374094__samulis__trumpet-staccato-a4-sum_shtrumpet_stac_a3_v1_rr2",
+					"id": "celloknock0",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "374098__samulis__trumpet-staccato-c6-sum_shtrumpet_stac_c5_v1_rr2",
+					"id": "clapping0",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "374133__samulis__trumpet-straight-mute-sustain-e5-sum_shtrumpet_straightm-sus_f4_v1_rr1",
+					"id": "cowbell",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "374152__samulis__trumpet-sustain-f4-sum_shtrumpet_sus_g3_v1_rr1",
+					"id": "knocking1",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "374174__samulis__trumpet-vibrato-sustain-a4-sum_shtrumpet_susvib_a3_v2_rr1",
+					"id": "knocking2",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "374267__samulis__tuba-sustain-a3-tuba3_sus_a2_v3_rr1_mid",
+					"id": "stapler",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "374798__samulis__oldtrombone-a2-trombone_short_a2_v2_3",
+					"id": "t0",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "374873__samulis__oldtrombone-d3-trombone_short_d3_v2_1",
+					"id": "thunk",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "374846__samulis__oldtrombone-d3-trombone_short_d3_v2_1",
+					"id": "typewriter1",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "374823__samulis__oldtrombone-c3-trombone_short_c3_v2_4",
+					"id": "typewriterlong",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "374914__samulis__oldtrombone-f3-trombone_short_f3_v2_2",
+					"id": "typewriterlongcistern",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "374920__samulis__oldtrombone-f3-trombone_short_f3_v3_4",
+					"id": "373405__samulis__percussion-d5-claves1_hit_v3_rr2_sum",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "374937__samulis__oldtrombone-g2-trombone_short_g2_v2_1",
+					"id": "373434__samulis__percussion-f2-gongscrape_mf",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "374961__samulis__oldtrombone-a2-trombone_sustain_a2_v4_2",
+					"id": "373440__samulis__percussion-e5-logdrumhi_medm_v2_rr1_sum",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "374992__samulis__oldtrombone-c3-trombone_sustain_c3_v4_1",
+					"id": "373581__samulis__marimba-c7-marimba_hit_outrigger_c6_loud_01",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "375008__samulis__oldtrombone-d3-trombone_sustain_d3_v4_1",
-					"weight": 1,
-					"chord": 0
-				},
-				{
-					"id": "375047__samulis__oldtrombone-f3-trombone_sustain_f3_v3_1",
-					"weight": 1,
-					"chord": 0
-				},
-				{
-					"id": "375063__samulis__oldtrombone-g2-trombone_sustain_g2_v2_1",
-					"weight": 1,
-					"chord": 0
-				},
-				{
-					"id": "375069__samulis__oldtrombone-g3-trombone_sustain_g3_v2_1",
-					"weight": 1,
-					"chord": 0
-				},
-				{
-					"id": "375078__samulis__oldtrombone-a2-trombone_vibrato_a2_v1_1",
+					"id": "375590__samulis__agogo-agogobell3_ff_1",
 					"weight": 1,
 					"chord": 0
 				}
@@ -690,119 +500,114 @@ let input =
 		},
 		{
 			"gain": 0.4,
-			"padmin": 10,
-			"padmax": 200,
+			"padmin": 0,
+			"padmax": 20,
 			"start": 0.5,
 			"end": 0.6,
 			"nthreads": 4,
 			"list": [
 				{
-					"id": "clarinet1",
+					"id": "bagpipe1e",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "clarinet2",
+					"id": "bagpipe1f",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "clarinetnotes_a",
+					"id": "bagpipe1g",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "clarinetnotes_b",
+					"id": "bagpipe1h",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "clarinetnotes_c",
+					"id": "cellohighthunk",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "clarinetnotes_d",
+					"id": "celloknock0",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "clarinetnotes_e",
+					"id": "clapping0",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "clarinetnotes_f",
+					"id": "cowbell",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "clarinetnotes_g",
+					"id": "knocking1",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "clarinetnotes_h",
+					"id": "knocking2",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "clarinetnotes_i",
+					"id": "stapler",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "tornadosiren",
+					"id": "t0",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "372930__samulis__clarinet-long-sustain-e4-dcclar_suslong_f3_v1_rr1_sum",
+					"id": "thunk",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "372934__samulis__clarinet-long-sustain-a5-dcclar_suslong_a4_v2_rr1_sum",
+					"id": "typewriter1",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "372936__samulis__clarinet-long-sustain-d4-dcclar_suslong_d3_v2_rr1_sum",
+					"id": "typewriterlong",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "372941__samulis__clarinet-long-sustain-e4-dcclar_suslong_f3_v2_rr1_sum",
+					"id": "typewriterlongcistern",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "373598__samulis__oboe-staccato-a5-oboe_stacc_a4_v2_rr1_main",
+					"id": "373405__samulis__percussion-d5-claves1_hit_v3_rr2_sum",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "373627__samulis__oboe-staccato-e4-oboe_stacc_f3_v2_rr2_main",
+					"id": "373434__samulis__percussion-f2-gongscrape_mf",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "373628__samulis__oboe-staccato-e5-oboe_stacc_f4_v2_rr2_main",
+					"id": "373440__samulis__percussion-e5-logdrumhi_medm_v2_rr1_sum",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "373636__samulis__oboe-staccato-e5-oboe_stacc_f4_v3_rr2_main",
+					"id": "373581__samulis__marimba-c7-marimba_hit_outrigger_c6_loud_01",
 					"weight": 1,
 					"chord": 0
 				},
 				{
-					"id": "373648__samulis__oboe-sustain-a4-oboe_sus_a3_v3_main",
-					"weight": 1,
-					"chord": 0
-				},
-				{
-					"id": "373654__samulis__oboe-sustain-e5-oboe_sus_f4_v3_main",
+					"id": "375590__samulis__agogo-agogobell3_ff_1",
 					"weight": 1,
 					"chord": 0
 				}
@@ -810,14 +615,114 @@ let input =
 		},
 		{
 			"gain": 0.4,
-			"padmin": 10,
-			"padmax": 200,
-			"start": 0.6,
-			"end": 0.9,
+			"padmin": 0,
+			"padmax": 40,
+			"start": 0.1,
+			"end": 0.5,
 			"nthreads": 4,
 			"list": [
 				{
-					"id": "clarinetnotes_e",
+					"id": "bagpipe1e",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "bagpipe1f",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "bagpipe1g",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "bagpipe1h",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "cellohighthunk",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "celloknock0",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "clapping0",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "cowbell",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "knocking1",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "knocking2",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "stapler",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "t0",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "thunk",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "typewriter1",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "typewriterlong",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "typewriterlongcistern",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "373405__samulis__percussion-d5-claves1_hit_v3_rr2_sum",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "373434__samulis__percussion-f2-gongscrape_mf",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "373440__samulis__percussion-e5-logdrumhi_medm_v2_rr1_sum",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "373581__samulis__marimba-c7-marimba_hit_outrigger_c6_loud_01",
+					"weight": 1,
+					"chord": 0
+				},
+				{
+					"id": "375590__samulis__agogo-agogobell3_ff_1",
 					"weight": 1,
 					"chord": 0
 				}
@@ -835,11 +740,11 @@ let input =
 		0.5
 	],
 	"ygrid": [
-		0.5,
-		0.5,
-		0.5,
-		0.5,
-		0.5
+		1,
+		1,
+		1,
+		1,
+		1
 	],
 	"pigments": {
 		"red": "#AE0501",

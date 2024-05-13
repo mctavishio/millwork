@@ -1,13 +1,13 @@
 const fs = require("fs");
 const tools = require("./tools.js");
-const input = require("./input.js");
+const input = require("./inputSounds.js");
 const score = input.score;
 const chords = input.chords;
 const nthreads = 4;
 
 console.log(process.argv);
 let args = process.argv;
-console.log(`parameters = ${args.filter( (a,j)=>{return j>1} )}`);
+//console.log(`parameters = ${args.filter( (a,j)=>{return j>1} )}`);
 //in minutes
 const duration = args[2] ? args[2] : input.duration;
 const threadlength = duration*60; // in seconds

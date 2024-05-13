@@ -236,55 +236,11 @@ const xgrid = [...new Array(nx).keys()].map( x=>0.5 );
 const ygrid = [...new Array(ny).keys()].map( y=>1.0 );
 //console.log(`inputMill:xgrid=${JSON.stringify(xgrid)}`);
 
-
-/*
- * example:::
-	// pentatonic
-	{ lowi: 0, bassi: 1, bassV: 3, bassIV: 3, I: 6, II: 0, majIII: 0, miniii: 6, IV: 6, V: 6, VI: 0, majVII: 0, minvii: 4, VIII: 2, lownoise: 0, midnoise: 0, highnoise: 0, noise:0, buzz: 0 },
-*/
-const chords = [
-	{ I: {weight:6,fraylow:100,frayhigh:100}, IV: {weight:2,fraylow:100,frayhigh:100}, V: {weight:3,fraylow:100,frayhigh:100}, VIII: {weight:3,fraylow:100,frayhigh:100} },
-	{ I: {weight:6,fraylow:100,frayhigh:100}, IV: {weight:2,fraylow:100,frayhigh:100}, V: {weight:3,fraylow:96,frayhigh:104}, minvii: {weight:1,fraylow:100,frayhigh:100}, VIII: {weight:1,fraylow:90,frayhigh:102} },
-];
-//console.log(`chords[1] = ${JSON.stringify(chords[1])}`);
-const sounddata = require("./rawSoundFiles.js");
-//{id: "accordion", keywords:"accordion", file: "accordion.mp3", duration:17.820000, nchannels:2, rate:44100, type:"mp3", bitrate:16},
-/*
-const horn = sounddata.filter(f=>f.id.includes("samulis__f-horn-sustain-a3-mohorn_sus_a2_v1_1")).map(f=> {
-	return {id:f.id, weight:1, chord:0}
-});  
-*/
-const drums1 = sounddata.filter(f=>f.keywords.includes("beat")).map(f=> {
-	return {id:f.id, weight:1, chord:0}
-});  
-const drums2 = drums1;
-const drums3 = drums1;
-const drums4 = drums1;
-
-const score = [
-	{gain:0.3,padmin:0,padmax:20,start:0,end:1.0,nthreads:4,list:drums1},
-	{gain:0.3,padmin:0,padmax:10,start:0.1,end:0.9,nthreads:3,list:drums2},
-	{gain:0.4,padmin:0,padmax:20,start:0.5,end:0.6,nthreads:4,list:drums3},
-	{gain:0.4,padmin:0,padmax:40,start:0.1,end:0.5,nthreads:4,list:drums4},
-];
-let soundids = [];
-const sounds = score.reduce( (acc,part) => {
-	part.list.forEach( instrument => { 
-		if(!soundids.includes(instrument.id)) {
-			soundids.push(instrument.id);
-			acc.push(sounddata.filter(f => f.id===instrument.id)[0]);
-		}
-	});
-	return acc;
-},[]);
 const input = {
 	sequencetitle,
 	duration: 2.0, //minutes
 	nticks: 60*2,
 	fps: 24,
-	chords,
-	sounds,
-	score,
 	nx, ny, nz,
 	xgrid, ygrid,
 	//pigments, colorsets, rawcolorsets,
@@ -303,19 +259,11 @@ const input = {
 	film9x9info,film16x9info,
 };
 
-fs.writeFileSync("inSoundFiles.js", JSON.stringify(sounds,null,"\t"), (err) => {
-	if (err)
-		console.log(err);
-	else {
-		console.log(`inSoundFiles file written successfully\n`);
-	}
-})
-
 let inputstr = `let input =
 	${JSON.stringify(input,null,"\t")};
 module.exports = input;`
 
-fs.writeFileSync("input.js", inputstr, (err) => {
+fs.writeFileSync(inputfile, inputstr, (err) => {
 	if (err)
 		console.log(err);
 	else {

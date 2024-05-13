@@ -9,7 +9,6 @@ echo $dt
 echo $mill
 echo $gsdir
 
-node inputMill.js
 
 mv poemTextLists.js poemTextLists$dt
 node textMill.js
@@ -19,8 +18,7 @@ mkdir data/$mill/css
 #cp buildMill.sh data/$mill/buildMill.sh
 cp buildPictures.sh data/$mill/buildPictures.sh
 cp textMill.js data/$mill/textMill.js
-cp inputMill.js data/$mill/inputMill.js
-cp input.js data/$mill/input.js
+cp inputPixMill.js data/$mill/inputPixMill.js
 cp pigments.js data/$mill/pigments.js
 cp tools.js data/$mill/tools.js
 cp poemTextLists.js data/$mill/poemTextLists.js
@@ -45,6 +43,7 @@ cd data/$mill
 echo ls data/$mill
 ls
 
+node inputPixMill.js
 echo "module.exports = { webpage:'printbook${mill:4}.html', dt:'$dt', datetime:'$(date)',directory:'data/$mill' }" > millinfo.js
 #
 node Bmill.js

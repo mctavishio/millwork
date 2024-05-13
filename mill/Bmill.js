@@ -53,7 +53,7 @@ let r0 = 0.4;
 	elements[z] = [];
 	const xgrid = tools.shuffle(input.xgrid);
 	const ygrid = tools.shuffle(input.ygrid);
-	let cy = 0.5;
+	let cy = 1.0;
 	let cx = 0.5;
 	let color = allcolors[tools.randominteger(0,allcolors.length)]; 
 	[...new Array(nx).keys()].forEach( x=> {
@@ -61,7 +61,7 @@ let r0 = 0.4;
 
 			//color = z<2 ? allcolors[tools.randominteger(0,allcolors.length)] : "var(--warmlightwhite)";
 			if(z<3 && y<2) {
-				color = z>0 ? allcolors[tools.randominteger(0,allcolors.length)] : "var(--red)";
+				color = z>1 ? allcolors[tools.randominteger(0,allcolors.length)] : "var(--yellow)";
 				++e;++count;
 				elements[z].push({b:[], tag:"circle", role:"scircle", x:0,y:0,z,e,n:count, cx:cx, cy:cy, so:1.0, fo:0.0, strokecolor:color, fillcolor:color});
 
@@ -69,17 +69,6 @@ let r0 = 0.4;
 				++e;++count;
 				elements[z].push({b:[], tag:"line", role:"hline", x,y,z,e,n:count, cx:cx, cy:cy, so:1.0, fo:0.0, strokecolor:color, fillcolor:color});
 			}
-			color = z<2 ? allcolors[tools.randominteger(0,allcolors.length)] : "var(--warmblack)";
-			++e;++count;
-			elements[z].push({b:[], tag:"line", role:"vline", x,y,z,e,n:count, cx:xgrid[x], cy:ygrid[y], so:1.0, fo:0.0, strokecolor:color, fillcolor:color});
-
-			color = z<2 ? allcolors[tools.randominteger(0,allcolors.length)] : "var(--warmlightwhite)";
-			++e;++count;
-			elements[z].push({b:[], tag:"line", role:"vline", x,y,z,e,n:count, cx:xgrid[x], cy:ygrid[y], so:1.0, fo:0.0, strokecolor:color, fillcolor:color});
-
-			color = z<3 ? allcolors[tools.randominteger(0,allcolors.length)] : "var(--warmlightwhite)";
-			++e;++count;
-			elements[z].push({b:[], tag:"line", role:"vline", x,y,z,e,n:count, cx:xgrid[x], cy:ygrid[y], so:1.0, fo:0.0, strokecolor:color, fillcolor:color});
 
 			//color = "var(--warmblack)"; 
 			color = z<2 ? allcolors[tools.randominteger(0,allcolors.length)] : "var(--warmblack)";
@@ -156,7 +145,7 @@ let mult = [...new Array(nz).keys()].map(z=>tools.randominteger(2,10)/10).sort( 
 			//return 0.6;
 		}).sort( (a, b) => b - a );
 		let sdarray = [...new Array(ny).keys()].map(j=>{
-			return tools.randominteger(8,90)/1000;
+			return tools.randominteger(8,180)/1000;
 		}).sort( (a, b) => b - a );
 		B.elements[z].forEach( (el,j) => {
 			let bt = {};
@@ -171,11 +160,11 @@ let mult = [...new Array(nz).keys()].map(z=>tools.randominteger(2,10)/10).sort( 
 				sd = tools.randominteger(18,298)/100
 			}
 			else if(el.tag==="circle") {
-				sw = tools.randominteger(30,48)/100; 
+				sw = tools.randominteger(30,68)/100; 
 				sf = tools.randominteger(0,160)/100; 
 				sd = tools.randominteger(8,108)/1000
 			}
-			let r = tools.randominteger(8,28)/100;
+			let r = tools.randominteger(8,38)/100;
 			let rmult = tools.randominteger(48,110)/100;
 			if("r" in el) r=el.r*rmult*tools.randominteger(96,104)/100;
 
