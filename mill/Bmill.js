@@ -25,71 +25,90 @@ const spicecolors = input.spicecolors;
 const corecolors = input.corecolors; 
 const allcolors = input.allcolors;
 const weightedcolors = input.weightedcolors;
-const nx = input.nx || 5;
-const ny = input.ny || 5;
-const nz = input.nz || 2;
+const train = [1,1,0,1,0,1,0,1,1,0];
+const nx = train.length;
+const dx = (1.0/(nx+1)).toFixed(2);
+const xgrid = train.map( (t,j) => {
+	return (j*dx + 1.0*dx).toFixed(2);
+});
+const ygrids = [];
+//phrase/strict imitation/theme
+ygrids[0] = train.map( (t,j) => {
+	return t;	
+});
+//inversion
+ygrids[1] = ygrids[0].map( (t,j) => {
+	return 	(t+1)%2;
+});
+//retrograde
+ygrids[2] = train.map( (t,j) => {
+	return train[nx-j-1];	
+});
+//retrograde inversion
+ygrids[3] = ygrids[2].map( (t,j) => {
+	return 	(t+1)%2;
+});
+const ny = ygrids.length;//4
+const dy = (1.0/(ny+1)).toFixed(2);
+console.log(`ygrids=${JSON.stringify(ygrids)}`);
+const ygrid = [...new Array(ny).keys()].map( j => {
+	return (1.0*j*dy + 1.0*dy).toFixed(2); 
+});
+console.log(`ygrid=${JSON.stringify(ygrid)}`);
+//const nx = input.nx || 5;
+//const ny = input.ny || 5;
+//const nz = input.nz || 2;
+const nz=1;
 const nmin = Math.min(nx,ny);
 const nmax = Math.max(nx,ny);
 const m = nx*ny*nz;
 const ne = (nx*2+ny)*nz;
 const n = nmin;
 
-const xgrid = tools.shuffle(input.xgrid);
-const ygrid = tools.shuffle(input.ygrid);
-console.log(`xgrid=${JSON.stringify(xgrid)}`);
 //const xgrid = tools.shuffle(input.xgrid);
 //const ygrid = tools.shuffle(input.ygrid);
+console.log(`xgrid=${JSON.stringify(xgrid)}`);
 
+//then run a vline through xgrid[t] 
+//at sec intervals according to current ylevel
+//& current x
 //x,y,e,z
 let elements = [];
 elements[0] = [
-	{tag:"rect",role:"rect",b:[],n:0,block:0,x:0,y:0,z:0,e:0,cx:0,cy:0,w:1,h:1,sw:0.2,sf:0,sd:4,so:0,fo:1,strokecolor:"var(--warmblack)",fillcolor:"var(--warmlightwhite)"},
+	{tag:"rect",role:"rect",b:[],n:0,cx:0,cy:0,w:1,h:1,sw:0.02,sf:0,sd:4,so:1,fo:1,strokecolor:"var(--warmblack)",fillcolor:"var(--warmlightwhite)"},
 ];
 let count=0;
-let r0 = 0.4;
+let r0 = Math.min(dx,dy)/2.0;
 [...new Array(nz).keys()].map(z=>z+1).forEach( z=> {
 	//let color = weightedcolors[tools.randominteger(0,weightedcolors.length)];
-	let e = -1;
 	elements[z] = [];
-	const xgrid = tools.shuffle(input.xgrid);
-	const ygrid = tools.shuffle(input.ygrid);
-	let cy = 1.0;
-	let cx = 0.5;
 	let color = allcolors[tools.randominteger(0,allcolors.length)]; 
-	[...new Array(nx).keys()].forEach( x=> {
-		[...new Array(ny).keys()].forEach( y=> {
+	ygrids.forEach( (theme,y) => {
+		console.log(`theme = ${JSON.stringify(theme)}`);
+		let cy = ygrid[y];
+		xgrid.forEach( (cx,x) => {
+			if(theme[x]) {
+				color = ["var(--yellow)","var(--red)"][(x+y)%2]; 
+				//elements[z].push({b:[], tag:"line", role:"vline", cx:cx, cy:cy, sw:r0*0.2, so:1.0, fo:0.0, strokecolor:color, fillcolor:color});
+				elements[z].push({tag:"rect",role:"rect",b:[],cx:cx-dx/2,cy:cy+dy/2,w:dx,h:dy,sw:0.02,sf:0,sd:4,so:0,fo:1,strokecolor:"var(--warmblack)",fillcolor:color});
 
-			//color = z<2 ? allcolors[tools.randominteger(0,allcolors.length)] : "var(--warmlightwhite)";
-			if(z<3 && y<2) {
-				color = z>1 ? allcolors[tools.randominteger(0,allcolors.length)] : "var(--yellow)";
-				++e;++count;
-				elements[z].push({b:[], tag:"circle", role:"scircle", x:0,y:0,z,e,n:count, cx:cx, cy:cy, so:1.0, fo:0.0, strokecolor:color, fillcolor:color});
+				color = "var(--warmblack)"; 
+				elements[z].push({b:[], tag:"circle", role:"fcircle", cx:cx, cy:cy, r:r0, strokecolor:color, fillcolor:color});
 
-				color = x<1 ? "var(--yellow)" : allcolors[x%allcolors.length];
-				++e;++count;
-				elements[z].push({b:[], tag:"line", role:"hline", x,y,z,e,n:count, cx:cx, cy:cy, so:1.0, fo:0.0, strokecolor:color, fillcolor:color});
+				color = "var(--warmlightwhite)"; 
+				elements[z].push({b:[], tag:"circle", role:"fcircle", cx:cx, cy:cy, r:r0*0.6, sw:r0*0.2, strokecolor:color, fillcolor:color});
 			}
-
-			//color = "var(--warmblack)"; 
-			color = z<2 ? allcolors[tools.randominteger(0,allcolors.length)] : "var(--warmblack)";
-			++e;++count;
-			elements[z].push({b:[], tag:"line", role:"hline", x,y,z,e,n:count, cx:xgrid[x], cy:ygrid[y], so:1.0, fo:0.0, strokecolor:color, fillcolor:color});
-
-			//color = "var(--warmlightwhite)"; 
-			color = z<2 ? allcolors[tools.randominteger(0,allcolors.length)] : "var(--warmlightwhite)";
-			++e;++count;
-			elements[z].push({b:[], tag:"line", role:"hline", x,y,z,e,n:count, cx:xgrid[x], cy:ygrid[y], so:1.0, fo:0.0, strokecolor:color, fillcolor:color});
-
 		});
 	});
-/*	
+	/*
 	color = "var(--warmlightwhite)"; 
-	++e;++count;
-	elements[z].push({tag:"rect",role:"rect",b:[],n:count,block:0,x:0,y:0,z:0,e,cx:0,cy:0,w:1,h:1,sw:0.2,sf:0,sd:.5,so:1,fo:0,strokecolor:color, fillcolor:color});
+	elements[z].push({tag:"rect",role:"rect",b:[],cx:0,cy:0,w:1,h:1,sw:0.2,sf:0,sd:.5,so:1,fo:0,strokecolor:color, fillcolor:color});
+
+	color = "var(--warmblack)"; 
+	elements[z].push({tag:"rect",role:"rect",b:[],cx:0,cy:0,w:1,h:1,sw:0.2,sf:0,sd:.5,so:1,fo:0,strokecolor:color, fillcolor:color});
 
 	color = "var(--warmlightwhite"; 
-	++e;++count;
-	elements[z].push({tag:"rect",role:"rect",b:[],n:count,block:0,x:0,y:0,z:0,e,cx:0,cy:0,w:1,h:1,sw:0.2,sf:0,sd:.5,so:1,fo:0,strokecolor:color, fillcolor:color});
+	elements[z].push({tag:"rect",role:"rect",b:[],cx:0,cy:0,w:1,h:1,sw:0.2,sf:0,sd:.5,so:1,fo:0,strokecolor:color, fillcolor:color});
 */
 });
 
@@ -112,7 +131,7 @@ let Bfilm = {
 		});
 	})
 }
-const dotween = () => { return tools.randominteger(0,100) < 90 }
+const dotween = () => { return tools.randominteger(0,100) < 96 }
 const ischange = () => { return tools.randominteger(0,100) > 8 }
 
 /* layer 0
@@ -134,18 +153,16 @@ const ischange = () => { return tools.randominteger(0,100) > 8 }
 
 /* layers 1&above
  * */
-let mult = [...new Array(nz).keys()].map(z=>tools.randominteger(2,10)/10).sort( (a, b) => b-a );
 [...new Array(nz).keys()].map(z=>z+1).forEach( z => { 
 	let rarray = [...new Array(B.elements[z].length).keys()].map(j=>{
 		return tools.randominteger(4,48)/100;
 	}).sort( (a, b) => b - a );
 	[...new Array(nticks).keys()].forEach( t => {
 		let swarray = [...new Array(ny).keys()].map(j=>{
-			return (t<0 || t>nticks-0) ? 0 : tools.randominteger(18,33)/100;
-			//return 0.6;
+			return (t<0 || t>nticks-0) ? 0 : tools.randominteger(8,68)/100;
 		}).sort( (a, b) => b - a );
 		let sdarray = [...new Array(ny).keys()].map(j=>{
-			return tools.randominteger(8,180)/1000;
+			return tools.randominteger(8,240)/1000;
 		}).sort( (a, b) => b - a );
 		B.elements[z].forEach( (el,j) => {
 			let bt = {};
@@ -153,19 +170,16 @@ let mult = [...new Array(nz).keys()].map(z=>tools.randominteger(2,10)/10).sort( 
 			//let sw = 1.2;
 			sw = swarray[el.y];
 			let sf = 0;
-			let sd = sdarray[el.y];
+			let sd = el.role==="scircle" ? tools.randominteger(5,20)/100 : tools.randominteger(0.4,10)/100;
+			sd = sdarray[el.y];
 			if(el.tag==="rect") {
-				sw = (t===0 || t>nticks-0) ? 0 : tools.randominteger(4,10)/100; 
+				sw = (t===0 || t>nticks-2) ? 0 : tools.randominteger(4,12)/100; 
 				sf = tools.randominteger(0,160)/100; 
-				sd = tools.randominteger(18,298)/100
+				sd = tools.randominteger(18,198)/100
 			}
-			else if(el.tag==="circle") {
-				sw = tools.randominteger(30,68)/100; 
-				sf = tools.randominteger(0,160)/100; 
-				sd = tools.randominteger(8,108)/1000
-			}
-			let r = tools.randominteger(8,38)/100;
-			let rmult = tools.randominteger(48,110)/100;
+
+			let r = tools.randominteger(8,48)/100;
+			let rmult = tools.randominteger(48,210)/100;
 			if("r" in el) r=el.r*rmult*tools.randominteger(96,104)/100;
 
 			if( t===0 || ischange() || t===nticks-1 ) {

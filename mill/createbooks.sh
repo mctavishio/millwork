@@ -129,7 +129,7 @@ echo done removing front matter from printpostcardbook.pdf
 #echo "done"
 #echo "|:|"
 #cd ../..
-#echo gsutil -m cp -r data/$mill gs://clockfactory/
+#echo gcloud storage cp -r data/$mill gs://clockfactory/
 #echo "cd data/$mill"
 #echo open data/$mill/printbook.pdf
 #echo open data/$mill/printbroadsides.pdf
@@ -138,6 +138,6 @@ echo done removing front matter from printpostcardbook.pdf
 #echo "open data/$mill/filmsound.mp4"
 #echo "open data/$mill/filmtextsound.mp4"
 #echo "bash createFilm.sh"
-#echo gsutil -m cp -r film_file$dt.mp4 gs://clockfactory/
+#echo gcloud storage cp -r film_file$dt.mp4 gs://clockfactory/
 #
 echo "|:|"

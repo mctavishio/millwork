@@ -103,6 +103,6 @@ rm printcoverbook_temp.pdf
 
 sed "s/figure class=\"frame\"/figure class=\"\"/" printbook.html > printbook_temp.html
 mv printbook_temp.html printbook.html
-#gsutil  cp printbook.html gs://$gsdir/$mill/
+#gcloud storage  cp printbook.html gs://$gsdir/$mill/
 cp printbook.html ../../printbook${mill:4}.html
 echo "|:|"

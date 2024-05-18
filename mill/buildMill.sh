@@ -42,6 +42,7 @@ cd css
  bash clean.sh
  bash compileCSS.sh
 cd ../
+cp css/print.css ../css/print.css
 cp css/print.css data/$mill/css/print.css
 #
 echo "copied files"
@@ -300,7 +301,8 @@ echo done making film16x9sound films
 #echo "done"
 #echo "|:|"
 #cd ../..
-#echo gsutil -m cp -r data/$mill gs://bindery/
+#echo gcloud storage cp -r data/$mill gs://$gsdir/
+#echo gcloud storage cp -r data/$mill gs://$gsdir/
 #echo "cd data/$mill"
 #echo open data/$mill/printbook.pdf
 #echo open data/$mill/printbroadsides.pdf
@@ -309,12 +311,13 @@ echo done making film16x9sound films
 #echo "open data/$mill/filmsound.mp4"
 #echo "open data/$mill/filmtextsound.mp4"
 #echo "bash createFilm.sh"
-#echo gsutil -m cp -r film_file$dt.mp4 gs://bindery/
+#echo gcloud storage cp -r film_file$dt.mp4 gs://$gsdir/
+#echo gcloud storage cp -r film_file$dt.mp4 gs://$gsdir/
 rm print.html
 rm Bfilm.js
 
 sed "s/figure class=\"frame\"/figure class=\"\"/" printbook.html > printbook_temp.html
 mv printbook_temp.html printbook.html
-#gsutil  cp printbook.html gs://$gsdir/$mill/
+#gcloud storage cp printbook.html gs://$gsdir/$mill/
 cp printbook.html ../../printbook${mill:4}.html
 echo "|:|"

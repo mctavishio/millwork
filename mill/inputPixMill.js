@@ -225,16 +225,16 @@ const weightedcolors = colorweights.flatMap(wx=>{
 	return [...new Array(wx[1]).keys()].map( w=>wx[0] );
 });
 
-const nx = 5;
-const ny = 5;
+const nx = 10;
+const ny = 10;
 //nz = nlayers
 const nz = 2;
-//const xgrid = [...new Array(nx).keys()].map( j=>Math.floor(100*j/(nx-1))/100 );
-//const ygrid = [...new Array(ny).keys()].map( j=>Math.floor(100*j/(ny-1))/100 );
+const xgrid = [...new Array(nx).keys()].map( j=> (0.8*j/(nx) + .1 ).toFixed(2));
+const ygrid = [...new Array(ny).keys()].map( j=> (0.8*j/(ny) + .1 ).toFixed(2));
 //const ygrid = [...new Array(n).keys()].map(j=>tools.randominteger(0,100)/100).sort( (a,b) => { return a - b } );
-const xgrid = [...new Array(nx).keys()].map( x=>0.5 );
-const ygrid = [...new Array(ny).keys()].map( y=>1.0 );
-//console.log(`inputMill:xgrid=${JSON.stringify(xgrid)}`);
+//const xgrid = [...new Array(nx).keys()].map( x=>0.5 );
+//const ygrid = [...new Array(ny).keys()].map( y=>1.0 );
+console.log(`inputMill:xgrid=${JSON.stringify(xgrid)}`);
 
 const input = {
 	sequencetitle,

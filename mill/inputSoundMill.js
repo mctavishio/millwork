@@ -38,12 +38,20 @@ let set1 = {
 	idNOTset: ["typewriter"],
 };
 let set2 = {
-	keywordANDset: [],
+	keywordANDset: ["knock", "orch"],
 	keywordORset: [],
 	keywordNOTset: [],
 	idANDset: [],
 	idORset: ["train"],
 	idNOTset: ["typewriter"],
+};
+let set3 = {
+	keywordANDset: [],
+	keywordORset: [],
+	keywordNOTset: [],
+	idANDset: ["pizz"],
+	idORset: [],
+	idNOTset: [],
 };
 const filterrawsounds = set => {
 	return f => {
@@ -78,15 +86,17 @@ const drums1 = sounddata.filter(filterrawsounds(set1)).map(f=> {
 	return {id:f.id, weight:1, chord:0}
 });  
 const drums2 = sounddata.filter(filterrawsounds(set2)).map(f=> {
+	return {id:f.id, weight:1, chord:1}
+});  
+const drums3 = sounddata.filter(filterrawsounds(set3)).map(f=> {
 	return {id:f.id, weight:1, chord:0}
 });  
 //console.log(`drums1 = ${JSON.stringify(drums1)}`);
-const drums3 = drums1;
 const drums4 = drums1;
 
 const score = [
-	{gain:0.3,padmin:0,padmax:20,start:0,end:1.0,nthreads:5,list:drums1},
-	{gain:0.3,padmin:0,padmax:10,start:0.1,end:0.9,nthreads:3,list:drums2},
+	{gain:0.3,padmin:0,padmax:20,start:0,end:1.0,nthreads:4,list:drums3},
+	{gain:0.2,padmin:0,padmax:10,start:0.1,end:0.9,nthreads:3,list:drums3},
 ];
 let soundids = [];
 const sounds = score.reduce( (acc,part) => {

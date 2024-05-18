@@ -101,7 +101,7 @@ cp printzine.html ../../printzine${mill:4}.html
 echo "|:|"
 echo "vim printzine${mill:4}.html"
 cd ../..
-echo gsutil -m cp data/$mill/printzine.pdf gs://$gsdir/$mill
+echo gcloud storage cp data/$mill/printzine.pdf gs://$gsdir/$mill
 echo "done with data/$mill"
 
 echo "|:|"

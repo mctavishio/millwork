@@ -9,7 +9,6 @@ echo $dt
 echo $mill
 echo $gsdir
 
-
 mv poemTextLists.js poemTextLists$dt
 node textMill.js
 
@@ -18,7 +17,7 @@ mkdir data/$mill/css
 #cp buildMill.sh data/$mill/buildMill.sh
 cp buildPictures.sh data/$mill/buildPictures.sh
 cp textMill.js data/$mill/textMill.js
-cp inputPixMill.js data/$mill/inputPixMill.js
+cp inputMill.js data/$mill/inputMill.js
 cp pigments.js data/$mill/pigments.js
 cp tools.js data/$mill/tools.js
 cp poemTextLists.js data/$mill/poemTextLists.js
@@ -35,6 +34,7 @@ cd css
  bash clean.sh
  bash compileCSS.sh
 cd ../
+cp css/print.css ../css/print.css
 cp css/print.css data/$mill/css/print.css
 #
 echo "copied files"
@@ -43,7 +43,7 @@ cd data/$mill
 echo ls data/$mill
 ls
 
-node inputPixMill.js
+node inputMill.js
 echo "module.exports = { webpage:'printbook${mill:4}.html', dt:'$dt', datetime:'$(date)',directory:'data/$mill' }" > millinfo.js
 #
 node Bmill.js
@@ -277,7 +277,7 @@ ffmpeg -i film16x9_15sec.mp4  -c copy -metadata:s:v:0 rotate=90 film16x9_15sec_v
 #echo "done"
 #echo "|:|"
 #cd ../..
-#echo gsutil -m cp -r data/$mill gs://bindery/
+#echo gcloud storage cp -r data/$mill gs://bindery/
 #echo "cd data/$mill"
 #echo open data/$mill/printbook.pdf
 #echo open data/$mill/printbroadsides.pdf
@@ -286,10 +286,11 @@ ffmpeg -i film16x9_15sec.mp4  -c copy -metadata:s:v:0 rotate=90 film16x9_15sec_v
 #echo "open data/$mill/filmsound.mp4"
 #echo "open data/$mill/filmtextsound.mp4"
 #echo "bash createFilm.sh"
-#echo gsutil -m cp -r film_file$dt.mp4 gs://bindery/
+#echo gcloud storage cp -r film_file$dt.mp4 gs://bindery/
 #
-#rm print.html
+rm print.html
 rm Bfilm.js
+rm B.js
 
 sed "s/figure class=\"frame\"/figure class=\"\"/" printbook.html > printbook_temp.html
 mv printbook_temp.html printbook.html

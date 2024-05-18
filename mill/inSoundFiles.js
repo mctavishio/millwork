@@ -50,70 +50,10 @@
 		"bitrate": 16
 	},
 	{
-		"id": "fan1",
-		"keywords": "noise|fan",
-		"file": "fan1.mp3",
-		"duration": 8.155011,
-		"nchannels": 2,
-		"rate": 44100,
-		"type": "mp3",
-		"bitrate": 16
-	},
-	{
-		"id": "mctbreathing0",
-		"keywords": "vox|breath|noise",
-		"file": "mctbreathing0.mp3",
-		"duration": 23.201995,
-		"nchannels": 2,
-		"rate": 44100,
-		"type": "mp3",
-		"bitrate": 16
-	},
-	{
-		"id": "scraping1",
-		"keywords": "noise|percussion",
-		"file": "scraping1.mp3",
-		"duration": 2.147007,
-		"nchannels": 2,
-		"rate": 44100,
-		"type": "mp3",
-		"bitrate": 16
-	},
-	{
-		"id": "surf",
-		"keywords": "surf|noise",
-		"file": "surf.mp3",
-		"duration": 9.957007,
-		"nchannels": 2,
-		"rate": 44100,
-		"type": "mp3",
-		"bitrate": 16
-	},
-	{
-		"id": "surf2",
-		"keywords": "surf|noise",
-		"file": "surf2.mp3",
-		"duration": 9.957007,
-		"nchannels": 2,
-		"rate": 44100,
-		"type": "mp3",
-		"bitrate": 16
-	},
-	{
 		"id": "train1",
 		"keywords": "noise|train|traffick",
 		"file": "train1.mp3",
 		"duration": 12.309002,
-		"nchannels": 2,
-		"rate": 44100,
-		"type": "mp3",
-		"bitrate": 16
-	},
-	{
-		"id": "weatherradio1",
-		"keywords": "noise|radio|weather",
-		"file": "weatherradio1.mp3",
-		"duration": 12.752993,
 		"nchannels": 2,
 		"rate": 44100,
 		"type": "mp3",

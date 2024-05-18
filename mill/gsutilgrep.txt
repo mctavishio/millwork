@@ -1,0 +1,60 @@
+./buildBooks.sh:#gsutil  cp printbook.html gs://$gsdir/$mill/
+./buildFilms.sh:#echo gsutil -m cp -r data/$mill gs://clockfactory/
+./buildFilms.sh:#echo gsutil -m cp -r film_file$dt.mp4 gs://clockfactory/
+./buildMill.sh:#echo gsutil -m cp -r data/$mill gs://$gsdir/
+./buildMill.sh:#echo gsutil -m cp -r film_file$dt.mp4 gs://$gsdir/
+./buildPictures.sh:#echo gsutil -m cp -r data/$mill gs://bindery/
+./buildPictures.sh:#echo gsutil -m cp -r film_file$dt.mp4 gs://bindery/
+./buildPictures.sh:#gsutil  cp printbook.html gs://$gsdir/$mill/
+./buildSoundFilms.sh:#echo gsutil -m cp -r data/$mill gs://clockfactory/
+./buildSoundFilms.sh:#echo gsutil -m cp -r film_file$dt.mp4 gs://clockfactory/
+./createbooks.sh:#echo gsutil -m cp -r data/$mill gs://clockfactory/
+./createbooks.sh:#echo gsutil -m cp -r film_file$dt.mp4 gs://clockfactory/
+./createzines.sh:#gsutil  cp printzinefilm.pdf gs://$gsdir/$mill/
+./createzines.sh:#gsutil  cp printzinebroadsides.pdf gs://$gsdir/$mill/
+./createzines.sh:#gsutil  cp printzinepicturebook.pdf gs://$gsdir/$mill/
+./createzines.sh:#gsutil  cp printzine.pdf gs://$gsdir/$mill/
+./createzines.sh:#gsutil  cp printzine.html gs://$gsdir/$mill/
+./createzines.sh:echo gsutil -m cp data/$mill/printzine.pdf gs://$gsdir/$mill
+./millfiles.sh:gsutil -m cp -r data/mill20240511150012 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511151304 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511152622 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511154339 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511155245 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511155823 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511160447 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511195653 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511200506 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511201432 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511202455 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511204219 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511204832 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511205630 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511210212 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511211847 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511212547 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511214321 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240511221630 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240512094357 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240512102250 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240512104604 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240512115206 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240512120911 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240512121459 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240512124407 gs://bindery/
+./millfiles.sh:gsutil -m cp -r data/mill20240512125830 gs://bindery/
+./redofilm.sh:echo gsutil -m cp -r filmsound.mp4 gs://clockfactory/
+./uploadcyclone.sh:gsutil -m cp -r data/mill20240120152036  gs://noisefactory/
+./uploadcyclone.sh:gsutil -m cp -r data/mill20240120153229  gs://noisefactory/
+./uploadcyclone.sh:gsutil -m cp -r data/mill20240120153748  gs://noisefactory/
+./uploadcyclone.sh:gsutil -m cp -r data/mill20240120190952  gs://noisefactory/
+./uploadcyclone.sh:gsutil -m cp -r data/mill20240120191912  gs://noisefactory/
+./uploadcyclone.sh:gsutil -m cp -r data/mill20240120192853  gs://noisefactory/
+./uploadcyclone.sh:gsutil -m cp -r data/mill20240120193546  gs://noisefactory/
+./uploadcyclone.sh:gsutil -m cp -r data/mill20240120200721  gs://noisefactory/
+./uploadcyclone.sh:gsutil -m cp -r data/mill20240120201524  gs://noisefactory/
+./uploadcyclone.sh:gsutil -m cp -r data/mill20240120215240  gs://noisefactory/
+./uploadcyclone.sh:gsutil -m cp -r data/mill20240120220009  gs://noisefactory/
+./uploadcyclone.sh:gsutil -m cp -r data/mill20240120220723  gs://noisefactory/
+./uploadcyclone.sh:gsutil -m cp -r data/mill20240120222203  gs://noisefactory/
+./uploadcyclone.sh:gsutil -m cp -r data/mill20240120223303  gs://noisefactory/
