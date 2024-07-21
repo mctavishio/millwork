@@ -193,8 +193,7 @@ const inputfile = `./input.js`;
 
 const fps = 24;
 const corecolors = [pigments.warmblack, pigments.warmlightwhite]; 
-const spicecolors = [pigments.yellow, pigments.warmblack, pigments.warmlightwhite]; 
-//const spicecolors = [pigments.yellow, pigments.lightgray]; 
+const spicecolors = [pigments.warmblack, pigments.warmlightwhite]; 
 const allcolors = [...corecolors,...spicecolors];
 const colorweights = [
 	["var(--corecolor0)",10],
@@ -225,15 +224,15 @@ const weightedcolors = colorweights.flatMap(wx=>{
 	return [...new Array(wx[1]).keys()].map( w=>wx[0] );
 });
 
-const nx = 4;
-const ny = 4;
+const nx = 3;
+const ny = 2;
 //nz = nlayers
-const nz = 3;
-const xgrid = [...new Array(nx).keys()].map( j=>Math.floor(100*j/(nx-1))/100 );
-const ygrid = [...new Array(ny).keys()].map( j=>Math.floor(100*j/(ny-1))/100 );
+const nz = 2;
+//const xgrid = [...new Array(nx).keys()].map( j=>Math.floor(100*j/(nx-1))/100 );
+//const ygrid = [...new Array(ny).keys()].map( j=>Math.floor(100*j/(ny-1))/100 );
 //const ygrid = [...new Array(n).keys()].map(j=>tools.randominteger(0,100)/100).sort( (a,b) => { return a - b } );
-//const xgrid = [...new Array(nx).keys()].map( x=>0.5 );
-//const ygrid = [...new Array(ny).keys()].map( y=>0.5 );
+const xgrid = [...new Array(nx).keys()].map( x=>0.5 );
+const ygrid = [...new Array(ny).keys()].map( y=>0.5 );
 //console.log(`inputMill:xgrid=${JSON.stringify(xgrid)}`);
 const input = {
 	sequencetitle,

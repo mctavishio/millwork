@@ -15,8 +15,10 @@ wordsAll.filter(list=>list.n>1).forEach( list=> {
 });
 const input = require("./input.js");
 const npoems = input.npoems || 80;
-const nstanzas = input.nstanzas || 3;
+const nstanzas =  3;
 const nlines = input.nlines || 4;
+//const nstanzas = input.nstanzas || 3;
+//const nlines = input.nlines || 4;
 const nchars = input.nchars || 48;
 const chcounts = wordsAll.map(w=>w.n);
 const wchcounts = wordsAll.flatMap( w => {

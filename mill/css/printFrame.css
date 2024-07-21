@@ -14,7 +14,15 @@
 }
 @page :right{
 	@bottom-right {
-		/*content: counter(page);*/
+		content: counter(page);
+		opacity:0.6;
+		font-family:  var(--monospace_zerodot);
+		font-weight:400;
+		font-size: 2rem;
+		color: var(--warmlightgray);
+		color: var(--richgray3);
+		margin-bottom: 0.5in;
+		/*
 		content: none;
 		font-family:  var(--monospace_zerodot);
 		font-weight:400;
@@ -22,6 +30,7 @@
 		color: var(--warmlightgray);
 		color: var(--richgray3);
 		margin-bottom: 0.5in;
+		*/
 	}
 }
 @page :left{
@@ -92,10 +101,10 @@ body {
 	background: var(--warmlightwhite);
 }
 section.pagestartnumbers > article:first-of-type {
-	counter-reset: page 1;
+	counter-reset: page 0;
 }
 article.pagestartnumbers {
-	counter-reset: page 1;
+	counter-reset: page 0;
 }
 section.interior > article:nth-child(0) {
 	counter-reset: counterArticle 1;
@@ -138,6 +147,9 @@ body.broadsides figure, body.broadsides div.frame {
 	page: pagefilm;
 }
 body.film figure, body.film div.frame {
+	page: pagefilm;
+}
+body.illustratedbook figure, body.illustratedbook div.frame {
 	page: pagefilm;
 }
 section#sectionfrontmatter {
@@ -210,7 +222,7 @@ main > header > h4 {
 }
 header {
 	margin-top:1em;
-	margin-bottom:2em;
+	margin-bottom:1.4em;
 }
 h1 {
 	font-family:  var(--monospace_zerodot);
@@ -262,16 +274,17 @@ body.broadsides article > div.flex {
 	overflow: clip;
 }
 body.illustratedbook article > div.flex {
-	position: absolute;
+	/*position: absolute;*/
 	top:0; left:0;
 	display: flex;
-    width: var(--innerwidth);
-    height: var(--innerheight);
-	align-items: center;
+    /*width: var(--innerwidth);
+    height: var(--innerheight);*/
+	/*align-items: center;*/
+	align-items: top;
 	/*justify-content: center;*/
 	justify-content: left;
-	overflow: clip;
-	border-right: 0.4rem solid var(--warmblack);
+	/*overflow: clip;*/
+	padding-bottom: 1.4em;
 }
 body.film article > div.flex {
 	position: absolute;
@@ -318,6 +331,7 @@ body.notext article > div.flex > div.content {
 }
 body.illustratedbook article header {
 	z-index: 400;
+	border-bottom: 0.4rem double var(--warmgray);
 }
 body.broadsides article header {
 	z-index: 400;
@@ -389,8 +403,8 @@ body.illustratedbook figure {
 	min-height: var(--innerheight);
 	padding-top:0;
 	margin:0;
-	break-before: recto;
-	/*break-before: page;*/
+	/*break-before: recto;*/
+	break-before: page;
 }
 body.broadsides figure, div.frame, body.film figure {
 	position: absolute;

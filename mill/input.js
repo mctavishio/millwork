@@ -4,32 +4,18 @@ let input =
 	"duration": 2,
 	"nticks": 120,
 	"fps": 24,
-	"nx": 10,
-	"ny": 10,
-	"nz": 2,
+	"nx": 3,
+	"ny": 3,
+	"nz": 3,
 	"xgrid": [
-		"0.10",
-		"0.18",
-		"0.26",
-		"0.34",
-		"0.42",
-		"0.50",
-		"0.58",
-		"0.66",
-		"0.74",
-		"0.82"
+		0.5,
+		0.5,
+		0.5
 	],
 	"ygrid": [
-		"0.10",
-		"0.18",
-		"0.26",
-		"0.34",
-		"0.42",
-		"0.50",
-		"0.58",
-		"0.66",
-		"0.74",
-		"0.82"
+		0.5,
+		0.5,
+		0.5
 	],
 	"pigments": {
 		"red": "#AE0501",
@@ -107,14 +93,12 @@ let input =
 	],
 	"spicecolors": [
 		"#191918",
-		"#fdfdf3",
 		"#fdfdf3"
 	],
 	"allcolors": [
 		"#191918",
 		"#fdfdf3",
 		"#191918",
-		"#fdfdf3",
 		"#fdfdf3"
 	],
 	"weightedcolors": [
@@ -202,7 +186,7 @@ let input =
 	"bookinfo": {
 		"sequencetitle": "telegraph",
 		"title": "telegraph",
-		"subtitle": "Sat May 18 2024",
+		"subtitle": "Sat Jul 20 2024",
 		"description": "algorithmic sound & drawings",
 		"rooturl": "https://telegraph.work",
 		"authorurl": "https://mctavish.work/",
@@ -234,7 +218,7 @@ let input =
 	"postcardinfo": {
 		"sequencetitle": "telegraph",
 		"title": "telegraph",
-		"subtitle": "Sat May 18 2024",
+		"subtitle": "Sat Jul 20 2024",
 		"description": "algorithmic sound & drawings",
 		"rooturl": "https://telegraph.work",
 		"authorurl": "https://mctavish.work/",
@@ -267,7 +251,7 @@ let input =
 	"coverinfo": {
 		"sequencetitle": "telegraph",
 		"title": "telegraph",
-		"subtitle": "Sat May 18 2024",
+		"subtitle": "Sat Jul 20 2024",
 		"description": "algorithmic sound & drawings",
 		"rooturl": "https://telegraph.work",
 		"authorurl": "https://mctavish.work/",
@@ -300,7 +284,7 @@ let input =
 	"picture8x8info": {
 		"sequencetitle": "telegraph",
 		"title": "telegraph",
-		"subtitle": "Sat May 18 2024",
+		"subtitle": "Sat Jul 20 2024",
 		"description": "algorithmic sound & drawings",
 		"rooturl": "https://telegraph.work",
 		"authorurl": "https://mctavish.work/",
@@ -333,7 +317,7 @@ let input =
 	"picturebookinfo": {
 		"sequencetitle": "telegraph",
 		"title": "telegraph",
-		"subtitle": "Sat May 18 2024",
+		"subtitle": "Sat Jul 20 2024",
 		"description": "algorithmic sound & drawings",
 		"rooturl": "https://telegraph.work",
 		"authorurl": "https://mctavish.work/",
@@ -365,7 +349,7 @@ let input =
 	"film9x9info": {
 		"sequencetitle": "telegraph",
 		"title": "telegraph",
-		"subtitle": "Sat May 18 2024",
+		"subtitle": "Sat Jul 20 2024",
 		"description": "algorithmic sound & drawings",
 		"rooturl": "https://telegraph.work",
 		"authorurl": "https://mctavish.work/",
@@ -398,7 +382,7 @@ let input =
 	"film16x9info": {
 		"sequencetitle": "telegraph",
 		"title": "telegraph",
-		"subtitle": "Sat May 18 2024",
+		"subtitle": "Sat Jul 20 2024",
 		"description": "algorithmic sound & drawings",
 		"rooturl": "https://telegraph.work",
 		"authorurl": "https://mctavish.work/",

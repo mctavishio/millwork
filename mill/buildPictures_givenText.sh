@@ -9,8 +9,8 @@ echo $dt
 echo $mill
 echo $gsdir
 
-mv poemTextLists.js poemTextLists$dt
-node textMill.js
+#mv poemTextLists.js poemTextLists$dt
+#node textMill.js
 
 mkdir data/$mill
 mkdir data/$mill/css

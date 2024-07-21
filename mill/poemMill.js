@@ -73,6 +73,10 @@ let poemsinfo = [...new Array(nticks).keys()].map( j => {
 	let elementdraw = B.elements.map( layer => {
 		return layer.map( el => {
 			//console.log(el.role);
+			let x1 = el.b[jd].x1 || el.x1;
+			let x2 = el.b[jd].x2 || el.x2;
+			let y1 = el.b[jd].y1 || el.y1;
+			let y2 = el.b[jd].y2 || el.y2;
 			let cx = el.b[jd].cx || el.cx;
 			let cy = el.b[jd].cy || el.cy;
 			let r = el.b[jd].r || el.r;
@@ -86,8 +90,8 @@ let poemsinfo = [...new Array(nticks).keys()].map( j => {
 			let strokecolor = el.b[jd].strokecolor || el.strokecolor;
 			let fillcolor = el.b[jd].fillcolor || el.fillcolor;
 			let cssclasses = el.cssclasses || [];
-			let p = tools.drawp[el.role]( {cx,cy,r,w,h,sw,sf,sd,so,fo,strokecolor,fillcolor } ); 
-			//console.log(JSON.stringify(p));
+			let p = tools.drawp[el.role]( {x1,x2,y1,y2,cx,cy,r,w,h,sw,sf,sd,so,fo,strokecolor,fillcolor } ); 
+			//console.log(`p = ${JSON.stringify(p)}`);
 			//console.log(JSON.stringify(tools.drawf(canvas,p,el.tag)));
 			return tools.drawf(canvas,p,el.tag,cssclasses);
 		}).join(" ");

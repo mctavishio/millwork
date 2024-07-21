@@ -56,7 +56,7 @@ let tools = {
 				a[j][n-i-1]=tmp;
 			}
 		}
-		console.log(`a=${JSON.stringify(a)}`);
+		//console.log(`a=${JSON.stringify(a)}`);
 		return a;
 	},
 	hexToRGB: h => {
@@ -330,6 +330,8 @@ let tools = {
 		//rect: p => { return {x:p.cx,y:p.cy,width:p.w,height:p.h,"stroke-width":p.sw,"stroke-dashoffset":p.sf,"stroke-dasharray":p.sd,"stroke-opacity":p.so,"fill-opacity":p.fo,stroke:p.strokecolor,fill:p.fillcolor } },
 		vline: p => { return {x1:p.cx,x2:p.cx,y1:0,y2:1,"stroke-width":p.sw,"stroke-dashoffset":p.sf,"stroke-dasharray":p.sd,"stroke-opacity":p.so,stroke:p.strokecolor } },
 		hline: p => { return {x1:0,x2:1,y1:p.cy,y2:p.cy,"stroke-width":p.sw,"stroke-dashoffset":p.sf,"stroke-dasharray":p.sd,"stroke-opacity":p.so,stroke:p.strokecolor } },
+		vlineseg: p => { console.log(`in drawp p=${JSON.stringify(p)}`); return {x1:p.x1,x2:p.x2,y1:p.y1,y2:p.y2,"stroke-width":p.sw,"stroke-dashoffset":p.sf,"stroke-dasharray":p.sd,"stroke-opacity":p.so,stroke:p.strokecolor } },
+		hlineseg: p => { return {x1:p.x1,x2:p.x2,y1:p.y1,y2:p.y2,"stroke-width":p.sw,"stroke-dashoffset":p.sf,"stroke-dasharray":p.sd,"stroke-opacity":p.so,stroke:p.strokecolor } },
 		line: p => { return {x1:p.x1,x2:p.x2,y1:p.y1,y2:p.y2,"stroke-width":p.sw,"stroke-dashoffset":p.sf,"stroke-dasharray":p.sd,"stroke-opacity":p.so,stroke:p.strokecolor } },
 	},
 
@@ -355,7 +357,7 @@ let tools = {
 				acc[key]=p[key];
 			}
 			else {
-				acc[key] = Math.round(100*p[key]*attmap(key))/100;
+				acc[key] = Math.round(100* +p[key] *attmap(key))/100;
 				//acc[key] = 1.0*Number(p[key])*attmap(key);
 			}
 			return acc; 
